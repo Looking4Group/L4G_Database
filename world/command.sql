@@ -12,7 +12,7 @@ CREATE TABLE IF NOT EXISTS `command` (
   PRIMARY KEY (`name`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 CHECKSUM=1 DELAY_KEY_WRITE=1 ROW_FORMAT=FIXED COMMENT='Chat System';
 
--- Dumping data for table progress_world.command: ~425 rows (approximately)
+-- Dumping data for table progress_world.command: ~413 rows (approximately)
 /*!40000 ALTER TABLE `command` DISABLE KEYS */;
 INSERT INTO `command` (`name`, `permission_mask`, `help`) VALUES
 	('account', 2048, 'Syntax: .account\r\nShows account type.'),
@@ -98,7 +98,7 @@ INSERT INTO `command` (`name`, `permission_mask`, `help`) VALUES
 	('debug setitemflag', 8192, 'Syntax: .debug setitemflag #guid #flag\r\nSets flags #flag to item with guid #guid.'),
 	('debug setvalue', 8192, 'Syntax: .debug setvalue #field #value #isInt\r\nSet the field #field of the selected creature with value #value. If no creature is selected, set the content of your field. Use a #isInt of value 1 if #value is an integer.'),
 	('debug showcombatstats', 8192, 'Syntax: .debug showcombatstats on/off\r\nEnable or disable extended combat stat show on chat'),
-	('debug threatlist', 8192, 'Syntax: .debug threatlist\r\nPrints out the current threatlist of the targetted creature.'),
+	('debug threatlist', 1, 'Syntax: .debug threatlist\r\nPrints out the current threatlist of the targetted creature.'),
 	('debug update', 8192, 'Syntax: .debug update #field #value\r\nUpdate the field #field of the selected character or creature with value #value.\r\nIf no #value is provided, display the content of field #field.'),
 	('debug uws', 8192, 'Syntax: .debug uws #world #state\r\nUpdate #world state with #state value.'),
 	('demorph', 256, 'Syntax: .demorph\r\nDemorph the selected player.'),

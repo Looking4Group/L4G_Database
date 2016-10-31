@@ -14,7 +14,7 @@ CREATE TABLE IF NOT EXISTS `spell_enchant_proc_data` (
   PRIMARY KEY (`entry`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 ROW_FORMAT=DYNAMIC COMMENT='Spell enchant proc data';
 
--- Dumping data for table progress_world.spell_enchant_proc_data: ~13 rows (approximately)
+-- Dumping data for table progress_world.spell_enchant_proc_data: ~14 rows (approximately)
 /*!40000 ALTER TABLE `spell_enchant_proc_data` DISABLE KEYS */;
 INSERT INTO `spell_enchant_proc_data` (`entry`, `customChance`, `PPMChance`, `procFlags`, `procEx`) VALUES
 	(2, 0, 8.8, 0, 0),
@@ -29,7 +29,8 @@ INSERT INTO `spell_enchant_proc_data` (`entry`, `customChance`, `PPMChance`, `pr
 	(2638, 20, 0, 8, 3),
 	(2639, 20, 0, 8, 3),
 	(2674, 0, 1, 0, 0),
-	(3266, 0, 1.2, 0, 0);
+	(3266, 0, 1.2, 0, 0),
+	(3273, 0, 3, 0, 3);
 /*!40000 ALTER TABLE `spell_enchant_proc_data` ENABLE KEYS */;
 /*!40101 SET SQL_MODE=IFNULL(@OLD_SQL_MODE, '') */;
 /*!40014 SET FOREIGN_KEY_CHECKS=IF(@OLD_FOREIGN_KEY_CHECKS IS NULL, 1, @OLD_FOREIGN_KEY_CHECKS) */;

@@ -11,7 +11,7 @@ CREATE TABLE IF NOT EXISTS `creature_questrelation` (
   PRIMARY KEY (`id`,`quest`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 ROW_FORMAT=FIXED COMMENT='Creature System';
 
--- Dumping data for table progress_world.creature_questrelation: ~4,357 rows (approximately)
+-- Dumping data for table progress_world.creature_questrelation: ~5,303 rows (approximately)
 /*!40000 ALTER TABLE `creature_questrelation` DISABLE KEYS */;
 INSERT INTO `creature_questrelation` (`id`, `quest`) VALUES
 	(62, 66714),
@@ -4420,6 +4420,10 @@ INSERT INTO `creature_questrelation` (`id`, `quest`) VALUES
 	(18262, 9890),
 	(18265, 9882),
 	(18265, 9883),
+	(18265, 9884),
+	(18265, 9885),
+	(18265, 9886),
+	(18265, 9887),
 	(18265, 9892),
 	(18265, 9893),
 	(18266, 10106),
@@ -4724,6 +4728,7 @@ INSERT INTO `creature_questrelation` (`id`, `quest`) VALUES
 	(19880, 10265),
 	(19880, 10266),
 	(19880, 10308),
+	(19935, 10445),
 	(19935, 10460),
 	(19935, 10461),
 	(19935, 10462),

@@ -18,7 +18,7 @@ CREATE TABLE IF NOT EXISTS `spell_scripts` (
   `o` float NOT NULL DEFAULT '0'
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
--- Dumping data for table progress_world.spell_scripts: ~11 rows (approximately)
+-- Dumping data for table progress_world.spell_scripts: ~12 rows (approximately)
 /*!40000 ALTER TABLE `spell_scripts` DISABLE KEYS */;
 INSERT INTO `spell_scripts` (`id`, `delay`, `command`, `datalong`, `datalong2`, `dataint`, `x`, `y`, `z`, `o`) VALUES
 	(25650, 0, 6, 530, 0, 0, -589.976, 4078.31, 143.258, 4.48305),
@@ -31,7 +31,8 @@ INSERT INTO `spell_scripts` (`id`, `delay`, `command`, `datalong`, `datalong2`, 
 	(37751, 0, 2, 159, 9, 0, 0, 0, 0, 0),
 	(37752, 1, 5, 46, 33554434, 0, 0, 0, 0, 0),
 	(43876, 0, 14, 43883, 1, 0, 0, 0, 0, 0),
-	(38920, 0, 19, 2, 0, 0, 0, 0, 0, 0);
+	(38920, 0, 19, 2, 0, 0, 0, 0, 0, 0),
+	(37906, 0, 14, 37905, 0, 0, 0, 0, 0, 0);
 /*!40000 ALTER TABLE `spell_scripts` ENABLE KEYS */;
 /*!40101 SET SQL_MODE=IFNULL(@OLD_SQL_MODE, '') */;
 /*!40014 SET FOREIGN_KEY_CHECKS=IF(@OLD_FOREIGN_KEY_CHECKS IS NULL, 1, @OLD_FOREIGN_KEY_CHECKS) */;

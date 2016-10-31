@@ -19,7 +19,7 @@ CREATE TABLE IF NOT EXISTS `looking4group_string` (
   PRIMARY KEY (`entry`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
--- Dumping data for table progress_world.looking4group_string: ~800 rows (approximately)
+-- Dumping data for table progress_world.looking4group_string: ~564 rows (approximately)
 /*!40000 ALTER TABLE `looking4group_string` DISABLE KEYS */;
 INSERT INTO `looking4group_string` (`entry`, `content_default`, `content_loc1`, `content_loc2`, `content_loc3`, `content_loc4`, `content_loc5`, `content_loc6`, `content_loc7`, `content_loc8`) VALUES
 	(1, 'You should select a character or a creature.', NULL, NULL, 'You should select a character or a creature.', NULL, NULL, NULL, NULL, NULL),

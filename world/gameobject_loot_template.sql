@@ -18,7 +18,7 @@ CREATE TABLE IF NOT EXISTS `gameobject_loot_template` (
   PRIMARY KEY (`entry`,`item`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COMMENT='Loot System';
 
--- Dumping data for table progress_world.gameobject_loot_template: ~17,667 rows (approximately)
+-- Dumping data for table progress_world.gameobject_loot_template: ~17,673 rows (approximately)
 /*!40000 ALTER TABLE `gameobject_loot_template` DISABLE KEYS */;
 INSERT INTO `gameobject_loot_template` (`entry`, `item`, `ChanceOrQuestChance`, `groupid`, `mincountOrRef`, `maxcount`, `lootcondition`, `condition_value1`, `condition_value2`) VALUES
 	(167, 1349, -100, 0, 1, 1, 0, 0, 0),

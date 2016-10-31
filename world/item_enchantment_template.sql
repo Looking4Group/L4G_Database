@@ -12,7 +12,7 @@ CREATE TABLE IF NOT EXISTS `item_enchantment_template` (
   PRIMARY KEY (`entry`,`ench`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 ROW_FORMAT=FIXED COMMENT='Item Random Enchantment System';
 
--- Dumping data for table progress_world.item_enchantment_template: ~27,750 rows (approximately)
+-- Dumping data for table progress_world.item_enchantment_template: ~28,837 rows (approximately)
 /*!40000 ALTER TABLE `item_enchantment_template` DISABLE KEYS */;
 INSERT INTO `item_enchantment_template` (`entry`, `ench`, `chance`) VALUES
 	(61, 6, 7.73),

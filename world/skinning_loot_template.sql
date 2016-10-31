@@ -18,7 +18,7 @@ CREATE TABLE IF NOT EXISTS `skinning_loot_template` (
   PRIMARY KEY (`entry`,`item`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 ROW_FORMAT=FIXED COMMENT='Loot System';
 
--- Dumping data for table progress_world.skinning_loot_template: ~3,761 rows (approximately)
+-- Dumping data for table progress_world.skinning_loot_template: ~3,056 rows (approximately)
 /*!40000 ALTER TABLE `skinning_loot_template` DISABLE KEYS */;
 INSERT INTO `skinning_loot_template` (`entry`, `item`, `ChanceOrQuestChance`, `groupid`, `mincountOrRef`, `maxcount`, `lootcondition`, `condition_value1`, `condition_value2`) VALUES
 	(113, 2318, 39.2962, 1, 1, 1, 0, 0, 0),

@@ -13,9 +13,9 @@ CREATE TABLE IF NOT EXISTS `worldboss_respawn` (
 
 -- Dumping data for table progress_world.worldboss_respawn: ~2 rows (approximately)
 /*!40000 ALTER TABLE `worldboss_respawn` DISABLE KEYS */;
-INSERT INTO `worldboss_respawn` (`BossEntry`, `RespawnTime`) VALUES
-	(17711, UNIX_TIMESTAMP()),
-	(18728, UNIX_TIMESTAMP());
+--INSERT INTO `worldboss_respawn` (`BossEntry`, `RespawnTime`) VALUES
+--	(17711, UNIX_TIMESTAMP()),
+--	(18728, UNIX_TIMESTAMP());
 /*!40000 ALTER TABLE `worldboss_respawn` ENABLE KEYS */;
 /*!40101 SET SQL_MODE=IFNULL(@OLD_SQL_MODE, '') */;
 /*!40014 SET FOREIGN_KEY_CHECKS=IF(@OLD_FOREIGN_KEY_CHECKS IS NULL, 1, @OLD_FOREIGN_KEY_CHECKS) */;

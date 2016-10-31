@@ -11,7 +11,7 @@ CREATE TABLE IF NOT EXISTS `gameobject_questrelation` (
   PRIMARY KEY (`id`,`quest`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
--- Dumping data for table progress_world.gameobject_questrelation: ~279 rows (approximately)
+-- Dumping data for table progress_world.gameobject_questrelation: ~280 rows (approximately)
 /*!40000 ALTER TABLE `gameobject_questrelation` DISABLE KEYS */;
 INSERT INTO `gameobject_questrelation` (`id`, `quest`) VALUES
 	(31, 248),
@@ -282,6 +282,7 @@ INSERT INTO `gameobject_questrelation` (`id`, `quest`) VALUES
 	(184945, 10647),
 	(184946, 10648),
 	(185035, 10690),
+	(185126, 10781),
 	(185165, 10820),
 	(185165, 10821),
 	(185166, 10809),

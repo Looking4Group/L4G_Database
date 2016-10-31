@@ -13,7 +13,7 @@ CREATE TABLE IF NOT EXISTS `spell_linked_spell` (
   PRIMARY KEY (`spell_trigger`,`spell_effect`,`type`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
--- Dumping data for table progress_world.spell_linked_spell: ~134 rows (approximately)
+-- Dumping data for table progress_world.spell_linked_spell: ~138 rows (approximately)
 /*!40000 ALTER TABLE `spell_linked_spell` DISABLE KEYS */;
 INSERT INTO `spell_linked_spell` (`spell_trigger`, `spell_effect`, `type`, `comment`) VALUES
 	(-46021, 46020, 0, 'Teleport: Normal Realm'),
@@ -38,6 +38,8 @@ INSERT INTO `spell_linked_spell` (`spell_trigger`, `spell_effect`, `type`, `comm
 	(-40268, 7, 0, 'Suicide when not possessing Vengeful Spirit'),
 	(-39187, 33652, 0, 'Cast Stoned spell when Ground Slam ends'),
 	(-38794, 33686, 0, 'Murmur\'s Shockwave (Heroic)'),
+	(-35201, 35202, 0, 'Paralytic Poison - Paralysis'),
+	(-33810, 33811, 0, 'Rock Shell trigger Broken Rage'),
 	(-33711, 33686, 0, 'Murmur\'s Shockwave (Normal)'),
 	(-30632, 30631, 1, ''),
 	(-30410, 44032, 0, 'Magtheridon: Cast Mind exhaustion on shadow grasp remove.'),
@@ -100,6 +102,7 @@ INSERT INTO `spell_linked_spell` (`spell_trigger`, `spell_effect`, `type`, `comm
 	(28273, -28274, 0, 'Remove bloodthistle withdrawal when bloodthistle starts'),
 	(30019, 30532, 0, 'Add InGame aura when player start possessing Chesspiece'),
 	(30410, 30166, 0, 'Maghteridon - shadow grasp visual'),
+	(30834, 30836, 1, 'Prince Infernal Spawning'),
 	(31224, -46394, 0, 'Cloak of Shadows - Burn'),
 	(31224, -45665, 0, 'Cloak of shadows dispells encapsulate'),
 	(31224, -45661, 0, 'Cloak of shadows dispells encapsulate'),
@@ -113,6 +116,7 @@ INSERT INTO `spell_linked_spell` (`spell_trigger`, `spell_effect`, `type`, `comm
 	(36574, 36650, 0, 'Apply Phase Slip Vulnerability'),
 	(36920, 23971, 1, 'Nazan: fireball summons fire [HC]'),
 	(37896, 37897, 0, 'X-52 Rocket Helmet - Parachute trigger'),
+	(37906, -37905, 1, 'Book of Fel Names - Remove Metamorphosis'),
 	(38736, 38729, 0, 'Rod of Purification - Quest 10839'),
 	(39828, 39831, 0, 'Light of the Naaru'),
 	(39828, 39832, 0, 'Light of the Naaru2'),

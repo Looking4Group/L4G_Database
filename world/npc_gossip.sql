@@ -11,7 +11,7 @@ CREATE TABLE IF NOT EXISTS `npc_gossip` (
   PRIMARY KEY (`npc_guid`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
--- Dumping data for table progress_world.npc_gossip: ~2,291 rows (approximately)
+-- Dumping data for table progress_world.npc_gossip: ~2,507 rows (approximately)
 /*!40000 ALTER TABLE `npc_gossip` DISABLE KEYS */;
 INSERT INTO `npc_gossip` (`npc_guid`, `textid`) VALUES
 	(2, 2282),
@@ -826,6 +826,7 @@ INSERT INTO `npc_gossip` (`npc_guid`, `textid`) VALUES
 	(33790, 8794),
 	(33823, 3543),
 	(33831, 3543),
+	(34080, 7),
 	(34102, 3543),
 	(34103, 3543),
 	(34104, 3543),
@@ -1334,8 +1335,10 @@ INSERT INTO `npc_gossip` (`npc_guid`, `textid`) VALUES
 	(57906, 8853),
 	(57907, 8851),
 	(57915, 9631),
+	(57942, 4),
 	(58017, 8672),
 	(58018, 8673),
+	(58021, 5),
 	(58048, 8682),
 	(58436, 8715),
 	(58437, 8688),
@@ -1345,6 +1348,7 @@ INSERT INTO `npc_gossip` (`npc_guid`, `textid`) VALUES
 	(59387, 8724),
 	(59388, 8754),
 	(59416, 8751),
+	(59423, 6),
 	(59434, 8760),
 	(59435, 8760),
 	(59436, 8760),

@@ -17,7 +17,7 @@ CREATE TABLE IF NOT EXISTS `warden_data_result` (
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB AUTO_INCREMENT=1010 DEFAULT CHARSET=utf8;
 
--- Dumping data for table progress_world.warden_data_result: ~49 rows (approximately)
+-- Dumping data for table progress_world.warden_data_result: ~50 rows (approximately)
 /*!40000 ALTER TABLE `warden_data_result` DISABLE KEYS */;
 INSERT INTO `warden_data_result` (`id`, `check`, `data`, `str`, `address`, `length`, `result`, `comment`) VALUES
 	(1, 243, '', '', 4840352, 2, '558B', 'LUA Protection'),
@@ -59,6 +59,7 @@ INSERT INTO `warden_data_result` (`id`, `check`, `data`, `str`, `address`, `leng
 	(37, 217, NULL, 'SETPRIV.DLL', 0, 0, NULL, 'HideToolz - Injected DLL'),
 	(38, 217, NULL, 'SPEEDHACK.DLL', 0, 0, NULL, 'Cheat Engine - Injected DLL'),
 	(39, 217, NULL, 'SZATYOR.DLL', 0, 0, NULL, 'Packet Sniffer - Injected DLL'),
+	(40, 217, NULL, 'WHIFF.DLL', 0, 0, NULL, 'Packet Sniffer - Injected DLL'),
 	(1000, 243, '', '', 4840352, 2, '558B', 'lua protection'),
 	(1001, 243, '', '', 8979979, 5, 'E04D62503F', 'Hyper speed'),
 	(1002, 243, '', '', 9208923, 5, 'C0854A3340', 'gravity'),

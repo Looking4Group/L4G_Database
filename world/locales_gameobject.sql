@@ -26,7 +26,7 @@ CREATE TABLE IF NOT EXISTS `locales_gameobject` (
   PRIMARY KEY (`entry`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
--- Dumping data for table progress_world.locales_gameobject: ~12,493 rows (approximately)
+-- Dumping data for table progress_world.locales_gameobject: ~13,633 rows (approximately)
 /*!40000 ALTER TABLE `locales_gameobject` DISABLE KEYS */;
 INSERT INTO `locales_gameobject` (`entry`, `name_loc1`, `name_loc2`, `name_loc3`, `name_loc4`, `name_loc5`, `name_loc6`, `name_loc7`, `name_loc8`, `castbarcaption_loc1`, `castbarcaption_loc2`, `castbarcaption_loc3`, `castbarcaption_loc4`, `castbarcaption_loc5`, `castbarcaption_loc6`, `castbarcaption_loc7`, `castbarcaption_loc8`) VALUES
 	(31, '', '', 'Alte Löwenstatue', '', '', '', '', '', '', '', '', '', '', '', '', ''),

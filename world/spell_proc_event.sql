@@ -18,7 +18,7 @@ CREATE TABLE IF NOT EXISTS `spell_proc_event` (
   PRIMARY KEY (`entry`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
--- Dumping data for table progress_world.spell_proc_event: ~744 rows (approximately)
+-- Dumping data for table progress_world.spell_proc_event: ~821 rows (approximately)
 /*!40000 ALTER TABLE `spell_proc_event` DISABLE KEYS */;
 INSERT INTO `spell_proc_event` (`entry`, `SchoolMask`, `SpellFamilyName`, `SpellFamilyMask`, `procFlags`, `procEx`, `ppmRate`, `CustomChance`, `Cooldown`) VALUES
 	(324, 0, 0, 0, 0, 0, 0, 0, 3),
@@ -459,6 +459,7 @@ INSERT INTO `spell_proc_event` (`entry`, `SchoolMask`, `SpellFamilyName`, `Spell
 	(31836, 0, 10, 2147483648, 0, 0, 0, 0, 0),
 	(31895, 0, 0, 0, 0, 0, 5, 0, 0),
 	(31904, 0, 0, 0, 0, 64, 0, 0, 0),
+	(32106, 0, 0, 0, 0, 67108864, 0, 0, 0),
 	(32385, 0, 5, 73014445058, 0, 0, 0, 0, 0),
 	(32387, 0, 5, 73014445058, 0, 0, 0, 0, 0),
 	(32392, 0, 5, 73014445058, 0, 0, 0, 0, 0),

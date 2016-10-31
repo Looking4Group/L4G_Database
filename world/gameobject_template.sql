@@ -43,7 +43,7 @@ CREATE TABLE IF NOT EXISTS `gameobject_template` (
   KEY `idx_name` (`name`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 ROW_FORMAT=FIXED COMMENT='Gameobject System';
 
--- Dumping data for table progress_world.gameobject_template: ~13,925 rows (approximately)
+-- Dumping data for table progress_world.gameobject_template: ~13,823 rows (approximately)
 /*!40000 ALTER TABLE `gameobject_template` DISABLE KEYS */;
 INSERT INTO `gameobject_template` (`entry`, `type`, `displayId`, `name`, `castBarCaption`, `faction`, `flags`, `size`, `data0`, `data1`, `data2`, `data3`, `data4`, `data5`, `data6`, `data7`, `data8`, `data9`, `data10`, `data11`, `data12`, `data13`, `data14`, `data15`, `data16`, `data17`, `data18`, `data19`, `data20`, `data21`, `data22`, `data23`, `ScriptName`) VALUES
 	(31, 2, 6, 'Old Lion Statue', '', 84, 0, 0.63, 43, 73, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, ''),
@@ -9626,7 +9626,7 @@ INSERT INTO `gameobject_template` (`entry`, `type`, `displayId`, `name`, `castBa
 	(181579, 10, 759, 'Southern Beacon', '', 0, 4, 2, 1653, 9391, 0, 655360, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, ''),
 	(181580, 10, 759, 'Central Beacon', '', 0, 4, 2, 1653, 9391, 0, 655360, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, ''),
 	(181581, 10, 759, 'Western Beacon', '', 0, 4, 2, 1653, 9391, 0, 655360, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, ''),
-	(181582, 10, 7143, 'Kaliri Nest', 'Opening', 0, 0, 0.3, 43, 0, 0, 196608, 0, 0, 0, 0, 0, 0, 29395, 0, 0, 0, 21400, 0, 0, 0, 0, 0, 0, 0, 0, 0, ''),
+	(181582, 3, 7143, 'Kaliri Nest', 'Opening', 0, 0, 0.3, 43, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, ''),
 	(181583, 6, 3993, 'Tainted Soil Trap', '', 0, 0, 0.9, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, ''),
 	(181584, 6, 2233, 'Battered Crate Trap', '', 1665, 0, 0.6, 0, 0, 3, 29420, 0, 15, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, ''),
 	(181585, 5, 6794, 'Banner01', '', 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, ''),
@@ -11565,9 +11565,9 @@ INSERT INTO `gameobject_template` (`entry`, `type`, `displayId`, `name`, `castBa
 	(184200, 31, 7148, 'Instance_Portal_Difficulty_0', '', 0, 0, 3.42869, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, ''),
 	(184201, 31, 7148, 'Instance_Portal_Difficulty_0', '', 0, 0, 2.93215, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, ''),
 	(184202, 31, 7149, 'Instance_Portal_Difficulty_1', '', 0, 0, 2.93215, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, ''),
-	(184203, 0, 7155, 'Doodad_Coilfang_Raid_Bridge_Part01', '', 1375, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, ''),
-	(184204, 0, 7156, 'Doodad_Coilfang_Raid_Bridge_Part02', '', 1375, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, ''),
-	(184205, 0, 7157, 'Doodad_Coilfang_Raid_Bridge_Part03', '', 1375, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, ''),
+	(184203, 0, 7155, 'Doodad_Coilfang_Raid_Bridge_Part01', '', 1375, 32, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, ''),
+	(184204, 0, 7156, 'Doodad_Coilfang_Raid_Bridge_Part02', '', 1375, 32, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, ''),
+	(184205, 0, 7157, 'Doodad_Coilfang_Raid_Bridge_Part03', '', 1375, 32, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, ''),
 	(184206, 31, 7148, 'InstancePortal_01_Difficulty_0', '', 0, 0, 3.42869, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, ''),
 	(184207, 31, 7149, 'InstancePortal_01_Difficulty_1', '', 0, 0, 3.42869, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, ''),
 	(184208, 31, 7148, 'InstancePortal_02_Difficulty_0', '', 0, 0, 2.93215, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, ''),
@@ -11877,7 +11877,7 @@ INSERT INTO `gameobject_template` (`entry`, `type`, `displayId`, `name`, `castBa
 	(184565, 8, 4452, '', '', 0, 0, 1, 4, 10, 2066, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, ''),
 	(184566, 10, 7147, 'Waterfall Control Console', '', 0, 0, 0.645021, 86, 0, 13521, 983040, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, ''),
 	(184567, 10, 7147, 'Waterfall Auxiliary Control', '', 0, 0, 0.645021, 0, 0, 0, 196608, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, ''),
-	(184568, 0, 7190, 'Lady Vashj Bridge Console', '', 0, 34, 1, 0, 86, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'GOUse_go_vashj_console_access_panel'),
+	(184568, 0, 7190, 'Lady Vashj Bridge Console', '', 0, 16, 1, 0, 1620, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, ''),
 	(184569, 0, 7191, 'Doodad_Coilfang_steam_off_on01', '', 0, 0, 5.66332, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, ''),
 	(184570, 0, 7191, 'Doodad_Coilfang_steam_off_on02', '', 0, 0, 5.66332, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, ''),
 	(184571, 0, 7191, 'Doodad_Coilfang_steam_off_on03', '', 0, 0, 5.66332, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, ''),
@@ -12287,11 +12287,11 @@ INSERT INTO `gameobject_template` (`entry`, `type`, `displayId`, `name`, `castBa
 	(185111, 8, 200, 'Bonfire', '', 0, 0, 1, 4, 10, 2066, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, ''),
 	(185112, 8, 192, 'Campfire', '', 0, 0, 1, 4, 10, 2061, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, ''),
 	(185113, 8, 192, 'Campfire', '', 0, 0, 1, 4, 10, 2061, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, ''),
-	(185114, 1, 7147, 'Serpentshrine Console', '', 0, 34, 0.458642, 0, 86, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'GOUse_go_vashj_console_access_panel'),
-	(185115, 1, 7147, 'Serpentshrine Console', '', 0, 34, 0.458642, 0, 86, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'GOUse_go_vashj_console_access_panel'),
-	(185116, 1, 7147, 'Serpentshrine Console', '', 0, 34, 0.458642, 0, 86, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'GOUse_go_vashj_console_access_panel'),
-	(185117, 1, 7147, 'Serpentshrine Console', '', 0, 34, 0.458642, 0, 86, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'GOUse_go_vashj_console_access_panel'),
-	(185118, 1, 7147, 'Serpentshrine Console', '', 0, 34, 0.418183, 0, 86, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'GOUse_go_vashj_console_access_panel'),
+	(185114, 0, 7147, 'Serpentshrine Console - Hydross the Unstable', '', 0, 0, 0.458642, 0, 86, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'GOUse_go_vashj_console_access_panel'),
+	(185115, 0, 7147, 'Serpentshrine Console - The Lurker Below', '', 0, 0, 0.458642, 0, 86, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'GOUse_go_vashj_console_access_panel'),
+	(185116, 0, 7147, 'Serpentshrine Console - Leotheras the Blind', '', 0, 0, 0.458642, 0, 86, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'GOUse_go_vashj_console_access_panel'),
+	(185117, 0, 7147, 'Serpentshrine Console - Fathom-Lord Karathress', '', 0, 0, 0.458642, 0, 86, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'GOUse_go_vashj_console_access_panel'),
+	(185118, 0, 7147, 'Serpentshrine Console - Morogrim Tidewalker', '', 0, 0, 0.418183, 0, 86, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'GOUse_go_vashj_console_access_panel'),
 	(185119, 3, 51, 'Dust Covered Chest', '', 0, 0, 1, 57, 20712, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 1, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, ''),
 	(185120, 5, 2911, 'O\'Mally\'s Instrument', '', 114, 0, 0.5, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, ''),
 	(185121, 2, 0, 'Eclipsion Communication Device', '', 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, ''),
@@ -12622,7 +12622,7 @@ INSERT INTO `gameobject_template` (`entry`, `type`, `displayId`, `name`, `castBa
 	(185596, 5, 7215, 'Bladespire Standard', '', 0, 0, 4, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, ''),
 	(185597, 5, 6957, 'Bloodmaul Standard', '', 0, 0, 4, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, ''),
 	(185598, 10, 1727, 'Blade\'s Edge Ogre Brew Keg', 'Drinking', 35, 0, 3, 1690, 0, 0, 0, 0, 0, 0, 0, 0, 0, 39980, 0, 0, 0, 21295, 0, 0, 0, 0, 0, 0, 0, 0, 0, ''),
-	(185600, 6, 6877, 'Netherwing Egg Trap (Gas)', '', 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, ''),
+	(185600, 6, 6877, 'Netherwing Egg Trap (Gas)', '', 0, 0, 1, 0, 0, 2, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, ''),
 	(185601, 6, 7362, 'Naj\'entus Spine Trap', '', 0, 0, 1, 0, 0, 0, 39977, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, ''),
 	(185602, 8, 7045, 'Anvil', '', 0, 0, 1.2, 1, 10, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, ''),
 	(185604, 10, 7364, 'Large Blue Cluster', '', 0, 16, 1, 0, 0, 0, 16384, 0, 0, 0, 0, 0, 0, 40165, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'go_simon_cluster'),

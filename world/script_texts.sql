@@ -24,7 +24,7 @@ CREATE TABLE IF NOT EXISTS `script_texts` (
   PRIMARY KEY (`entry`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 ROW_FORMAT=FIXED COMMENT='Script Texts';
 
--- Dumping data for table progress_world.script_texts: ~2,076 rows (approximately)
+-- Dumping data for table progress_world.script_texts: ~2,174 rows (approximately)
 /*!40000 ALTER TABLE `script_texts` DISABLE KEYS */;
 INSERT INTO `script_texts` (`entry`, `content_default`, `content_loc1`, `content_loc2`, `content_loc3`, `content_loc4`, `content_loc5`, `content_loc6`, `content_loc7`, `content_loc8`, `sound`, `type`, `language`, `emote`, `comment`) VALUES
 	(-1999998, 'Akama... your duplicity is hardly surprising. I should have slaughtered you and your malformed brethren long ago.', NULL, NULL, 'Akama. Euer falsches Spiel Ã¼berrascht mich nicht. Ich hÃ¤tte Euch und Eure missgestalteten BrÃ¼der schon vor langer Zeit abschlachten sollen.', NULL, NULL, NULL, NULL, NULL, 11463, 6, 0, 0, 'Conversation: txt no 1, ILLIDAN_STORMRAGE'),
@@ -1787,9 +1787,11 @@ INSERT INTO `script_texts` (`entry`, `content_default`, `content_loc1`, `content
 	(-1000577, 'Proceed.', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, 0, 0, 0, 0, 'max_a_million SAY_CONTINUE'),
 	(-1000576, 'Be careful in there and come back in one piece!', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, 0, 0, 0, 0, 'bot-specialist_alley SAY_ALLEY_FAREWELL'),
 	(-1000575, 'All systems on-line. Prepare yourself, we leave shortly.', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, 0, 0, 0, 0, 'max_a_million SAY_START'),
-	(-1000563, 'Farewell to you, and may Elune be with you always.', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, 0, 0, 2, 3, 'garments SAY_SHAYA_GOODBYE'),
-	(-1000562, 'Thank you! Thank you, $GPriest:Priestess;. Now I can take on those corrupt timberlings with Elune\'s power behind me!', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, 0, 0, 2, 1, 'garments SAY_SHAYA_THANKS'),
-	(-1000561, 'Farewell to you, and may the Light be with you always.', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, 0, 0, 7, 3, 'garments SAY_DOLF_GOODBYE'),
+	(-1000565, 'Brave adventurer, thank you for rescuing me! I am sure Marshal Marris will reward your kind deed.', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, 0, 0, 0, 0, 'SAY_CORPORAL_KEESHAN_5'),
+	(-1000564, 'Marshal Marris, sir. Corporal Keeshan of the 12th Sabre Regiment returned from battle and reporting for duty!', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, 0, 0, 0, 0, 'SAY_CORPORAL_KEESHAN_4'),
+	(-1000563, 'The Blackrock infestation is thick in these parts. I will do my best to keep the pace. Let\'s go!', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, 0, 0, 0, 0, 'SAY_CORPORAL_KEESHAN_3'),
+	(-1000562, 'Ah, fresh air, at last! I need a moment to reset.', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, 0, 0, 0, 0, 'SAY_CORPORAL_KEESHAN_2'),
+	(-1000561, 'My wounds are grave. Forgive my slow pace but my injuries won\'t allow me to walk any faster.', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, 0, 0, 0, 0, 'SAY_CORPORAL_KEESHAN_1'),
 	(-1000560, 'Thank you! Thank you, $GPriest:Priestess;. Now I can take on those wendigo with the Light on my side!', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, 0, 0, 7, 1, 'garments SAY_DOLF_THANKS'),
 	(-1000559, 'Farewell to you, and may our ancestors be with you always!', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, 0, 0, 1, 3, 'garments SAY_KORJA_GOODBYE'),
 	(-1000558, 'Thank you! Thank you, $GPriest:Priestess;. Now I can take on those humans with your power to back me!', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, 0, 0, 1, 1, 'garments SAY_KORJA_THANKS'),

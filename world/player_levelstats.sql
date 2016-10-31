@@ -17,7 +17,7 @@ CREATE TABLE IF NOT EXISTS `player_levelstats` (
   PRIMARY KEY (`race`,`class`,`level`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 PACK_KEYS=0 COMMENT='Stores levels stats.';
 
--- Dumping data for table progress_world.player_levelstats: ~3,529 rows (approximately)
+-- Dumping data for table progress_world.player_levelstats: ~3,939 rows (approximately)
 /*!40000 ALTER TABLE `player_levelstats` DISABLE KEYS */;
 INSERT INTO `player_levelstats` (`race`, `class`, `level`, `str`, `agi`, `sta`, `inte`, `spi`) VALUES
 	(1, 1, 1, 23, 20, 22, 20, 20),

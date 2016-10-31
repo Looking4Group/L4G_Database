@@ -11,10 +11,11 @@ CREATE TABLE IF NOT EXISTS `areatrigger_tavern` (
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 ROW_FORMAT=FIXED COMMENT='Trigger System';
 
--- Dumping data for table progress_world.areatrigger_tavern: ~71 rows (approximately)
+-- Dumping data for table progress_world.areatrigger_tavern: ~82 rows (approximately)
 /*!40000 ALTER TABLE `areatrigger_tavern` DISABLE KEYS */;
 INSERT INTO `areatrigger_tavern` (`id`, `name`) VALUES
 	(71, 'Westfall - Sentinel Hill Inn'),
+	(98, 'Nesingwary\'s Expedition'),
 	(178, 'Strahnbrad'),
 	(562, 'Elwynn Forest - Goldshire - Lion\'s Pride Inn'),
 	(682, 'Redridge Mountains - Lakeshire Inn'),
@@ -57,8 +58,10 @@ INSERT INTO `areatrigger_tavern` (`id`, `name`) VALUES
 	(4058, 'Light\'s Hope Chapel'),
 	(4090, 'Stonetalon Peak'),
 	(4108, 'Tranquillien Inn'),
+	(4109, 'Tranquillen - Upper level Inn'),
 	(4240, 'Auzre Watch Inn'),
 	(4241, 'Bloodmyst Isle Blood Watch Inn'),
+	(4300, 'Cenarion Refugee - Outside Inn'),
 	(4336, 'Thrallmar Inn'),
 	(4337, 'Honor Hold Inn'),
 	(4373, 'Zabra jin Inn'),
@@ -66,11 +69,14 @@ INSERT INTO `areatrigger_tavern` (`id`, `name`) VALUES
 	(4375, 'Garadar Inn'),
 	(4376, 'Telaar Inn'),
 	(4377, 'Allerian Stronghold Inn'),
+	(4378, 'Stonebreaker Hold Inn'),
+	(4380, 'Falcon Watch Inn'),
 	(4381, 'Temple Of Thelamat Inn'),
 	(4382, 'Cenarion Refuge'),
 	(4383, 'Orebor Harborage Inn'),
 	(4486, 'Falconwing Square Inn'),
 	(4494, 'Thunderlord Stronghold Inn'),
+	(4498, 'Old Hillsbrad Foothills Inn'),
 	(4499, 'Sylvanaar Inn'),
 	(4521, 'Area 52 Inn'),
 	(4526, 'Shadowmoon Village Inn'),
@@ -80,11 +86,16 @@ INSERT INTO `areatrigger_tavern` (`id`, `name`) VALUES
 	(4577, 'Altar of Sha\'tar Inn'),
 	(4595, 'Mok\'Nathal Village Inn'),
 	(4607, 'Sanctum of the Stars Inn'),
+	(4608, 'Sanctum Of The Stars - Upper level Inn'),
 	(4640, 'Evergrove Inn'),
 	(4714, 'Mudsprocket Inn'),
 	(4769, 'The City of Ironforge'),
 	(4775, 'Brackenwall Village Inn'),
-	(4847, 'Isle of Quel\'Danas, Sun\'s Reach Harbor Inn');
+	(4847, 'Isle of Quel\'Danas, Sun\'s Reach Harbor Inn'),
+	(5314, 'Wyrmrest Temple'),
+	(5315, 'Wyrmrest Temple'),
+	(5316, 'Wyrmrest Temple'),
+	(5317, 'Wyrmrest Temple');
 /*!40000 ALTER TABLE `areatrigger_tavern` ENABLE KEYS */;
 /*!40101 SET SQL_MODE=IFNULL(@OLD_SQL_MODE, '') */;
 /*!40014 SET FOREIGN_KEY_CHECKS=IF(@OLD_FOREIGN_KEY_CHECKS IS NULL, 1, @OLD_FOREIGN_KEY_CHECKS) */;

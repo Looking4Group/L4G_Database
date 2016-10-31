@@ -19,12 +19,16 @@ CREATE TABLE IF NOT EXISTS `db_script_string` (
   PRIMARY KEY (`entry`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
--- Dumping data for table progress_world.db_script_string: ~80 rows (approximately)
+-- Dumping data for table progress_world.db_script_string: ~101 rows (approximately)
 /*!40000 ALTER TABLE `db_script_string` DISABLE KEYS */;
 INSERT INTO `db_script_string` (`entry`, `content_default`, `content_loc1`, `content_loc2`, `content_loc3`, `content_loc4`, `content_loc5`, `content_loc6`, `content_loc7`, `content_loc8`) VALUES
 	(2000000001, 'Get in the Ring of Blood, $N. The fight is about to start!', NULL, NULL, 'Gehe in den Ring des Blutes, $N. Der Kampf wird bald beginnen!', NULL, NULL, NULL, NULL, NULL),
 	(2000000002, 'The battle is about to begin!', NULL, NULL, 'Der Kampf wird bald beginnen!', NULL, NULL, NULL, NULL, NULL),
 	(2000000003, '$N versus the ferocious clefthoof, Brokentoe!', NULL, NULL, '$N gegen den grausamen Grollhuf, Schmetterzehe!', NULL, NULL, NULL, NULL, NULL),
+	(2000000004, 'Do ya want me to call a medic? Maybe a priest? It\'s been over an hour, mate!', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL),
+	(2000000005, 'So help me, I\'m gonna count to ten and if yer not outta there by the time I reach 10, I\'m comin\' in!', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL),
+	(2000000006, 'What\'s goin\' on in there?? For the love of the LIGHT, hurry it up!', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL),
+	(2000000007, 'OY! You in there, this is official Honor Hold business yer holdin\' up!', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL),
 	(2000000009, 'What happens?', NULL, NULL, 'Was passiert hier?', NULL, NULL, NULL, NULL, NULL),
 	(2000000010, 'Volcor need help ?', NULL, NULL, 'Valcor braucht Hilfe?', NULL, NULL, NULL, NULL, NULL),
 	(2000000011, 'All right, I shall find people to help him.', NULL, NULL, 'Alles klar, Ich sollten Leute finden, die ihm helfen können.', NULL, NULL, NULL, NULL, NULL),
@@ -92,6 +96,27 @@ INSERT INTO `db_script_string` (`entry`, `content_default`, `content_loc1`, `con
 	(2000000075, 'Since the sparrowhawks have proven such a success in hunting down the raven stones, Watcher Elaira has trained another one to relay my voice at a great distance. He can help us communicate as you investigate the bird spirits revealed in the tablet!', NULL, NULL, 'Seit die Sperber so einen großen Erfolg bei der Jagd nach den Rabensteine verbucht haben, hat Behüterin Elaira einen Weiteren trainiert, um meine Stimme über eine große Distanz zu übertragen. Er kann uns helfen miteinander zu kommunizieren während ihr den Vogelgeist der in der Schreibtafel gefangen ist erkundet!', NULL, NULL, NULL, NULL, NULL),
 	(2000000076, 'Hear ye, denizens of Tanaris! Let it be known $n is an exalted member of the Mithril Order. A blacksmith of honor, dedication, and infinite patience. Three cheers for $n!', NULL, NULL, 'Hört, hört, Bewohner von Tanaris! Lasst es alle wissen: $N ist ein exzellentes Mitglied des Mithrilordens. Ein Schmied mit Ehre, Engagement und grenzenloser Geduld. Ein dreifaches Hoch auf $N!', NULL, NULL, NULL, NULL, NULL),
 	(2000000077, '$N,I\'ll make make sure all my friends in the Cartel know what you\'ve saved my life today.Here - I\'m going to need to be able to travel light,so please help yourself to my cache of tailoring and leatherworking supplies! Thanks again - see ya!', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL),
+	(2000000078, 'What now, Danath? Can you not see that I am imundated with work as is?', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL),
+	(2000000079, 'I take my leave now, Commander. Good day!', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL),
+	(2000000080, 'A mailbox? Well is that not the salt on the wounds! Twenty years cut-off from the world and now a mailbox! WONDERFUL!', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL),
+	(2000000081, 'Sid! Ale, NOW!', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL),
+	(2000000082, 'Comin\' right up, yer highness! Is there anythin\' else you\'ll be needin\'? Perhaps yer hat cleaned or yer nails trimmed?', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL),
+	(2000000083, 'Don\'t you start with me, Sid! Have it sent to my quarters in the tower instead! Your inn has become a zoo!', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL),
+	(2000000084, 'Twenty years we\'ve been stranded in this hell-hole. It\'s all I can do not to run screaming through that blasted Portal. I want to see my loved ones again! I want them to know I\'m still alive.', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL),
+	(2000000085, 'I feel the same. But there\'s still a job to do out here. It\'ll all be for naught if this evil finds its way back to Azeroth - back to our homes. We just have to hold on a while longer. Trust Dannath - he\'s never let us down before.', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL),
+	(2000000086, 'It\'s not him I\'m worried about. It\'s all these new rookies around here - and those creepy purple elves they brought with \'em. They ain\'t even proved themselves yet.', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL),
+	(2000000087, 'C\'mon - you sound like a grumpy old man.', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL),
+	(2000000088, 'I am a grumpy old man!', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL),
+	(2000000089, 'Wake up, Gal\'ressa.', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL),
+	(2000000090, 'What do you want, Taleris?', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL),
+	(2000000091, 'You\'ve had enough time to recover from your wounds, Gal\'ressa. The time has come for you to return to the road.', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL),
+	(2000000092, 'I\'m not going on alone, Taleris, and that\'s final. I\'m going to wait here for the next group of pilgrims and set out with them when they depart.', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL),
+	(2000000093, 'You\'ll do no such thing. We simply haven\'t the room to keep you here. Now, kindly be on your way.', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL),
+	(2000000094, 'By the Sunwell, you\'ve a thick skull! You\'ll not bully me into leaving, Taleris. Now, begone from my sight!', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL),
+	(2000000095, 'Very well then, have it your way. When we turn others away, you will be responsible for their suffering. Think about that.', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL),
+	(2000000096, 'You\'re such a good friend, Twinkle. You\'d never leave me, would you?', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL),
+	(2000000097, 'It\'s just you and me, Twinkle. Daddy\'s not going to be coming home.', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL),
+	(2000000098, 'Did you find something fun to chase around, Twinkle? I bet you did!', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL),
 	(2000005550, 'We must not fail our leader!  Kael\'thas will redeem us!', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL),
 	(2000005551, 'Hmm...Frost, Fire, and Arcane defenses respond faster than Batch 7, but Nature defenses remain passive.', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL),
 	(2000005552, 'Hmm...', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL),
@@ -101,7 +126,17 @@ INSERT INTO `db_script_string` (`entry`, `content_default`, `content_loc1`, `con
 	(2000005556, '...with the right mixture, perhaps...', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL),
 	(2000005557, '...thorny vines...mumble...ouch!', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL),
 	(2000005558, 'Get out of here, there are too many of them! Escape while you can!', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL),
-	(2000005559, 'Help! Someone help us!', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL);
+	(2000005559, 'Help! Someone help us!', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL),
+	(2000005560, 'Sir, I am here to deliver my report from the Scryer\'s Tier.', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL),
+	(2000005561, 'Well, out with it neophyte...', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL),
+	(2000005562, 'Sir, it\'s impossible to read anything into their actions.', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL),
+	(2000005563, 'Their movements are totally chaotic, as if they themselves know not what they are about.', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL),
+	(2000005564, 'My apologies, sir. I wish I had more to report.', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL),
+	(2000005565, 'It is exactly as I expected, soldier. They know we watch them closely.', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL),
+	(2000005566, 'They mask their intentions with meaningless movements to confuse us.', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL),
+	(2000005567, 'In time, you may learn to see through their deceptions.', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL),
+	(2000005568, 'Until then, your presence at your post will keep them on their toes.', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL),
+	(2000005569, 'As you command, sir.', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL);
 /*!40000 ALTER TABLE `db_script_string` ENABLE KEYS */;
 /*!40101 SET SQL_MODE=IFNULL(@OLD_SQL_MODE, '') */;
 /*!40014 SET FOREIGN_KEY_CHECKS=IF(@OLD_FOREIGN_KEY_CHECKS IS NULL, 1, @OLD_FOREIGN_KEY_CHECKS) */;

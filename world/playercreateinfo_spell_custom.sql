@@ -14,7 +14,7 @@ CREATE TABLE IF NOT EXISTS `playercreateinfo_spell_custom` (
   PRIMARY KEY (`race`,`class`,`Spell`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
--- Dumping data for table progress_world.playercreateinfo_spell_custom: ~4,648 rows (approximately)
+-- Dumping data for table progress_world.playercreateinfo_spell_custom: ~4,366 rows (approximately)
 /*!40000 ALTER TABLE `playercreateinfo_spell_custom` DISABLE KEYS */;
 INSERT INTO `playercreateinfo_spell_custom` (`race`, `class`, `Spell`, `Note`, `Active`) VALUES
 	(1, 1, 71, NULL, 1),

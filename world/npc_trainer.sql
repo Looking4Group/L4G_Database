@@ -15,7 +15,7 @@ CREATE TABLE IF NOT EXISTS `npc_trainer` (
   PRIMARY KEY (`entry`,`spell`)
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 
--- Dumping data for table progress_world.npc_trainer: 55,221 rows
+-- Dumping data for table progress_world.npc_trainer: 55,225 rows
 /*!40000 ALTER TABLE `npc_trainer` DISABLE KEYS */;
 INSERT INTO `npc_trainer` (`entry`, `spell`, `spellcost`, `reqskill`, `reqskillvalue`, `reqlevel`) VALUES
 	(198, 116, 0, 0, 0, 4),
@@ -55239,7 +55239,11 @@ INSERT INTO `npc_trainer` (`entry`, `spell`, `spellcost`, `reqskill`, `reqskillv
 	(18774, 41429, 10000, 755, 350, 0),
 	(19063, 41429, 10000, 755, 350, 0),
 	(19539, 41429, 10000, 755, 350, 0),
-	(14742, 23486, 1050, 202, 260, 0);
+	(14742, 23486, 1050, 202, 260, 0),
+	(18754, 44970, 50000, 165, 350, 0),
+	(18771, 44970, 50000, 165, 350, 0),
+	(21087, 44970, 50000, 165, 350, 0),
+	(19187, 44970, 50000, 165, 350, 0);
 /*!40000 ALTER TABLE `npc_trainer` ENABLE KEYS */;
 /*!40101 SET SQL_MODE=IFNULL(@OLD_SQL_MODE, '') */;
 /*!40014 SET FOREIGN_KEY_CHECKS=IF(@OLD_FOREIGN_KEY_CHECKS IS NULL, 1, @OLD_FOREIGN_KEY_CHECKS) */;
