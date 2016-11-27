@@ -11,7 +11,7 @@ CREATE TABLE IF NOT EXISTS `creature_linked_respawn` (
   PRIMARY KEY (`guid`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 ROW_FORMAT=DYNAMIC COMMENT='Creature Respawn Link System';
 
--- Dumping data for table progress_world.creature_linked_respawn: ~5,924 rows (approximately)
+-- Dumping data for table progress_world.creature_linked_respawn: ~5,097 rows (approximately)
 /*!40000 ALTER TABLE `creature_linked_respawn` DISABLE KEYS */;
 INSERT INTO `creature_linked_respawn` (`guid`, `linkedGuid`) VALUES
 	(14, 62083),

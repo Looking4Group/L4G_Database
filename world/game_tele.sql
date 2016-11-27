@@ -16,7 +16,7 @@ CREATE TABLE IF NOT EXISTS `game_tele` (
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB AUTO_INCREMENT=648 DEFAULT CHARSET=utf8 COMMENT='Tele Command';
 
--- Dumping data for table progress_world.game_tele: ~449 rows (approximately)
+-- Dumping data for table progress_world.game_tele: ~595 rows (approximately)
 /*!40000 ALTER TABLE `game_tele` DISABLE KEYS */;
 INSERT INTO `game_tele` (`id`, `position_x`, `position_y`, `position_z`, `orientation`, `map`, `name`) VALUES
 	(1, 1400.61, -1493.87, 54.7844, 4.08661, 0, 'RuinsOfAndorhal'),

@@ -12,7 +12,7 @@ CREATE TABLE IF NOT EXISTS `command` (
   PRIMARY KEY (`name`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 CHECKSUM=1 DELAY_KEY_WRITE=1 ROW_FORMAT=FIXED COMMENT='Chat System';
 
--- Dumping data for table progress_world.command: ~413 rows (approximately)
+-- Dumping data for table progress_world.command: ~433 rows (approximately)
 /*!40000 ALTER TABLE `command` DISABLE KEYS */;
 INSERT INTO `command` (`name`, `permission_mask`, `help`) VALUES
 	('account', 2048, 'Syntax: .account\r\nShows account type.'),

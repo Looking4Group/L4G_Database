@@ -18,7 +18,7 @@ CREATE TABLE IF NOT EXISTS `reference_loot_template` (
   PRIMARY KEY (`entry`,`item`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 ROW_FORMAT=FIXED COMMENT='Loot System';
 
--- Dumping data for table progress_world.reference_loot_template: ~5,392 rows (approximately)
+-- Dumping data for table progress_world.reference_loot_template: ~6,705 rows (approximately)
 /*!40000 ALTER TABLE `reference_loot_template` DISABLE KEYS */;
 INSERT INTO `reference_loot_template` (`entry`, `item`, `ChanceOrQuestChance`, `groupid`, `mincountOrRef`, `maxcount`, `lootcondition`, `condition_value1`, `condition_value2`) VALUES
 	(10000, 8827, 25, 1, 3, 6, 0, 0, 0),
@@ -253,6 +253,9 @@ INSERT INTO `reference_loot_template` (`entry`, `item`, `ChanceOrQuestChance`, `
 	(10006, 29732, 0, 1, 1, 1, 0, 0, 0),
 	(10006, 29733, 0, 1, 1, 1, 0, 0, 0),
 	(10006, 29734, 0, 1, 1, 1, 0, 0, 0),
+	(10006, 31875, 0, 1, 1, 1, 0, 0, 0),
+	(10006, 31876, 0, 1, 1, 1, 0, 0, 0),
+	(10006, 31877, 0, 1, 1, 1, 0, 0, 0),
 	(10006, 33954, 0, 1, 1, 1, 0, 0, 0),
 	(11000, 118, 0.4, 1, 1, 1, 0, 0, 0),
 	(11000, 2455, 0.4, 1, 1, 1, 0, 0, 0),
@@ -4795,6 +4798,11 @@ INSERT INTO `reference_loot_template` (`entry`, `item`, `ChanceOrQuestChance`, `
 	(24092, 28279, 0, 1, 1, 1, 0, 0, 0),
 	(24092, 28280, 0, 1, 1, 1, 0, 0, 0),
 	(24092, 29714, 0, 1, 1, 1, 0, 0, 0),
+	(24092, 31875, 0, 1, 1, 1, 0, 0, 0),
+	(24092, 31876, 0, 1, 1, 1, 0, 0, 0),
+	(24092, 31877, 0, 1, 1, 1, 0, 0, 0),
+	(24092, 31878, 0, 1, 1, 1, 0, 0, 0),
+	(24092, 31879, 0, 1, 1, 1, 0, 0, 0),
 	(24093, 22926, 0, 1, 1, 1, 0, 0, 0),
 	(24093, 23620, 0, 1, 1, 1, 0, 0, 0),
 	(24093, 23622, 0, 1, 1, 1, 0, 0, 0),
@@ -6674,9 +6682,22 @@ INSERT INTO `reference_loot_template` (`entry`, `item`, `ChanceOrQuestChance`, `
 	(50027, 27792, 0, 1, 1, 1, 0, 0, 0),
 	(50027, 27793, 0, 1, 1, 1, 0, 0, 0),
 	(50027, 27794, 0, 1, 1, 1, 0, 0, 0),
-	(50028, 30575, 0, 1, 1, 1, 0, 0, 0),
-	(50028, 30581, 0, 1, 1, 1, 0, 0, 0),
-	(50028, 30582, 0, 1, 1, 1, 0, 0, 0),
+	(50028, 31883, 0, 1, 1, 1, 0, 0, 0),
+	(50028, 31884, 0, 1, 1, 1, 0, 0, 0),
+	(50028, 31886, 0, 1, 1, 1, 0, 0, 0),
+	(50028, 31887, 0, 1, 1, 1, 0, 0, 0),
+	(50028, 31893, 0, 1, 1, 1, 0, 0, 0),
+	(50028, 31894, 0, 1, 1, 1, 0, 0, 0),
+	(50028, 31896, 0, 1, 1, 1, 0, 0, 0),
+	(50028, 31898, 0, 1, 1, 1, 0, 0, 0),
+	(50028, 31902, 0, 1, 1, 1, 0, 0, 0),
+	(50028, 31903, 0, 1, 1, 1, 0, 0, 0),
+	(50028, 31905, 0, 1, 1, 1, 0, 0, 0),
+	(50028, 31906, 0, 1, 1, 1, 0, 0, 0),
+	(50028, 31911, 0, 1, 1, 1, 0, 0, 0),
+	(50028, 31912, 0, 1, 1, 1, 0, 0, 0),
+	(50028, 31915, 0, 1, 1, 1, 0, 0, 0),
+	(50028, 31916, 0, 1, 1, 1, 0, 0, 0),
 	(50029, 34955, 0, 3, 1, 1, 0, 0, 0),
 	(50029, 35494, 0, 1, 1, 1, 0, 0, 0),
 	(50029, 35495, 0, 1, 1, 1, 0, 0, 0),
@@ -6701,7 +6722,10 @@ INSERT INTO `reference_loot_template` (`entry`, `item`, `ChanceOrQuestChance`, `
 	(50031, 30244, 0, 1, 1, 1, 0, 0, 0),
 	(50032, 30236, 0, 1, 1, 1, 0, 0, 0),
 	(50032, 30237, 0, 1, 1, 1, 0, 0, 0),
-	(50032, 30238, 0, 1, 1, 1, 0, 0, 0);
+	(50032, 30238, 0, 1, 1, 1, 0, 0, 0),
+	(50033, 30575, 0, 1, 1, 1, 0, 0, 0),
+	(50033, 30581, 0, 1, 1, 1, 0, 0, 0),
+	(50033, 30582, 0, 1, 1, 1, 0, 0, 0);
 /*!40000 ALTER TABLE `reference_loot_template` ENABLE KEYS */;
 /*!40101 SET SQL_MODE=IFNULL(@OLD_SQL_MODE, '') */;
 /*!40014 SET FOREIGN_KEY_CHECKS=IF(@OLD_FOREIGN_KEY_CHECKS IS NULL, 1, @OLD_FOREIGN_KEY_CHECKS) */;

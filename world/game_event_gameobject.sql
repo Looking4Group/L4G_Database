@@ -11,7 +11,7 @@ CREATE TABLE IF NOT EXISTS `game_event_gameobject` (
   PRIMARY KEY (`guid`,`event`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
--- Dumping data for table progress_world.game_event_gameobject: ~15,997 rows (approximately)
+-- Dumping data for table progress_world.game_event_gameobject: ~15,789 rows (approximately)
 /*!40000 ALTER TABLE `game_event_gameobject` DISABLE KEYS */;
 INSERT INTO `game_event_gameobject` (`guid`, `event`) VALUES
 	(1, 1),

@@ -19,7 +19,7 @@ CREATE TABLE IF NOT EXISTS `pet_levelstats` (
   PRIMARY KEY (`creature_entry`,`level`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 PACK_KEYS=0 COMMENT='Stores pet levels stats.';
 
--- Dumping data for table progress_world.pet_levelstats: ~1,934 rows (approximately)
+-- Dumping data for table progress_world.pet_levelstats: ~1,750 rows (approximately)
 /*!40000 ALTER TABLE `pet_levelstats` DISABLE KEYS */;
 INSERT INTO `pet_levelstats` (`creature_entry`, `level`, `hp`, `mana`, `armor`, `str`, `agi`, `sta`, `inte`, `spi`) VALUES
 	(1, 1, 42, 1, 20, 22, 20, 22, 20, 20),

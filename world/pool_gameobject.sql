@@ -13,7 +13,7 @@ CREATE TABLE IF NOT EXISTS `pool_gameobject` (
   PRIMARY KEY (`guid`,`pool_entry`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
--- Dumping data for table progress_world.pool_gameobject: ~17,838 rows (approximately)
+-- Dumping data for table progress_world.pool_gameobject: ~22,196 rows (approximately)
 /*!40000 ALTER TABLE `pool_gameobject` DISABLE KEYS */;
 INSERT INTO `pool_gameobject` (`guid`, `pool_entry`, `chance`, `description`) VALUES
 	(5788, 2991, 0, 'Master Herb Pool - Isle of Quel\'Danas (Bloodberry Bush)'),

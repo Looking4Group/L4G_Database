@@ -14,7 +14,7 @@ CREATE TABLE IF NOT EXISTS `creature_model_info` (
   PRIMARY KEY (`modelid`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COMMENT='Creature System (Model related info)';
 
--- Dumping data for table progress_world.creature_model_info: ~17,253 rows (approximately)
+-- Dumping data for table progress_world.creature_model_info: ~17,001 rows (approximately)
 /*!40000 ALTER TABLE `creature_model_info` DISABLE KEYS */;
 INSERT INTO `creature_model_info` (`modelid`, `bounding_radius`, `combat_reach`, `gender`, `modelid_other_gender`) VALUES
 	(4, 2, 3, 2, 0),
@@ -3871,7 +3871,7 @@ INSERT INTO `creature_model_info` (`modelid`, `bounding_radius`, `combat_reach`,
 	(4563, 0.372, 1.5, 0, 0),
 	(4564, 0.372, 1.5, 0, 0),
 	(4565, 0.372, 1.5, 0, 0),
-	(4566, 0.28, 1.2, 2, 0),
+	(4566, 0.28, 1.2, 1, 20730),
 	(4567, 0.372, 1.5, 0, 0),
 	(4568, 0.9747, 4.05, 0, 0),
 	(4569, 0.306, 1.5, 0, 0),
@@ -13230,7 +13230,7 @@ INSERT INTO `creature_model_info` (`modelid`, `bounding_radius`, `combat_reach`,
 	(18930, 2, 3, 2, 0),
 	(18931, 0.383, 1.5, 1, 0),
 	(18932, 0.236, 1.5, 1, 0),
-	(18933, 2, 0, 2, 0),
+	(18933, 2, 0, 1, 20588),
 	(18938, 0.372, 1.5, 0, 18939),
 	(18939, 0.236, 1.5, 1, 18938),
 	(18940, 0.383, 1.5, 0, 18941),
@@ -14860,7 +14860,7 @@ INSERT INTO `creature_model_info` (`modelid`, `bounding_radius`, `combat_reach`,
 	(20585, 0, 0, 0, 0),
 	(20586, 0, 0, 2, 0),
 	(20587, 0, 0, 2, 0),
-	(20588, 0, 0, 2, 0),
+	(20588, 2, 0, 2, 0),
 	(20589, 0, 0, 2, 0),
 	(20590, 2, 0, 2, 0),
 	(20591, 2, 0, 2, 0),

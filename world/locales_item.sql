@@ -26,7 +26,7 @@ CREATE TABLE IF NOT EXISTS `locales_item` (
   PRIMARY KEY (`entry`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
--- Dumping data for table progress_world.locales_item: ~22,346 rows (approximately)
+-- Dumping data for table progress_world.locales_item: ~23,912 rows (approximately)
 /*!40000 ALTER TABLE `locales_item` DISABLE KEYS */;
 INSERT INTO `locales_item` (`entry`, `name_loc1`, `name_loc2`, `name_loc3`, `name_loc4`, `name_loc5`, `name_loc6`, `name_loc7`, `name_loc8`, `description_loc1`, `description_loc2`, `description_loc3`, `description_loc4`, `description_loc5`, `description_loc6`, `description_loc7`, `description_loc8`) VALUES
 	(25, '', '', 'Abgenutztes Kurzschwert', '', '', '', '', '', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL),

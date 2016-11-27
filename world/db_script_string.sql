@@ -19,7 +19,7 @@ CREATE TABLE IF NOT EXISTS `db_script_string` (
   PRIMARY KEY (`entry`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
--- Dumping data for table progress_world.db_script_string: ~101 rows (approximately)
+-- Dumping data for table progress_world.db_script_string: ~137 rows (approximately)
 /*!40000 ALTER TABLE `db_script_string` DISABLE KEYS */;
 INSERT INTO `db_script_string` (`entry`, `content_default`, `content_loc1`, `content_loc2`, `content_loc3`, `content_loc4`, `content_loc5`, `content_loc6`, `content_loc7`, `content_loc8`) VALUES
 	(2000000001, 'Get in the Ring of Blood, $N. The fight is about to start!', NULL, NULL, 'Gehe in den Ring des Blutes, $N. Der Kampf wird bald beginnen!', NULL, NULL, NULL, NULL, NULL),
@@ -136,7 +136,29 @@ INSERT INTO `db_script_string` (`entry`, `content_default`, `content_loc1`, `con
 	(2000005566, 'They mask their intentions with meaningless movements to confuse us.', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL),
 	(2000005567, 'In time, you may learn to see through their deceptions.', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL),
 	(2000005568, 'Until then, your presence at your post will keep them on their toes.', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL),
-	(2000005569, 'As you command, sir.', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL);
+	(2000005569, 'As you command, sir.', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL),
+	(2000005570, 'Listen up soldiers!', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL),
+	(2000005571, 'You are here because you displayed exceptional aptitude and ability throughout your training period.', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL),
+	(2000005572, 'You are now to be dispatched directly into a hostile environment on a treacherous mission.', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL),
+	(2000005573, 'Nagrand, the land to the west, has recently become littered with enemy forge camps that threaten our security.', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL),
+	(2000005574, 'With the bulk of our forces focused on illidan, the task of cleansing these lands falls to you.', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL),
+	(2000005575, 'You are to return in a week\'s time with a detailed report of your actions.', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL),
+	(2000005576, 'May the Light be with you... Dismissed!', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL),
+	(2000005577, 'By your leave, sir, I have pressing matters to attend to.', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL),
+	(2000005578, 'Of course, Harbinger. Dismissed.', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL),
+	(2000005579, 'Anchorite Nindumen, I have a request to make of you.', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL),
+	(2000005580, 'Of course, my friend. How can I be of service to you?', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL),
+	(2000005581, 'We\'ve just sent another inexperienced squad into Nagrand. Might you offer a prayer for them?', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL),
+	(2000005582, 'A noble request. It would be an honor, Erothem.', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL),
+	(2000005583, 'My friends, please join me in humble supplication to the Light.', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL),
+	(2000005584, 'Light that we embrace, we beseech thee...', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL),
+	(2000005585, 'Into our struggle against the darkness we have sent our children.', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL),
+	(2000005586, 'Please bless and protect them, and grant them success over those who seek to do us harm...', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL),
+	(2000005587, 'Continue to bless this, our ancient home, we beg.', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL),
+	(2000005588, 'Bless us with tolerance for our elven visitors.', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL),
+	(2000005589, 'By the Naaru, may it be so.', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL),
+	(2000005590, 'May it be so.', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL),
+	(2000005591, 'What manner of creature is that? Looks like a purple goblin.', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL);
 /*!40000 ALTER TABLE `db_script_string` ENABLE KEYS */;
 /*!40101 SET SQL_MODE=IFNULL(@OLD_SQL_MODE, '') */;
 /*!40014 SET FOREIGN_KEY_CHECKS=IF(@OLD_FOREIGN_KEY_CHECKS IS NULL, 1, @OLD_FOREIGN_KEY_CHECKS) */;

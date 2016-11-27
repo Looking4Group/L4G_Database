@@ -14,7 +14,7 @@ CREATE TABLE IF NOT EXISTS `petcreateinfo_spell` (
   PRIMARY KEY (`entry`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 ROW_FORMAT=DYNAMIC COMMENT='Pet Create Spells';
 
--- Dumping data for table progress_world.petcreateinfo_spell: ~555 rows (approximately)
+-- Dumping data for table progress_world.petcreateinfo_spell: ~739 rows (approximately)
 /*!40000 ALTER TABLE `petcreateinfo_spell` DISABLE KEYS */;
 INSERT INTO `petcreateinfo_spell` (`entry`, `Spell1`, `Spell2`, `Spell3`, `Spell4`) VALUES
 	(30, 17254, 0, 0, 0),

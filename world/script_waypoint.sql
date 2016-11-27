@@ -16,7 +16,7 @@ CREATE TABLE IF NOT EXISTS `script_waypoint` (
   PRIMARY KEY (`entry`,`pointid`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 ROW_FORMAT=FIXED COMMENT='Script Creature waypoints';
 
--- Dumping data for table progress_world.script_waypoint: ~900 rows (approximately)
+-- Dumping data for table progress_world.script_waypoint: ~1,299 rows (approximately)
 /*!40000 ALTER TABLE `script_waypoint` DISABLE KEYS */;
 INSERT INTO `script_waypoint` (`entry`, `pointid`, `location_x`, `location_y`, `location_z`, `waittime`, `point_comment`) VALUES
 	(349, 1, -8769.59, -2185.73, 141.975, 0, ''),

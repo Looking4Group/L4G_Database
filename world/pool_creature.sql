@@ -13,7 +13,7 @@ CREATE TABLE IF NOT EXISTS `pool_creature` (
   PRIMARY KEY (`pool_entry`,`guid`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
--- Dumping data for table progress_world.pool_creature: ~579 rows (approximately)
+-- Dumping data for table progress_world.pool_creature: ~574 rows (approximately)
 /*!40000 ALTER TABLE `pool_creature` DISABLE KEYS */;
 INSERT INTO `pool_creature` (`guid`, `pool_entry`, `chance`, `description`) VALUES
 	(86170, 1047, 0, 'Bjarn (1130)'),
@@ -34,6 +34,10 @@ INSERT INTO `pool_creature` (`guid`, `pool_entry`, `chance`, `description`) VALU
 	(92657, 1067, 0, 'Lynnia Abbendis (10828)'),
 	(98741, 1067, 0, 'Lynnia Abbendis (10828)'),
 	(98742, 1067, 0, 'Lynnia Abbendis (10828)'),
+	(98755, 1077, 0, 'Dr. Whitherlimb (22062)'),
+	(98756, 1077, 0, 'Dr. Whitherlimb (22062)'),
+	(98757, 1077, 0, 'Dr. Whitherlimb (22062)'),
+	(98758, 1077, 0, 'Dr. Whitherlimb (22062)'),
 	(45220, 1094, 0, 'Seeker Aqualon (14269)'),
 	(98809, 1094, 0, 'Seeker Aqualon (14269)'),
 	(98810, 1094, 0, 'Seeker Aqualon (14269)'),

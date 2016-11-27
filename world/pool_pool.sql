@@ -13,7 +13,7 @@ CREATE TABLE IF NOT EXISTS `pool_pool` (
   PRIMARY KEY (`pool_id`,`mother_pool`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
--- Dumping data for table progress_world.pool_pool: ~1,639 rows (approximately)
+-- Dumping data for table progress_world.pool_pool: ~1,555 rows (approximately)
 /*!40000 ALTER TABLE `pool_pool` DISABLE KEYS */;
 INSERT INTO `pool_pool` (`pool_id`, `mother_pool`, `chance`, `description`) VALUES
 	(3000, 2000, 0, 'Spawn Point 1 - Alterac Mountains (Inner Section)'),

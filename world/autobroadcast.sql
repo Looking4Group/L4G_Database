@@ -11,7 +11,7 @@ CREATE TABLE IF NOT EXISTS `autobroadcast` (
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB AUTO_INCREMENT=10 DEFAULT CHARSET=utf8;
 
--- Dumping data for table progress_world.autobroadcast: ~8 rows (approximately)
+-- Dumping data for table progress_world.autobroadcast: ~7 rows (approximately)
 /*!40000 ALTER TABLE `autobroadcast` DISABLE KEYS */;
 INSERT INTO `autobroadcast` (`id`, `text`) VALUES
 	(1, 'Tickets regarding bugs will be closed without a response. Use http://bug.looking4group.eu/.\n'),
@@ -20,8 +20,7 @@ INSERT INTO `autobroadcast` (`id`, `text`) VALUES
 	(4, 'Don\'t use same login/password like on other projects. You can change password with .password OLD NEW NEW (don\'t use special characters in your password)'),
 	(5, 'Vote for Hellfire! Visit the News and Announcements sub-forum for more details!'),
 	(6, 'Using third party software is forbidden in general.'),
-	(7, 'If you need assistance from a Game Master then asking in World chat is not the way to go. Please type /gm and press "Talk to a GM". We will get back to you soon!'),
-	(8, 'Karazhan Speedrun Sign-ups are open! Visit the News and Announcements sub-forum for more details!');
+	(7, 'If you need assistance from a Game Master then asking in World chat is not the way to go. Please type /gm and press "Talk to a GM". We will get back to you soon!');
 /*!40000 ALTER TABLE `autobroadcast` ENABLE KEYS */;
 /*!40101 SET SQL_MODE=IFNULL(@OLD_SQL_MODE, '') */;
 /*!40014 SET FOREIGN_KEY_CHECKS=IF(@OLD_FOREIGN_KEY_CHECKS IS NULL, 1, @OLD_FOREIGN_KEY_CHECKS) */;

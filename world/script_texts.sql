@@ -24,7 +24,7 @@ CREATE TABLE IF NOT EXISTS `script_texts` (
   PRIMARY KEY (`entry`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 ROW_FORMAT=FIXED COMMENT='Script Texts';
 
--- Dumping data for table progress_world.script_texts: ~2,174 rows (approximately)
+-- Dumping data for table progress_world.script_texts: ~2,117 rows (approximately)
 /*!40000 ALTER TABLE `script_texts` DISABLE KEYS */;
 INSERT INTO `script_texts` (`entry`, `content_default`, `content_loc1`, `content_loc2`, `content_loc3`, `content_loc4`, `content_loc5`, `content_loc6`, `content_loc7`, `content_loc8`, `sound`, `type`, `language`, `emote`, `comment`) VALUES
 	(-1999998, 'Akama... your duplicity is hardly surprising. I should have slaughtered you and your malformed brethren long ago.', NULL, NULL, 'Akama. Euer falsches Spiel Ã¼berrascht mich nicht. Ich hÃ¤tte Euch und Eure missgestalteten BrÃ¼der schon vor langer Zeit abschlachten sollen.', NULL, NULL, NULL, NULL, NULL, 11463, 6, 0, 0, 'Conversation: txt no 1, ILLIDAN_STORMRAGE'),

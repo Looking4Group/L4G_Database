@@ -12,7 +12,7 @@ CREATE TABLE IF NOT EXISTS `pool_template` (
   PRIMARY KEY (`entry`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
--- Dumping data for table progress_world.pool_template: ~6,976 rows (approximately)
+-- Dumping data for table progress_world.pool_template: ~6,869 rows (approximately)
 /*!40000 ALTER TABLE `pool_template` DISABLE KEYS */;
 INSERT INTO `pool_template` (`entry`, `max_limit`, `description`) VALUES
 	(800, 18, 'Master Zone 17 Leftover Areas (18 out of 88 nodes)'),
@@ -57,8 +57,8 @@ INSERT INTO `pool_template` (`entry`, `max_limit`, `description`) VALUES
 	(973, 40, 'MASTER Herbs Nagrand zone 3518'),
 	(974, 40, 'MASTER Herbs Netherstorm zone 3523'),
 	(975, 95, 'MASTER Herbs Zangarmarsh zone 3521'),
-	(976, 45, 'MASTER Herbs Shadowmoon Valley zone 3520'),
-	(977, 65, 'MASTER Herbs Terokkar Forest zone 3519'),
+	(976, 55, 'MASTER Herbs Shadowmoon Valley zone 3520'),
+	(977, 55, 'MASTER Herbs Terokkar Forest zone 3519'),
 	(978, 35, 'MASTER Herbs Blade\'s Edge Mountains zone 3522'),
 	(988, 100, 'MASTER Herbs Stranglethorn Vale zone 33'),
 	(990, 85, 'MASTER Herbs Azshara zone 16'),
