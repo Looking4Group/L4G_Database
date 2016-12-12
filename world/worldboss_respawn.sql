@@ -4,7 +4,7 @@
 /*!40101 SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='NO_AUTO_VALUE_ON_ZERO' */;
 
 -- Dumping structure for table progress_world.worldboss_respawn
-DROP TABLE IF EXISTS `worldboss_respawn`;
+-- DROP TABLE IF EXISTS `worldboss_respawn`;
 CREATE TABLE IF NOT EXISTS `worldboss_respawn` (
   `BossEntry` int(10) NOT NULL,
   `RespawnTime` int(20) NOT NULL,
@@ -13,7 +13,7 @@ CREATE TABLE IF NOT EXISTS `worldboss_respawn` (
 
 -- Dumping data for table progress_world.worldboss_respawn: ~2 rows (approximately)
 /*!40000 ALTER TABLE `worldboss_respawn` DISABLE KEYS */;
---INSERT INTO `worldboss_respawn` (`BossEntry`, `RespawnTime`) VALUES
+-- INSERT INTO `worldboss_respawn` (`BossEntry`, `RespawnTime`) VALUES
 --	(17711, UNIX_TIMESTAMP()),
 --	(18728, UNIX_TIMESTAMP());
 /*!40000 ALTER TABLE `worldboss_respawn` ENABLE KEYS */;
