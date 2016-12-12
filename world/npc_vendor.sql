@@ -14,7 +14,7 @@ CREATE TABLE IF NOT EXISTS `npc_vendor` (
   PRIMARY KEY (`entry`,`item`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 ROW_FORMAT=FIXED COMMENT='Npc System';
 
--- Dumping data for table progress_world.npc_vendor: ~24,808 rows (approximately)
+-- Dumping data for table progress_world.npc_vendor: ~20,534 rows (approximately)
 /*!40000 ALTER TABLE `npc_vendor` DISABLE KEYS */;
 INSERT INTO `npc_vendor` (`entry`, `item`, `maxcount`, `incrtime`, `ExtendedCost`) VALUES
 	(54, 2488, 0, 0, 0),

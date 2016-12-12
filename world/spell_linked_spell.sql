@@ -13,7 +13,7 @@ CREATE TABLE IF NOT EXISTS `spell_linked_spell` (
   PRIMARY KEY (`spell_trigger`,`spell_effect`,`type`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
--- Dumping data for table progress_world.spell_linked_spell: ~138 rows (approximately)
+-- Dumping data for table progress_world.spell_linked_spell: ~139 rows (approximately)
 /*!40000 ALTER TABLE `spell_linked_spell` DISABLE KEYS */;
 INSERT INTO `spell_linked_spell` (`spell_trigger`, `spell_effect`, `type`, `comment`) VALUES
 	(-46021, 46020, 0, 'Teleport: Normal Realm'),
@@ -44,6 +44,7 @@ INSERT INTO `spell_linked_spell` (`spell_trigger`, `spell_effect`, `type`, `comm
 	(-30632, 30631, 1, ''),
 	(-30410, 44032, 0, 'Magtheridon: Cast Mind exhaustion on shadow grasp remove.'),
 	(-30166, 44032, 0, 'Manticron Cube Mind Exhaustion'),
+	(-30032, -30033, 0, 'Remove Warrior Rampage trigger if player cancels the Stacking Aura.'),
 	(-30019, -30532, 0, 'Remove InGame aura when player stopped possessing Chesspiece'),
 	(-30019, 30529, 0, 'Add debuff when player stopped possessing Chesspiece'),
 	(-28273, 28274, 0, 'Add bloodthistle withrawal after bloodthistle ends'),

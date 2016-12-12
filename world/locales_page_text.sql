@@ -18,7 +18,7 @@ CREATE TABLE IF NOT EXISTS `locales_page_text` (
   PRIMARY KEY (`entry`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
--- Dumping data for table progress_world.locales_page_text: ~1,425 rows (approximately)
+-- Dumping data for table progress_world.locales_page_text: ~1,365 rows (approximately)
 /*!40000 ALTER TABLE `locales_page_text` DISABLE KEYS */;
 INSERT INTO `locales_page_text` (`entry`, `Text_loc1`, `Text_loc2`, `Text_loc3`, `Text_loc4`, `Text_loc5`, `Text_loc6`, `Text_loc7`, `Text_loc8`) VALUES
 	(15, NULL, NULL, 'Mein lieber Morgan,\\r\\n\\r\\ndie Geschäfte hier in Goldhain gehen gut - so gut, dass ich bislang noch nicht einmal dazugekommen bin, dir eine Lieferung zu schicken! \\r\\n\\r\\nDie Person, die dir diese Notiz übergibt, hat gleichzeitig auch den Auftrag von mir, dir ein großes Paket Wachskerzen zu übergeben - du weißt schon, diese Dinger, wie sie Kobolde gern auf dem Kopf tragen. \\r\\n\\r\\nBitte zeig dich dankbar und entlohn die Person angemessen.', NULL, NULL, NULL, NULL, NULL),

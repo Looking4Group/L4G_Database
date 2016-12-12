@@ -18,7 +18,7 @@ CREATE TABLE IF NOT EXISTS `event_scripts` (
   `o` float NOT NULL DEFAULT '0'
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
--- Dumping data for table progress_world.event_scripts: ~371 rows (approximately)
+-- Dumping data for table progress_world.event_scripts: ~373 rows (approximately)
 /*!40000 ALTER TABLE `event_scripts` DISABLE KEYS */;
 INSERT INTO `event_scripts` (`id`, `delay`, `command`, `datalong`, `datalong2`, `dataint`, `x`, `y`, `z`, `o`) VALUES
 	(259, 2, 10, 1770, 300000, 0, 881.63, 1230.37, 47.83, 3.1),

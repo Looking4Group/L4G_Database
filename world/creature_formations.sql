@@ -14,7 +14,7 @@ CREATE TABLE IF NOT EXISTS `creature_formations` (
   PRIMARY KEY (`memberGUID`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
--- Dumping data for table progress_world.creature_formations: ~3,550 rows (approximately)
+-- Dumping data for table progress_world.creature_formations: ~3,446 rows (approximately)
 /*!40000 ALTER TABLE `creature_formations` DISABLE KEYS */;
 INSERT INTO `creature_formations` (`leaderGUID`, `memberGUID`, `dist`, `angle`, `groupAI`) VALUES
 	(14, 14, 60, 360, 2),

@@ -14,9 +14,9 @@ CREATE TABLE IF NOT EXISTS `game_tele` (
   `map` smallint(5) unsigned NOT NULL DEFAULT '0',
   `name` varchar(100) NOT NULL DEFAULT '',
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=648 DEFAULT CHARSET=utf8 COMMENT='Tele Command';
+) ENGINE=InnoDB AUTO_INCREMENT=649 DEFAULT CHARSET=utf8 COMMENT='Tele Command';
 
--- Dumping data for table progress_world.game_tele: ~595 rows (approximately)
+-- Dumping data for table progress_world.game_tele: ~782 rows (approximately)
 /*!40000 ALTER TABLE `game_tele` DISABLE KEYS */;
 INSERT INTO `game_tele` (`id`, `position_x`, `position_y`, `position_z`, `orientation`, `map`, `name`) VALUES
 	(1, 1400.61, -1493.87, 54.7844, 4.08661, 0, 'RuinsOfAndorhal'),
@@ -613,7 +613,8 @@ INSERT INTO `game_tele` (`id`, `position_x`, `position_y`, `position_z`, `orient
 	(644, -8650.35, 602.556, 92.9568, 2.19869, 0, 'stormwind_vault'),
 	(645, -0.880864, 42.4248, -24.9236, 1.55509, 35, 'SturmwindGewölbe'),
 	(646, -3360.21, 3635.33, 284.325, 4.58393, 530, 'skettis'),
-	(647, 16227.9, 16292.1, 32.1962, 4.58484, 1, 'barber');
+	(647, 16227.9, 16292.1, 32.1962, 4.58484, 1, 'barber'),
+	(648, 3.33159, 2.47313, -144.709, 4.57115, 29, 'transfer');
 /*!40000 ALTER TABLE `game_tele` ENABLE KEYS */;
 /*!40101 SET SQL_MODE=IFNULL(@OLD_SQL_MODE, '') */;
 /*!40014 SET FOREIGN_KEY_CHECKS=IF(@OLD_FOREIGN_KEY_CHECKS IS NULL, 1, @OLD_FOREIGN_KEY_CHECKS) */;

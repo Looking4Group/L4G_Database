@@ -15,7 +15,7 @@ CREATE TABLE IF NOT EXISTS `version` (
 -- Dumping data for table progress_world.version: ~1 rows (approximately)
 /*!40000 ALTER TABLE `version` DISABLE KEYS */;
 INSERT INTO `version` (`core_version`, `core_revision`, `db_version`, `script_version`) VALUES
-	('Looking4GroupCore Rev: ab4a585aba69141e46ac964f795f4c8fc1fd5214', 0, 'TDB 0.0.1 (6) for Trinity rev. 678', 'ACID 0.1.0 - Unsupported 2.4.3 Client Version');
+	('Looking4GroupCore Rev: 8cfe4c0bd6bb6ee7851a19b18e7ae445cc08af3b', 8, 'TDB 0.0.1 (6) for Trinity rev. 678', 'ACID 0.1.0 - Unsupported 2.4.3 Client Version');
 /*!40000 ALTER TABLE `version` ENABLE KEYS */;
 /*!40101 SET SQL_MODE=IFNULL(@OLD_SQL_MODE, '') */;
 /*!40014 SET FOREIGN_KEY_CHECKS=IF(@OLD_FOREIGN_KEY_CHECKS IS NULL, 1, @OLD_FOREIGN_KEY_CHECKS) */;

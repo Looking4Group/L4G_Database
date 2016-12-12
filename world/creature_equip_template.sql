@@ -19,7 +19,7 @@ CREATE TABLE IF NOT EXISTS `creature_equip_template` (
   PRIMARY KEY (`entry`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COMMENT='Creature System (Equipment)';
 
--- Dumping data for table progress_world.creature_equip_template: ~2,025 rows (approximately)
+-- Dumping data for table progress_world.creature_equip_template: ~2,099 rows (approximately)
 /*!40000 ALTER TABLE `creature_equip_template` DISABLE KEYS */;
 INSERT INTO `creature_equip_template` (`entry`, `equipmodel1`, `equipmodel2`, `equipmodel3`, `equipinfo1`, `equipinfo2`, `equipinfo3`, `equipslot1`, `equipslot2`, `equipslot3`) VALUES
 	(1, 0, 0, 6231, 0, 0, 50266626, 0, 0, 15),

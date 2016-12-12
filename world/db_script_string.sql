@@ -19,7 +19,7 @@ CREATE TABLE IF NOT EXISTS `db_script_string` (
   PRIMARY KEY (`entry`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
--- Dumping data for table progress_world.db_script_string: ~137 rows (approximately)
+-- Dumping data for table progress_world.db_script_string: ~95 rows (approximately)
 /*!40000 ALTER TABLE `db_script_string` DISABLE KEYS */;
 INSERT INTO `db_script_string` (`entry`, `content_default`, `content_loc1`, `content_loc2`, `content_loc3`, `content_loc4`, `content_loc5`, `content_loc6`, `content_loc7`, `content_loc8`) VALUES
 	(2000000001, 'Get in the Ring of Blood, $N. The fight is about to start!', NULL, NULL, 'Gehe in den Ring des Blutes, $N. Der Kampf wird bald beginnen!', NULL, NULL, NULL, NULL, NULL),

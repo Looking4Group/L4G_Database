@@ -18,7 +18,7 @@ CREATE TABLE IF NOT EXISTS `pickpocketing_loot_template` (
   PRIMARY KEY (`entry`,`item`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 ROW_FORMAT=FIXED COMMENT='Loot System';
 
--- Dumping data for table progress_world.pickpocketing_loot_template: ~10,594 rows (approximately)
+-- Dumping data for table progress_world.pickpocketing_loot_template: ~10,223 rows (approximately)
 /*!40000 ALTER TABLE `pickpocketing_loot_template` DISABLE KEYS */;
 INSERT INTO `pickpocketing_loot_template` (`entry`, `item`, `ChanceOrQuestChance`, `groupid`, `mincountOrRef`, `maxcount`, `lootcondition`, `condition_value1`, `condition_value2`) VALUES
 	(3, 929, 2.449, 0, 1, 1, 0, 0, 0),

@@ -13,7 +13,7 @@ CREATE TABLE IF NOT EXISTS `pool_creature` (
   PRIMARY KEY (`pool_entry`,`guid`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
--- Dumping data for table progress_world.pool_creature: ~574 rows (approximately)
+-- Dumping data for table progress_world.pool_creature: ~546 rows (approximately)
 /*!40000 ALTER TABLE `pool_creature` DISABLE KEYS */;
 INSERT INTO `pool_creature` (`guid`, `pool_entry`, `chance`, `description`) VALUES
 	(86170, 1047, 0, 'Bjarn (1130)'),
@@ -496,6 +496,7 @@ INSERT INTO `pool_creature` (`guid`, `pool_entry`, `chance`, `description`) VALU
 	(14332, 30043, 0, 'Windy Cloud - Nagrand'),
 	(14730, 30043, 0, 'Windy Cloud - Nagrand'),
 	(14731, 30043, 0, 'Windy Cloud - Nagrand'),
+	(43598, 30043, 0, 'Windy Cloud - Nagrand'),
 	(52399, 30043, 0, 'Windy Cloud - Nagrand'),
 	(52400, 30043, 0, 'Windy Cloud - Nagrand'),
 	(52401, 30043, 0, 'Windy Cloud - Nagrand'),
@@ -504,7 +505,6 @@ INSERT INTO `pool_creature` (`guid`, `pool_entry`, `chance`, `description`) VALU
 	(52404, 30043, 0, 'Windy Cloud - Nagrand'),
 	(99969, 30043, 0, 'Windy Cloud - Nagrand'),
 	(99970, 30043, 0, 'Windy Cloud - Nagrand'),
-	(99971, 30043, 0, 'Windy Cloud - Nagrand'),
 	(99972, 30043, 0, 'Windy Cloud - Nagrand'),
 	(99973, 30043, 0, 'Windy Cloud - Nagrand'),
 	(99974, 30043, 0, 'Windy Cloud - Nagrand'),

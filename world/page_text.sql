@@ -12,7 +12,7 @@ CREATE TABLE IF NOT EXISTS `page_text` (
   PRIMARY KEY (`entry`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COMMENT='Item System';
 
--- Dumping data for table progress_world.page_text: ~1,426 rows (approximately)
+-- Dumping data for table progress_world.page_text: ~1,481 rows (approximately)
 /*!40000 ALTER TABLE `page_text` DISABLE KEYS */;
 INSERT INTO `page_text` (`entry`, `text`, `next_page`) VALUES
 	(15, 'Hello Morgan,\r\n\r\nBusiness in Goldshire is brisk, so brisk that I haven\'t had time to send you any shipments!  \r\n\r\nI commissioned the person bearing this note to bring you a package of large wax candles (you know, the ones the Kobolds like to wear on their heads?). \r\n\r\nPlease give this person our thanks, and fair payment.', 0),

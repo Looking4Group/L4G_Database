@@ -26,7 +26,7 @@ CREATE TABLE IF NOT EXISTS `locales_creature` (
   PRIMARY KEY (`entry`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
--- Dumping data for table progress_world.locales_creature: ~18,837 rows (approximately)
+-- Dumping data for table progress_world.locales_creature: ~19,058 rows (approximately)
 /*!40000 ALTER TABLE `locales_creature` DISABLE KEYS */;
 INSERT INTO `locales_creature` (`entry`, `name_loc1`, `name_loc2`, `name_loc3`, `name_loc4`, `name_loc5`, `name_loc6`, `name_loc7`, `name_loc8`, `subname_loc1`, `subname_loc2`, `subname_loc3`, `subname_loc4`, `subname_loc5`, `subname_loc6`, `subname_loc7`, `subname_loc8`) VALUES
 	(0, '', '', '', '', '', '', '', '', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL),

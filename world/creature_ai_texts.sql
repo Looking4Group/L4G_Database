@@ -24,7 +24,7 @@ CREATE TABLE IF NOT EXISTS `creature_ai_texts` (
   PRIMARY KEY (`entry`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 ROW_FORMAT=FIXED COMMENT='Script Texts';
 
--- Dumping data for table progress_world.creature_ai_texts: ~1,240 rows (approximately)
+-- Dumping data for table progress_world.creature_ai_texts: ~1,222 rows (approximately)
 /*!40000 ALTER TABLE `creature_ai_texts` DISABLE KEYS */;
 INSERT INTO `creature_ai_texts` (`entry`, `content_default`, `content_loc1`, `content_loc2`, `content_loc3`, `content_loc4`, `content_loc5`, `content_loc6`, `content_loc7`, `content_loc8`, `sound`, `type`, `language`, `emote`, `comment`) VALUES
 	(-23066, 'What is this?! $N and her friends come to play?', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, 0, 1, 0, 0, 'Blade edge dragons'),

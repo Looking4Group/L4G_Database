@@ -18,7 +18,7 @@ CREATE TABLE IF NOT EXISTS `creature_template_addon` (
   PRIMARY KEY (`entry`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
--- Dumping data for table progress_world.creature_template_addon: ~4,819 rows (approximately)
+-- Dumping data for table progress_world.creature_template_addon: ~4,382 rows (approximately)
 /*!40000 ALTER TABLE `creature_template_addon` DISABLE KEYS */;
 INSERT INTO `creature_template_addon` (`entry`, `path_id`, `mount`, `bytes0`, `bytes1`, `bytes2`, `emote`, `moveflags`, `auras`) VALUES
 	(6, 0, 0, 16777472, 0, 4097, 0, 0, NULL),

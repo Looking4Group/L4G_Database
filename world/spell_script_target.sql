@@ -12,7 +12,7 @@ CREATE TABLE IF NOT EXISTS `spell_script_target` (
   UNIQUE KEY `entry_type_target` (`entry`,`type`,`targetEntry`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COMMENT='Spell System';
 
--- Dumping data for table progress_world.spell_script_target: ~969 rows (approximately)
+-- Dumping data for table progress_world.spell_script_target: ~784 rows (approximately)
 /*!40000 ALTER TABLE `spell_script_target` DISABLE KEYS */;
 INSERT INTO `spell_script_target` (`entry`, `type`, `targetEntry`) VALUES
 	(3730, 1, 15263),
@@ -219,6 +219,7 @@ INSERT INTO `spell_script_target` (`entry`, `type`, `targetEntry`) VALUES
 	(28806, 0, 181288),
 	(28806, 1, 16592),
 	(28861, 1, 16592),
+	(29120, 1, 5202),
 	(29120, 1, 16897),
 	(29120, 1, 16898),
 	(29120, 1, 16899),

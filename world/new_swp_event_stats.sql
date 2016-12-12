@@ -16,7 +16,7 @@ CREATE TABLE IF NOT EXISTS `new_swp_event_stats` (
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB AUTO_INCREMENT=12395 DEFAULT CHARSET=utf8;
 
--- Dumping data for table progress_world.new_swp_event_stats: ~12,394 rows (approximately)
+-- Dumping data for table progress_world.new_swp_event_stats: ~12,661 rows (approximately)
 /*!40000 ALTER TABLE `new_swp_event_stats` DISABLE KEYS */;
 INSERT INTO `new_swp_event_stats` (`id`, `player_name`, `guild_id`, `count`, `quest_id`, `timestamp`, `accountid`) VALUES
 	(1, 'Shrimps', 85, 1, 11536, '2016-02-14 00:00:00', 7217),

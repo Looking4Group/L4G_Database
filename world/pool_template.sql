@@ -12,7 +12,7 @@ CREATE TABLE IF NOT EXISTS `pool_template` (
   PRIMARY KEY (`entry`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
--- Dumping data for table progress_world.pool_template: ~6,869 rows (approximately)
+-- Dumping data for table progress_world.pool_template: ~6,867 rows (approximately)
 /*!40000 ALTER TABLE `pool_template` DISABLE KEYS */;
 INSERT INTO `pool_template` (`entry`, `max_limit`, `description`) VALUES
 	(800, 18, 'Master Zone 17 Leftover Areas (18 out of 88 nodes)'),

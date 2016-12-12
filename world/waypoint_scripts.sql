@@ -21,7 +21,7 @@ CREATE TABLE IF NOT EXISTS `waypoint_scripts` (
   PRIMARY KEY (`guid`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
--- Dumping data for table progress_world.waypoint_scripts: ~621 rows (approximately)
+-- Dumping data for table progress_world.waypoint_scripts: ~555 rows (approximately)
 /*!40000 ALTER TABLE `waypoint_scripts` DISABLE KEYS */;
 INSERT INTO `waypoint_scripts` (`id`, `delay`, `command`, `datalong`, `datalong2`, `dataint`, `x`, `y`, `z`, `o`, `guid`, `comment`) VALUES
 	(1, 0, 2, 169, 11, 0, 0, 0, 0, 0, 1, NULL),

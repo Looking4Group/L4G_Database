@@ -18,7 +18,7 @@ CREATE TABLE IF NOT EXISTS `spell_proc_event` (
   PRIMARY KEY (`entry`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
--- Dumping data for table progress_world.spell_proc_event: ~649 rows (approximately)
+-- Dumping data for table progress_world.spell_proc_event: ~563 rows (approximately)
 /*!40000 ALTER TABLE `spell_proc_event` DISABLE KEYS */;
 INSERT INTO `spell_proc_event` (`entry`, `SchoolMask`, `SpellFamilyName`, `SpellFamilyMask`, `procFlags`, `procEx`, `ppmRate`, `CustomChance`, `Cooldown`) VALUES
 	(324, 0, 0, 0, 0, 0, 0, 0, 3),
@@ -190,6 +190,7 @@ INSERT INTO `spell_proc_event` (`entry`, `SchoolMask`, `SpellFamilyName`, `Spell
 	(16487, 0, 0, 0, 0, 2, 0, 0, 0),
 	(16489, 0, 0, 0, 0, 2, 0, 0, 0),
 	(16492, 0, 0, 0, 0, 2, 0, 0, 0),
+	(16511, 0, 8, 0, 139944, 0, 0, 0, 0),
 	(16550, 0, 0, 0, 0, 2, 0, 0, 0),
 	(16620, 0, 0, 0, 0, 0, 0, 0, 30),
 	(16624, 0, 0, 0, 0, 64, 0, 0, 0),
@@ -205,6 +206,8 @@ INSERT INTO `spell_proc_event` (`entry`, `SchoolMask`, `SpellFamilyName`, `Spell
 	(17106, 0, 7, 524288, 0, 0, 0, 0, 0),
 	(17107, 0, 7, 524288, 0, 0, 0, 0, 0),
 	(17108, 0, 7, 524288, 0, 0, 0, 0, 0),
+	(17347, 0, 8, 0, 139944, 0, 0, 0, 0),
+	(17348, 0, 8, 0, 139944, 0, 0, 0, 0),
 	(17364, 8, 0, 0, 0, 0, 0, 0, 0),
 	(17495, 0, 0, 0, 0, 64, 0, 0, 0),
 	(17619, 0, 13, 0, 32768, 0, 0, 0, 0),
@@ -343,6 +346,7 @@ INSERT INTO `spell_proc_event` (`entry`, `SchoolMask`, `SpellFamilyName`, `Spell
 	(26135, 0, 10, 8388608, 0, 65536, 0, 0, 0),
 	(26480, 0, 0, 0, 0, 0, 3, 0, 0),
 	(26605, 0, 0, 0, 0, 2, 0, 0, 0),
+	(26864, 0, 8, 0, 139944, 0, 0, 0, 0),
 	(27044, 0, 9, 1, 0, 0, 0, 0, 0),
 	(27131, 0, 0, 0, 0, 1024, 0, 0, 0),
 	(27160, 0, 0, 0, 0, 0, 20, 0, 0),
@@ -405,13 +409,13 @@ INSERT INTO `spell_proc_event` (`entry`, `SchoolMask`, `SpellFamilyName`, `Spell
 	(29635, 0, 0, 0, 0, 0, 3, 0, 0),
 	(29636, 0, 0, 0, 0, 0, 3, 0, 0),
 	(29637, 0, 0, 0, 0, 0, 3, 0, 0),
-	(29801, 0, 0, 0, 0, 2, 0, 0, 0),
+	(29801, 0, 0, 0, 0, 3, 0, 0, 0),
 	(29834, 0, 0, 0, 0, 65536, 0, 0, 0),
 	(29838, 0, 0, 0, 0, 65536, 0, 0, 0),
 	(29977, 0, 3, 274890489879, 0, 0, 0, 0, 0),
 	(30003, 0, 0, 0, 0, 2048, 0, 0, 0),
-	(30030, 0, 0, 0, 0, 2, 0, 0, 0),
-	(30033, 0, 0, 0, 0, 2, 0, 0, 0),
+	(30030, 0, 0, 0, 0, 3, 0, 0, 0),
+	(30033, 0, 0, 0, 0, 3, 0, 0, 0),
 	(30160, 0, 0, 0, 0, 2, 0, 0, 0),
 	(30293, 0, 5, 824633721729, 0, 0, 0, 0, 0),
 	(30295, 0, 5, 824633721729, 0, 0, 0, 0, 0),
@@ -549,7 +553,7 @@ INSERT INTO `spell_proc_event` (`entry`, `SchoolMask`, `SpellFamilyName`, `Spell
 	(35102, 0, 9, 1, 0, 0, 0, 0, 0),
 	(35103, 0, 9, 1, 0, 0, 0, 0, 0),
 	(35121, 0, 0, 0, 0, 2, 0, 0, 0),
-	(36070, 0, 0, 0, 4, 0, 0, 0, 10),
+	(36070, 0, 0, 0, 4, 0, 0, 0, 0),
 	(36096, 0, 0, 0, 0, 2048, 0, 0, 0),
 	(36111, 0, 0, 0, 0, 0, 0, 0, 0),
 	(36541, 4, 0, 0, 0, 0, 0, 0, 0),

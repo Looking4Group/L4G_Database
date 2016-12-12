@@ -12,7 +12,7 @@ CREATE TABLE IF NOT EXISTS `spell_affect` (
   PRIMARY KEY (`entry`,`effectId`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
--- Dumping data for table progress_world.spell_affect: ~1,193 rows (approximately)
+-- Dumping data for table progress_world.spell_affect: ~1,016 rows (approximately)
 /*!40000 ALTER TABLE `spell_affect` DISABLE KEYS */;
 INSERT INTO `spell_affect` (`entry`, `effectId`, `SpellFamilyMask`) VALUES
 	(5420, 2, 17669763891408),

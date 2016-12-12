@@ -11,7 +11,7 @@ CREATE TABLE IF NOT EXISTS `npc_gossip` (
   PRIMARY KEY (`npc_guid`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
--- Dumping data for table progress_world.npc_gossip: ~2,412 rows (approximately)
+-- Dumping data for table progress_world.npc_gossip: ~2,259 rows (approximately)
 /*!40000 ALTER TABLE `npc_gossip` DISABLE KEYS */;
 INSERT INTO `npc_gossip` (`npc_guid`, `textid`) VALUES
 	(2, 2282),

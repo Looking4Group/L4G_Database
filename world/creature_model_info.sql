@@ -14,7 +14,7 @@ CREATE TABLE IF NOT EXISTS `creature_model_info` (
   PRIMARY KEY (`modelid`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COMMENT='Creature System (Model related info)';
 
--- Dumping data for table progress_world.creature_model_info: ~17,001 rows (approximately)
+-- Dumping data for table progress_world.creature_model_info: ~17,253 rows (approximately)
 /*!40000 ALTER TABLE `creature_model_info` DISABLE KEYS */;
 INSERT INTO `creature_model_info` (`modelid`, `bounding_radius`, `combat_reach`, `gender`, `modelid_other_gender`) VALUES
 	(4, 2, 3, 2, 0),
