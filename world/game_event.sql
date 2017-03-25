@@ -1,9 +1,9 @@
 /*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
 /*!40101 SET NAMES utf8 */;
+/*!50503 SET NAMES utf8mb4 */;
 /*!40014 SET @OLD_FOREIGN_KEY_CHECKS=@@FOREIGN_KEY_CHECKS, FOREIGN_KEY_CHECKS=0 */;
 /*!40101 SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='NO_AUTO_VALUE_ON_ZERO' */;
 
--- Dumping structure for table progress_world.game_event
 DROP TABLE IF EXISTS `game_event`;
 CREATE TABLE IF NOT EXISTS `game_event` (
   `entry` mediumint(8) unsigned NOT NULL COMMENT 'Entry of the game event',
@@ -17,7 +17,6 @@ CREATE TABLE IF NOT EXISTS `game_event` (
   PRIMARY KEY (`entry`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
--- Dumping data for table progress_world.game_event: ~68 rows (approximately)
 /*!40000 ALTER TABLE `game_event` DISABLE KEYS */;
 INSERT INTO `game_event` (`entry`, `start_time`, `end_time`, `occurence`, `length`, `description`, `world_event`, `flags`) VALUES
 	(1, '2010-06-21 15:00:00', '2020-12-30 17:00:00', 525600, 20160, 'Midsummer Fire Festival', 0, 0),
@@ -79,8 +78,8 @@ INSERT INTO `game_event` (`entry`, `start_time`, `end_time`, `occurence`, `lengt
 	(127, '2010-01-03 00:00:00', '2020-01-03 03:00:00', 5184000, 1440, 'Daily Cooking: Super Hot Stew', 0, 0),
 	(128, '2010-01-03 00:00:00', '2020-01-03 03:00:00', 5184000, 1440, 'Daily Fishing: Bait Bandits', 0, 0),
 	(129, '2010-01-03 00:00:00', '2020-01-03 03:00:00', 5184000, 1440, 'Daily Fishing: Crocolisks in the City', 0, 0),
-	(130, '2010-01-03 00:00:00', '2020-01-03 03:00:00', 1400, 1440, 'Daily Fishing: Felblood Fillet', 0, 0),
-	(131, '2010-01-03 00:00:00', '2020-01-03 03:00:00', 5184000, 1440, 'Daily Fishing: Shrimpin\' Ain\'t Easy', 0, 0),
+	(130, '2010-01-03 00:00:00', '2020-01-03 03:00:00', 5184000, 1440, 'Daily Fishing: Felblood Fillet', 0, 0),
+	(131, '2010-01-03 00:00:00', '2020-01-03 03:00:00', 1400, 1440, 'Daily Fishing: Shrimpin\' Ain\'t Easy', 0, 0),
 	(132, '2010-01-03 00:00:00', '2020-01-03 03:00:00', 5184000, 1440, 'Daily Fishing: The One That Got Away', 0, 0),
 	(133, '2010-01-03 00:00:00', '2020-01-03 03:00:00', 5184000, 1440, 'Daily PvP: Arathi Basin', 0, 0),
 	(134, '2010-01-03 00:00:00', '2020-01-03 03:00:00', 5184000, 1440, 'Daily PvP: Alterac Valley', 0, 0),
@@ -89,6 +88,7 @@ INSERT INTO `game_event` (`entry`, `start_time`, `end_time`, `occurence`, `lengt
 	(137, '2013-02-16 18:00:00', '2020-12-30 18:00:00', 120, 35, 'Assault on Bash\'ir Landing!', 0, 0),
 	(138, '2016-03-23 00:00:00', '2020-01-03 03:00:00', 5184000, 0, 'Ostern', 1, 0);
 /*!40000 ALTER TABLE `game_event` ENABLE KEYS */;
+
 /*!40101 SET SQL_MODE=IFNULL(@OLD_SQL_MODE, '') */;
 /*!40014 SET FOREIGN_KEY_CHECKS=IF(@OLD_FOREIGN_KEY_CHECKS IS NULL, 1, @OLD_FOREIGN_KEY_CHECKS) */;
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;

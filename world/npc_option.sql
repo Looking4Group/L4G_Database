@@ -1,9 +1,9 @@
 /*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
 /*!40101 SET NAMES utf8 */;
+/*!50503 SET NAMES utf8mb4 */;
 /*!40014 SET @OLD_FOREIGN_KEY_CHECKS=@@FOREIGN_KEY_CHECKS, FOREIGN_KEY_CHECKS=0 */;
 /*!40101 SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='NO_AUTO_VALUE_ON_ZERO' */;
 
--- Dumping structure for table progress_world.npc_option
 DROP TABLE IF EXISTS `npc_option`;
 CREATE TABLE IF NOT EXISTS `npc_option` (
   `id` mediumint(8) unsigned NOT NULL DEFAULT '0',
@@ -18,7 +18,6 @@ CREATE TABLE IF NOT EXISTS `npc_option` (
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
--- Dumping data for table progress_world.npc_option: ~49 rows (approximately)
 /*!40000 ALTER TABLE `npc_option` DISABLE KEYS */;
 INSERT INTO `npc_option` (`id`, `gossip_id`, `npcflag`, `icon`, `action`, `box_money`, `coded`, `option_text`, `box_text`) VALUES
 	(0, 0, 0, 0, 0, 0, 0, 'What?', NULL),
@@ -71,6 +70,7 @@ INSERT INTO `npc_option` (`id`, `gossip_id`, `npcflag`, `icon`, `action`, `box_m
 	(50, 0, 16, 2, 17, 0, 0, 'I wish to unlearn my pet\'s skills', NULL),
 	(51, 0, 536870912, 0, 18, 0, 0, 'UNIT_NPC_FLAG_OUTDOORPVP', NULL);
 /*!40000 ALTER TABLE `npc_option` ENABLE KEYS */;
+
 /*!40101 SET SQL_MODE=IFNULL(@OLD_SQL_MODE, '') */;
 /*!40014 SET FOREIGN_KEY_CHECKS=IF(@OLD_FOREIGN_KEY_CHECKS IS NULL, 1, @OLD_FOREIGN_KEY_CHECKS) */;
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;

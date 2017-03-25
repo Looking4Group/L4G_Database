@@ -1,9 +1,9 @@
 /*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
 /*!40101 SET NAMES utf8 */;
+/*!50503 SET NAMES utf8mb4 */;
 /*!40014 SET @OLD_FOREIGN_KEY_CHECKS=@@FOREIGN_KEY_CHECKS, FOREIGN_KEY_CHECKS=0 */;
 /*!40101 SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='NO_AUTO_VALUE_ON_ZERO' */;
 
--- Dumping structure for table progress_world.pool_template
 DROP TABLE IF EXISTS `pool_template`;
 CREATE TABLE IF NOT EXISTS `pool_template` (
   `entry` mediumint(8) unsigned NOT NULL DEFAULT '0' COMMENT 'Pool entry',
@@ -12,7 +12,6 @@ CREATE TABLE IF NOT EXISTS `pool_template` (
   PRIMARY KEY (`entry`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
--- Dumping data for table progress_world.pool_template: ~6,867 rows (approximately)
 /*!40000 ALTER TABLE `pool_template` DISABLE KEYS */;
 INSERT INTO `pool_template` (`entry`, `max_limit`, `description`) VALUES
 	(800, 18, 'Master Zone 17 Leftover Areas (18 out of 88 nodes)'),
@@ -53,13 +52,14 @@ INSERT INTO `pool_template` (`entry`, `max_limit`, `description`) VALUES
 	(969, 30, 'MASTER Herbs Ghostlands zone 3433'),
 	(970, 40, 'MASTER Herbs Eversong Woods zone 3430'),
 	(971, 30, 'MASTER Herbs Azuremyst Isle zone 3524'),
-	(972, 60, 'MASTER Herbs Hellfire Peninsula zone 3483'),
-	(973, 40, 'MASTER Herbs Nagrand zone 3518'),
-	(974, 40, 'MASTER Herbs Netherstorm zone 3523'),
-	(975, 95, 'MASTER Herbs Zangarmarsh zone 3521'),
-	(976, 55, 'MASTER Herbs Shadowmoon Valley zone 3520'),
-	(977, 55, 'MASTER Herbs Terokkar Forest zone 3519'),
-	(978, 35, 'MASTER Herbs Blade\'s Edge Mountains zone 3522'),
+	(972, 93, 'MASTER Herbs Hellfire Peninsula zone 3483'),
+	(973, 48, 'MASTER Herbs Nagrand zone 3518'),
+	(974, 53, 'MASTER Herbs Netherstorm zone 3523'),
+	(975, 125, 'MASTER Herbs Zangarmarsh zone 3521'),
+	(976, 44, 'MASTER Herbs Shadowmoon Valley zone 3520'),
+	(977, 90, 'MASTER Herbs Terokkar Forest zone 3519'),
+	(978, 45, 'MASTER Herbs Blade\'s Edge Mountains zone 3522'),
+	(979, 3, 'MASTER Herbs Isle of Quel\'Danas'),
 	(988, 100, 'MASTER Herbs Stranglethorn Vale zone 33'),
 	(990, 85, 'MASTER Herbs Azshara zone 16'),
 	(991, 25, 'MASTER Herbs Dustwallow Marsh zone 15'),
@@ -380,7 +380,7 @@ INSERT INTO `pool_template` (`entry`, `max_limit`, `description`) VALUES
 	(2014, 10, 'Master Mineral Pool - Hillsbrad Foothills (Main Section)'),
 	(2015, 5, 'Master Mineral Pool - Hillsbrad Foothills (Higher Level Sections)'),
 	(2016, 3, 'Master Mineral Pool - Hillsbrad Foothills (Azurelode Mine) - Special Mineral GOs ONLY'),
-	(2017, 2, 'Master Mineral Pool - Isle of Quel\'Danas'),
+	(2017, 3, 'Master Mineral Pool - Isle of Quel\'Danas'),
 	(2018, 20, 'Master Mineral Pool - Loch Modan'),
 	(2019, 9, 'Master Mineral Pool - Redridge Mountians (Main Section)'),
 	(2020, 4, 'Master Mineral Pool - Redridge Mountians (Rethban Caverns)'),
@@ -423,13 +423,13 @@ INSERT INTO `pool_template` (`entry`, `max_limit`, `description`) VALUES
 	(2059, 5, 'Master Mineral Pool - Un\'Goro Crater (Ooze Covered Mineral GOs)'),
 	(2060, 7, 'Master Mineral Pool - Winterspring (Main Section)'),
 	(2061, 5, 'Master Mineral Pool - Winterspring (West Section)'),
-	(2062, 25, 'Master Mineral Pool - Hellfire Peninsula'),
-	(2063, 25, 'Master Mineral Pool - Zangarmarsh'),
-	(2064, 25, 'Master Mineral Pool - Nagrand'),
-	(2065, 25, 'Master Mineral Pool - Terokkar Forest'),
-	(2066, 25, 'Master Mineral Pool - Netherstorm'),
-	(2067, 25, 'Master Mineral Pool - Blades Edge Mountains'),
-	(2068, 25, 'Master Mineral Pool - Shadowmoon Valley'),
+	(2062, 69, 'Master Mineral Pool - Hellfire Peninsula'),
+	(2063, 36, 'Master Mineral Pool - Zangarmarsh'),
+	(2064, 68, 'Master Mineral Pool - Nagrand'),
+	(2065, 47, 'Master Mineral Pool - Terokkar Forest'),
+	(2066, 26, 'Master Mineral Pool - Netherstorm'),
+	(2067, 35, 'Master Mineral Pool - Blades Edge Mountains'),
+	(2068, 42, 'Master Mineral Pool - Shadowmoon Valley'),
 	(2069, 10, 'Master Mineral Pool - Shadowmoon Valley (Nethercite Deposit Spawns)'),
 	(2070, 10, 'Master Mineral Pool - Shadowmoon Valley (Netherdust Bush Spawns)'),
 	(2991, 20, 'Master Herb Pool - Isle of Quel\'Danas (Bloodberry Bush)'),
@@ -6735,6 +6735,8 @@ INSERT INTO `pool_template` (`entry`, `max_limit`, `description`) VALUES
 	(12262, 1, 'Shadowmoon Valley mineral, node 126'),
 	(12263, 1, 'Shadowmoon Valley mineral, node 127'),
 	(12264, 1, 'Shadowmoon Valley mineral, node 128'),
+	(13029, 21, 'Master Herb Pool - Desolace'),
+	(13100, 9, 'Master Herb Pool - Maraudon'),
 	(15000, 1, 'Arathi Basin: Stable power up buff'),
 	(15001, 1, 'Arathi Basin: Blacksmith power up buff'),
 	(15002, 1, 'Arathi Basin: Farm power up buff'),
@@ -6810,10 +6812,10 @@ INSERT INTO `pool_template` (`entry`, `max_limit`, `description`) VALUES
 	(30039, 1, 'Worldboss Spawn Doom Lord Kazzak'),
 	(30040, 1, 'Worldboss Spawn Doomwalker'),
 	(30041, 5, 'Ethereum Jailor'),
-	(30043, 10, 'Windy Cloud - Nagrand'),
-	(30044, 10, 'Swamp Gas - Zangarmarsh'),
-	(30045, 10, 'Arcane Vortex - Netherstorm'),
-	(30046, 10, 'Felmist - Shadowmoonvalley'),
+	(30043, 15, 'Windy Cloud - Nagrand'),
+	(30044, 15, 'Swamp Gas - Zangarmarsh'),
+	(30045, 15, 'Arcane Vortex - Netherstorm'),
+	(30046, 15, 'Felmist - Shadowmoonvalley'),
 	(30047, 5, 'Skettis - Mountain Colossus / Talonsworn Forest-Rager'),
 	(30048, 1, 'Karazhan - Servants Quarter Bosses'),
 	(50002, 15, 'Tin Vein - Westfall'),
@@ -6885,6 +6887,7 @@ INSERT INTO `pool_template` (`entry`, `max_limit`, `description`) VALUES
 	(2542912, 2, 'Netherwing eggs (185915) - Netherwing Mine'),
 	(2542913, 2, 'Netherwing eggs (185915) - Netherwing Mine');
 /*!40000 ALTER TABLE `pool_template` ENABLE KEYS */;
+
 /*!40101 SET SQL_MODE=IFNULL(@OLD_SQL_MODE, '') */;
 /*!40014 SET FOREIGN_KEY_CHECKS=IF(@OLD_FOREIGN_KEY_CHECKS IS NULL, 1, @OLD_FOREIGN_KEY_CHECKS) */;
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;

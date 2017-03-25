@@ -1,9 +1,9 @@
 /*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
 /*!40101 SET NAMES utf8 */;
+/*!50503 SET NAMES utf8mb4 */;
 /*!40014 SET @OLD_FOREIGN_KEY_CHECKS=@@FOREIGN_KEY_CHECKS, FOREIGN_KEY_CHECKS=0 */;
 /*!40101 SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='NO_AUTO_VALUE_ON_ZERO' */;
 
--- Dumping structure for table progress_world.new_swp_event
 DROP TABLE IF EXISTS `new_swp_event`;
 CREATE TABLE IF NOT EXISTS `new_swp_event` (
   `quests_needed_p1` bigint(20) DEFAULT NULL,
@@ -16,11 +16,11 @@ CREATE TABLE IF NOT EXISTS `new_swp_event` (
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
--- Dumping data for table progress_world.new_swp_event: ~1 rows (approximately)
 /*!40000 ALTER TABLE `new_swp_event` DISABLE KEYS */;
 INSERT INTO `new_swp_event` (`quests_needed_p1`, `quests_needed_p2`, `quests_needed_p3`, `quests_needed_p4`, `quests_done`, `quests_phase`, `id`) VALUES
 	(30000, 250000, 1500000, 500000, 37090, 1, 1);
 /*!40000 ALTER TABLE `new_swp_event` ENABLE KEYS */;
+
 /*!40101 SET SQL_MODE=IFNULL(@OLD_SQL_MODE, '') */;
 /*!40014 SET FOREIGN_KEY_CHECKS=IF(@OLD_FOREIGN_KEY_CHECKS IS NULL, 1, @OLD_FOREIGN_KEY_CHECKS) */;
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;

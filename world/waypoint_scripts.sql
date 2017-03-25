@@ -1,9 +1,9 @@
 /*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
 /*!40101 SET NAMES utf8 */;
+/*!50503 SET NAMES utf8mb4 */;
 /*!40014 SET @OLD_FOREIGN_KEY_CHECKS=@@FOREIGN_KEY_CHECKS, FOREIGN_KEY_CHECKS=0 */;
 /*!40101 SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='NO_AUTO_VALUE_ON_ZERO' */;
 
--- Dumping structure for table progress_world.waypoint_scripts
 DROP TABLE IF EXISTS `waypoint_scripts`;
 CREATE TABLE IF NOT EXISTS `waypoint_scripts` (
   `id` int(11) unsigned NOT NULL DEFAULT '0',
@@ -21,7 +21,6 @@ CREATE TABLE IF NOT EXISTS `waypoint_scripts` (
   PRIMARY KEY (`guid`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
--- Dumping data for table progress_world.waypoint_scripts: ~555 rows (approximately)
 /*!40000 ALTER TABLE `waypoint_scripts` DISABLE KEYS */;
 INSERT INTO `waypoint_scripts` (`id`, `delay`, `command`, `datalong`, `datalong2`, `dataint`, `x`, `y`, `z`, `o`, `guid`, `comment`) VALUES
 	(1, 0, 2, 169, 11, 0, 0, 0, 0, 0, 1, NULL),
@@ -243,12 +242,12 @@ INSERT INTO `waypoint_scripts` (`id`, `delay`, `command`, `datalong`, `datalong2
 	(217, 0, 2, 169, 5, 0, 0, 0, 0, 0, 217, NULL),
 	(218, 0, 2, 169, 5, 0, 0, 0, 0, 0, 218, NULL),
 	(219, 0, 2, 169, 233, 0, 0, 0, 0, 0, 219, NULL),
-	(220, 0, 2, 169, 233, 0, 0, 0, 0, 0, 220, NULL),
-	(221, 0, 2, 169, 10, 0, 0, 0, 0, 0, 221, NULL),
-	(222, 0, 2, 169, 10, 0, 0, 0, 0, 0, 222, NULL),
+	(220, 0, 22, 0, 0, 0, 0, 0, 0, 0, 220, 'Creature - Visibilty OFF'),
+	(221, 0, 22, 1, 0, 0, 0, 0, 0, 0, 221, 'Creature - Visibilty ON'),
+	(222, 0, 22, 2, 0, 0, 0, 0, 0, 0, 222, 'Creature - Visibilty Group Stealth'),
 	(223, 0, 2, 169, 10, 0, 0, 0, 0, 0, 223, NULL),
 	(224, 0, 2, 169, 10, 0, 0, 0, 0, 0, 224, NULL),
-	(225, 0, 2, 169, 10, 0, 0, 0, 0, 0, 225, NULL),
+	(225, 0, 22, 5, 0, 0, 0, 0, 0, 0, 225, 'Creature - Visibilty Respawn'),
 	(226, 0, 2, 169, 10, 0, 0, 0, 0, 0, 226, NULL),
 	(227, 0, 2, 169, 10, 0, 0, 0, 0, 0, 227, NULL),
 	(228, 0, 2, 169, 10, 0, 0, 0, 0, 0, 228, NULL),
@@ -333,7 +332,43 @@ INSERT INTO `waypoint_scripts` (`id`, `delay`, `command`, `datalong`, `datalong2
 	(307, 0, 2, 169, 398, 0, 0, 0, 0, 0, 307, NULL),
 	(308, 0, 2, 169, 398, 0, 0, 0, 0, 0, 308, NULL),
 	(309, 0, 1, 233, 0, 0, 0, 0, 0, 0, 309, NULL),
+	(401, 0, 4, 46, 1, 0, 0, 0, 0, 0, 401, 'Creature - Add UNIT_FLAG_UNKNOWN7'),
+	(402, 0, 4, 46, 2, 0, 0, 0, 0, 0, 402, 'Creature - Add UNIT_FLAG_NON_ATTACKABLE'),
+	(403, 0, 4, 46, 4, 0, 0, 0, 0, 0, 403, 'Creature - Add UNIT_FLAG_DISABLE_MOVE'),
+	(404, 0, 4, 46, 8, 0, 0, 0, 0, 0, 404, 'Creature - Add UNIT_FLAG_PVP_ATTACKABLE'),
+	(405, 0, 4, 46, 16, 0, 0, 0, 0, 0, 405, 'Creature - Add UNIT_FLAG_RENAME'),
+	(406, 0, 4, 46, 32, 0, 0, 0, 0, 0, 406, 'Creature - Add UNIT_FLAG_RESTING'),
+	(407, 0, 4, 46, 64, 0, 0, 0, 0, 0, 407, 'Creature - Add UNIT_FLAG_UNKNOWN9'),
+	(408, 0, 4, 46, 128, 0, 0, 0, 0, 0, 408, 'Creature - Add UNIT_FLAG_NOT_ATTACKABLE_1'),
+	(409, 0, 4, 46, 256, 0, 0, 0, 0, 0, 409, 'Creature - Add UNIT_FLAG_NOT_ATTACKABLE_2'),
+	(410, 0, 4, 46, 512, 0, 0, 0, 0, 0, 410, 'Creature - Add UNIT_FLAG_PASSIVE'),
+	(411, 0, 4, 46, 1024, 0, 0, 0, 0, 0, 411, 'Creature - Add UNIT_FLAG_LOOTING'),
+	(412, 0, 4, 46, 2048, 0, 0, 0, 0, 0, 412, 'Creature - Add UNIT_FLAG_PET_IN_COMBAT'),
+	(413, 0, 4, 46, 4096, 0, 0, 0, 0, 0, 413, 'Creature - Add UNIT_FLAG_PVP'),
+	(414, 0, 4, 46, 8192, 0, 0, 0, 0, 0, 414, 'Creature - Add UNIT_FLAG_SILENCED'),
+	(415, 0, 4, 46, 16384, 0, 0, 0, 0, 0, 415, 'Creature - Add UNIT_FLAG_UNKNOWN4'),
+	(416, 0, 4, 46, 32768, 0, 0, 0, 0, 0, 416, 'Creature - Add UNIT_FLAG_UNKNOWN13'),
+	(417, 0, 4, 46, 65536, 0, 0, 0, 0, 0, 417, 'Creature - Add UNIT_FLAG_NOT_PL_SPELL_TARGET'),
+	(418, 0, 4, 46, 131072, 0, 0, 0, 0, 0, 418, 'Creature - Add UNIT_FLAG_PACIFIED'),
 	(449, 0, 0, 0, 0, 24425, 0, 0, 0, 0, 493, 'Text'),
+	(501, 0, 5, 46, 1, 0, 0, 0, 0, 0, 501, 'Creature - Remove UNIT_FLAG_UNKNOWN7'),
+	(502, 0, 5, 46, 2, 0, 0, 0, 0, 0, 502, 'Creature - Remove UNIT_FLAG_NON_ATTACKABLE'),
+	(503, 0, 5, 46, 4, 0, 0, 0, 0, 0, 503, 'Creature - Remove UNIT_FLAG_DISABLE_MOVE'),
+	(504, 0, 5, 46, 8, 0, 0, 0, 0, 0, 504, 'Creature - Remove UNIT_FLAG_PVP_ATTACKABLE'),
+	(505, 0, 5, 46, 16, 0, 0, 0, 0, 0, 505, 'Creature - Remove UNIT_FLAG_RENAME'),
+	(506, 0, 5, 46, 32, 0, 0, 0, 0, 0, 506, 'Creature - Remove UNIT_FLAG_RESTING'),
+	(507, 0, 5, 46, 64, 0, 0, 0, 0, 0, 507, 'Creature - Remove UNIT_FLAG_UNKNOWN9'),
+	(508, 0, 5, 46, 128, 0, 0, 0, 0, 0, 508, 'Creature - Remove UNIT_FLAG_NOT_ATTACKABLE_1'),
+	(509, 0, 5, 46, 256, 0, 0, 0, 0, 0, 509, 'Creature - Remove UNIT_FLAG_NOT_ATTACKABLE_2'),
+	(510, 0, 5, 46, 512, 0, 0, 0, 0, 0, 510, 'Creature - Remove UNIT_FLAG_PASSIVE'),
+	(511, 0, 5, 46, 1024, 0, 0, 0, 0, 0, 511, 'Creature - Remove UNIT_FLAG_LOOTING'),
+	(512, 0, 5, 46, 2048, 0, 0, 0, 0, 0, 512, 'Creature - Remove UNIT_FLAG_PET_IN_COMBAT'),
+	(513, 0, 5, 46, 4096, 0, 0, 0, 0, 0, 513, 'Creature - Remove UNIT_FLAG_PVP'),
+	(514, 0, 5, 46, 8192, 0, 0, 0, 0, 0, 514, 'Creature - Remove UNIT_FLAG_SILENCED'),
+	(515, 0, 5, 46, 16384, 0, 0, 0, 0, 0, 515, 'Creature - Remove UNIT_FLAG_UNKNOWN4'),
+	(516, 0, 5, 46, 32768, 0, 0, 0, 0, 0, 516, 'Creature - Remove UNIT_FLAG_UNKNOWN13'),
+	(517, 0, 5, 46, 65536, 0, 0, 0, 0, 0, 517, 'Creature - Remove UNIT_FLAG_NOT_PL_SPELL_TARGET'),
+	(518, 0, 5, 46, 131072, 0, 0, 0, 0, 0, 518, 'Creature - Remove UNIT_FLAG_PACIFIED'),
 	(1000, 0, 2, 169, 0, 0, 0, 0, 0, 0, 1000, 'ONESHOT_NONE'),
 	(1001, 0, 2, 169, 1, 0, 0, 0, 0, 0, 1001, 'ONESHOT_TALK'),
 	(1002, 0, 2, 169, 2, 0, 0, 0, 0, 0, 1002, 'ONESHOT_BOW'),
@@ -646,6 +681,7 @@ INSERT INTO `waypoint_scripts` (`id`, `delay`, `command`, `datalong`, `datalong2
 	(680349401, 0, 30, 0, 0, 0, 0, 0, 0, 2.7636, 680349401, 'Orientation 1'),
 	(680349401, 2, 0, 0, 0, 2000005591, 0, 0, 0, 0, 680349402, 'Haggard War Veteran - Text 1');
 /*!40000 ALTER TABLE `waypoint_scripts` ENABLE KEYS */;
+
 /*!40101 SET SQL_MODE=IFNULL(@OLD_SQL_MODE, '') */;
 /*!40014 SET FOREIGN_KEY_CHECKS=IF(@OLD_FOREIGN_KEY_CHECKS IS NULL, 1, @OLD_FOREIGN_KEY_CHECKS) */;
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;

@@ -1,9 +1,9 @@
 /*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
 /*!40101 SET NAMES utf8 */;
+/*!50503 SET NAMES utf8mb4 */;
 /*!40014 SET @OLD_FOREIGN_KEY_CHECKS=@@FOREIGN_KEY_CHECKS, FOREIGN_KEY_CHECKS=0 */;
 /*!40101 SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='NO_AUTO_VALUE_ON_ZERO' */;
 
--- Dumping structure for table progress_world.command
 DROP TABLE IF EXISTS `command`;
 CREATE TABLE IF NOT EXISTS `command` (
   `name` varchar(50) NOT NULL DEFAULT '',
@@ -12,7 +12,6 @@ CREATE TABLE IF NOT EXISTS `command` (
   PRIMARY KEY (`name`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 CHECKSUM=1 DELAY_KEY_WRITE=1 ROW_FORMAT=FIXED COMMENT='Chat System';
 
--- Dumping data for table progress_world.command: ~473 rows (approximately)
 /*!40000 ALTER TABLE `command` DISABLE KEYS */;
 INSERT INTO `command` (`name`, `permission_mask`, `help`) VALUES
 	('account', 2048, 'Syntax: .account\r\nShows account type.'),
@@ -449,6 +448,7 @@ INSERT INTO `command` (`name`, `permission_mask`, `help`) VALUES
 	('wp tofile', 8192, 'Syntax: .wp tofile\r\nAdds current place as a waypoint for selected creature to waypoints.txt file.'),
 	('wp unload', 8192, 'Syntax: .wp unload');
 /*!40000 ALTER TABLE `command` ENABLE KEYS */;
+
 /*!40101 SET SQL_MODE=IFNULL(@OLD_SQL_MODE, '') */;
 /*!40014 SET FOREIGN_KEY_CHECKS=IF(@OLD_FOREIGN_KEY_CHECKS IS NULL, 1, @OLD_FOREIGN_KEY_CHECKS) */;
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;

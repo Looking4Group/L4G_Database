@@ -1,9 +1,9 @@
 /*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
 /*!40101 SET NAMES utf8 */;
+/*!50503 SET NAMES utf8mb4 */;
 /*!40014 SET @OLD_FOREIGN_KEY_CHECKS=@@FOREIGN_KEY_CHECKS, FOREIGN_KEY_CHECKS=0 */;
 /*!40101 SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='NO_AUTO_VALUE_ON_ZERO' */;
 
--- Dumping structure for table progress_world.reputation_spillover_template
 DROP TABLE IF EXISTS `reputation_spillover_template`;
 CREATE TABLE IF NOT EXISTS `reputation_spillover_template` (
   `faction` smallint(6) unsigned NOT NULL DEFAULT '0' COMMENT 'faction entry',
@@ -22,7 +22,6 @@ CREATE TABLE IF NOT EXISTS `reputation_spillover_template` (
   PRIMARY KEY (`faction`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 ROW_FORMAT=DYNAMIC COMMENT='Reputation spillover reputation gain';
 
--- Dumping data for table progress_world.reputation_spillover_template: ~16 rows (approximately)
 /*!40000 ALTER TABLE `reputation_spillover_template` DISABLE KEYS */;
 INSERT INTO `reputation_spillover_template` (`faction`, `faction1`, `rate_1`, `rank_1`, `faction2`, `rate_2`, `rank_2`, `faction3`, `rate_3`, `rank_3`, `faction4`, `rate_4`, `rank_4`) VALUES
 	(21, 369, 0.5, 7, 470, 0.5, 7, 577, 0.5, 7, 0, 0, 0),
@@ -42,6 +41,7 @@ INSERT INTO `reputation_spillover_template` (`faction`, `faction1`, `rate_1`, `r
 	(932, 934, -1.1, 7, 935, 0.5, 4, 0, 0, 0, 0, 0, 0),
 	(934, 932, -1.1, 7, 935, 0.5, 4, 0, 0, 0, 0, 0, 0);
 /*!40000 ALTER TABLE `reputation_spillover_template` ENABLE KEYS */;
+
 /*!40101 SET SQL_MODE=IFNULL(@OLD_SQL_MODE, '') */;
 /*!40014 SET FOREIGN_KEY_CHECKS=IF(@OLD_FOREIGN_KEY_CHECKS IS NULL, 1, @OLD_FOREIGN_KEY_CHECKS) */;
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;

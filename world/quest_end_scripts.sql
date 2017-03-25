@@ -1,9 +1,9 @@
 /*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
 /*!40101 SET NAMES utf8 */;
+/*!50503 SET NAMES utf8mb4 */;
 /*!40014 SET @OLD_FOREIGN_KEY_CHECKS=@@FOREIGN_KEY_CHECKS, FOREIGN_KEY_CHECKS=0 */;
 /*!40101 SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='NO_AUTO_VALUE_ON_ZERO' */;
 
--- Dumping structure for table progress_world.quest_end_scripts
 DROP TABLE IF EXISTS `quest_end_scripts`;
 CREATE TABLE IF NOT EXISTS `quest_end_scripts` (
   `id` mediumint(8) unsigned NOT NULL DEFAULT '0',
@@ -18,7 +18,6 @@ CREATE TABLE IF NOT EXISTS `quest_end_scripts` (
   `o` float NOT NULL DEFAULT '0'
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
--- Dumping data for table progress_world.quest_end_scripts: ~203 rows (approximately)
 /*!40000 ALTER TABLE `quest_end_scripts` DISABLE KEYS */;
 INSERT INTO `quest_end_scripts` (`id`, `delay`, `command`, `datalong`, `datalong2`, `dataint`, `x`, `y`, `z`, `o`) VALUES
 	(3364, 8, 0, 0, 0, 2000000046, 0, 0, 0, 0),
@@ -121,7 +120,6 @@ INSERT INTO `quest_end_scripts` (`id`, `delay`, `command`, `datalong`, `datalong
 	(931, 9, 1, 28, 0, 0, 0, 0, 0, 0),
 	(931, 10, 9, 30276, 600, 0, 0, 0, 0, 0),
 	(931, 12, 3, 0, 0, 0, 9506.92, 713.766, 1255.89, 0.279253),
-	(410, 5, 10, 1946, 180000, 0, 2468.28, 15.26, 23.89, 0.37),
 	(63, 0, 9, 15175, 30, 0, 0, 0, 0, 0),
 	(63, 15, 9, 15176, 180, 0, 0, 0, 0, 0),
 	(63, 15, 10, 5895, 180000, 0, 417.05, 1822.39, 13.007, 0.035),
@@ -223,8 +221,10 @@ INSERT INTO `quest_end_scripts` (`id`, `delay`, `command`, `datalong`, `datalong
 	(72, 4, 10, 2044, 300000, 0, -8832.2, 985.599, 98.7002, 4.5751),
 	(7429, 0, 0, 0, 0, 2000000077, 0, 0, 0, 0),
 	(7429, 10, 3, 0, 1, 0, 1.98, 585.15, -4.5, 0.73),
-	(7429, 2, 9, 35831, 180, 0, 0, 0, 0, 0);
+	(7429, 2, 9, 35831, 180, 0, 0, 0, 0, 0),
+	(410, 0, 10, 1946, 180000, 0, 2483.71, 22.11, 26.98, 3.15197);
 /*!40000 ALTER TABLE `quest_end_scripts` ENABLE KEYS */;
+
 /*!40101 SET SQL_MODE=IFNULL(@OLD_SQL_MODE, '') */;
 /*!40014 SET FOREIGN_KEY_CHECKS=IF(@OLD_FOREIGN_KEY_CHECKS IS NULL, 1, @OLD_FOREIGN_KEY_CHECKS) */;
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;

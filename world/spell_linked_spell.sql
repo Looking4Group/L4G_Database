@@ -1,9 +1,9 @@
 /*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
 /*!40101 SET NAMES utf8 */;
+/*!50503 SET NAMES utf8mb4 */;
 /*!40014 SET @OLD_FOREIGN_KEY_CHECKS=@@FOREIGN_KEY_CHECKS, FOREIGN_KEY_CHECKS=0 */;
 /*!40101 SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='NO_AUTO_VALUE_ON_ZERO' */;
 
--- Dumping structure for table progress_world.spell_linked_spell
 DROP TABLE IF EXISTS `spell_linked_spell`;
 CREATE TABLE IF NOT EXISTS `spell_linked_spell` (
   `spell_trigger` int(10) NOT NULL,
@@ -13,7 +13,6 @@ CREATE TABLE IF NOT EXISTS `spell_linked_spell` (
   PRIMARY KEY (`spell_trigger`,`spell_effect`,`type`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
--- Dumping data for table progress_world.spell_linked_spell: ~139 rows (approximately)
 /*!40000 ALTER TABLE `spell_linked_spell` DISABLE KEYS */;
 INSERT INTO `spell_linked_spell` (`spell_trigger`, `spell_effect`, `type`, `comment`) VALUES
 	(-46021, 46020, 0, 'Teleport: Normal Realm'),
@@ -32,6 +31,7 @@ INSERT INTO `spell_linked_spell` (`spell_trigger`, `spell_effect`, `type`, `comm
 	(-43880, -42992, 0, 'Ram trot'),
 	(-43880, -42924, 0, 'Racing reins'),
 	(-43880, -42146, 0, 'Ram racing aura'),
+	(-43364, 8064, 0, 'Sleepy on Tranquilizing Poison Expire'),
 	(-41376, 41377, 0, 'Spite deal damage'),
 	(-41292, -42017, 0, 'Aura of Suffering'),
 	(-40268, -40282, 0, 'Remove Posess Spirit Immune'),
@@ -53,6 +53,8 @@ INSERT INTO `spell_linked_spell` (`spell_trigger`, `spell_effect`, `type`, `comm
 	(-24926, -44742, 0, 'Candy Remove Kostum on Remove'),
 	(-24133, 24135, 0, 'Wyvern Sting'),
 	(-24132, 24134, 0, 'Wyvern Sting'),
+	(-24003, 8064, 0, 'Sleepy on Tranquilizing Poison Expire'),
+	(-24002, 8064, 0, 'Sleepy on Tranquilizing Poison Expire'),
 	(-19386, 24131, 0, 'Wyvern Sting'),
 	(5784, 31725, 0, 'Summon Felsteed'),
 	(12292, -14205, 2, 'enrage immune on DW'),
@@ -101,6 +103,7 @@ INSERT INTO `spell_linked_spell` (`spell_trigger`, `spell_effect`, `type`, `comm
 	(28059, -28084, 1, 'Thaddius Positive Charge'),
 	(28084, -28059, 1, 'Thaddius Negative Charge'),
 	(28273, -28274, 0, 'Remove bloodthistle withdrawal when bloodthistle starts'),
+	(30009, 29989, 0, 'Control Robotron 3000'),
 	(30019, 30532, 0, 'Add InGame aura when player start possessing Chesspiece'),
 	(30410, 30166, 0, 'Maghteridon - shadow grasp visual'),
 	(30834, 30836, 1, 'Prince Infernal Spawning'),
@@ -134,6 +137,8 @@ INSERT INTO `spell_linked_spell` (`spell_trigger`, `spell_effect`, `type`, `comm
 	(41461, -41459, 0, 'Ilidari Council: Remove Seal of Blood when Judgemend is casts'),
 	(41470, -41469, 0, 'Ilidari Council: Remove Seal of Command when Judgemend is cast'),
 	(42287, 42288, 0, 'Summon Salvaged Lockbox'),
+	(43622, 44008, 0, 'Static Disruption Debuff'),
+	(43622, 45265, 1, 'Static Disruption Chaining Visual'),
 	(43648, 44007, 1, 'Storm Eye Safe Zone'),
 	(43658, 43653, 0, 'Electrical Arc Visual'),
 	(43658, 43654, 0, 'Electrical Arc Visual'),
@@ -141,7 +146,6 @@ INSERT INTO `spell_linked_spell` (`spell_trigger`, `spell_effect`, `type`, `comm
 	(43658, 43656, 0, 'Electrical Arc Visual'),
 	(43658, 43659, 0, 'Electrical Arc Visual'),
 	(44007, -43657, 2, 'Storm Eye Safe Zone Immune'),
-	(44008, 45265, 1, 'Static Disruption Visual'),
 	(44175, 6788, 0, 'NPC: Weakened Soul debuff on SW:Shield usage'),
 	(44867, -46019, 2, 'Spectral Exhaustion - Teleport: Spectral Realm'),
 	(44869, 44866, 1, 'Spectral Blast Portal'),
@@ -156,6 +160,7 @@ INSERT INTO `spell_linked_spell` (`spell_trigger`, `spell_effect`, `type`, `comm
 	(46228, -46247, 0, 'Black Hole Visual (Grown)'),
 	(46228, 46235, 0, 'Black Hole Visual (Grown)');
 /*!40000 ALTER TABLE `spell_linked_spell` ENABLE KEYS */;
+
 /*!40101 SET SQL_MODE=IFNULL(@OLD_SQL_MODE, '') */;
 /*!40014 SET FOREIGN_KEY_CHECKS=IF(@OLD_FOREIGN_KEY_CHECKS IS NULL, 1, @OLD_FOREIGN_KEY_CHECKS) */;
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;

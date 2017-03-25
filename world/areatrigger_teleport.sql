@@ -1,9 +1,9 @@
 /*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
 /*!40101 SET NAMES utf8 */;
+/*!50503 SET NAMES utf8mb4 */;
 /*!40014 SET @OLD_FOREIGN_KEY_CHECKS=@@FOREIGN_KEY_CHECKS, FOREIGN_KEY_CHECKS=0 */;
 /*!40101 SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='NO_AUTO_VALUE_ON_ZERO' */;
 
--- Dumping structure for table progress_world.areatrigger_teleport
 DROP TABLE IF EXISTS `areatrigger_teleport`;
 CREATE TABLE IF NOT EXISTS `areatrigger_teleport` (
   `id` mediumint(8) unsigned NOT NULL DEFAULT '0' COMMENT 'Identifier',
@@ -17,7 +17,6 @@ CREATE TABLE IF NOT EXISTS `areatrigger_teleport` (
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 ROW_FORMAT=FIXED COMMENT='Trigger System';
 
--- Dumping data for table progress_world.areatrigger_teleport: ~164 rows (approximately)
 /*!40000 ALTER TABLE `areatrigger_teleport` DISABLE KEYS */;
 INSERT INTO `areatrigger_teleport` (`id`, `name`, `access_id`, `target_map`, `target_position_x`, `target_position_y`, `target_position_z`, `target_orientation`) VALUES
 	(45, 'Scarlet Monastery - Graveyard (Entrance)', 0, 189, 1688.99, 1053.48, 18.6775, 0.00117),
@@ -87,7 +86,7 @@ INSERT INTO `areatrigger_teleport` (`id`, `name`, `access_id`, `target_map`, `ta
 	(2608, 'Alterac Valley - Alliance Exit', 0, 0, 98.432, -182.274, 127.52, 5.02654),
 	(2848, 'Onyxia\'s Lair Entrance', 0, 249, 29.1607, -71.3372, -8.18032, 4.58),
 	(2886, 'The Molten Bridge', 0, 409, 1096, -467, -104.6, 3.64),
-	(2890, 'Molten Core Entrance, Inside', 0, 230, 1115.35, -457.35, -102.7, 0.5),
+	(2890, 'Blackrock Depths - Main Entrance', 0, 230, 1115.35, -457.35, -102.7, 0.5),
 	(3126, 'Maraudon', 0, 1, -1186.98, 2875.95, 85.7258, 0),
 	(3131, 'Maraudon', 0, 1, -1471.07, 2618.57, 76.1944, 0),
 	(3133, 'Maraudon', 0, 349, 1019.69, -458.31, -43.43, 0.31),
@@ -185,6 +184,7 @@ INSERT INTO `areatrigger_teleport` (`id`, `name`, `access_id`, `target_map`, `ta
 	(4889, 'Sunwell Plateau (Entrance)', 0, 580, 1790.65, 925.67, 15.15, 3.1),
 	(4891, 'Sunwell Plateau (Exit)', 0, 530, 12560.8, -6774.59, 15.08, 6.25);
 /*!40000 ALTER TABLE `areatrigger_teleport` ENABLE KEYS */;
+
 /*!40101 SET SQL_MODE=IFNULL(@OLD_SQL_MODE, '') */;
 /*!40014 SET FOREIGN_KEY_CHECKS=IF(@OLD_FOREIGN_KEY_CHECKS IS NULL, 1, @OLD_FOREIGN_KEY_CHECKS) */;
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;

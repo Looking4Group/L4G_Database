@@ -1,9 +1,9 @@
 /*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
 /*!40101 SET NAMES utf8 */;
+/*!50503 SET NAMES utf8mb4 */;
 /*!40014 SET @OLD_FOREIGN_KEY_CHECKS=@@FOREIGN_KEY_CHECKS, FOREIGN_KEY_CHECKS=0 */;
 /*!40101 SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='NO_AUTO_VALUE_ON_ZERO' */;
 
--- Dumping structure for table progress_world.locales_item
 DROP TABLE IF EXISTS `locales_item`;
 CREATE TABLE IF NOT EXISTS `locales_item` (
   `entry` mediumint(8) unsigned NOT NULL DEFAULT '0',
@@ -26,7 +26,6 @@ CREATE TABLE IF NOT EXISTS `locales_item` (
   PRIMARY KEY (`entry`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
--- Dumping data for table progress_world.locales_item: ~22,885 rows (approximately)
 /*!40000 ALTER TABLE `locales_item` DISABLE KEYS */;
 INSERT INTO `locales_item` (`entry`, `name_loc1`, `name_loc2`, `name_loc3`, `name_loc4`, `name_loc5`, `name_loc6`, `name_loc7`, `name_loc8`, `description_loc1`, `description_loc2`, `description_loc3`, `description_loc4`, `description_loc5`, `description_loc6`, `description_loc7`, `description_loc8`) VALUES
 	(25, '', '', 'Abgenutztes Kurzschwert', '', '', '', '', '', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL),
@@ -23945,6 +23944,7 @@ INSERT INTO `locales_item` (`entry`, `name_loc1`, `name_loc2`, `name_loc3`, `nam
 	(90005, '', '', '', '', '', '', '', '', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL),
 	(99999, '', '', '', '', '', '', '', '', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL);
 /*!40000 ALTER TABLE `locales_item` ENABLE KEYS */;
+
 /*!40101 SET SQL_MODE=IFNULL(@OLD_SQL_MODE, '') */;
 /*!40014 SET FOREIGN_KEY_CHECKS=IF(@OLD_FOREIGN_KEY_CHECKS IS NULL, 1, @OLD_FOREIGN_KEY_CHECKS) */;
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;

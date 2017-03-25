@@ -1,9 +1,9 @@
 /*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
 /*!40101 SET NAMES utf8 */;
+/*!50503 SET NAMES utf8mb4 */;
 /*!40014 SET @OLD_FOREIGN_KEY_CHECKS=@@FOREIGN_KEY_CHECKS, FOREIGN_KEY_CHECKS=0 */;
 /*!40101 SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='NO_AUTO_VALUE_ON_ZERO' */;
 
--- Dumping structure for table progress_world.quest_mail_loot_template
 DROP TABLE IF EXISTS `quest_mail_loot_template`;
 CREATE TABLE IF NOT EXISTS `quest_mail_loot_template` (
   `entry` mediumint(8) unsigned NOT NULL DEFAULT '0',
@@ -18,7 +18,6 @@ CREATE TABLE IF NOT EXISTS `quest_mail_loot_template` (
   PRIMARY KEY (`entry`,`item`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 ROW_FORMAT=FIXED COMMENT='Loot System';
 
--- Dumping data for table progress_world.quest_mail_loot_template: ~66 rows (approximately)
 /*!40000 ALTER TABLE `quest_mail_loot_template` DISABLE KEYS */;
 INSERT INTO `quest_mail_loot_template` (`entry`, `item`, `ChanceOrQuestChance`, `groupid`, `mincountOrRef`, `maxcount`, `lootcondition`, `condition_value1`, `condition_value2`) VALUES
 	(84, 21746, 100, 0, 1, 1, 0, 0, 0),
@@ -88,6 +87,7 @@ INSERT INTO `quest_mail_loot_template` (`entry`, `item`, `ChanceOrQuestChance`, 
 	(183, 31698, 100, 0, 1, 1, 0, 0, 0),
 	(187, 34413, 100, 0, 1, 1, 0, 0, 0);
 /*!40000 ALTER TABLE `quest_mail_loot_template` ENABLE KEYS */;
+
 /*!40101 SET SQL_MODE=IFNULL(@OLD_SQL_MODE, '') */;
 /*!40014 SET FOREIGN_KEY_CHECKS=IF(@OLD_FOREIGN_KEY_CHECKS IS NULL, 1, @OLD_FOREIGN_KEY_CHECKS) */;
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;

@@ -1,9 +1,9 @@
 /*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
 /*!40101 SET NAMES utf8 */;
+/*!50503 SET NAMES utf8mb4 */;
 /*!40014 SET @OLD_FOREIGN_KEY_CHECKS=@@FOREIGN_KEY_CHECKS, FOREIGN_KEY_CHECKS=0 */;
 /*!40101 SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='NO_AUTO_VALUE_ON_ZERO' */;
 
--- Dumping structure for table progress_world.pet_levelstats
 DROP TABLE IF EXISTS `pet_levelstats`;
 CREATE TABLE IF NOT EXISTS `pet_levelstats` (
   `creature_entry` mediumint(8) unsigned NOT NULL,
@@ -19,7 +19,6 @@ CREATE TABLE IF NOT EXISTS `pet_levelstats` (
   PRIMARY KEY (`creature_entry`,`level`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 PACK_KEYS=0 COMMENT='Stores pet levels stats.';
 
--- Dumping data for table progress_world.pet_levelstats: ~1,612 rows (approximately)
 /*!40000 ALTER TABLE `pet_levelstats` DISABLE KEYS */;
 INSERT INTO `pet_levelstats` (`creature_entry`, `level`, `hp`, `mana`, `armor`, `str`, `agi`, `sta`, `inte`, `spi`) VALUES
 	(1, 1, 42, 1, 20, 22, 20, 22, 20, 20),
@@ -1773,6 +1772,7 @@ INSERT INTO `pet_levelstats` (`creature_entry`, `level`, `hp`, `mana`, `armor`, 
 	(26101, 69, 1, 1, 0, 1, 1, 1, 1, 1),
 	(26101, 70, 11352, 3155, 6792, 152, 39, 102, 334, 360);
 /*!40000 ALTER TABLE `pet_levelstats` ENABLE KEYS */;
+
 /*!40101 SET SQL_MODE=IFNULL(@OLD_SQL_MODE, '') */;
 /*!40014 SET FOREIGN_KEY_CHECKS=IF(@OLD_FOREIGN_KEY_CHECKS IS NULL, 1, @OLD_FOREIGN_KEY_CHECKS) */;
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;

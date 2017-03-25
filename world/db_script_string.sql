@@ -1,9 +1,9 @@
 /*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
 /*!40101 SET NAMES utf8 */;
+/*!50503 SET NAMES utf8mb4 */;
 /*!40014 SET @OLD_FOREIGN_KEY_CHECKS=@@FOREIGN_KEY_CHECKS, FOREIGN_KEY_CHECKS=0 */;
 /*!40101 SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='NO_AUTO_VALUE_ON_ZERO' */;
 
--- Dumping structure for table progress_world.db_script_string
 DROP TABLE IF EXISTS `db_script_string`;
 CREATE TABLE IF NOT EXISTS `db_script_string` (
   `entry` int(11) unsigned NOT NULL DEFAULT '0',
@@ -19,7 +19,6 @@ CREATE TABLE IF NOT EXISTS `db_script_string` (
   PRIMARY KEY (`entry`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
--- Dumping data for table progress_world.db_script_string: ~95 rows (approximately)
 /*!40000 ALTER TABLE `db_script_string` DISABLE KEYS */;
 INSERT INTO `db_script_string` (`entry`, `content_default`, `content_loc1`, `content_loc2`, `content_loc3`, `content_loc4`, `content_loc5`, `content_loc6`, `content_loc7`, `content_loc8`) VALUES
 	(2000000001, 'Get in the Ring of Blood, $N. The fight is about to start!', NULL, NULL, 'Gehe in den Ring des Blutes, $N. Der Kampf wird bald beginnen!', NULL, NULL, NULL, NULL, NULL),
@@ -160,6 +159,7 @@ INSERT INTO `db_script_string` (`entry`, `content_default`, `content_loc1`, `con
 	(2000005590, 'May it be so.', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL),
 	(2000005591, 'What manner of creature is that? Looks like a purple goblin.', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL);
 /*!40000 ALTER TABLE `db_script_string` ENABLE KEYS */;
+
 /*!40101 SET SQL_MODE=IFNULL(@OLD_SQL_MODE, '') */;
 /*!40014 SET FOREIGN_KEY_CHECKS=IF(@OLD_FOREIGN_KEY_CHECKS IS NULL, 1, @OLD_FOREIGN_KEY_CHECKS) */;
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;

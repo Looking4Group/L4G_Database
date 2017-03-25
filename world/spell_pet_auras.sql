@@ -1,9 +1,9 @@
 /*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
 /*!40101 SET NAMES utf8 */;
+/*!50503 SET NAMES utf8mb4 */;
 /*!40014 SET @OLD_FOREIGN_KEY_CHECKS=@@FOREIGN_KEY_CHECKS, FOREIGN_KEY_CHECKS=0 */;
 /*!40101 SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='NO_AUTO_VALUE_ON_ZERO' */;
 
--- Dumping structure for table progress_world.spell_pet_auras
 DROP TABLE IF EXISTS `spell_pet_auras`;
 CREATE TABLE IF NOT EXISTS `spell_pet_auras` (
   `spell` mediumint(8) unsigned NOT NULL COMMENT 'dummy spell id',
@@ -12,7 +12,6 @@ CREATE TABLE IF NOT EXISTS `spell_pet_auras` (
   PRIMARY KEY (`spell`,`pet`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
--- Dumping data for table progress_world.spell_pet_auras: ~34 rows (approximately)
 /*!40000 ALTER TABLE `spell_pet_auras` DISABLE KEYS */;
 INSERT INTO `spell_pet_auras` (`spell`, `pet`, `aura`) VALUES
 	(19028, 0, 25228),
@@ -50,6 +49,7 @@ INSERT INTO `spell_pet_auras` (`spell`, `pet`, `aura`) VALUES
 	(35692, 0, 35696),
 	(35693, 0, 35696);
 /*!40000 ALTER TABLE `spell_pet_auras` ENABLE KEYS */;
+
 /*!40101 SET SQL_MODE=IFNULL(@OLD_SQL_MODE, '') */;
 /*!40014 SET FOREIGN_KEY_CHECKS=IF(@OLD_FOREIGN_KEY_CHECKS IS NULL, 1, @OLD_FOREIGN_KEY_CHECKS) */;
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;

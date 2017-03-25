@@ -1,9 +1,9 @@
 /*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
 /*!40101 SET NAMES utf8 */;
+/*!50503 SET NAMES utf8mb4 */;
 /*!40014 SET @OLD_FOREIGN_KEY_CHECKS=@@FOREIGN_KEY_CHECKS, FOREIGN_KEY_CHECKS=0 */;
 /*!40101 SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='NO_AUTO_VALUE_ON_ZERO' */;
 
--- Dumping structure for table progress_world.instance_template
 DROP TABLE IF EXISTS `instance_template`;
 CREATE TABLE IF NOT EXISTS `instance_template` (
   `map` smallint(5) unsigned NOT NULL,
@@ -19,7 +19,6 @@ CREATE TABLE IF NOT EXISTS `instance_template` (
   PRIMARY KEY (`map`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
--- Dumping data for table progress_world.instance_template: ~64 rows (approximately)
 /*!40000 ALTER TABLE `instance_template` DISABLE KEYS */;
 INSERT INTO `instance_template` (`map`, `parent`, `maxPlayers`, `reset_delay`, `access_id`, `startLocX`, `startLocY`, `startLocZ`, `startLocO`, `script`) VALUES
 	(29, 0, 50, 0, 0, NULL, NULL, NULL, NULL, ''),
@@ -87,6 +86,7 @@ INSERT INTO `instance_template` (`map`, `parent`, `maxPlayers`, `reset_delay`, `
 	(585, 0, 5, 0, 51, NULL, NULL, NULL, NULL, 'instance_magisters_terrace'),
 	(586, 0, 50, 0, 0, NULL, NULL, NULL, NULL, '');
 /*!40000 ALTER TABLE `instance_template` ENABLE KEYS */;
+
 /*!40101 SET SQL_MODE=IFNULL(@OLD_SQL_MODE, '') */;
 /*!40014 SET FOREIGN_KEY_CHECKS=IF(@OLD_FOREIGN_KEY_CHECKS IS NULL, 1, @OLD_FOREIGN_KEY_CHECKS) */;
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;

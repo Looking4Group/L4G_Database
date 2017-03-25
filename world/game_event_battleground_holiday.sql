@@ -1,9 +1,9 @@
 /*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
 /*!40101 SET NAMES utf8 */;
+/*!50503 SET NAMES utf8mb4 */;
 /*!40014 SET @OLD_FOREIGN_KEY_CHECKS=@@FOREIGN_KEY_CHECKS, FOREIGN_KEY_CHECKS=0 */;
 /*!40101 SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='NO_AUTO_VALUE_ON_ZERO' */;
 
--- Dumping structure for table progress_world.game_event_battleground_holiday
 DROP TABLE IF EXISTS `game_event_battleground_holiday`;
 CREATE TABLE IF NOT EXISTS `game_event_battleground_holiday` (
   `event` int(10) unsigned NOT NULL,
@@ -11,7 +11,6 @@ CREATE TABLE IF NOT EXISTS `game_event_battleground_holiday` (
   PRIMARY KEY (`event`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
--- Dumping data for table progress_world.game_event_battleground_holiday: ~4 rows (approximately)
 /*!40000 ALTER TABLE `game_event_battleground_holiday` DISABLE KEYS */;
 INSERT INTO `game_event_battleground_holiday` (`event`, `bgflag`) VALUES
 	(18, 2),
@@ -19,6 +18,7 @@ INSERT INTO `game_event_battleground_holiday` (`event`, `bgflag`) VALUES
 	(20, 8),
 	(21, 128);
 /*!40000 ALTER TABLE `game_event_battleground_holiday` ENABLE KEYS */;
+
 /*!40101 SET SQL_MODE=IFNULL(@OLD_SQL_MODE, '') */;
 /*!40014 SET FOREIGN_KEY_CHECKS=IF(@OLD_FOREIGN_KEY_CHECKS IS NULL, 1, @OLD_FOREIGN_KEY_CHECKS) */;
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;

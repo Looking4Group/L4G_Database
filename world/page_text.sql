@@ -1,9 +1,9 @@
 /*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
 /*!40101 SET NAMES utf8 */;
+/*!50503 SET NAMES utf8mb4 */;
 /*!40014 SET @OLD_FOREIGN_KEY_CHECKS=@@FOREIGN_KEY_CHECKS, FOREIGN_KEY_CHECKS=0 */;
 /*!40101 SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='NO_AUTO_VALUE_ON_ZERO' */;
 
--- Dumping structure for table progress_world.page_text
 DROP TABLE IF EXISTS `page_text`;
 CREATE TABLE IF NOT EXISTS `page_text` (
   `entry` mediumint(8) unsigned NOT NULL DEFAULT '0',
@@ -12,7 +12,6 @@ CREATE TABLE IF NOT EXISTS `page_text` (
   PRIMARY KEY (`entry`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COMMENT='Item System';
 
--- Dumping data for table progress_world.page_text: ~1,481 rows (approximately)
 /*!40000 ALTER TABLE `page_text` DISABLE KEYS */;
 INSERT INTO `page_text` (`entry`, `text`, `next_page`) VALUES
 	(15, 'Hello Morgan,\r\n\r\nBusiness in Goldshire is brisk, so brisk that I haven\'t had time to send you any shipments!  \r\n\r\nI commissioned the person bearing this note to bring you a package of large wax candles (you know, the ones the Kobolds like to wear on their heads?). \r\n\r\nPlease give this person our thanks, and fair payment.', 0),
@@ -1028,7 +1027,7 @@ INSERT INTO `page_text` (`entry`, `text`, `next_page`) VALUES
 	(2207, 'Even his Atal\'ai priests were eventually driven from the capital of Zul\'Gurub and forced to survive in the uncharted swamplands to the north. Within those shadowy fens they built a great temple to their fallen god -- Atal\'Hakkar -- where they could continue to do their master\'s work... ', 2208),
 	(2208, 'The rest of the Gurubashi tribes went their separate ways after the great civil war had left their lands in ruins. The Skullsplitter, Bloodscalp and Darkspear tribes set off to claim their own lands withtin the vast jungles of Stranglethorn. Though a fragile peace had settled over the broken empire, some spoke of a prophecy that Hakkar would one day be reborn into the world -- and on that day -- he would consume it whole.', 0),
 	(2210, 'The rest of the Gurubashi tribes went their separate ways after the great civil war had left their lands in ruins. The Skullsplitter, Bloodscalp and Darkspear tribes set off to claim their own lands withtin the vast jungles of Stranglethorn. Though a fragile peace had settled over the broken empire, some spoke of a prophecy that Hakkar would one day be reborn into the world -- and on that day -- he would consume it whole. ', 0),
-	(2211, 'Here lies Grommash Hellscream, Chieftain of the Warsong Clan\nIn many ways, the curse of our people began and ended with Grom.\nHis name meant \'giant?s heart\' in our ancient tongue. He earned that \nname a hundred-fold as he stood alone before the demon Mannoroth \n- and won our freedom with his blood. \nLok\'Tar ogar, big brother. May the Warsong never fade. \n-Thrall, Warchief of the Horde \n', 0),
+	(2211, 'Here lies Grommash Hellscream, Chieftain of the Warsong Clan$B$BIn many ways, the curse of our people began and ended with Grom.$BHis name meant \'giants heart\' in our ancient tongue. He earned that \nname a hundred-fold as he stood alone before the demon Mannoroth$B- and won our freedom with his blood.$B$BLok\'Tar ogar, big brother. May the Warsong never fade.$B$B-Thrall, Warchief of the Horde', 0),
 	(2212, 'Oh, I am cursed!  Once a great ogre mage of the Spirestone clan, I challenged Urok Doomhowl and he stole my magic and cursed me.  Now, I must walk the halls of Hordemar as this wretched creature!$B$BAid me!  Face Urok and steal back my magic!  It will not be easy, for Urok stays in the shadows and can only be summoned through a great challenge.$B$BThat challenge will be the death of his most trusted aid, Highlord Omokk.$B$BRead on, and you will see.', 2213),
 	(2213, 'Highlord Omokk rules the Spirestones, but he does so through Urok\'s magic.  Urok charmed Omokk with a spell that can strike dead any ogre who challenges him.  He has used that spell many times, and keeps the skulls of his victims in a pile, in a place of power above Omokk\'s chamber.$B$BThat is where you must go to face Urok.', 2214),
 	(2214, 'Find a roughshod pike among the Scarshield camps.  They often stack them by their bed mats near the entrance to the Spirestone ogre\'s domain.$B$BWhen you have the pike, charge your way  to Highlord Omokk.  Kill him, and place his head on the pike.$B$BThen you will be ready for your real challenge.', 2215),
@@ -1442,6 +1441,7 @@ INSERT INTO `page_text` (`entry`, `text`, `next_page`) VALUES
 	(4000, 'Welcome to Hellfire TBC!\n\nThank you for choosing our realm. We hope you will enjoy your stay here. Before you begin your journey, here are a few things to help you on your way:\n\n1. The Murloc in front of you will take you through the process of obtaining level 60, choosing your gear-setup and teleport you to your class trainer where you can learn your skills.\n\n2. Your Hearthstone is your one way ticket to Blasted Lands where you can reach the Outlands through the Dark Portal. ( Dont forget to set hearthstone to the next Inn )\n\n3. You may notice you are unable to chat in global chat. It\'s set in place to neutralize illegal gold selling spam. Rest assured - you can still use /Say, /Whisper, /Yell and /Guild.\n\nIf you have any further questions, feel free to visit the Q & A Section of our forum board: http://looking4group.eu/hellfire/\n\nGood luck and have fun in your adventures! Your L4G - Team.', 0),
 	(9999, 'Howdy! You have found a loot bug in UDB. We are terribly sorry about that, and we will try and fix it just as SOON as possible. However, You need to help us a little bit. If you will go to http://www.udbforums.org and fill out a loot bug report, with the location you found this, we will try and get it fixed ASAP. Thanks, the UDB team!', 0);
 /*!40000 ALTER TABLE `page_text` ENABLE KEYS */;
+
 /*!40101 SET SQL_MODE=IFNULL(@OLD_SQL_MODE, '') */;
 /*!40014 SET FOREIGN_KEY_CHECKS=IF(@OLD_FOREIGN_KEY_CHECKS IS NULL, 1, @OLD_FOREIGN_KEY_CHECKS) */;
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;

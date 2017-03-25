@@ -1,9 +1,9 @@
 /*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
 /*!40101 SET NAMES utf8 */;
+/*!50503 SET NAMES utf8mb4 */;
 /*!40014 SET @OLD_FOREIGN_KEY_CHECKS=@@FOREIGN_KEY_CHECKS, FOREIGN_KEY_CHECKS=0 */;
 /*!40101 SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='NO_AUTO_VALUE_ON_ZERO' */;
 
--- Dumping structure for table progress_world.creature_onkill_reputation
 DROP TABLE IF EXISTS `creature_onkill_reputation`;
 CREATE TABLE IF NOT EXISTS `creature_onkill_reputation` (
   `creature_id` mediumint(8) unsigned NOT NULL DEFAULT '0' COMMENT 'Creature Identifier',
@@ -19,7 +19,6 @@ CREATE TABLE IF NOT EXISTS `creature_onkill_reputation` (
   PRIMARY KEY (`creature_id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 ROW_FORMAT=DYNAMIC COMMENT='Creature OnKill Reputation gain';
 
--- Dumping data for table progress_world.creature_onkill_reputation: ~1,577 rows (approximately)
 /*!40000 ALTER TABLE `creature_onkill_reputation` DISABLE KEYS */;
 INSERT INTO `creature_onkill_reputation` (`creature_id`, `RewOnKillRepFaction1`, `RewOnKillRepFaction2`, `MaxStanding1`, `IsTeamAward1`, `RewOnKillRepValue1`, `MaxStanding2`, `IsTeamAward2`, `RewOnKillRepValue2`, `TeamDependent`) VALUES
 	(674, 21, 0, 5, 0, 25, 0, 0, 0, 0),
@@ -736,12 +735,12 @@ INSERT INTO `creature_onkill_reputation` (`creature_id`, `RewOnKillRepFaction1`,
 	(17882, 942, 0, 4, 0, 70, 0, 0, 0, 0),
 	(17888, 990, 0, 7, 0, 375, 0, 0, 0, 0),
 	(17892, 989, 0, 7, 0, 0, 0, 0, 0, 0),
-	(17895, 990, 0, 7, 0, 12, 0, 0, 0, 0),
+	(17895, 990, 0, 7, 0, 3, 0, 0, 0, 0),
 	(17897, 990, 0, 7, 0, 12, 0, 0, 0, 0),
 	(17898, 990, 0, 7, 0, 12, 0, 0, 0, 0),
 	(17899, 990, 0, 7, 0, 12, 0, 0, 0, 0),
-	(17902, 990, 0, 7, 0, 12, 0, 0, 0, 0),
-	(17903, 990, 0, 7, 0, 12, 0, 0, 0, 0),
+	(17902, 990, 0, 3, 0, 12, 0, 0, 0, 0),
+	(17903, 990, 0, 3, 0, 12, 0, 0, 0, 0),
 	(17905, 990, 0, 7, 0, 12, 0, 0, 0, 0),
 	(17906, 990, 0, 7, 0, 12, 0, 0, 0, 0),
 	(17907, 990, 0, 7, 0, 60, 0, 0, 0, 0),
@@ -1321,11 +1320,17 @@ INSERT INTO `creature_onkill_reputation` (`creature_id`, `RewOnKillRepFaction1`,
 	(22398, 989, 0, 7, 0, 8, 0, 0, 0, 0),
 	(22399, 989, 0, 7, 0, 15, 0, 0, 0, 0),
 	(22841, 1012, 0, 7, 0, 250, 0, 0, 0, 0),
+	(22844, 1012, 0, 7, 0, 15, 0, 0, 0, 0),
+	(22845, 1012, 0, 7, 0, 15, 0, 0, 0, 0),
+	(22846, 1012, 0, 7, 0, 15, 0, 0, 0, 0),
+	(22847, 1012, 0, 7, 0, 15, 0, 0, 0, 0),
+	(22848, 1012, 0, 5, 0, 3, 0, 0, 0, 0),
+	(22849, 1012, 0, 15, 0, 7, 0, 0, 0, 0),
 	(22853, 1012, 0, 7, 0, 15, 0, 0, 0, 0),
 	(22855, 1012, 0, 7, 0, 15, 0, 0, 0, 0),
 	(22869, 1012, 0, 7, 0, 15, 0, 0, 0, 0),
 	(22873, 1012, 0, 7, 0, 15, 0, 0, 0, 0),
-	(22874, 1012, 0, 7, 0, 15, 0, 0, 0, 0),
+	(22874, 1012, 0, 3, 0, 15, 0, 0, 0, 0),
 	(22875, 1012, 0, 7, 0, 15, 0, 0, 0, 0),
 	(22876, 1012, 0, 7, 0, 15, 0, 0, 0, 0),
 	(22877, 1012, 0, 7, 0, 15, 0, 0, 0, 0),
@@ -1336,6 +1341,7 @@ INSERT INTO `creature_onkill_reputation` (`creature_id`, `RewOnKillRepFaction1`,
 	(22882, 1012, 0, 7, 0, 15, 0, 0, 0, 0),
 	(22883, 1012, 0, 7, 0, 3, 0, 0, 0, 0),
 	(22884, 1012, 0, 7, 0, 15, 0, 0, 0, 0),
+	(22885, 1012, 0, 7, 0, 15, 0, 0, 0, 0),
 	(22887, 1012, 0, 7, 0, 250, 0, 0, 0, 0),
 	(22890, 0, 0, 7, 0, 0, 0, 0, 0, 0),
 	(22891, 0, 0, 7, 0, 0, 0, 0, 0, 0),
@@ -1343,14 +1349,15 @@ INSERT INTO `creature_onkill_reputation` (`creature_id`, `RewOnKillRepFaction1`,
 	(22898, 1012, 0, 7, 0, 250, 0, 0, 0, 0),
 	(22930, 933, 0, 7, 0, 250, 0, 0, 0, 0),
 	(22938, 942, 0, 7, 0, 15, 0, 0, 0, 0),
-	(22939, 1012, 0, 7, 0, 15, 0, 0, 0, 0),
+	(22939, 1012, 0, 7, 0, 3, 0, 0, 0, 0),
 	(22945, 1012, 0, 7, 0, 15, 0, 0, 0, 0),
+	(22946, 1012, 0, 7, 0, 3, 0, 0, 0, 0),
 	(22947, 1012, 0, 7, 0, 250, 0, 0, 0, 0),
 	(22948, 1012, 0, 7, 0, 250, 0, 0, 0, 0),
 	(22949, 1012, 0, 7, 0, 250, 0, 0, 0, 0),
 	(22953, 1012, 0, 7, 0, 15, 0, 0, 0, 0),
 	(22954, 1012, 0, 7, 0, 15, 0, 0, 0, 0),
-	(22955, 1012, 0, 7, 0, 15, 0, 0, 0, 0),
+	(22955, 1012, 0, 7, 0, 3, 0, 0, 0, 0),
 	(22956, 1012, 0, 7, 0, 15, 0, 0, 0, 0),
 	(22957, 1012, 0, 7, 0, 15, 0, 0, 0, 0),
 	(22959, 1012, 0, 7, 0, 15, 0, 0, 0, 0),
@@ -1388,7 +1395,7 @@ INSERT INTO `creature_onkill_reputation` (`creature_id`, `RewOnKillRepFaction1`,
 	(23184, 989, 0, 7, 0, 15, 0, 0, 0, 0),
 	(23185, 989, 0, 7, 0, 15, 0, 0, 0, 0),
 	(23186, 989, 0, 7, 0, 15, 0, 0, 0, 0),
-	(23196, 1012, 0, 7, 0, 15, 0, 0, 0, 0),
+	(23196, 1012, 0, 7, 0, 23, 0, 0, 0, 0),
 	(23207, 1031, 0, 7, 0, 10, 0, 0, 0, 0),
 	(23222, 1012, 0, 7, 0, 15, 0, 0, 0, 0),
 	(23223, 1012, 0, 7, 0, 15, 0, 0, 0, 0),
@@ -1400,13 +1407,14 @@ INSERT INTO `creature_onkill_reputation` (`creature_id`, `RewOnKillRepFaction1`,
 	(23330, 1012, 0, 7, 0, 15, 0, 0, 0, 0),
 	(23337, 1012, 0, 7, 0, 15, 0, 0, 0, 0),
 	(23339, 1012, 0, 7, 0, 15, 0, 0, 0, 0),
-	(23394, 1012, 0, 7, 0, 15, 0, 0, 0, 0),
+	(23394, 1012, 0, 7, 0, 30, 0, 0, 0, 0),
 	(23397, 1012, 0, 7, 0, 15, 0, 0, 0, 0),
 	(23400, 1012, 0, 7, 0, 15, 0, 0, 0, 0),
 	(23402, 1012, 0, 7, 0, 15, 0, 0, 0, 0),
 	(23403, 1012, 0, 7, 0, 15, 0, 0, 0, 0),
 	(23420, 1012, 0, 7, 0, 250, 0, 0, 0, 0),
-	(23436, 1012, 0, 7, 0, 3, 0, 0, 0, 0),
+	(23421, 1012, 0, 5, 0, 15, 0, 0, 0, 0),
+	(23436, 1012, 0, 7, 0, 0, 0, 0, 0, 0),
 	(24476, 349, 70, 5, 0, 5, 7, 0, -50, 0),
 	(24477, 349, 70, 5, 0, 5, 7, 0, -50, 0),
 	(24560, 1077, 0, 6, 0, 120, 0, 0, 0, 0),
@@ -1444,6 +1452,7 @@ INSERT INTO `creature_onkill_reputation` (`creature_id`, `RewOnKillRepFaction1`,
 	(25576, 1077, 0, 7, 0, 12, 0, 0, 0, 0),
 	(25577, 1077, 0, 7, 0, 12, 0, 0, 0, 0);
 /*!40000 ALTER TABLE `creature_onkill_reputation` ENABLE KEYS */;
+
 /*!40101 SET SQL_MODE=IFNULL(@OLD_SQL_MODE, '') */;
 /*!40014 SET FOREIGN_KEY_CHECKS=IF(@OLD_FOREIGN_KEY_CHECKS IS NULL, 1, @OLD_FOREIGN_KEY_CHECKS) */;
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;

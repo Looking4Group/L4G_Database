@@ -1,9 +1,9 @@
 /*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
 /*!40101 SET NAMES utf8 */;
+/*!50503 SET NAMES utf8mb4 */;
 /*!40014 SET @OLD_FOREIGN_KEY_CHECKS=@@FOREIGN_KEY_CHECKS, FOREIGN_KEY_CHECKS=0 */;
 /*!40101 SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='NO_AUTO_VALUE_ON_ZERO' */;
 
--- Dumping structure for table progress_world.looking4group_string
 DROP TABLE IF EXISTS `looking4group_string`;
 CREATE TABLE IF NOT EXISTS `looking4group_string` (
   `entry` mediumint(8) unsigned NOT NULL DEFAULT '0',
@@ -19,7 +19,6 @@ CREATE TABLE IF NOT EXISTS `looking4group_string` (
   PRIMARY KEY (`entry`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
--- Dumping data for table progress_world.looking4group_string: ~727 rows (approximately)
 /*!40000 ALTER TABLE `looking4group_string` DISABLE KEYS */;
 INSERT INTO `looking4group_string` (`entry`, `content_default`, `content_loc1`, `content_loc2`, `content_loc3`, `content_loc4`, `content_loc5`, `content_loc6`, `content_loc7`, `content_loc8`) VALUES
 	(1, 'You should select a character or a creature.', NULL, NULL, 'You should select a character or a creature.', NULL, NULL, NULL, NULL, NULL),
@@ -795,6 +794,7 @@ INSERT INTO `looking4group_string` (`entry`, `content_default`, `content_loc1`, 
 	(12000, 'Gildenlevel: %u.', NULL, NULL, 'Gildenlevel: %u.', NULL, NULL, NULL, NULL, NULL),
 	(12001, 'Gildenerfahrung: %u/%u.', NULL, NULL, 'Gildenerfahrung: %u/%u.', NULL, NULL, NULL, NULL, NULL);
 /*!40000 ALTER TABLE `looking4group_string` ENABLE KEYS */;
+
 /*!40101 SET SQL_MODE=IFNULL(@OLD_SQL_MODE, '') */;
 /*!40014 SET FOREIGN_KEY_CHECKS=IF(@OLD_FOREIGN_KEY_CHECKS IS NULL, 1, @OLD_FOREIGN_KEY_CHECKS) */;
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;

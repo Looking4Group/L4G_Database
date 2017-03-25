@@ -1,9 +1,9 @@
 /*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
 /*!40101 SET NAMES utf8 */;
+/*!50503 SET NAMES utf8mb4 */;
 /*!40014 SET @OLD_FOREIGN_KEY_CHECKS=@@FOREIGN_KEY_CHECKS, FOREIGN_KEY_CHECKS=0 */;
 /*!40101 SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='NO_AUTO_VALUE_ON_ZERO' */;
 
--- Dumping structure for table progress_world.creature_questrelation
 DROP TABLE IF EXISTS `creature_questrelation`;
 CREATE TABLE IF NOT EXISTS `creature_questrelation` (
   `id` mediumint(8) unsigned NOT NULL DEFAULT '0' COMMENT 'Identifier',
@@ -11,7 +11,6 @@ CREATE TABLE IF NOT EXISTS `creature_questrelation` (
   PRIMARY KEY (`id`,`quest`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 ROW_FORMAT=FIXED COMMENT='Creature System';
 
--- Dumping data for table progress_world.creature_questrelation: ~4,066 rows (approximately)
 /*!40000 ALTER TABLE `creature_questrelation` DISABLE KEYS */;
 INSERT INTO `creature_questrelation` (`id`, `quest`) VALUES
 	(62, 66714),
@@ -2668,6 +2667,7 @@ INSERT INTO `creature_questrelation` (`id`, `quest`) VALUES
 	(11939, 6845),
 	(12031, 6142),
 	(12042, 9063),
+	(12042, 10955),
 	(12096, 5892),
 	(12096, 6982),
 	(12097, 5893),
@@ -4936,6 +4936,7 @@ INSERT INTO `creature_questrelation` (`id`, `quest`) VALUES
 	(21359, 10599),
 	(21359, 10604),
 	(21359, 10767),
+	(21402, 10568),
 	(21402, 10571),
 	(21402, 10574),
 	(21402, 10575),
@@ -5031,6 +5032,7 @@ INSERT INTO `creature_questrelation` (`id`, `quest`) VALUES
 	(21954, 10688),
 	(21954, 10689),
 	(21954, 10692),
+	(21955, 10683),
 	(21955, 10684),
 	(21955, 10685),
 	(21955, 10686),
@@ -5086,8 +5088,11 @@ INSERT INTO `creature_questrelation` (`id`, `quest`) VALUES
 	(22103, 10806),
 	(22107, 10792),
 	(22112, 10866),
+	(22112, 10870),
 	(22113, 10804),
 	(22113, 10811),
+	(22113, 11012),
+	(22113, 11013),
 	(22127, 10819),
 	(22127, 10910),
 	(22133, 10753),
@@ -5162,6 +5167,7 @@ INSERT INTO `creature_questrelation` (`id`, `quest`) VALUES
 	(22488, 10927),
 	(22489, 10928),
 	(22497, 10984),
+	(22820, 10944),
 	(22832, 10961),
 	(22832, 10964),
 	(22832, 10979),
@@ -5485,6 +5491,7 @@ INSERT INTO `creature_questrelation` (`id`, `quest`) VALUES
 	(1200007, 100018),
 	(1200007, 100019);
 /*!40000 ALTER TABLE `creature_questrelation` ENABLE KEYS */;
+
 /*!40101 SET SQL_MODE=IFNULL(@OLD_SQL_MODE, '') */;
 /*!40014 SET FOREIGN_KEY_CHECKS=IF(@OLD_FOREIGN_KEY_CHECKS IS NULL, 1, @OLD_FOREIGN_KEY_CHECKS) */;
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;

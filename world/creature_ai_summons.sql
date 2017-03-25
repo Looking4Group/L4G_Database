@@ -1,9 +1,9 @@
 /*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
 /*!40101 SET NAMES utf8 */;
+/*!50503 SET NAMES utf8mb4 */;
 /*!40014 SET @OLD_FOREIGN_KEY_CHECKS=@@FOREIGN_KEY_CHECKS, FOREIGN_KEY_CHECKS=0 */;
 /*!40101 SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='NO_AUTO_VALUE_ON_ZERO' */;
 
--- Dumping structure for table progress_world.creature_ai_summons
 DROP TABLE IF EXISTS `creature_ai_summons`;
 CREATE TABLE IF NOT EXISTS `creature_ai_summons` (
   `id` int(11) unsigned NOT NULL AUTO_INCREMENT COMMENT 'Location Identifier',
@@ -16,7 +16,6 @@ CREATE TABLE IF NOT EXISTS `creature_ai_summons` (
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB AUTO_INCREMENT=24 DEFAULT CHARSET=utf8 ROW_FORMAT=FIXED COMMENT='EventAI Summoning Locations';
 
--- Dumping data for table progress_world.creature_ai_summons: ~12 rows (approximately)
 /*!40000 ALTER TABLE `creature_ai_summons` DISABLE KEYS */;
 INSERT INTO `creature_ai_summons` (`id`, `position_x`, `position_y`, `position_z`, `orientation`, `spawntimesecs`, `comment`) VALUES
 	(1, 8074.84, -3840, 690.061, 4.6, 180000, '10727'),
@@ -32,6 +31,7 @@ INSERT INTO `creature_ai_summons` (`id`, `position_x`, `position_y`, `position_z
 	(22, 3423.28, -3055.59, 136.498, 0, 300000, '16102'),
 	(23, 3420.28, -3053.59, 136.498, 0, 300000, '16101');
 /*!40000 ALTER TABLE `creature_ai_summons` ENABLE KEYS */;
+
 /*!40101 SET SQL_MODE=IFNULL(@OLD_SQL_MODE, '') */;
 /*!40014 SET FOREIGN_KEY_CHECKS=IF(@OLD_FOREIGN_KEY_CHECKS IS NULL, 1, @OLD_FOREIGN_KEY_CHECKS) */;
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;

@@ -1,9 +1,9 @@
 /*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
 /*!40101 SET NAMES utf8 */;
+/*!50503 SET NAMES utf8mb4 */;
 /*!40014 SET @OLD_FOREIGN_KEY_CHECKS=@@FOREIGN_KEY_CHECKS, FOREIGN_KEY_CHECKS=0 */;
 /*!40101 SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='NO_AUTO_VALUE_ON_ZERO' */;
 
--- Dumping structure for table progress_world.pool_creature
 DROP TABLE IF EXISTS `pool_creature`;
 CREATE TABLE IF NOT EXISTS `pool_creature` (
   `guid` int(10) unsigned NOT NULL DEFAULT '0',
@@ -13,7 +13,6 @@ CREATE TABLE IF NOT EXISTS `pool_creature` (
   PRIMARY KEY (`pool_entry`,`guid`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
--- Dumping data for table progress_world.pool_creature: ~546 rows (approximately)
 /*!40000 ALTER TABLE `pool_creature` DISABLE KEYS */;
 INSERT INTO `pool_creature` (`guid`, `pool_entry`, `chance`, `description`) VALUES
 	(86170, 1047, 0, 'Bjarn (1130)'),
@@ -387,8 +386,8 @@ INSERT INTO `pool_creature` (`guid`, `pool_entry`, `chance`, `description`) VALU
 	(86860, 1597, 0, 'Nuramoc (20932)'),
 	(99266, 1597, 0, 'Nuramoc (20932)'),
 	(99267, 1597, 0, 'Nuramoc (20932)'),
-	(657, 1598, 5, 'Deathsworn Captain (Shadowfang Keep)(3872)'),
-	(99291, 1598, 5, 'Deathsworn Captain (Shadowfang Keep)(3872)'),
+	(657, 1598, 0, 'Deathsworn Captain (Shadowfang Keep)(3872)'),
+	(99291, 1598, 0, 'Deathsworn Captain (Shadowfang Keep)(3872)'),
 	(52150, 1599, 0, 'Hearthsinger Forresten (10558)'),
 	(128631, 1599, 0, 'Hearthsinger Forresten (10558)'),
 	(128632, 1599, 0, 'Hearthsinger Forresten (10558)'),
@@ -459,27 +458,6 @@ INSERT INTO `pool_creature` (`guid`, `pool_entry`, `chance`, `description`) VALU
 	(124776, 30039, 0, 'Worldboss Spawn Doom Lord Kazzak'),
 	(17525, 30040, 50, 'Worldboss Spawn Doomwalker'),
 	(84633, 30040, 0, 'Worldboss Spawn Doomwalker'),
-	(123771, 30041, 0, 'Ethereum Jailor'),
-	(123772, 30041, 0, 'Ethereum Jailor'),
-	(123773, 30041, 0, 'Ethereum Jailor'),
-	(123774, 30041, 0, 'Ethereum Jailor'),
-	(123775, 30041, 0, 'Ethereum Jailor'),
-	(123776, 30041, 0, 'Ethereum Jailor'),
-	(123777, 30041, 0, 'Ethereum Jailor'),
-	(123778, 30041, 0, 'Ethereum Jailor'),
-	(123779, 30041, 0, 'Ethereum Jailor'),
-	(123780, 30041, 0, 'Ethereum Jailor'),
-	(123781, 30041, 0, 'Ethereum Jailor'),
-	(123782, 30041, 0, 'Ethereum Jailor'),
-	(123783, 30041, 0, 'Ethereum Jailor'),
-	(123784, 30041, 0, 'Ethereum Jailor'),
-	(123785, 30041, 0, 'Ethereum Jailor'),
-	(123786, 30041, 0, 'Ethereum Jailor'),
-	(123787, 30041, 0, 'Ethereum Jailor'),
-	(123788, 30041, 0, 'Ethereum Jailor'),
-	(123789, 30041, 0, 'Ethereum Jailor'),
-	(123790, 30041, 0, 'Ethereum Jailor'),
-	(123791, 30041, 0, 'Ethereum Jailor'),
 	(7202, 30043, 0, 'Windy Cloud - Nagrand'),
 	(9740, 30043, 0, 'Windy Cloud - Nagrand'),
 	(9741, 30043, 0, 'Windy Cloud - Nagrand'),
@@ -576,21 +554,11 @@ INSERT INTO `pool_creature` (`guid`, `pool_entry`, `chance`, `description`) VALU
 	(140803, 30046, 0, 'Felmist - Shadowmoonvalley'),
 	(140804, 30046, 0, 'Felmist - Shadowmoonvalley'),
 	(140805, 30046, 0, 'Felmist - Shadowmoonvalley'),
-	(133904, 30047, 0, 'Skettis - Mountain Colossus / Talonsworn Forest-Rager'),
-	(133905, 30047, 0, 'Skettis - Mountain Colossus / Talonsworn Forest-Rager'),
-	(133906, 30047, 0, 'Skettis - Mountain Colossus / Talonsworn Forest-Rager'),
-	(1189277, 30047, 0, 'Skettis - Mountain Colossus / Talonsworn Forest-Rager'),
-	(1189278, 30047, 0, 'Skettis - Mountain Colossus / Talonsworn Forest-Rager'),
-	(1189279, 30047, 0, 'Skettis - Mountain Colossus / Talonsworn Forest-Rager'),
-	(1189280, 30047, 0, 'Skettis - Mountain Colossus / Talonsworn Forest-Rager'),
-	(16777196, 30047, 0, 'Skettis - Mountain Colossus / Talonsworn Forest-Rager'),
-	(16777197, 30047, 0, 'Skettis - Mountain Colossus / Talonsworn Forest-Rager'),
-	(16777198, 30047, 0, 'Skettis - Mountain Colossus / Talonsworn Forest-Rager'),
-	(16777199, 30047, 0, 'Skettis - Mountain Colossus / Talonsworn Forest-Rager'),
 	(56809, 30048, 0, 'Karazhan - Hyakiss the Lurker'),
 	(84987, 30048, 0, 'Karazhan - Rokad the Ravager'),
 	(86073, 30048, 0, 'Karazhan - Shadikith the Glider');
 /*!40000 ALTER TABLE `pool_creature` ENABLE KEYS */;
+
 /*!40101 SET SQL_MODE=IFNULL(@OLD_SQL_MODE, '') */;
 /*!40014 SET FOREIGN_KEY_CHECKS=IF(@OLD_FOREIGN_KEY_CHECKS IS NULL, 1, @OLD_FOREIGN_KEY_CHECKS) */;
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;

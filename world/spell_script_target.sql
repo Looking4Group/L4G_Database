@@ -1,9 +1,9 @@
 /*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
 /*!40101 SET NAMES utf8 */;
+/*!50503 SET NAMES utf8mb4 */;
 /*!40014 SET @OLD_FOREIGN_KEY_CHECKS=@@FOREIGN_KEY_CHECKS, FOREIGN_KEY_CHECKS=0 */;
 /*!40101 SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='NO_AUTO_VALUE_ON_ZERO' */;
 
--- Dumping structure for table progress_world.spell_script_target
 DROP TABLE IF EXISTS `spell_script_target`;
 CREATE TABLE IF NOT EXISTS `spell_script_target` (
   `entry` mediumint(8) unsigned NOT NULL,
@@ -12,10 +12,14 @@ CREATE TABLE IF NOT EXISTS `spell_script_target` (
   UNIQUE KEY `entry_type_target` (`entry`,`type`,`targetEntry`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COMMENT='Spell System';
 
--- Dumping data for table progress_world.spell_script_target: ~784 rows (approximately)
 /*!40000 ALTER TABLE `spell_script_target` DISABLE KEYS */;
 INSERT INTO `spell_script_target` (`entry`, `type`, `targetEntry`) VALUES
 	(3730, 1, 15263),
+	(5628, 1, 2006),
+	(5628, 1, 2007),
+	(5628, 1, 2008),
+	(5628, 1, 2009),
+	(5628, 1, 2010),
 	(5628, 1, 2011),
 	(5628, 1, 2012),
 	(5628, 1, 2013),
@@ -438,6 +442,7 @@ INSERT INTO `spell_script_target` (`entry`, `type`, `targetEntry`) VALUES
 	(36460, 0, 183808),
 	(36717, 1, 21761),
 	(36795, 1, 21394),
+	(36804, 1, 21404),
 	(36852, 1, 21440),
 	(36854, 1, 21437),
 	(36856, 1, 21436),
@@ -864,6 +869,7 @@ INSERT INTO `spell_script_target` (`entry`, `type`, `targetEntry`) VALUES
 	(40830, 1, 22327),
 	(40830, 1, 22392),
 	(40851, 1, 22963),
+	(40855, 2, 22841),
 	(40874, 1, 22841),
 	(41128, 1, 23164),
 	(41268, 1, 23412),
@@ -922,10 +928,14 @@ INSERT INTO `spell_script_target` (`entry`, `type`, `targetEntry`) VALUES
 	(42471, 1, 23817),
 	(42492, 1, 0),
 	(42517, 1, 23864),
+	(42542, 1, 23863),
 	(42577, 1, 24136),
 	(42631, 1, 23920),
 	(42734, 1, 4974),
 	(43144, 1, 23817),
+	(43515, 1, 23746),
+	(43520, 1, 23746),
+	(43525, 1, 23746),
 	(43662, 1, 24497),
 	(43723, 2, 19973),
 	(43734, 1, 23817),
@@ -978,6 +988,7 @@ INSERT INTO `spell_script_target` (`entry`, `type`, `targetEntry`) VALUES
 	(46475, 1, 25507),
 	(46589, 1, 30598),
 	(46589, 1, 30614),
+	(46609, 1, 19871),
 	(46809, 1, 26239),
 	(46818, 1, 25840),
 	(46852, 0, 181605),
@@ -986,6 +997,7 @@ INSERT INTO `spell_script_target` (`entry`, `type`, `targetEntry`) VALUES
 	(47104, 1, 26401),
 	(49058, 1, 24968);
 /*!40000 ALTER TABLE `spell_script_target` ENABLE KEYS */;
+
 /*!40101 SET SQL_MODE=IFNULL(@OLD_SQL_MODE, '') */;
 /*!40014 SET FOREIGN_KEY_CHECKS=IF(@OLD_FOREIGN_KEY_CHECKS IS NULL, 1, @OLD_FOREIGN_KEY_CHECKS) */;
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;

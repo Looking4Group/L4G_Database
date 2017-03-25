@@ -1,9 +1,9 @@
 /*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
 /*!40101 SET NAMES utf8 */;
+/*!50503 SET NAMES utf8mb4 */;
 /*!40014 SET @OLD_FOREIGN_KEY_CHECKS=@@FOREIGN_KEY_CHECKS, FOREIGN_KEY_CHECKS=0 */;
 /*!40101 SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='NO_AUTO_VALUE_ON_ZERO' */;
 
--- Dumping structure for table progress_world.player_classlevelstats
 DROP TABLE IF EXISTS `player_classlevelstats`;
 CREATE TABLE IF NOT EXISTS `player_classlevelstats` (
   `class` tinyint(3) unsigned NOT NULL,
@@ -13,7 +13,6 @@ CREATE TABLE IF NOT EXISTS `player_classlevelstats` (
   PRIMARY KEY (`class`,`level`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 PACK_KEYS=0 COMMENT='Stores levels stats.';
 
--- Dumping data for table progress_world.player_classlevelstats: ~641 rows (approximately)
 /*!40000 ALTER TABLE `player_classlevelstats` DISABLE KEYS */;
 INSERT INTO `player_classlevelstats` (`class`, `level`, `basehp`, `basemana`) VALUES
 	(1, 1, 20, 0),
@@ -647,6 +646,7 @@ INSERT INTO `player_classlevelstats` (`class`, `level`, `basehp`, `basemana`) VA
 	(11, 69, 3351, 2257),
 	(11, 70, 3614, 2370);
 /*!40000 ALTER TABLE `player_classlevelstats` ENABLE KEYS */;
+
 /*!40101 SET SQL_MODE=IFNULL(@OLD_SQL_MODE, '') */;
 /*!40014 SET FOREIGN_KEY_CHECKS=IF(@OLD_FOREIGN_KEY_CHECKS IS NULL, 1, @OLD_FOREIGN_KEY_CHECKS) */;
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;

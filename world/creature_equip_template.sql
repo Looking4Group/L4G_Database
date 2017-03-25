@@ -1,9 +1,9 @@
 /*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
 /*!40101 SET NAMES utf8 */;
+/*!50503 SET NAMES utf8mb4 */;
 /*!40014 SET @OLD_FOREIGN_KEY_CHECKS=@@FOREIGN_KEY_CHECKS, FOREIGN_KEY_CHECKS=0 */;
 /*!40101 SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='NO_AUTO_VALUE_ON_ZERO' */;
 
--- Dumping structure for table progress_world.creature_equip_template
 DROP TABLE IF EXISTS `creature_equip_template`;
 CREATE TABLE IF NOT EXISTS `creature_equip_template` (
   `entry` mediumint(8) unsigned NOT NULL DEFAULT '0' COMMENT 'Unique entry',
@@ -19,7 +19,6 @@ CREATE TABLE IF NOT EXISTS `creature_equip_template` (
   PRIMARY KEY (`entry`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COMMENT='Creature System (Equipment)';
 
--- Dumping data for table progress_world.creature_equip_template: ~2,099 rows (approximately)
 /*!40000 ALTER TABLE `creature_equip_template` DISABLE KEYS */;
 INSERT INTO `creature_equip_template` (`entry`, `equipmodel1`, `equipmodel2`, `equipmodel3`, `equipinfo1`, `equipinfo2`, `equipinfo3`, `equipslot1`, `equipslot2`, `equipslot3`) VALUES
 	(1, 0, 0, 6231, 0, 0, 50266626, 0, 0, 15),
@@ -1981,14 +1980,24 @@ INSERT INTO `creature_equip_template` (`entry`, `equipmodel1`, `equipmodel2`, `e
 	(3000, 36080, 36080, 0, 33492738, 33492738, 0, 781, 781, 0),
 	(3586, 0, 14038, 0, 0, 0, 0, 0, 0, 0),
 	(4000, 18342, 0, 0, 50267394, 0, 0, 273, 0, 0),
+	(4001, 45947, 0, 0, 50268674, 0, 0, 529, 0, 0),
 	(4002, 3213, 2704, 0, 50267138, 50267138, 0, 781, 781, 0),
 	(4003, 19555, 0, 0, 50267138, 0, 0, 781, 0, 0),
 	(4004, 38827, 29702, 0, 50267138, 33490436, 0, 3, 1038, 0),
+	(5186, 7493, 23172, 0, 218169346, 218172930, 0, 3, 7, 0),
+	(5316, 7439, 0, 0, 50267138, 0, 0, 3, 0, 0),
 	(5601, 0, 18816, 0, 0, 33490436, 0, 0, 1038, 0),
 	(5603, 0, 0, 31747, 0, 0, 33489666, 0, 0, 26),
 	(5605, 4788, 0, 33828, 218171138, 0, 33493506, 3, 0, 26),
 	(5607, 20195, 0, 0, 218171394, 0, 0, 1, 0, 0),
 	(5609, 22081, 0, 20650, 33490690, 0, 50266626, 781, 0, 15),
+	(5616, 3797, 0, 0, 285278466, 0, 0, 1, 0, 0),
+	(5617, 22563, 0, 0, 285346306, 0, 0, 2, 0, 0),
+	(5618, 24499, 0, 0, 285346306, 0, 0, 2, 0, 0),
+	(5619, 24926, 0, 0, 285346306, 0, 0, 2, 0, 0),
+	(5620, 25180, 0, 0, 285345026, 0, 0, 1, 0, 0),
+	(5621, 24394, 0, 0, 285346306, 0, 0, 2, 0, 0),
+	(5622, 33163, 0, 0, 285346306, 0, 0, 2, 0, 0),
 	(8000, 18652, 0, 0, 50268674, 0, 0, 3, 0, 0),
 	(8001, 33299, 0, 0, 50268674, 0, 0, 529, 0, 0),
 	(8002, 33236, 38728, 0, 218171138, 33490436, 0, 3, 1038, 0),
@@ -2010,7 +2019,7 @@ INSERT INTO `creature_equip_template` (`entry`, `equipmodel1`, `equipmodel2`, `e
 	(8018, 20273, 20273, 0, 218173186, 218173186, 0, 3, 3, 0),
 	(8019, 20029, 26283, 0, 218171138, 33490436, 0, 3, 1038, 0),
 	(8020, 19647, 0, 0, 33490946, 0, 0, 256, 0, 0),
-	(8021, 36079, 0, 0, 285345026, 0, 0, 1, 0, 0),
+	(8021, 36960, 2161, 0, 218171138, 234948100, 0, 3, 1038, 0),
 	(8022, 31997, 31746, 0, 218171138, 234948100, 0, 3, 1038, 0),
 	(8023, 5193, 0, 31338, 218171394, 0, 50266626, 1, 0, 15),
 	(8024, 38724, 0, 0, 218173186, 0, 0, 3, 0, 0),
@@ -2032,6 +2041,10 @@ INSERT INTO `creature_equip_template` (`entry`, `equipmodel1`, `equipmodel2`, `e
 	(8042, 38666, 0, 0, 285346306, 0, 0, 2, 0, 0),
 	(8043, 19741, 0, 0, 50267138, 0, 0, 781, 0, 0),
 	(8044, 41562, 0, 0, 33490434, 0, 0, 529, 0, 0),
+	(8100, 40401, 0, 0, 285279746, 0, 0, 2, 0, 0),
+	(8101, 46789, 32560, 0, 218171138, 234948100, 0, 3, 1038, 0),
+	(8102, 46982, 46982, 0, 218173186, 218173186, 0, 3, 3, 0),
+	(8103, 32722, 32581, 0, 218171138, 218171138, 0, 3, 3, 0),
 	(9000, 43810, 0, 0, 285346306, 0, 0, 529, 0, 0),
 	(10000, 28544, 2594, 0, 218171138, 234948100, 0, 3, 1038, 0),
 	(16409, 0, 0, 40187, 0, 0, 33493506, 0, 0, 26),
@@ -2048,6 +2061,7 @@ INSERT INTO `creature_equip_template` (`entry`, `equipmodel1`, `equipmodel2`, `e
 	(23686, 24594, 24117, 0, 33492482, 218235906, 0, 13, 7, 0),
 	(30000, 22402, 0, 0, 0, 0, 0, 0, 0, 0);
 /*!40000 ALTER TABLE `creature_equip_template` ENABLE KEYS */;
+
 /*!40101 SET SQL_MODE=IFNULL(@OLD_SQL_MODE, '') */;
 /*!40014 SET FOREIGN_KEY_CHECKS=IF(@OLD_FOREIGN_KEY_CHECKS IS NULL, 1, @OLD_FOREIGN_KEY_CHECKS) */;
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;

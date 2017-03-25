@@ -1,9 +1,9 @@
 /*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
 /*!40101 SET NAMES utf8 */;
+/*!50503 SET NAMES utf8mb4 */;
 /*!40014 SET @OLD_FOREIGN_KEY_CHECKS=@@FOREIGN_KEY_CHECKS, FOREIGN_KEY_CHECKS=0 */;
 /*!40101 SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='NO_AUTO_VALUE_ON_ZERO' */;
 
--- Dumping structure for table progress_world.areatrigger_tavern
 DROP TABLE IF EXISTS `areatrigger_tavern`;
 CREATE TABLE IF NOT EXISTS `areatrigger_tavern` (
   `id` mediumint(8) unsigned NOT NULL DEFAULT '0' COMMENT 'Identifier',
@@ -11,7 +11,6 @@ CREATE TABLE IF NOT EXISTS `areatrigger_tavern` (
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 ROW_FORMAT=FIXED COMMENT='Trigger System';
 
--- Dumping data for table progress_world.areatrigger_tavern: ~82 rows (approximately)
 /*!40000 ALTER TABLE `areatrigger_tavern` DISABLE KEYS */;
 INSERT INTO `areatrigger_tavern` (`id`, `name`) VALUES
 	(71, 'Westfall - Sentinel Hill Inn'),
@@ -97,6 +96,7 @@ INSERT INTO `areatrigger_tavern` (`id`, `name`) VALUES
 	(5316, 'Wyrmrest Temple'),
 	(5317, 'Wyrmrest Temple');
 /*!40000 ALTER TABLE `areatrigger_tavern` ENABLE KEYS */;
+
 /*!40101 SET SQL_MODE=IFNULL(@OLD_SQL_MODE, '') */;
 /*!40014 SET FOREIGN_KEY_CHECKS=IF(@OLD_FOREIGN_KEY_CHECKS IS NULL, 1, @OLD_FOREIGN_KEY_CHECKS) */;
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;

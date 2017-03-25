@@ -1,9 +1,9 @@
 /*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
 /*!40101 SET NAMES utf8 */;
+/*!50503 SET NAMES utf8mb4 */;
 /*!40014 SET @OLD_FOREIGN_KEY_CHECKS=@@FOREIGN_KEY_CHECKS, FOREIGN_KEY_CHECKS=0 */;
 /*!40101 SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='NO_AUTO_VALUE_ON_ZERO' */;
 
--- Dumping structure for table progress_world.creature_model_info
 DROP TABLE IF EXISTS `creature_model_info`;
 CREATE TABLE IF NOT EXISTS `creature_model_info` (
   `modelid` mediumint(8) unsigned NOT NULL DEFAULT '0',
@@ -14,7 +14,6 @@ CREATE TABLE IF NOT EXISTS `creature_model_info` (
   PRIMARY KEY (`modelid`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COMMENT='Creature System (Model related info)';
 
--- Dumping data for table progress_world.creature_model_info: ~17,253 rows (approximately)
 /*!40000 ALTER TABLE `creature_model_info` DISABLE KEYS */;
 INSERT INTO `creature_model_info` (`modelid`, `bounding_radius`, `combat_reach`, `gender`, `modelid_other_gender`) VALUES
 	(4, 2, 3, 2, 0),
@@ -10992,7 +10991,7 @@ INSERT INTO `creature_model_info` (`modelid`, `bounding_radius`, `combat_reach`,
 	(16617, 0.3672, 1.8, 0, 0),
 	(16618, 2, 0, 0, 0),
 	(16620, 2, 0, 0, 0),
-	(16621, 0.5508, 2.7, 0, 0),
+	(16621, 0, 0, 0, 0),
 	(16622, 0.842, 5, 2, 0),
 	(16623, 0, 0, 0, 0),
 	(16624, 0.383, 1.5, 0, 0),
@@ -12209,7 +12208,7 @@ INSERT INTO `creature_model_info` (`modelid`, `bounding_radius`, `combat_reach`,
 	(17882, 1, 1.5, 1, 0),
 	(17883, 2, 0, 0, 17884),
 	(17884, 0, 0, 1, 17883),
-	(17886, 6, 0, 2, 0),
+	(17886, 13, 13, 2, 0),
 	(17887, 2, 0, 2, 0),
 	(17888, 0, 0, 2, 0),
 	(17889, 0, 0, 2, 0),
@@ -15382,10 +15381,10 @@ INSERT INTO `creature_model_info` (`modelid`, `bounding_radius`, `combat_reach`,
 	(21112, 2.6, 2.6, 2, 0),
 	(21113, 0.30556, 1, 2, 0),
 	(21114, 0.522, 1.5, 2, 0),
-	(21115, 2, 0, 0, 21118),
+	(21115, 2, 0, 0, 0),
 	(21116, 1.8, 0, 0, 0),
 	(21117, 2, 0, 0, 0),
-	(21118, 1.8, 0, 0, 21115),
+	(21118, 1.8, 0, 0, 0),
 	(21119, 0.25, 0.5, 2, 0),
 	(21120, 0.9, 2.5, 2, 0),
 	(21121, 0, 0, 2, 0),
@@ -15412,7 +15411,7 @@ INSERT INTO `creature_model_info` (`modelid`, `bounding_radius`, `combat_reach`,
 	(21142, 0.389, 1.5, 0, 0),
 	(21143, 1, 1.5, 1, 0),
 	(21144, 0, 0, 0, 0),
-	(21145, 13, 0, 2, 0),
+	(21145, 20, 20, 2, 0),
 	(21146, 0.3, 1, 2, 0),
 	(21147, 0, 0, 2, 0),
 	(21148, 0, 0, 2, 0),
@@ -17019,6 +17018,7 @@ INSERT INTO `creature_model_info` (`modelid`, `bounding_radius`, `combat_reach`,
 	(25902, 0, 0, 0, 0),
 	(25958, 0, 0, 2, 0);
 /*!40000 ALTER TABLE `creature_model_info` ENABLE KEYS */;
+
 /*!40101 SET SQL_MODE=IFNULL(@OLD_SQL_MODE, '') */;
 /*!40014 SET FOREIGN_KEY_CHECKS=IF(@OLD_FOREIGN_KEY_CHECKS IS NULL, 1, @OLD_FOREIGN_KEY_CHECKS) */;
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;

@@ -1,9 +1,9 @@
 /*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
 /*!40101 SET NAMES utf8 */;
+/*!50503 SET NAMES utf8mb4 */;
 /*!40014 SET @OLD_FOREIGN_KEY_CHECKS=@@FOREIGN_KEY_CHECKS, FOREIGN_KEY_CHECKS=0 */;
 /*!40101 SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='NO_AUTO_VALUE_ON_ZERO' */;
 
--- Dumping structure for table progress_world.spell_target_position
 DROP TABLE IF EXISTS `spell_target_position`;
 CREATE TABLE IF NOT EXISTS `spell_target_position` (
   `id` mediumint(8) unsigned NOT NULL DEFAULT '0' COMMENT 'Identifier',
@@ -15,7 +15,6 @@ CREATE TABLE IF NOT EXISTS `spell_target_position` (
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 ROW_FORMAT=FIXED COMMENT='Spell System';
 
--- Dumping data for table progress_world.spell_target_position: ~244 rows (approximately)
 /*!40000 ALTER TABLE `spell_target_position` DISABLE KEYS */;
 INSERT INTO `spell_target_position` (`id`, `target_map`, `target_position_x`, `target_position_y`, `target_position_z`, `target_orientation`) VALUES
 	(31, 0, -9464, 62, 56, 0),
@@ -222,7 +221,7 @@ INSERT INTO `spell_target_position` (`id`, `target_map`, `target_position_x`, `t
 	(38023, 548, 366.27, -709.4, -13.92, 3.82),
 	(38024, 548, 365.53, -737.12, -14, 2.88),
 	(38025, 548, 337.69, -732.87, -13.74, 1.06),
-	(39567, 532, -11164.5, -1909.56, 232.009, 2.23979),
+	(39567, 532, -11164.9, -1912.2, 232.009, 2.2226),
 	(39813, 548, 424.84, -732.18, -7.14, 3.13),
 	(39814, 548, 424.91, -728.68, -7.14, 3.13),
 	(39815, 548, 425.05, -724.23, -7.14, 3.13),
@@ -263,6 +262,7 @@ INSERT INTO `spell_target_position` (`id`, `target_map`, `target_position_x`, `t
 	(49363, 0, -10442, -3291.46, 20.179, 1.30292),
 	(49846, 230, 850.38, -223.3, -43.68, 0.79);
 /*!40000 ALTER TABLE `spell_target_position` ENABLE KEYS */;
+
 /*!40101 SET SQL_MODE=IFNULL(@OLD_SQL_MODE, '') */;
 /*!40014 SET FOREIGN_KEY_CHECKS=IF(@OLD_FOREIGN_KEY_CHECKS IS NULL, 1, @OLD_FOREIGN_KEY_CHECKS) */;
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;

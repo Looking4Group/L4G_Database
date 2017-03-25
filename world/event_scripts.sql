@@ -1,9 +1,9 @@
 /*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
 /*!40101 SET NAMES utf8 */;
+/*!50503 SET NAMES utf8mb4 */;
 /*!40014 SET @OLD_FOREIGN_KEY_CHECKS=@@FOREIGN_KEY_CHECKS, FOREIGN_KEY_CHECKS=0 */;
 /*!40101 SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='NO_AUTO_VALUE_ON_ZERO' */;
 
--- Dumping structure for table progress_world.event_scripts
 DROP TABLE IF EXISTS `event_scripts`;
 CREATE TABLE IF NOT EXISTS `event_scripts` (
   `id` mediumint(8) unsigned NOT NULL DEFAULT '0',
@@ -18,7 +18,6 @@ CREATE TABLE IF NOT EXISTS `event_scripts` (
   `o` float NOT NULL DEFAULT '0'
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
--- Dumping data for table progress_world.event_scripts: ~373 rows (approximately)
 /*!40000 ALTER TABLE `event_scripts` DISABLE KEYS */;
 INSERT INTO `event_scripts` (`id`, `delay`, `command`, `datalong`, `datalong2`, `dataint`, `x`, `y`, `z`, `o`) VALUES
 	(259, 2, 10, 1770, 300000, 0, 881.63, 1230.37, 47.83, 3.1),
@@ -393,6 +392,7 @@ INSERT INTO `event_scripts` (`id`, `delay`, `command`, `datalong`, `datalong2`, 
 	(9066, 10, 20, 5, 1, 0, 0, 0, 0, 0),
 	(11087, 3, 10, 17592, 180000, 0, -1238.71, -12447.4, 95.6189, 6.25233);
 /*!40000 ALTER TABLE `event_scripts` ENABLE KEYS */;
+
 /*!40101 SET SQL_MODE=IFNULL(@OLD_SQL_MODE, '') */;
 /*!40014 SET FOREIGN_KEY_CHECKS=IF(@OLD_FOREIGN_KEY_CHECKS IS NULL, 1, @OLD_FOREIGN_KEY_CHECKS) */;
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;

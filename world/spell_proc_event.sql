@@ -1,9 +1,9 @@
 /*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
 /*!40101 SET NAMES utf8 */;
+/*!50503 SET NAMES utf8mb4 */;
 /*!40014 SET @OLD_FOREIGN_KEY_CHECKS=@@FOREIGN_KEY_CHECKS, FOREIGN_KEY_CHECKS=0 */;
 /*!40101 SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='NO_AUTO_VALUE_ON_ZERO' */;
 
--- Dumping structure for table progress_world.spell_proc_event
 DROP TABLE IF EXISTS `spell_proc_event`;
 CREATE TABLE IF NOT EXISTS `spell_proc_event` (
   `entry` smallint(6) unsigned NOT NULL DEFAULT '0',
@@ -18,7 +18,6 @@ CREATE TABLE IF NOT EXISTS `spell_proc_event` (
   PRIMARY KEY (`entry`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
--- Dumping data for table progress_world.spell_proc_event: ~563 rows (approximately)
 /*!40000 ALTER TABLE `spell_proc_event` DISABLE KEYS */;
 INSERT INTO `spell_proc_event` (`entry`, `SchoolMask`, `SpellFamilyName`, `SpellFamilyMask`, `procFlags`, `procEx`, `ppmRate`, `CustomChance`, `Cooldown`) VALUES
 	(324, 0, 0, 0, 0, 0, 0, 0, 3),
@@ -675,6 +674,7 @@ INSERT INTO `spell_proc_event` (`entry`, `SchoolMask`, `SpellFamilyName`, `Spell
 	(46662, 0, 0, 0, 65536, 67108864, 0, 0, 25),
 	(46832, 0, 7, 1, 0, 65536, 0, 0, 0);
 /*!40000 ALTER TABLE `spell_proc_event` ENABLE KEYS */;
+
 /*!40101 SET SQL_MODE=IFNULL(@OLD_SQL_MODE, '') */;
 /*!40014 SET FOREIGN_KEY_CHECKS=IF(@OLD_FOREIGN_KEY_CHECKS IS NULL, 1, @OLD_FOREIGN_KEY_CHECKS) */;
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;

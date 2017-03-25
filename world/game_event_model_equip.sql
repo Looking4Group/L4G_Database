@@ -1,9 +1,9 @@
 /*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
 /*!40101 SET NAMES utf8 */;
+/*!50503 SET NAMES utf8mb4 */;
 /*!40014 SET @OLD_FOREIGN_KEY_CHECKS=@@FOREIGN_KEY_CHECKS, FOREIGN_KEY_CHECKS=0 */;
 /*!40101 SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='NO_AUTO_VALUE_ON_ZERO' */;
 
--- Dumping structure for table progress_world.game_event_model_equip
 DROP TABLE IF EXISTS `game_event_model_equip`;
 CREATE TABLE IF NOT EXISTS `game_event_model_equip` (
   `guid` int(10) unsigned NOT NULL DEFAULT '0',
@@ -13,7 +13,6 @@ CREATE TABLE IF NOT EXISTS `game_event_model_equip` (
   PRIMARY KEY (`guid`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
--- Dumping data for table progress_world.game_event_model_equip: ~10 rows (approximately)
 /*!40000 ALTER TABLE `game_event_model_equip` DISABLE KEYS */;
 INSERT INTO `game_event_model_equip` (`guid`, `modelid`, `equipment_id`, `event`) VALUES
 	(12088, 0, 504, 27),
@@ -27,6 +26,7 @@ INSERT INTO `game_event_model_equip` (`guid`, `modelid`, `equipment_id`, `event`
 	(79807, 0, 504, 27),
 	(79814, 0, 504, 27);
 /*!40000 ALTER TABLE `game_event_model_equip` ENABLE KEYS */;
+
 /*!40101 SET SQL_MODE=IFNULL(@OLD_SQL_MODE, '') */;
 /*!40014 SET FOREIGN_KEY_CHECKS=IF(@OLD_FOREIGN_KEY_CHECKS IS NULL, 1, @OLD_FOREIGN_KEY_CHECKS) */;
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;

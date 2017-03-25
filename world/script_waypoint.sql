@@ -1,9 +1,9 @@
 /*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
 /*!40101 SET NAMES utf8 */;
+/*!50503 SET NAMES utf8mb4 */;
 /*!40014 SET @OLD_FOREIGN_KEY_CHECKS=@@FOREIGN_KEY_CHECKS, FOREIGN_KEY_CHECKS=0 */;
 /*!40101 SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='NO_AUTO_VALUE_ON_ZERO' */;
 
--- Dumping structure for table progress_world.script_waypoint
 DROP TABLE IF EXISTS `script_waypoint`;
 CREATE TABLE IF NOT EXISTS `script_waypoint` (
   `entry` mediumint(8) unsigned NOT NULL DEFAULT '0' COMMENT 'creature_template entry',
@@ -16,7 +16,6 @@ CREATE TABLE IF NOT EXISTS `script_waypoint` (
   PRIMARY KEY (`entry`,`pointid`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 ROW_FORMAT=FIXED COMMENT='Script Creature waypoints';
 
--- Dumping data for table progress_world.script_waypoint: ~1,616 rows (approximately)
 /*!40000 ALTER TABLE `script_waypoint` DISABLE KEYS */;
 INSERT INTO `script_waypoint` (`entry`, `pointid`, `location_x`, `location_y`, `location_z`, `waittime`, `point_comment`) VALUES
 	(349, 1, -8769.59, -2185.73, 141.975, 0, ''),
@@ -1319,6 +1318,7 @@ INSERT INTO `script_waypoint` (`entry`, `pointid`, `location_x`, `location_y`, `
 	(24375, 6, 120.53, 1578, 43.5, 60000, ''),
 	(24375, 7, 120.53, 1578, 43.5, 60000, '');
 /*!40000 ALTER TABLE `script_waypoint` ENABLE KEYS */;
+
 /*!40101 SET SQL_MODE=IFNULL(@OLD_SQL_MODE, '') */;
 /*!40014 SET FOREIGN_KEY_CHECKS=IF(@OLD_FOREIGN_KEY_CHECKS IS NULL, 1, @OLD_FOREIGN_KEY_CHECKS) */;
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;

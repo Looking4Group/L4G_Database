@@ -1,9 +1,9 @@
 /*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
 /*!40101 SET NAMES utf8 */;
+/*!50503 SET NAMES utf8mb4 */;
 /*!40014 SET @OLD_FOREIGN_KEY_CHECKS=@@FOREIGN_KEY_CHECKS, FOREIGN_KEY_CHECKS=0 */;
 /*!40101 SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='NO_AUTO_VALUE_ON_ZERO' */;
 
--- Dumping structure for table progress_world.warden_data_result
 DROP TABLE IF EXISTS `warden_data_result`;
 CREATE TABLE IF NOT EXISTS `warden_data_result` (
   `id` int(4) NOT NULL AUTO_INCREMENT,
@@ -17,7 +17,6 @@ CREATE TABLE IF NOT EXISTS `warden_data_result` (
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB AUTO_INCREMENT=1010 DEFAULT CHARSET=utf8;
 
--- Dumping data for table progress_world.warden_data_result: ~50 rows (approximately)
 /*!40000 ALTER TABLE `warden_data_result` DISABLE KEYS */;
 INSERT INTO `warden_data_result` (`id`, `check`, `data`, `str`, `address`, `length`, `result`, `comment`) VALUES
 	(1, 243, '', '', 4840352, 2, '558B', 'LUA Protection'),
@@ -71,6 +70,7 @@ INSERT INTO `warden_data_result` (`id`, `check`, `data`, `str`, `address`, `leng
 	(1008, 243, '', '', 8095957, 3, '894808 ', 'Teleport To Plane'),
 	(1009, 243, '', '', 8103107, 3, '894E3C', 'No Fall DMG');
 /*!40000 ALTER TABLE `warden_data_result` ENABLE KEYS */;
+
 /*!40101 SET SQL_MODE=IFNULL(@OLD_SQL_MODE, '') */;
 /*!40014 SET FOREIGN_KEY_CHECKS=IF(@OLD_FOREIGN_KEY_CHECKS IS NULL, 1, @OLD_FOREIGN_KEY_CHECKS) */;
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;

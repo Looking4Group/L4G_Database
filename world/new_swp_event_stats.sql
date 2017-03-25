@@ -1,9 +1,9 @@
 /*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
 /*!40101 SET NAMES utf8 */;
+/*!50503 SET NAMES utf8mb4 */;
 /*!40014 SET @OLD_FOREIGN_KEY_CHECKS=@@FOREIGN_KEY_CHECKS, FOREIGN_KEY_CHECKS=0 */;
 /*!40101 SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='NO_AUTO_VALUE_ON_ZERO' */;
 
--- Dumping structure for table progress_world.new_swp_event_stats
 DROP TABLE IF EXISTS `new_swp_event_stats`;
 CREATE TABLE IF NOT EXISTS `new_swp_event_stats` (
   `id` bigint(20) NOT NULL AUTO_INCREMENT,
@@ -16,7 +16,6 @@ CREATE TABLE IF NOT EXISTS `new_swp_event_stats` (
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB AUTO_INCREMENT=12395 DEFAULT CHARSET=utf8;
 
--- Dumping data for table progress_world.new_swp_event_stats: ~12,661 rows (approximately)
 /*!40000 ALTER TABLE `new_swp_event_stats` DISABLE KEYS */;
 INSERT INTO `new_swp_event_stats` (`id`, `player_name`, `guild_id`, `count`, `quest_id`, `timestamp`, `accountid`) VALUES
 	(1, 'Shrimps', 85, 1, 11536, '2016-02-14 00:00:00', 7217),
@@ -12414,6 +12413,7 @@ INSERT INTO `new_swp_event_stats` (`id`, `player_name`, `guild_id`, `count`, `qu
 	(12393, 'Weirdoe', 85, 3, 11543, '2016-04-21 19:45:24', 12267),
 	(12394, 'Weirdoe', 85, 3, 11536, '2016-04-21 19:46:41', 12267);
 /*!40000 ALTER TABLE `new_swp_event_stats` ENABLE KEYS */;
+
 /*!40101 SET SQL_MODE=IFNULL(@OLD_SQL_MODE, '') */;
 /*!40014 SET FOREIGN_KEY_CHECKS=IF(@OLD_FOREIGN_KEY_CHECKS IS NULL, 1, @OLD_FOREIGN_KEY_CHECKS) */;
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;

@@ -1,9 +1,9 @@
 /*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
 /*!40101 SET NAMES utf8 */;
+/*!50503 SET NAMES utf8mb4 */;
 /*!40014 SET @OLD_FOREIGN_KEY_CHECKS=@@FOREIGN_KEY_CHECKS, FOREIGN_KEY_CHECKS=0 */;
 /*!40101 SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='NO_AUTO_VALUE_ON_ZERO' */;
 
--- Dumping structure for table progress_world.custom_texts
 DROP TABLE IF EXISTS `custom_texts`;
 CREATE TABLE IF NOT EXISTS `custom_texts` (
   `entry` mediumint(8) NOT NULL,
@@ -24,7 +24,6 @@ CREATE TABLE IF NOT EXISTS `custom_texts` (
   PRIMARY KEY (`entry`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 ROW_FORMAT=FIXED COMMENT='Custom Texts';
 
--- Dumping data for table progress_world.custom_texts: ~33 rows (approximately)
 /*!40000 ALTER TABLE `custom_texts` DISABLE KEYS */;
 INSERT INTO `custom_texts` (`entry`, `content_default`, `content_loc1`, `content_loc2`, `content_loc3`, `content_loc4`, `content_loc5`, `content_loc6`, `content_loc7`, `content_loc8`, `sound`, `type`, `language`, `emote`, `comment`) VALUES
 	(-2100032, 'Incoming Plaguemaw the Rotting - Look sharp friends!', '', '', '', '', '', '', '', '', 0, 0, 0, 0, '8165'),
@@ -61,6 +60,7 @@ INSERT INTO `custom_texts` (`entry`, `content_default`, `content_loc1`, `content
 	(-2100001, 'You seek to draw the General of the Frostwolf legion out from his fortress? PREPOSTEROUS!', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, 0, 1, 0, 0, '11946'),
 	(-2100000, 'Stormpike filth! In my keep?! Slay them all!', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, 0, 1, 0, 0, '11946');
 /*!40000 ALTER TABLE `custom_texts` ENABLE KEYS */;
+
 /*!40101 SET SQL_MODE=IFNULL(@OLD_SQL_MODE, '') */;
 /*!40014 SET FOREIGN_KEY_CHECKS=IF(@OLD_FOREIGN_KEY_CHECKS IS NULL, 1, @OLD_FOREIGN_KEY_CHECKS) */;
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;

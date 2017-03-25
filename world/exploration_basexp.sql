@@ -1,9 +1,9 @@
 /*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
 /*!40101 SET NAMES utf8 */;
+/*!50503 SET NAMES utf8mb4 */;
 /*!40014 SET @OLD_FOREIGN_KEY_CHECKS=@@FOREIGN_KEY_CHECKS, FOREIGN_KEY_CHECKS=0 */;
 /*!40101 SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='NO_AUTO_VALUE_ON_ZERO' */;
 
--- Dumping structure for table progress_world.exploration_basexp
 DROP TABLE IF EXISTS `exploration_basexp`;
 CREATE TABLE IF NOT EXISTS `exploration_basexp` (
   `level` tinyint(4) NOT NULL DEFAULT '0',
@@ -11,7 +11,6 @@ CREATE TABLE IF NOT EXISTS `exploration_basexp` (
   PRIMARY KEY (`level`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 ROW_FORMAT=FIXED COMMENT='Exploration System';
 
--- Dumping data for table progress_world.exploration_basexp: ~71 rows (approximately)
 /*!40000 ALTER TABLE `exploration_basexp` DISABLE KEYS */;
 INSERT INTO `exploration_basexp` (`level`, `basexp`) VALUES
 	(0, 0),
@@ -86,6 +85,7 @@ INSERT INTO `exploration_basexp` (`level`, `basexp`) VALUES
 	(69, 1230),
 	(70, 1300);
 /*!40000 ALTER TABLE `exploration_basexp` ENABLE KEYS */;
+
 /*!40101 SET SQL_MODE=IFNULL(@OLD_SQL_MODE, '') */;
 /*!40014 SET FOREIGN_KEY_CHECKS=IF(@OLD_FOREIGN_KEY_CHECKS IS NULL, 1, @OLD_FOREIGN_KEY_CHECKS) */;
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;

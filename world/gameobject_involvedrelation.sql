@@ -1,9 +1,9 @@
 /*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
 /*!40101 SET NAMES utf8 */;
+/*!50503 SET NAMES utf8mb4 */;
 /*!40014 SET @OLD_FOREIGN_KEY_CHECKS=@@FOREIGN_KEY_CHECKS, FOREIGN_KEY_CHECKS=0 */;
 /*!40101 SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='NO_AUTO_VALUE_ON_ZERO' */;
 
--- Dumping structure for table progress_world.gameobject_involvedrelation
 DROP TABLE IF EXISTS `gameobject_involvedrelation`;
 CREATE TABLE IF NOT EXISTS `gameobject_involvedrelation` (
   `id` mediumint(8) unsigned NOT NULL DEFAULT '0',
@@ -11,7 +11,6 @@ CREATE TABLE IF NOT EXISTS `gameobject_involvedrelation` (
   PRIMARY KEY (`id`,`quest`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
--- Dumping data for table progress_world.gameobject_involvedrelation: ~220 rows (approximately)
 /*!40000 ALTER TABLE `gameobject_involvedrelation` DISABLE KEYS */;
 INSERT INTO `gameobject_involvedrelation` (`id`, `quest`) VALUES
 	(31, 94),
@@ -235,6 +234,7 @@ INSERT INTO `gameobject_involvedrelation` (`id`, `quest`) VALUES
 	(187929, 11746),
 	(187945, 11762);
 /*!40000 ALTER TABLE `gameobject_involvedrelation` ENABLE KEYS */;
+
 /*!40101 SET SQL_MODE=IFNULL(@OLD_SQL_MODE, '') */;
 /*!40014 SET FOREIGN_KEY_CHECKS=IF(@OLD_FOREIGN_KEY_CHECKS IS NULL, 1, @OLD_FOREIGN_KEY_CHECKS) */;
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;

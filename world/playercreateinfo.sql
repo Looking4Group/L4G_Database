@@ -1,9 +1,9 @@
 /*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
 /*!40101 SET NAMES utf8 */;
+/*!50503 SET NAMES utf8mb4 */;
 /*!40014 SET @OLD_FOREIGN_KEY_CHECKS=@@FOREIGN_KEY_CHECKS, FOREIGN_KEY_CHECKS=0 */;
 /*!40101 SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='NO_AUTO_VALUE_ON_ZERO' */;
 
--- Dumping structure for table progress_world.playercreateinfo
 DROP TABLE IF EXISTS `playercreateinfo`;
 CREATE TABLE IF NOT EXISTS `playercreateinfo` (
   `race` tinyint(3) unsigned NOT NULL DEFAULT '0',
@@ -16,7 +16,6 @@ CREATE TABLE IF NOT EXISTS `playercreateinfo` (
   PRIMARY KEY (`race`,`class`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
--- Dumping data for table progress_world.playercreateinfo: ~52 rows (approximately)
 /*!40000 ALTER TABLE `playercreateinfo` DISABLE KEYS */;
 INSERT INTO `playercreateinfo` (`race`, `class`, `map`, `zone`, `position_x`, `position_y`, `position_z`) VALUES
 	(1, 1, 0, 12, -8949.95, -132.493, 83.5312),
@@ -72,6 +71,7 @@ INSERT INTO `playercreateinfo` (`race`, `class`, `map`, `zone`, `position_x`, `p
 	(11, 7, 530, 3526, -3961.64, -13931.2, 100.615),
 	(11, 8, 530, 3526, -3961.64, -13931.2, 100.615);
 /*!40000 ALTER TABLE `playercreateinfo` ENABLE KEYS */;
+
 /*!40101 SET SQL_MODE=IFNULL(@OLD_SQL_MODE, '') */;
 /*!40014 SET FOREIGN_KEY_CHECKS=IF(@OLD_FOREIGN_KEY_CHECKS IS NULL, 1, @OLD_FOREIGN_KEY_CHECKS) */;
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;

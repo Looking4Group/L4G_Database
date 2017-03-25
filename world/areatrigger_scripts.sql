@@ -1,9 +1,9 @@
 /*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
 /*!40101 SET NAMES utf8 */;
+/*!50503 SET NAMES utf8mb4 */;
 /*!40014 SET @OLD_FOREIGN_KEY_CHECKS=@@FOREIGN_KEY_CHECKS, FOREIGN_KEY_CHECKS=0 */;
 /*!40101 SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='NO_AUTO_VALUE_ON_ZERO' */;
 
--- Dumping structure for table progress_world.areatrigger_scripts
 DROP TABLE IF EXISTS `areatrigger_scripts`;
 CREATE TABLE IF NOT EXISTS `areatrigger_scripts` (
   `entry` mediumint(8) NOT NULL,
@@ -11,7 +11,6 @@ CREATE TABLE IF NOT EXISTS `areatrigger_scripts` (
   PRIMARY KEY (`entry`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
--- Dumping data for table progress_world.areatrigger_scripts: ~24 rows (approximately)
 /*!40000 ALTER TABLE `areatrigger_scripts` DISABLE KEYS */;
 INSERT INTO `areatrigger_scripts` (`entry`, `ScriptName`) VALUES
 	(522, 'at_twiggy_flathead'),
@@ -39,6 +38,7 @@ INSERT INTO `areatrigger_scripts` (`entry`, `ScriptName`) VALUES
 	(4752, 'at_nats_landing'),
 	(4937, 'at_eredar_twins');
 /*!40000 ALTER TABLE `areatrigger_scripts` ENABLE KEYS */;
+
 /*!40101 SET SQL_MODE=IFNULL(@OLD_SQL_MODE, '') */;
 /*!40014 SET FOREIGN_KEY_CHECKS=IF(@OLD_FOREIGN_KEY_CHECKS IS NULL, 1, @OLD_FOREIGN_KEY_CHECKS) */;
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;

@@ -1,9 +1,9 @@
 /*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
 /*!40101 SET NAMES utf8 */;
+/*!50503 SET NAMES utf8mb4 */;
 /*!40014 SET @OLD_FOREIGN_KEY_CHECKS=@@FOREIGN_KEY_CHECKS, FOREIGN_KEY_CHECKS=0 */;
 /*!40101 SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='NO_AUTO_VALUE_ON_ZERO' */;
 
--- Dumping structure for table progress_world.game_graveyard_zone
 DROP TABLE IF EXISTS `game_graveyard_zone`;
 CREATE TABLE IF NOT EXISTS `game_graveyard_zone` (
   `id` mediumint(8) unsigned NOT NULL DEFAULT '0',
@@ -12,7 +12,6 @@ CREATE TABLE IF NOT EXISTS `game_graveyard_zone` (
   PRIMARY KEY (`id`,`ghost_zone`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COMMENT='Trigger System';
 
--- Dumping data for table progress_world.game_graveyard_zone: ~519 rows (approximately)
 /*!40000 ALTER TABLE `game_graveyard_zone` DISABLE KEYS */;
 INSERT INTO `game_graveyard_zone` (`id`, `ghost_zone`, `faction`) VALUES
 	(3, 10, 469),
@@ -535,6 +534,7 @@ INSERT INTO `game_graveyard_zone` (`id`, `ghost_zone`, `faction`) VALUES
 	(1293, 4131, 0),
 	(1298, 3519, 0);
 /*!40000 ALTER TABLE `game_graveyard_zone` ENABLE KEYS */;
+
 /*!40101 SET SQL_MODE=IFNULL(@OLD_SQL_MODE, '') */;
 /*!40014 SET FOREIGN_KEY_CHECKS=IF(@OLD_FOREIGN_KEY_CHECKS IS NULL, 1, @OLD_FOREIGN_KEY_CHECKS) */;
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;

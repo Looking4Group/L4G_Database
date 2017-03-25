@@ -1,9 +1,9 @@
 /*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
 /*!40101 SET NAMES utf8 */;
+/*!50503 SET NAMES utf8mb4 */;
 /*!40014 SET @OLD_FOREIGN_KEY_CHECKS=@@FOREIGN_KEY_CHECKS, FOREIGN_KEY_CHECKS=0 */;
 /*!40101 SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='NO_AUTO_VALUE_ON_ZERO' */;
 
--- Dumping structure for table progress_world.fishing_loot_template
 DROP TABLE IF EXISTS `fishing_loot_template`;
 CREATE TABLE IF NOT EXISTS `fishing_loot_template` (
   `entry` mediumint(8) unsigned NOT NULL DEFAULT '0',
@@ -18,7 +18,6 @@ CREATE TABLE IF NOT EXISTS `fishing_loot_template` (
   PRIMARY KEY (`entry`,`item`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COMMENT='Loot System';
 
--- Dumping data for table progress_world.fishing_loot_template: ~194 rows (approximately)
 /*!40000 ALTER TABLE `fishing_loot_template` DISABLE KEYS */;
 INSERT INTO `fishing_loot_template` (`entry`, `item`, `ChanceOrQuestChance`, `groupid`, `mincountOrRef`, `maxcount`, `lootcondition`, `condition_value1`, `condition_value2`) VALUES
 	(1, 11000, 100, 1, -11000, 1, 0, 0, 0),
@@ -216,6 +215,7 @@ INSERT INTO `fishing_loot_template` (`entry`, `item`, `ChanceOrQuestChance`, `gr
 	(4047, 11007, 100, 1, -11007, 1, 0, 0, 0),
 	(4080, 11016, 100, 1, -11016, 1, 0, 0, 0);
 /*!40000 ALTER TABLE `fishing_loot_template` ENABLE KEYS */;
+
 /*!40101 SET SQL_MODE=IFNULL(@OLD_SQL_MODE, '') */;
 /*!40014 SET FOREIGN_KEY_CHECKS=IF(@OLD_FOREIGN_KEY_CHECKS IS NULL, 1, @OLD_FOREIGN_KEY_CHECKS) */;
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;

@@ -1,9 +1,9 @@
 /*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
 /*!40101 SET NAMES utf8 */;
+/*!50503 SET NAMES utf8mb4 */;
 /*!40014 SET @OLD_FOREIGN_KEY_CHECKS=@@FOREIGN_KEY_CHECKS, FOREIGN_KEY_CHECKS=0 */;
 /*!40101 SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='NO_AUTO_VALUE_ON_ZERO' */;
 
--- Dumping structure for table progress_world.item_enchantment_template
 DROP TABLE IF EXISTS `item_enchantment_template`;
 CREATE TABLE IF NOT EXISTS `item_enchantment_template` (
   `entry` mediumint(8) unsigned NOT NULL DEFAULT '0',
@@ -12,7 +12,6 @@ CREATE TABLE IF NOT EXISTS `item_enchantment_template` (
   PRIMARY KEY (`entry`,`ench`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 ROW_FORMAT=FIXED COMMENT='Item Random Enchantment System';
 
--- Dumping data for table progress_world.item_enchantment_template: ~28,837 rows (approximately)
 /*!40000 ALTER TABLE `item_enchantment_template` DISABLE KEYS */;
 INSERT INTO `item_enchantment_template` (`entry`, `ench`, `chance`) VALUES
 	(61, 6, 7.73),
@@ -28424,6 +28423,7 @@ INSERT INTO `item_enchantment_template` (`entry`, `ench`, `chance`) VALUES
 	(8675, 2153, 6.93),
 	(8675, 2154, 11.98);
 /*!40000 ALTER TABLE `item_enchantment_template` ENABLE KEYS */;
+
 /*!40101 SET SQL_MODE=IFNULL(@OLD_SQL_MODE, '') */;
 /*!40014 SET FOREIGN_KEY_CHECKS=IF(@OLD_FOREIGN_KEY_CHECKS IS NULL, 1, @OLD_FOREIGN_KEY_CHECKS) */;
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
