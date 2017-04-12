@@ -25,12 +25,7 @@ INSERT INTO `skill_discovery_template` (`spellId`, `reqSpell`, `chance`) VALUES
 	(28588, 0, 0.1),
 	(28589, 0, 0.1),
 	(28590, 0, 0.1),
-	(28591, 0, 0.1),
-	(41458, 28575, 30),
-	(41500, 28571, 30),
-	(41501, 28572, 30),
-	(41502, 28573, 30),
-	(41503, 28576, 30);
+	(28591, 0, 0.1);
 /*!40000 ALTER TABLE `skill_discovery_template` ENABLE KEYS */;
 
 /*!40101 SET SQL_MODE=IFNULL(@OLD_SQL_MODE, '') */;

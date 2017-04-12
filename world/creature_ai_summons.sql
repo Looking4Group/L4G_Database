@@ -14,7 +14,7 @@ CREATE TABLE IF NOT EXISTS `creature_ai_summons` (
   `spawntimesecs` int(11) unsigned NOT NULL DEFAULT '120',
   `comment` varchar(255) NOT NULL DEFAULT '' COMMENT 'Summon Comment',
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=24 DEFAULT CHARSET=utf8 ROW_FORMAT=FIXED COMMENT='EventAI Summoning Locations';
+) ENGINE=InnoDB AUTO_INCREMENT=28 DEFAULT CHARSET=utf8 ROW_FORMAT=FIXED COMMENT='EventAI Summoning Locations';
 
 /*!40000 ALTER TABLE `creature_ai_summons` DISABLE KEYS */;
 INSERT INTO `creature_ai_summons` (`id`, `position_x`, `position_y`, `position_z`, `orientation`, `spawntimesecs`, `comment`) VALUES
@@ -29,7 +29,8 @@ INSERT INTO `creature_ai_summons` (`id`, `position_x`, `position_y`, `position_z
 	(20, -472.02, 105.823, -94.6299, 0.0301925, 300000, '5721'),
 	(21, -467.099, 85.2944, -94.7318, 3.95326, 300000, '5720'),
 	(22, 3423.28, -3055.59, 136.498, 0, 300000, '16102'),
-	(23, 3420.28, -3053.59, 136.498, 0, 300000, '16101');
+	(23, 3420.28, -3053.59, 136.498, 0, 300000, '16101'),
+	(27, -2426.94, -12167, 32.701, 3.68, 180000, '17702');
 /*!40000 ALTER TABLE `creature_ai_summons` ENABLE KEYS */;
 
 /*!40101 SET SQL_MODE=IFNULL(@OLD_SQL_MODE, '') */;

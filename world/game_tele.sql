@@ -14,7 +14,7 @@ CREATE TABLE IF NOT EXISTS `game_tele` (
   `map` smallint(5) unsigned NOT NULL DEFAULT '0',
   `name` varchar(100) NOT NULL DEFAULT '',
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=650 DEFAULT CHARSET=utf8 COMMENT='Tele Command';
+) ENGINE=InnoDB AUTO_INCREMENT=651 DEFAULT CHARSET=utf8 COMMENT='Tele Command';
 
 /*!40000 ALTER TABLE `game_tele` DISABLE KEYS */;
 INSERT INTO `game_tele` (`id`, `position_x`, `position_y`, `position_z`, `orientation`, `map`, `name`) VALUES
@@ -609,12 +609,12 @@ INSERT INTO `game_tele` (`id`, `position_x`, `position_y`, `position_z`, `orient
 	(641, 911.267, 2275.14, 312.496, 5.89916, 530, 'kazzak'),
 	(642, 53.1278, -0.30316, -17.9347, 3.16317, 34, 'thestockade'),
 	(643, -11168.7, -1914.95, 91.4729, 1.47604, 532, 'nightbane'),
-	(644, -8650.35, 602.556, 92.9568, 2.19869, 0, 'stormwind_vault'),
 	(645, -0.880864, 42.4248, -24.9236, 1.55509, 35, 'SturmwindGewölbe'),
 	(646, -3360.21, 3635.33, 284.325, 4.58393, 530, 'skettis'),
 	(647, 16227.9, 16292.1, 32.1962, 4.58484, 1, 'barber'),
 	(648, 3.33159, 2.47313, -144.709, 4.57115, 29, 'transfer'),
-	(649, 1572.46, 266.262, -43.1027, 5.52387, 0, 'undercity');
+	(649, 1572.46, 266.262, -43.1027, 5.52387, 0, 'undercity'),
+	(650, -8830.47, 626.949, 93.9923, 3.19142, 0, 'Stormwind');
 /*!40000 ALTER TABLE `game_tele` ENABLE KEYS */;
 
 /*!40101 SET SQL_MODE=IFNULL(@OLD_SQL_MODE, '') */;

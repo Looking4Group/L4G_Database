@@ -4,7 +4,6 @@
 /*!40014 SET @OLD_FOREIGN_KEY_CHECKS=@@FOREIGN_KEY_CHECKS, FOREIGN_KEY_CHECKS=0 */;
 /*!40101 SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='NO_AUTO_VALUE_ON_ZERO' */;
 
-DROP TABLE IF EXISTS `worldboss_respawn`;
 CREATE TABLE IF NOT EXISTS `worldboss_respawn` (
   `BossEntry` int(10) NOT NULL,
   `RespawnTime` int(20) NOT NULL,
@@ -13,8 +12,8 @@ CREATE TABLE IF NOT EXISTS `worldboss_respawn` (
 
 /*!40000 ALTER TABLE `worldboss_respawn` DISABLE KEYS */;
 INSERT INTO `worldboss_respawn` (`BossEntry`, `RespawnTime`) VALUES
-	(17711, 1486189144),
-	(18728, 1485710260);
+	(17711, 0),
+	(18728, 0);
 /*!40000 ALTER TABLE `worldboss_respawn` ENABLE KEYS */;
 
 /*!40101 SET SQL_MODE=IFNULL(@OLD_SQL_MODE, '') */;

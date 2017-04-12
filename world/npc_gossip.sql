@@ -2424,7 +2424,9 @@ INSERT INTO `npc_gossip` (`npc_guid`, `textid`) VALUES
 	(96984, 10009),
 	(96985, 10063),
 	(96986, 10010),
-	(96987, 10010);
+	(96987, 10010),
+	(170005, 8838),
+	(170006, 8838);
 /*!40000 ALTER TABLE `npc_gossip` ENABLE KEYS */;
 
 /*!40101 SET SQL_MODE=IFNULL(@OLD_SQL_MODE, '') */;

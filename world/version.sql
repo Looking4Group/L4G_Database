@@ -14,7 +14,7 @@ CREATE TABLE IF NOT EXISTS `version` (
 
 /*!40000 ALTER TABLE `version` DISABLE KEYS */;
 INSERT INTO `version` (`core_version`, `core_revision`, `db_version`, `script_version`) VALUES
-	('Looking4GroupCore Rev: 7b578e5f65b186c2625485bf30e25c2de4722c02', 7, 'TDB 0.0.1 (6) for Trinity rev. 678', 'ACID 0.1.0 - Unsupported 2.4.3 Client Version');
+	('Looking4GroupCore Rev: e8311de9ec4755bc352fb80944b4f6de2ce62f8d', 0, 'TDB 0.0.1 (6) for Trinity rev. 678', 'ACID 0.1.0 - Unsupported 2.4.3 Client Version');
 /*!40000 ALTER TABLE `version` ENABLE KEYS */;
 
 /*!40101 SET SQL_MODE=IFNULL(@OLD_SQL_MODE, '') */;
