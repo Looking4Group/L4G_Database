@@ -18866,7 +18866,8 @@ INSERT INTO `locales_creature` (`entry`, `name_loc1`, `name_loc2`, `name_loc3`, 
 	(66707, '', '', '', '', '', '', '', '', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL),
 	(66708, '', '', '', '', '', '', '', '', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL),
 	(66709, '', '', '', '', '', '', '', '', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL),
-	(66710, '', '', '', '', '', '', '', '', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL);
+	(66710, '', '', '', '', '', '', '', '', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL),
+	(1200051, '', '', 'Unteroffizier Tristia', '', '', '', '', '', NULL, NULL, 'Rüstmeister für Rüstungen', NULL, NULL, NULL, NULL, NULL);
 /*!40000 ALTER TABLE `locales_creature` ENABLE KEYS */;
 
 /*!40101 SET SQL_MODE=IFNULL(@OLD_SQL_MODE, '') */;

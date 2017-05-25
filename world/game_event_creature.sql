@@ -14,6 +14,10 @@ CREATE TABLE IF NOT EXISTS `game_event_creature` (
 /*!40000 ALTER TABLE `game_event_creature` DISABLE KEYS */;
 INSERT INTO `game_event_creature` (`guid`, `event`) VALUES
 	(113, 18),
+	(724, 1),
+	(725, 1),
+	(726, 1),
+	(727, 1),
 	(984, 46),
 	(1102, 7),
 	(1963, 12),
@@ -906,7 +910,7 @@ INSERT INTO `game_event_creature` (`guid`, `event`) VALUES
 	(93983, 35),
 	(93983, 37),
 	(94377, 42),
-	(94378, 42),
+	(94378, 46),
 	(94379, 42),
 	(94380, 42),
 	(94381, 42),

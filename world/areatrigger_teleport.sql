@@ -37,7 +37,7 @@ INSERT INTO `areatrigger_teleport` (`id`, `name`, `access_id`, `target_map`, `ta
 	(286, 'Uldaman Entrance', 0, 70, -226.8, 49.09, -46.03, 1.39),
 	(288, 'Uldaman Instance Start', 0, 0, -6066.73, -2955.63, 209.776, 3),
 	(322, 'Gnomeregan Instance Start', 0, 0, -5163.33, 927.623, 257.188, 0),
-	(324, 'Gnomeregan Entrance', 0, 90, -332.22, -2.28, -150.86, 2.77),
+	(324, 'Gnomeregan Entrance', 0, 90, -327.529, -4.6991, -152.846, 3.02761),
 	(442, 'Razorfen Downs Entrance', 0, 129, 2592.55, 1107.5, 51.29, 4.74),
 	(444, 'Razorfen Downs Instance Start', 0, 1, -4658.12, -2526.35, 82.9671, 0),
 	(446, 'Altar of Atal\'Hakkar Entrance', 0, 109, -319.24, 99.9, -131.85, 3.19),

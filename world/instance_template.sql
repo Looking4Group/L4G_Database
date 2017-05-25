@@ -80,7 +80,7 @@ INSERT INTO `instance_template` (`map`, `parent`, `maxPlayers`, `reset_delay`, `
 	(564, 0, 25, 7, 47, NULL, NULL, NULL, NULL, 'instance_black_temple'),
 	(565, 0, 25, 7, 48, NULL, NULL, NULL, NULL, 'instance_gruuls_lair'),
 	(566, 0, 50, 0, 0, NULL, NULL, NULL, NULL, ''),
-	(568, 0, 10, 7, 49, NULL, NULL, NULL, NULL, 'instance_zulaman'),
+	(568, 0, 10, 3, 49, NULL, NULL, NULL, NULL, 'instance_zulaman'),
 	(572, 0, 50, 0, 0, NULL, NULL, NULL, NULL, ''),
 	(580, 0, 25, 7, 50, NULL, NULL, NULL, NULL, 'instance_sunwell_plateau'),
 	(585, 0, 5, 0, 51, NULL, NULL, NULL, NULL, 'instance_magisters_terrace'),

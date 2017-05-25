@@ -25,6 +25,7 @@ INSERT INTO `scripted_spell_id` (`id`, `ScriptName`) VALUES
 	(30004, 'spell_flame_wreath'),
 	(32580, 'strong_fetish'),
 	(33390, 'spell_arcane_torrent'),
+	(37408, 'spell_oscillating_field'),
 	(38544, 'coax_marmot'),
 	(43991, 'spell_seed_of_corruption_proc');
 /*!40000 ALTER TABLE `scripted_spell_id` ENABLE KEYS */;
