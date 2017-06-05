@@ -70,7 +70,8 @@ INSERT INTO `npc_option` (`id`, `gossip_id`, `npcflag`, `icon`, `action`, `box_m
 	(50, 0, 16, 2, 17, 0, 0, 'I wish to unlearn my pet\'s skills', NULL),
 	(51, 0, 536870912, 0, 18, 0, 0, 'UNIT_NPC_FLAG_OUTDOORPVP', NULL),
 	(52, 0, 16, 2, 19, 0, 0, 'Use the talent reset token to unlearn my talents for free!', 'Are you sure you wish to unlearn all your talents?'),
-	(53, 0, 16, 2, 20, 2000000, 0, 'Buy a talent reset token', 'This token lasts for 30 days and costs 200 gold. During that time you can reset your talents an unlimited amount of times for free by talking to your class trainer. Do you wish to buy this item?');
+	(53, 0, 16, 2, 20, 2000000, 0, 'Buy a talent reset token', 'This token lasts for 30 days and costs 200 gold. During that time you can reset your talents an unlimited amount of times for free by talking to your class trainer. Do you wish to buy this item?'),
+	(54, 0, 16, 0, 21, 0, 0, '<Take the letter>', NULL);
 /*!40000 ALTER TABLE `npc_option` ENABLE KEYS */;
 
 /*!40101 SET SQL_MODE=IFNULL(@OLD_SQL_MODE, '') */;

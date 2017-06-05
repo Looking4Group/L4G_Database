@@ -38,6 +38,7 @@ INSERT INTO `spell_linked_spell` (`spell_trigger`, `spell_effect`, `type`, `comm
 	(-40268, 7, 0, 'Suicide when not possessing Vengeful Spirit'),
 	(-39187, 33652, 0, 'Cast Stoned spell when Ground Slam ends'),
 	(-38794, 33686, 0, 'Murmur\'s Shockwave (Heroic)'),
+	(-37986, 37988, 0, 'Ancient Fire Damage Component'),
 	(-35201, 35202, 0, 'Paralytic Poison - Paralysis'),
 	(-33810, 33811, 0, 'Rock Shell trigger Broken Rage'),
 	(-33711, 33686, 0, 'Murmur\'s Shockwave (Normal)'),
