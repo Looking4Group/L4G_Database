@@ -6823,6 +6823,7 @@ INSERT INTO `pool_template` (`entry`, `max_limit`, `description`) VALUES
 	(30046, 15, 'Felmist - Shadowmoonvalley'),
 	(30047, 5, 'Skettis - Mountain Colossus / Talonsworn Forest-Rager'),
 	(30048, 1, 'Karazhan - Servants Quarter Bosses'),
+	(30049, 1, 'Terokkar Forest - Alluvion'),
 	(50002, 15, 'Tin Vein - Westfall'),
 	(2542701, 2, 'Netherwing eggs (185915) - Dragonmaw Fortrees'),
 	(2542702, 2, 'Netherwing eggs (185915) - Dragonmaw Fortrees'),

@@ -18,7 +18,6 @@ INSERT INTO `autobroadcast` (`id`, `text`) VALUES
 	(3, 'Hellfire staff will never send any ingame currency! Beware of the C.O.D. mail scammers!'),
 	(4, 'Don\'t use same login/password like on other projects. You can change password with .password OLD NEW NEW (don\'t use special characters in your password)'),
 	(5, 'Up to five accounts per player are allowed in PVE only without the use of third party software. Using third party software is forbidden in general.'),
-	(6, 'PvE Speedrun contest announced! Check out the announcement on the forum.'),
 	(7, 'If you need assistance from a Game Master then asking in World chat is not the way to go. Please type /gm and press "Talk to a GM". We will get back to you soon!'),
 	(8, 'Looking for a dungeon group or trying to start your own? /join LookingForGroup'),
 	(9, 'Your experience rate is set to x3 by default. Toggle it using .account xp'),

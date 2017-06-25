@@ -589,6 +589,8 @@ INSERT INTO `creature_ai_texts` (`entry`, `content_default`, `content_loc1`, `co
 	(-768, 'You cannot stop us!', '', '', 'Ihr kÃƒÂ¶nnt uns nicht stoppen!', '', '', '', '', '', 0, 1, 0, 0, '17670'),
 	(-765, 'Death to the interlopers!', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, 0, 0, 0, 0, '18952'),
 	(-764, 'Leave this place!', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, 0, 0, 0, 0, '10940'),
+	(-763, 'Wow, this one is just plain useless. Let me try again.', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, 0, 0, 0, 1, '11582'),
+	(-762, 'Note the weak binding structure of this one. Be sure to finish your incantations or this is what you will end up with.', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, 0, 0, 0, 1, '11582'),
 	(-719, 'YOU WANT DRINK? WE GOT DRINK!', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, 0, 1, 0, 0, '23685'),
 	(-718, 'HEY YOU! DRINK OGRE BREWS! MAKE YOU BIG AND STRONG!', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, 0, 1, 0, 0, '23685'),
 	(-717, 'YOU TRY DA\' BEST, NOW TRY DA\' REST! OGRE BREW!!', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, 0, 1, 0, 0, '23685'),
