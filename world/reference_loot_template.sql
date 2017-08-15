@@ -1,10 +1,17 @@
+-- --------------------------------------------------------
+-- Host:                         78.46.96.217
+-- Server version:               5.5.49-0+deb8u1 - (Debian)
+-- Server OS:                    debian-linux-gnu
+-- HeidiSQL Version:             9.4.0.5145
+-- --------------------------------------------------------
+
 /*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
 /*!40101 SET NAMES utf8 */;
 /*!50503 SET NAMES utf8mb4 */;
 /*!40014 SET @OLD_FOREIGN_KEY_CHECKS=@@FOREIGN_KEY_CHECKS, FOREIGN_KEY_CHECKS=0 */;
 /*!40101 SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='NO_AUTO_VALUE_ON_ZERO' */;
 
-DROP TABLE IF EXISTS `reference_loot_template`;
+-- Dumping structure for table sully_world.reference_loot_template
 CREATE TABLE IF NOT EXISTS `reference_loot_template` (
   `entry` mediumint(8) unsigned NOT NULL DEFAULT '0',
   `item` mediumint(8) unsigned NOT NULL DEFAULT '0',
@@ -18,6 +25,8 @@ CREATE TABLE IF NOT EXISTS `reference_loot_template` (
   PRIMARY KEY (`entry`,`item`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 ROW_FORMAT=FIXED COMMENT='Loot System';
 
+-- Dumping data for table sully_world.reference_loot_template: ~7.471 rows (approximately)
+DELETE FROM `reference_loot_template`;
 /*!40000 ALTER TABLE `reference_loot_template` DISABLE KEYS */;
 INSERT INTO `reference_loot_template` (`entry`, `item`, `ChanceOrQuestChance`, `groupid`, `mincountOrRef`, `maxcount`, `lootcondition`, `condition_value1`, `condition_value2`) VALUES
 	(10000, 8827, 25, 1, 3, 6, 0, 0, 0),
@@ -255,6 +264,7 @@ INSERT INTO `reference_loot_template` (`entry`, `item`, `ChanceOrQuestChance`, `
 	(10006, 31875, 0, 1, 1, 1, 0, 0, 0),
 	(10006, 31876, 0, 1, 1, 1, 0, 0, 0),
 	(10006, 31877, 0, 1, 1, 1, 0, 0, 0),
+	(10006, 33954, 0, 1, 1, 1, 0, 0, 0),
 	(11000, 118, 0.4, 1, 1, 1, 0, 0, 0),
 	(11000, 2455, 0.4, 1, 1, 1, 0, 0, 0),
 	(11000, 6289, 40, 1, 1, 1, 0, 0, 0),
@@ -5857,7 +5867,6 @@ INSERT INTO `reference_loot_template` (`entry`, `item`, `ChanceOrQuestChance`, `
 	(34057, 30664, 0, 1, 1, 1, 0, 0, 0),
 	(34057, 32516, 0, 1, 1, 1, 0, 0, 0),
 	(34057, 33055, 0, 1, 1, 1, 0, 0, 0),
-	(34058, 30054, 0, 1, 1, 1, 0, 0, 0),
 	(34058, 30057, 0, 1, 1, 1, 0, 0, 0),
 	(34058, 30058, 0, 1, 1, 1, 0, 0, 0),
 	(34058, 30059, 0, 1, 1, 1, 0, 0, 0),
@@ -5866,10 +5875,10 @@ INSERT INTO `reference_loot_template` (`entry`, `item`, `ChanceOrQuestChance`, `
 	(34058, 30062, 0, 1, 1, 1, 0, 0, 0),
 	(34058, 30063, 0, 1, 1, 1, 0, 0, 0),
 	(34058, 30064, 0, 1, 1, 1, 0, 0, 0),
-	(34058, 30065, 0, 1, 1, 1, 0, 0, 0),
 	(34058, 30066, 0, 1, 1, 1, 0, 0, 0),
 	(34058, 30067, 0, 1, 1, 1, 0, 0, 0),
 	(34058, 30665, 0, 1, 1, 1, 0, 0, 0),
+	(34058, 33054, 0, 1, 1, 1, 0, 0, 0),
 	(34059, 30239, 0, 1, 1, 1, 0, 0, 0),
 	(34059, 30240, 0, 1, 1, 1, 0, 0, 0),
 	(34059, 30241, 0, 1, 1, 1, 0, 0, 0),
@@ -6243,6 +6252,20 @@ INSERT INTO `reference_loot_template` (`entry`, `item`, `ChanceOrQuestChance`, `
 	(34095, 34428, 0, 1, 1, 1, 0, 0, 0),
 	(34095, 34429, 0, 1, 1, 1, 0, 0, 0),
 	(34095, 34430, 0, 1, 1, 1, 0, 0, 0),
+	(34096, 34241, 0, 1, 1, 1, 0, 0, 0),
+	(34096, 34242, 0, 1, 1, 1, 0, 0, 0),
+	(34096, 34243, 0, 1, 1, 1, 0, 0, 0),
+	(34096, 34244, 0, 1, 1, 1, 0, 0, 0),
+	(34096, 34245, 0, 1, 1, 1, 0, 0, 0),
+	(34096, 34332, 0, 1, 1, 1, 0, 0, 0),
+	(34096, 34333, 0, 1, 1, 1, 0, 0, 0),
+	(34096, 34339, 0, 1, 1, 1, 0, 0, 0),
+	(34096, 34340, 0, 1, 1, 1, 0, 0, 0),
+	(34096, 34341, 0, 1, 1, 1, 0, 0, 0),
+	(34096, 34342, 0, 1, 1, 1, 0, 0, 0),
+	(34096, 34343, 0, 1, 1, 1, 0, 0, 0),
+	(34096, 34344, 0, 1, 1, 1, 0, 0, 0),
+	(34096, 34345, 0, 1, 1, 1, 0, 0, 0),
 	(34097, 35290, 0, 1, 1, 1, 0, 0, 0),
 	(34097, 35291, 0, 1, 1, 1, 0, 0, 0),
 	(34097, 35292, 0, 1, 1, 1, 0, 0, 0),
@@ -6731,6 +6754,7 @@ INSERT INTO `reference_loot_template` (`entry`, `item`, `ChanceOrQuestChance`, `
 	(50019, 28255, 0, 1, 1, 1, 0, 0, 0),
 	(50019, 28256, 0, 1, 1, 1, 0, 0, 0),
 	(50019, 28257, 0, 1, 1, 1, 0, 0, 0),
+	(50019, 35582, 10, 0, 1, 1, 0, 0, 0),
 	(50020, 22920, 10, 0, 1, 1, 7, 171, 1),
 	(50020, 28258, 0, 1, 1, 1, 0, 0, 0),
 	(50020, 28259, 0, 1, 1, 1, 0, 0, 0),

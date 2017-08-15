@@ -1,10 +1,17 @@
+-- --------------------------------------------------------
+-- Host:                         78.46.96.217
+-- Server version:               5.5.49-0+deb8u1 - (Debian)
+-- Server OS:                    debian-linux-gnu
+-- HeidiSQL Version:             9.4.0.5145
+-- --------------------------------------------------------
+
 /*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
 /*!40101 SET NAMES utf8 */;
 /*!50503 SET NAMES utf8mb4 */;
 /*!40014 SET @OLD_FOREIGN_KEY_CHECKS=@@FOREIGN_KEY_CHECKS, FOREIGN_KEY_CHECKS=0 */;
 /*!40101 SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='NO_AUTO_VALUE_ON_ZERO' */;
 
-DROP TABLE IF EXISTS `waypoint_scripts`;
+-- Dumping structure for table sully_world.waypoint_scripts
 CREATE TABLE IF NOT EXISTS `waypoint_scripts` (
   `id` int(11) unsigned NOT NULL DEFAULT '0',
   `delay` int(11) unsigned NOT NULL DEFAULT '0',
@@ -21,6 +28,8 @@ CREATE TABLE IF NOT EXISTS `waypoint_scripts` (
   PRIMARY KEY (`guid`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
+-- Dumping data for table sully_world.waypoint_scripts: ~786 rows (approximately)
+DELETE FROM `waypoint_scripts`;
 /*!40000 ALTER TABLE `waypoint_scripts` DISABLE KEYS */;
 INSERT INTO `waypoint_scripts` (`id`, `delay`, `command`, `datalong`, `datalong2`, `dataint`, `x`, `y`, `z`, `o`, `guid`, `comment`) VALUES
 	(1, 0, 2, 169, 11, 0, 0, 0, 0, 0, 1, NULL),
@@ -34,8 +43,8 @@ INSERT INTO `waypoint_scripts` (`id`, `delay`, `command`, `datalong`, `datalong2
 	(9, 0, 2, 169, 1, 0, 0, 0, 0, 0, 9, NULL),
 	(10, 0, 2, 169, 1, 0, 0, 0, 0, 0, 10, NULL),
 	(11, 0, 2, 169, 13, 0, 0, 0, 0, 0, 11, NULL),
-	(12, 0, 2, 169, 13, 0, 0, 0, 0, 0, 12, NULL),
-	(13, 0, 2, 169, 13, 0, 0, 0, 0, 0, 13, NULL),
+	(12, 0, 2, 159, 0, 0, 0, 0, 0, 0, 12, 'Creature - Set UNIT_STAND_STATE_STAND'),
+	(13, 0, 2, 159, 1, 0, 0, 0, 0, 0, 13, 'Creature - Set UNIT_STAND_STATE_SIT'),
 	(14, 0, 2, 169, 16, 0, 0, 0, 0, 0, 14, NULL),
 	(15, 0, 2, 169, 16, 0, 0, 0, 0, 0, 15, NULL),
 	(16, 0, 2, 169, 16, 0, 0, 0, 0, 0, 16, NULL),
@@ -430,8 +439,22 @@ INSERT INTO `waypoint_scripts` (`id`, `delay`, `command`, `datalong`, `datalong2
 	(1376, 0, 2, 169, 376, 0, 0, 0, 0, 0, 1376, 'Creature - Set Emote STATE_READYBOW'),
 	(1476, 0, 2, 169, 476, 0, 0, 0, 0, 0, 1476, 'ONESHOT_CRY (JAINA PROUDMOORE ONLY)'),
 	(1897701, 0, 15, 7741, 1, 0, 0, 0, 0, 0, 1897701, 'Felguard Destroyer - Cast Summoned Demon'),
+	(2104601, 2, 2, 159, 8, 0, 0, 0, 0, 0, 2104600, 'Boulder\'mok Brute - Set UNIT_STAND_STATE_KNEEL'),
+	(2104601, 22, 2, 159, 0, 0, 0, 0, 0, 0, 2104601, 'Boulder\'mok Brute - Set UNIT_STAND_STATE_STAND'),
+	(2104602, 2, 2, 159, 1, 0, 0, 0, 0, 0, 2104602, 'Boulder\'mok Brute - Set UNIT_STAND_STATE_SIT'),
+	(2104602, 52, 2, 159, 0, 0, 0, 0, 0, 0, 2104603, 'Boulder\'mok Brute - Set UNIT_STAND_STATE_STAND'),
+	(2104701, 2, 2, 159, 1, 0, 0, 0, 0, 0, 2104700, 'Boulder\'mok Shaman - Set UNIT_STAND_STATE_SIT'),
+	(2104701, 52, 2, 159, 0, 0, 0, 0, 0, 0, 2104701, 'Boulder\'mok Shaman - Set UNIT_STAND_STATE_STAND'),
+	(2104702, 2, 2, 159, 8, 0, 0, 0, 0, 0, 2104702, 'Boulder\'mok Shaman - Set UNIT_STAND_STATE_KNEEL'),
+	(2104702, 22, 2, 159, 0, 0, 0, 0, 0, 0, 2104703, 'Boulder\'mok Shaman - Set UNIT_STAND_STATE_STAND'),
+	(2104703, 5, 2, 169, 1, 0, 0, 0, 0, 0, 2104704, 'Boulder\'mok Shaman - ONESHOT_TALK'),
+	(2104703, 15, 2, 169, 1, 0, 0, 0, 0, 0, 2104705, 'Boulder\'mok Shaman - ONESHOT_TALK'),
+	(2104703, 25, 2, 169, 1, 0, 0, 0, 0, 0, 2104706, 'Boulder\'mok Shaman - ONESHOT_TALK'),
 	(2130901, 1, 15, 36578, 0, 0, 0, 0, 0, 0, 2130901, 'cast 36578 on buddy'),
 	(2130901, 5, 15, 6273, 0, 0, 0, 0, 0, 0, 2130902, 'cast 6273 on X'),
+	(2145301, 2, 15, 37067, 4, 21455, 20, 0, 0, 0, 2145301, 'Ashtongue Shaman - Cast Bloodlust on 21455'),
+	(2145302, 2, 15, 37067, 4, 21455, 20, 0, 0, 0, 2145302, 'Ashtongue Shaman - Cast Bloodlust on 21455'),
+	(2145302, 4, 0, 0, 0, 2000005470, 0, 0, 0, 0, 2145303, 'Ashtongue Shaman - Text'),
 	(2150001, 1, 1, 1, 0, 0, 0, 0, 0, 0, 2150001, 'Morgroron Talk Emote'),
 	(2150002, 1, 30, 0, 0, 0, 0, 0, 0, 2.79253, 2150002, 'Morgroron None Emote'),
 	(2150002, 2, 1, 1, 0, 0, 0, 0, 0, 0, 2150003, 'Morgroron Set Field'),

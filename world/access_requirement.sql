@@ -1,10 +1,17 @@
+-- --------------------------------------------------------
+-- Host:                         78.46.96.217
+-- Server version:               5.5.49-0+deb8u1 - (Debian)
+-- Server OS:                    debian-linux-gnu
+-- HeidiSQL Version:             9.4.0.5145
+-- --------------------------------------------------------
+
 /*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
 /*!40101 SET NAMES utf8 */;
 /*!50503 SET NAMES utf8mb4 */;
 /*!40014 SET @OLD_FOREIGN_KEY_CHECKS=@@FOREIGN_KEY_CHECKS, FOREIGN_KEY_CHECKS=0 */;
 /*!40101 SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='NO_AUTO_VALUE_ON_ZERO' */;
 
-DROP TABLE IF EXISTS `access_requirement`;
+-- Dumping structure for table sully_world.access_requirement
 CREATE TABLE IF NOT EXISTS `access_requirement` (
   `id` bigint(20) unsigned NOT NULL COMMENT 'Identifier',
   `level_min` tinyint(3) unsigned NOT NULL DEFAULT '0',
@@ -23,6 +30,8 @@ CREATE TABLE IF NOT EXISTS `access_requirement` (
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 ROW_FORMAT=DYNAMIC COMMENT='Access Requirements';
 
+-- Dumping data for table sully_world.access_requirement: ~53 rows (approximately)
+DELETE FROM `access_requirement`;
 /*!40000 ALTER TABLE `access_requirement` DISABLE KEYS */;
 INSERT INTO `access_requirement` (`id`, `level_min`, `level_max`, `item`, `item2`, `heroic_key`, `heroic_key2`, `quest_done`, `quest_failed_text`, `heroic_quest_done`, `heroic_quest_failed_text`, `aura_id`, `missing_aura_text`, `comment`) VALUES
 	(1, 10, 0, 0, 0, 0, 0, 0, NULL, 0, NULL, 0, NULL, 'instance Shadowfang Keep (33)'),
@@ -51,9 +60,9 @@ INSERT INTO `access_requirement` (`id`, `level_min`, `level_max`, `item`, `item2
 	(24, 60, 0, 0, 0, 0, 0, 0, NULL, 0, NULL, 0, NULL, 'instance Blackwing Lair (469)'),
 	(25, 50, 0, 0, 0, 0, 0, 0, NULL, 0, NULL, 0, NULL, 'instance Ruins of Ahn\'Qiraj (509)'),
 	(26, 50, 0, 0, 0, 0, 0, 0, NULL, 0, NULL, 0, NULL, 'instance Temple of Ahn\'Qiraj (531)'),
-	(27, 70, 0, 24490, 0, 0, 0, 9837, 'To enter raid instance you myst have completed quest: Return to Khadgar and you have to possess The Master\'s Key', 0, NULL, 0, NULL, 'instance Karazhan (532)'),
+	(27, 70, 0, 0, 0, 0, 0, 0, 'To enter raid instance you myst have completed quest: Return to Khadgar and you have to possess The Master\'s Key', 0, NULL, 0, NULL, 'instance Karazhan (532)'),
 	(28, 51, 0, 0, 0, 0, 0, 9378, 'To enter raid instance you must have completed quest: The Dread Citadel - Naxxramas', 0, NULL, 0, NULL, 'instance Naxxramas (533)'),
-	(29, 71, 0, 0, 0, 0, 0, 10445, 'To enter raid instance you must have completed quest: The Vials of Eternity', 0, NULL, 0, NULL, 'instance Hyjal Summit (534)'),
+	(29, 70, 0, 0, 0, 0, 0, 0, 'To enter raid instance you must have completed quest: The Vials of Eternity', 0, NULL, 0, NULL, 'instance Hyjal Summit (534)'),
 	(30, 65, 0, 0, 0, 30637, 30622, 0, NULL, 0, NULL, 0, NULL, 'instance The Shattered Halls (540)'),
 	(31, 55, 0, 0, 0, 30637, 30622, 0, NULL, 0, NULL, 0, NULL, 'instance The Blood Furnace (542)'),
 	(32, 55, 0, 0, 0, 30637, 30622, 0, NULL, 0, NULL, 0, NULL, 'instance Hellfire Ramparts (543)'),
@@ -61,8 +70,8 @@ INSERT INTO `access_requirement` (`id`, `level_min`, `level_max`, `item`, `item2
 	(34, 65, 0, 0, 0, 30623, 0, 0, NULL, 0, NULL, 0, NULL, 'instance The Steamvault (545)'),
 	(35, 61, 0, 0, 0, 30623, 0, 0, NULL, 0, NULL, 0, NULL, 'instance The Underbog (546)'),
 	(36, 61, 0, 0, 0, 30623, 0, 0, NULL, 0, NULL, 0, NULL, 'instance The Slave Pens (547)'),
-	(37, 70, 0, 0, 0, 0, 0, 10901, 'To enter raid instance you must have completed quest: The Cudgel of Kar\'desh', 0, NULL, 0, NULL, 'instance Serpentshrine Cavern (548)'),
-	(38, 70, 0, 0, 0, 0, 0, 10888, 'To enter raid instance you must have completed quest: Trial of the Naaru: Magtheridon', 0, NULL, 0, NULL, 'instance The Eye (550)'),
+	(37, 70, 0, 0, 0, 0, 0, 0, 'To enter raid instance you must have completed quest: The Cudgel of Kar\'desh', 0, NULL, 0, NULL, 'instance Serpentshrine Cavern (548)'),
+	(38, 70, 0, 0, 0, 0, 0, 0, 'To enter raid instance you must have completed quest: Trial of the Naaru: Magtheridon', 0, NULL, 0, NULL, 'instance The Eye (550)'),
 	(39, 68, 0, 0, 0, 30634, 0, 0, NULL, 0, NULL, 0, NULL, 'instance The Arcatraz (552)'),
 	(40, 68, 0, 0, 0, 30634, 0, 0, NULL, 0, NULL, 0, NULL, 'instance The Botanica (553)'),
 	(41, 68, 0, 0, 0, 30634, 0, 0, NULL, 0, NULL, 0, NULL, 'instance The Mechanar (554)'),
@@ -71,11 +80,11 @@ INSERT INTO `access_requirement` (`id`, `level_min`, `level_max`, `item`, `item2
 	(44, 61, 0, 0, 0, 30633, 0, 0, NULL, 0, NULL, 0, NULL, 'instance Mana-Tombs (557)'),
 	(45, 61, 0, 0, 0, 30633, 0, 0, NULL, 0, NULL, 0, NULL, 'instance Auchenai Crypts (558)'),
 	(46, 66, 0, 0, 0, 30635, 0, 10277, NULL, 10277, NULL, 0, NULL, 'instance Old Hillsbrad Foothills (560)'),
-	(47, 71, 0, 32649, 32757, 0, 0, 0, 'To enter raid instance you must have completed quest: A Distraction for Akama', 0, NULL, 0, NULL, 'instance Black Temple (564)'),
+	(47, 70, 0, 0, 0, 0, 0, 0, 'To enter raid instance you must have completed quest: A Distraction for Akama', 0, NULL, 0, NULL, 'instance Black Temple (564)'),
 	(48, 70, 0, 0, 0, 0, 0, 0, NULL, 0, NULL, 0, NULL, 'instance Gruul\'s Lair (565)'),
-	(49, 71, 0, 0, 0, 0, 0, 0, NULL, 0, NULL, 0, NULL, 'instance Zul\'Aman (568)'),
-	(50, 71, 0, 0, 0, 0, 0, 0, '\'NON SHELL PASS\'. Be patient! Shattered Sun Offensive mages are trying to unseal the main entrance!', 0, NULL, 0, NULL, 'instance Sunwell Plateau (580)'),
-	(51, 71, 0, 0, 0, 0, 0, 0, NULL, 11492, 'Heroic Difficulty requires completion of the "Hard to Kill" quest.', 0, NULL, 'instance Magisters\' Terrace (585)'),
+	(49, 70, 0, 0, 0, 0, 0, 0, NULL, 0, NULL, 0, NULL, 'instance Zul\'Aman (568)'),
+	(50, 70, 0, 0, 0, 0, 0, 0, '\'NON SHELL PASS\'. Be patient! Shattered Sun Offensive mages are trying to unseal the main entrance!', 0, NULL, 0, NULL, 'instance Sunwell Plateau (580)'),
+	(51, 70, 0, 0, 0, 0, 0, 0, NULL, 11492, 'Heroic Difficulty requires completion of the "Hard to Kill" quest.', 0, NULL, 'instance Magisters\' Terrace (585)'),
 	(52, 58, 0, 0, 0, 0, 0, 0, NULL, 0, NULL, 0, NULL, 'Dark Portal'),
 	(53, 60, 0, 0, 0, 0, 0, 7487, NULL, 0, NULL, 0, NULL, 'Molten Core');
 /*!40000 ALTER TABLE `access_requirement` ENABLE KEYS */;

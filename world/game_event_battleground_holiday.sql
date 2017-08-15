@@ -1,16 +1,25 @@
+-- --------------------------------------------------------
+-- Host:                         78.46.96.217
+-- Server version:               5.5.49-0+deb8u1 - (Debian)
+-- Server OS:                    debian-linux-gnu
+-- HeidiSQL Version:             9.4.0.5145
+-- --------------------------------------------------------
+
 /*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
 /*!40101 SET NAMES utf8 */;
 /*!50503 SET NAMES utf8mb4 */;
 /*!40014 SET @OLD_FOREIGN_KEY_CHECKS=@@FOREIGN_KEY_CHECKS, FOREIGN_KEY_CHECKS=0 */;
 /*!40101 SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='NO_AUTO_VALUE_ON_ZERO' */;
 
-DROP TABLE IF EXISTS `game_event_battleground_holiday`;
+-- Dumping structure for table sully_world.game_event_battleground_holiday
 CREATE TABLE IF NOT EXISTS `game_event_battleground_holiday` (
   `event` int(10) unsigned NOT NULL,
   `bgflag` int(10) unsigned NOT NULL DEFAULT '0',
   PRIMARY KEY (`event`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
+-- Dumping data for table sully_world.game_event_battleground_holiday: ~4 rows (approximately)
+DELETE FROM `game_event_battleground_holiday`;
 /*!40000 ALTER TABLE `game_event_battleground_holiday` DISABLE KEYS */;
 INSERT INTO `game_event_battleground_holiday` (`event`, `bgflag`) VALUES
 	(18, 2),

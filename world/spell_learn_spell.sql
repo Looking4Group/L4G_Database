@@ -1,16 +1,25 @@
+-- --------------------------------------------------------
+-- Host:                         78.46.96.217
+-- Server version:               5.5.49-0+deb8u1 - (Debian)
+-- Server OS:                    debian-linux-gnu
+-- HeidiSQL Version:             9.4.0.5145
+-- --------------------------------------------------------
+
 /*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
 /*!40101 SET NAMES utf8 */;
 /*!50503 SET NAMES utf8mb4 */;
 /*!40014 SET @OLD_FOREIGN_KEY_CHECKS=@@FOREIGN_KEY_CHECKS, FOREIGN_KEY_CHECKS=0 */;
 /*!40101 SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='NO_AUTO_VALUE_ON_ZERO' */;
 
-DROP TABLE IF EXISTS `spell_learn_spell`;
+-- Dumping structure for table sully_world.spell_learn_spell
 CREATE TABLE IF NOT EXISTS `spell_learn_spell` (
   `entry` smallint(5) unsigned NOT NULL DEFAULT '0',
   `SpellID` smallint(5) unsigned NOT NULL DEFAULT '0',
   PRIMARY KEY (`entry`,`SpellID`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 ROW_FORMAT=FIXED COMMENT='Item System';
 
+-- Dumping data for table sully_world.spell_learn_spell: ~14 rows (approximately)
+DELETE FROM `spell_learn_spell`;
 /*!40000 ALTER TABLE `spell_learn_spell` DISABLE KEYS */;
 INSERT INTO `spell_learn_spell` (`entry`, `SpellID`) VALUES
 	(2842, 8681),

@@ -1,10 +1,17 @@
+-- --------------------------------------------------------
+-- Host:                         78.46.96.217
+-- Server version:               5.5.49-0+deb8u1 - (Debian)
+-- Server OS:                    debian-linux-gnu
+-- HeidiSQL Version:             9.4.0.5145
+-- --------------------------------------------------------
+
 /*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
 /*!40101 SET NAMES utf8 */;
 /*!50503 SET NAMES utf8mb4 */;
 /*!40014 SET @OLD_FOREIGN_KEY_CHECKS=@@FOREIGN_KEY_CHECKS, FOREIGN_KEY_CHECKS=0 */;
 /*!40101 SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='NO_AUTO_VALUE_ON_ZERO' */;
 
-DROP TABLE IF EXISTS `version`;
+-- Dumping structure for table sully_world.version
 CREATE TABLE IF NOT EXISTS `version` (
   `core_version` varchar(120) DEFAULT NULL COMMENT 'Core revision dumped at startup.',
   `core_revision` bigint(20) unsigned DEFAULT NULL,
@@ -12,9 +19,11 @@ CREATE TABLE IF NOT EXISTS `version` (
   `script_version` varchar(120) DEFAULT NULL COMMENT 'Version of scripts DB.'
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 CHECKSUM=1 DELAY_KEY_WRITE=1 ROW_FORMAT=FIXED COMMENT='Version Notes';
 
+-- Dumping data for table sully_world.version: ~1 rows (approximately)
+DELETE FROM `version`;
 /*!40000 ALTER TABLE `version` DISABLE KEYS */;
 INSERT INTO `version` (`core_version`, `core_revision`, `db_version`, `script_version`) VALUES
-	('Looking4GroupCore Rev: 3eeb6fba6f8b58265c189e730a59d331aed0a252', 3, 'TDB 0.0.1 (6) for Trinity rev. 678', 'ACID 0.1.0 - Unsupported 2.4.3 Client Version');
+	('Looking4GroupCore Rev: 05ba5a25454cd1ee793501501abebeb632b23c30', 5, 'TDB 0.0.1 (6) for Trinity rev. 678', 'ACID 0.1.0 - Unsupported 2.4.3 Client Version');
 /*!40000 ALTER TABLE `version` ENABLE KEYS */;
 
 /*!40101 SET SQL_MODE=IFNULL(@OLD_SQL_MODE, '') */;

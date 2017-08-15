@@ -1,10 +1,17 @@
+-- --------------------------------------------------------
+-- Host:                         78.46.96.217
+-- Server version:               5.5.49-0+deb8u1 - (Debian)
+-- Server OS:                    debian-linux-gnu
+-- HeidiSQL Version:             9.4.0.5145
+-- --------------------------------------------------------
+
 /*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
 /*!40101 SET NAMES utf8 */;
 /*!50503 SET NAMES utf8mb4 */;
 /*!40014 SET @OLD_FOREIGN_KEY_CHECKS=@@FOREIGN_KEY_CHECKS, FOREIGN_KEY_CHECKS=0 */;
 /*!40101 SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='NO_AUTO_VALUE_ON_ZERO' */;
 
-DROP TABLE IF EXISTS `creature_onkill_reputation`;
+-- Dumping structure for table sully_world.creature_onkill_reputation
 CREATE TABLE IF NOT EXISTS `creature_onkill_reputation` (
   `creature_id` mediumint(8) unsigned NOT NULL DEFAULT '0' COMMENT 'Creature Identifier',
   `RewOnKillRepFaction1` smallint(6) NOT NULL DEFAULT '0',
@@ -19,6 +26,8 @@ CREATE TABLE IF NOT EXISTS `creature_onkill_reputation` (
   PRIMARY KEY (`creature_id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 ROW_FORMAT=DYNAMIC COMMENT='Creature OnKill Reputation gain';
 
+-- Dumping data for table sully_world.creature_onkill_reputation: ~1.643 rows (approximately)
+DELETE FROM `creature_onkill_reputation`;
 /*!40000 ALTER TABLE `creature_onkill_reputation` DISABLE KEYS */;
 INSERT INTO `creature_onkill_reputation` (`creature_id`, `RewOnKillRepFaction1`, `RewOnKillRepFaction2`, `MaxStanding1`, `IsTeamAward1`, `RewOnKillRepValue1`, `MaxStanding2`, `IsTeamAward2`, `RewOnKillRepValue2`, `TeamDependent`) VALUES
 	(674, 21, 0, 5, 0, 25, 0, 0, 0, 0),
@@ -1417,12 +1426,18 @@ INSERT INTO `creature_onkill_reputation` (`creature_id`, `RewOnKillRepFaction1`,
 	(23436, 1012, 0, 7, 0, 0, 0, 0, 0, 0),
 	(24476, 349, 70, 5, 0, 5, 7, 0, -50, 0),
 	(24477, 349, 70, 5, 0, 5, 7, 0, -50, 0),
+	(24553, 1077, 0, 7, 0, 13, 0, 0, 0, 0),
+	(24555, 1077, 0, 7, 0, 13, 0, 0, 0, 0),
+	(24556, 1077, 0, 7, 0, 13, 0, 0, 0, 0),
+	(24557, 1077, 0, 7, 0, 12, 0, 0, 0, 0),
+	(24559, 1077, 0, 7, 0, 13, 0, 0, 0, 0),
 	(24560, 1077, 0, 6, 0, 120, 0, 0, 0, 0),
+	(24561, 1077, 0, 7, 0, 12, 0, 0, 0, 0),
 	(24683, 1077, 0, 7, 0, 13, 0, 0, 0, 0),
 	(24684, 1077, 0, 7, 0, 13, 0, 0, 0, 0),
 	(24685, 1077, 0, 7, 0, 13, 0, 0, 0, 0),
 	(24686, 1077, 0, 7, 0, 13, 0, 0, 0, 0),
-	(24687, 1077, 0, 7, 0, 13, 0, 0, 0, 0),
+	(24687, 1077, 0, 7, 0, 12, 0, 0, 0, 0),
 	(24688, 1077, 0, 7, 0, 9, 0, 0, 0, 0),
 	(24689, 1077, 0, 7, 0, 9, 0, 0, 0, 0),
 	(24690, 1077, 0, 7, 0, 9, 0, 0, 0, 0),
@@ -1431,26 +1446,33 @@ INSERT INTO `creature_onkill_reputation` (`creature_id`, `RewOnKillRepFaction1`,
 	(24698, 1077, 0, 7, 0, 13, 0, 0, 0, 0),
 	(24723, 1077, 0, 6, 0, 120, 0, 0, 0, 0),
 	(24744, 1077, 0, 6, 0, 120, 0, 0, 0, 0),
-	(24761, 1077, 0, 6, 0, 1, 0, 0, 0, 0),
+	(24761, 1077, 0, 5, 0, 1, 0, 0, 0, 0),
 	(24762, 1077, 0, 7, 0, 12, 0, 0, 0, 0),
 	(24777, 1077, 0, 7, 0, 24, 0, 0, 0, 0),
 	(24857, 1077, 0, 7, 0, 250, 0, 0, 0, 0),
+	(25541, 1077, 0, 7, 0, 15, 0, 0, 0, 0),
 	(25545, 1077, 0, 6, 0, 2, 0, 0, 0, 0),
 	(25547, 1077, 0, 7, 0, 16, 0, 0, 0, 0),
 	(25551, 1077, 0, 7, 0, 16, 0, 0, 0, 0),
+	(25555, 1077, 0, 7, 0, 15, 0, 0, 0, 0),
+	(25556, 1077, 0, 7, 0, 15, 0, 0, 0, 0),
 	(25560, 1077, 0, 6, 0, 250, 0, 0, 0, 0),
 	(25562, 1077, 0, 6, 0, 250, 0, 0, 0, 0),
 	(25563, 1077, 0, 7, 0, 16, 0, 0, 0, 0),
 	(25565, 1077, 0, 7, 0, 16, 0, 0, 0, 0),
+	(25567, 1077, 0, 7, 0, 15, 0, 0, 0, 0),
 	(25568, 1077, 0, 7, 0, 16, 0, 0, 0, 0),
 	(25569, 1077, 0, 7, 0, 16, 0, 0, 0, 0),
-	(25570, 1077, 0, 7, 0, 16, 0, 0, 0, 0),
+	(25570, 1077, 0, 7, 0, 15, 0, 0, 0, 0),
 	(25571, 1077, 0, 7, 0, 30, 0, 0, 0, 0),
 	(25572, 1077, 0, 7, 0, 16, 0, 0, 0, 0),
 	(25573, 1077, 0, 6, 0, 250, 0, 0, 0, 0),
+	(25574, 1077, 0, 7, 0, 15, 0, 0, 0, 0),
 	(25575, 1077, 0, 7, 0, 12, 0, 0, 0, 0),
 	(25576, 1077, 0, 7, 0, 12, 0, 0, 0, 0),
-	(25577, 1077, 0, 7, 0, 12, 0, 0, 0, 0);
+	(25577, 1077, 0, 7, 0, 12, 0, 0, 0, 0),
+	(25578, 1077, 0, 7, 0, 15, 0, 0, 0, 0),
+	(25579, 1077, 0, 7, 0, 15, 0, 0, 0, 0);
 /*!40000 ALTER TABLE `creature_onkill_reputation` ENABLE KEYS */;
 
 /*!40101 SET SQL_MODE=IFNULL(@OLD_SQL_MODE, '') */;

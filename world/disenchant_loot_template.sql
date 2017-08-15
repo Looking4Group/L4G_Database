@@ -1,10 +1,17 @@
+-- --------------------------------------------------------
+-- Host:                         78.46.96.217
+-- Server version:               5.5.49-0+deb8u1 - (Debian)
+-- Server OS:                    debian-linux-gnu
+-- HeidiSQL Version:             9.4.0.5145
+-- --------------------------------------------------------
+
 /*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
 /*!40101 SET NAMES utf8 */;
 /*!50503 SET NAMES utf8mb4 */;
 /*!40014 SET @OLD_FOREIGN_KEY_CHECKS=@@FOREIGN_KEY_CHECKS, FOREIGN_KEY_CHECKS=0 */;
 /*!40101 SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='NO_AUTO_VALUE_ON_ZERO' */;
 
-DROP TABLE IF EXISTS `disenchant_loot_template`;
+-- Dumping structure for table sully_world.disenchant_loot_template
 CREATE TABLE IF NOT EXISTS `disenchant_loot_template` (
   `entry` mediumint(8) unsigned NOT NULL DEFAULT '0' COMMENT 'Recommended id selection: item_level*100 + item_quality',
   `item` mediumint(8) unsigned NOT NULL DEFAULT '0',
@@ -18,6 +25,8 @@ CREATE TABLE IF NOT EXISTS `disenchant_loot_template` (
   PRIMARY KEY (`entry`,`item`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 ROW_FORMAT=FIXED COMMENT='Loot System';
 
+-- Dumping data for table sully_world.disenchant_loot_template: ~102 rows (approximately)
+DELETE FROM `disenchant_loot_template`;
 /*!40000 ALTER TABLE `disenchant_loot_template` DISABLE KEYS */;
 INSERT INTO `disenchant_loot_template` (`entry`, `item`, `ChanceOrQuestChance`, `groupid`, `mincountOrRef`, `maxcount`, `lootcondition`, `condition_value1`, `condition_value2`) VALUES
 	(1, 10938, 20, 1, 1, 2, 0, 0, 0),

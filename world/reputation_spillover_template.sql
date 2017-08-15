@@ -1,10 +1,17 @@
+-- --------------------------------------------------------
+-- Host:                         78.46.96.217
+-- Server version:               5.5.49-0+deb8u1 - (Debian)
+-- Server OS:                    debian-linux-gnu
+-- HeidiSQL Version:             9.4.0.5145
+-- --------------------------------------------------------
+
 /*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
 /*!40101 SET NAMES utf8 */;
 /*!50503 SET NAMES utf8mb4 */;
 /*!40014 SET @OLD_FOREIGN_KEY_CHECKS=@@FOREIGN_KEY_CHECKS, FOREIGN_KEY_CHECKS=0 */;
 /*!40101 SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='NO_AUTO_VALUE_ON_ZERO' */;
 
-DROP TABLE IF EXISTS `reputation_spillover_template`;
+-- Dumping structure for table sully_world.reputation_spillover_template
 CREATE TABLE IF NOT EXISTS `reputation_spillover_template` (
   `faction` smallint(6) unsigned NOT NULL DEFAULT '0' COMMENT 'faction entry',
   `faction1` smallint(6) unsigned NOT NULL DEFAULT '0' COMMENT 'faction to give \nspillover for',
@@ -22,6 +29,8 @@ CREATE TABLE IF NOT EXISTS `reputation_spillover_template` (
   PRIMARY KEY (`faction`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 ROW_FORMAT=DYNAMIC COMMENT='Reputation spillover reputation gain';
 
+-- Dumping data for table sully_world.reputation_spillover_template: ~16 rows (approximately)
+DELETE FROM `reputation_spillover_template`;
 /*!40000 ALTER TABLE `reputation_spillover_template` DISABLE KEYS */;
 INSERT INTO `reputation_spillover_template` (`faction`, `faction1`, `rate_1`, `rank_1`, `faction2`, `rate_2`, `rank_2`, `faction3`, `rate_3`, `rank_3`, `faction4`, `rate_4`, `rank_4`) VALUES
 	(21, 369, 0.5, 7, 470, 0.5, 7, 577, 0.5, 7, 0, 0, 0),

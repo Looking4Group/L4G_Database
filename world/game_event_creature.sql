@@ -1,16 +1,25 @@
+-- --------------------------------------------------------
+-- Host:                         78.46.96.217
+-- Server version:               5.5.49-0+deb8u1 - (Debian)
+-- Server OS:                    debian-linux-gnu
+-- HeidiSQL Version:             9.4.0.5145
+-- --------------------------------------------------------
+
 /*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
 /*!40101 SET NAMES utf8 */;
 /*!50503 SET NAMES utf8mb4 */;
 /*!40014 SET @OLD_FOREIGN_KEY_CHECKS=@@FOREIGN_KEY_CHECKS, FOREIGN_KEY_CHECKS=0 */;
 /*!40101 SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='NO_AUTO_VALUE_ON_ZERO' */;
 
-DROP TABLE IF EXISTS `game_event_creature`;
+-- Dumping structure for table sully_world.game_event_creature
 CREATE TABLE IF NOT EXISTS `game_event_creature` (
   `guid` int(10) unsigned NOT NULL,
   `event` smallint(6) NOT NULL DEFAULT '0' COMMENT 'Put negatives values to remove during event',
   PRIMARY KEY (`guid`,`event`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
+-- Dumping data for table sully_world.game_event_creature: ~2.615 rows (approximately)
+DELETE FROM `game_event_creature`;
 /*!40000 ALTER TABLE `game_event_creature` DISABLE KEYS */;
 INSERT INTO `game_event_creature` (`guid`, `event`) VALUES
 	(113, 18),
@@ -158,8 +167,6 @@ INSERT INTO `game_event_creature` (`guid`, `event`) VALUES
 	(54430, 5),
 	(54431, 5),
 	(54432, 5),
-	(54687, 15),
-	(54688, 15),
 	(54742, 14),
 	(55089, 3),
 	(56315, 36),
@@ -888,6 +895,8 @@ INSERT INTO `game_event_creature` (`guid`, `event`) VALUES
 	(93762, 1),
 	(93763, 1),
 	(93913, 1),
+	(93946, 49),
+	(93948, 49),
 	(93950, 36),
 	(93951, 36),
 	(93952, 36),
@@ -2483,6 +2492,8 @@ INSERT INTO `game_event_creature` (`guid`, `event`) VALUES
 	(96584, 33),
 	(96585, 33),
 	(96586, 33),
+	(96600, 35),
+	(96600, 36),
 	(96864, 35),
 	(97062, 35),
 	(97062, 36),
@@ -3291,6 +3302,9 @@ INSERT INTO `game_event_creature` (`guid`, `event`) VALUES
 	(245627, 1),
 	(353884, 42),
 	(356613, 38),
+	(359460, 15),
+	(359462, 15),
+	(359464, 15),
 	(363220, 35),
 	(363220, 37),
 	(363529, 35),
@@ -3350,7 +3364,6 @@ INSERT INTO `game_event_creature` (`guid`, `event`) VALUES
 	(667022, 122),
 	(667023, 123),
 	(683864, 43),
-	(1189204, 15),
 	(1517096, 40),
 	(10000001, 138),
 	(10000010, 26),

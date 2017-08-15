@@ -1,10 +1,17 @@
+-- --------------------------------------------------------
+-- Host:                         78.46.96.217
+-- Server version:               5.5.49-0+deb8u1 - (Debian)
+-- Server OS:                    debian-linux-gnu
+-- HeidiSQL Version:             9.4.0.5145
+-- --------------------------------------------------------
+
 /*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
 /*!40101 SET NAMES utf8 */;
 /*!50503 SET NAMES utf8mb4 */;
 /*!40014 SET @OLD_FOREIGN_KEY_CHECKS=@@FOREIGN_KEY_CHECKS, FOREIGN_KEY_CHECKS=0 */;
 /*!40101 SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='NO_AUTO_VALUE_ON_ZERO' */;
 
-DROP TABLE IF EXISTS `item_loot_template`;
+-- Dumping structure for table sully_world.item_loot_template
 CREATE TABLE IF NOT EXISTS `item_loot_template` (
   `entry` mediumint(8) unsigned NOT NULL DEFAULT '0',
   `item` mediumint(8) unsigned NOT NULL DEFAULT '0',
@@ -18,6 +25,8 @@ CREATE TABLE IF NOT EXISTS `item_loot_template` (
   PRIMARY KEY (`entry`,`item`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 ROW_FORMAT=FIXED COMMENT='Loot System';
 
+-- Dumping data for table sully_world.item_loot_template: ~4.803 rows (approximately)
+DELETE FROM `item_loot_template`;
 /*!40000 ALTER TABLE `item_loot_template` DISABLE KEYS */;
 INSERT INTO `item_loot_template` (`entry`, `item`, `ChanceOrQuestChance`, `groupid`, `mincountOrRef`, `maxcount`, `lootcondition`, `condition_value1`, `condition_value2`) VALUES
 	(4632, 789, 0.3, 0, 1, 1, 0, 0, 0),
@@ -3519,6 +3528,7 @@ INSERT INTO `item_loot_template` (`entry`, `item`, `ChanceOrQuestChance`, `group
 	(20708, 9745, 0.2, 0, 1, 1, 0, 0, 0),
 	(20708, 9752, 0.2, 0, 1, 1, 0, 0, 0),
 	(20708, 9754, 0.3, 0, 1, 1, 0, 0, 0),
+	(20708, 34109, 5, 0, 1, 1, 0, 0, 0),
 	(20766, 765, 5.8, 0, 1, 1, 0, 0, 0),
 	(20766, 785, 0.6, 0, 1, 1, 0, 0, 0),
 	(20766, 929, 5.2, 0, 2, 4, 0, 0, 0),
@@ -3642,6 +3652,7 @@ INSERT INTO `item_loot_template` (`entry`, `item`, `ChanceOrQuestChance`, `group
 	(21113, 9812, 0.3, 0, 1, 1, 0, 0, 0),
 	(21113, 9822, 0.3, 0, 1, 1, 0, 0, 0),
 	(21113, 9831, 0.2, 0, 1, 1, 0, 0, 0),
+	(21113, 34109, 5, 0, 1, 1, 0, 0, 0),
 	(21132, 20806, 20, 1, 1, 1, 0, 0, 0),
 	(21132, 21257, 20, 1, 1, 1, 0, 0, 0),
 	(21132, 21259, 20, 1, 1, 1, 0, 0, 0),
@@ -3666,6 +3677,7 @@ INSERT INTO `item_loot_template` (`entry`, `item`, `ChanceOrQuestChance`, `group
 	(21150, 7476, 0.3, 0, 1, 1, 0, 0, 0),
 	(21150, 9836, 0.2, 0, 1, 1, 0, 0, 0),
 	(21150, 9869, 0.2, 0, 1, 1, 0, 0, 0),
+	(21150, 34109, 5, 0, 1, 1, 0, 0, 0),
 	(21156, 20858, 52.8, 0, 1, 4, 0, 0, 0),
 	(21156, 20859, 54.6, 0, 1, 4, 0, 0, 0),
 	(21156, 20860, 52.5, 0, 1, 4, 0, 0, 0),
@@ -3703,6 +3715,7 @@ INSERT INTO `item_loot_template` (`entry`, `item`, `ChanceOrQuestChance`, `group
 	(21228, 10320, 0.2, 0, 1, 1, 0, 0, 0),
 	(21228, 14048, 29.6, 0, 1, 2, 0, 0, 0),
 	(21228, 15245, 0.2, 0, 1, 1, 0, 0, 0),
+	(21228, 34109, 5, 0, 1, 1, 0, 0, 0),
 	(21266, 21258, 20, 1, 1, 1, 0, 0, 0),
 	(21266, 21261, 20, 1, 1, 1, 0, 0, 0),
 	(21266, 21264, 20, 1, 1, 1, 0, 0, 0),
@@ -4287,6 +4300,7 @@ INSERT INTO `item_loot_template` (`entry`, `item`, `ChanceOrQuestChance`, `group
 	(27481, 23768, 0, 1, 1, 4, 0, 0, 0),
 	(27481, 23781, 0, 1, 1, 2, 0, 0, 0),
 	(27481, 23783, 0, 1, 1, 3, 0, 0, 0),
+	(27481, 34109, 11, 0, 1, 1, 0, 0, 0),
 	(27511, 27498, 0, 1, 1, 3, 0, 0, 0),
 	(27511, 27499, 0, 1, 1, 3, 0, 0, 0),
 	(27511, 27500, 0, 1, 1, 3, 0, 0, 0),
@@ -4296,6 +4310,7 @@ INSERT INTO `item_loot_template` (`entry`, `item`, `ChanceOrQuestChance`, `group
 	(27513, 21877, 0, 1, 1, 3, 0, 0, 0),
 	(27513, 23424, 0, 1, 1, 3, 0, 0, 0),
 	(27513, 25649, 0, 1, 2, 6, 0, 0, 0),
+	(27513, 34109, 43, 0, 1, 1, 0, 0, 0),
 	(28499, 22829, 100, 0, 1, 2, 0, 0, 0),
 	(29569, 5140, 21.1, 0, 1, 5, 0, 0, 0),
 	(29569, 5173, 36.3, 0, 2, 5, 0, 0, 0),

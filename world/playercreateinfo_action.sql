@@ -1,10 +1,17 @@
+-- --------------------------------------------------------
+-- Host:                         78.46.96.217
+-- Server version:               5.5.49-0+deb8u1 - (Debian)
+-- Server OS:                    debian-linux-gnu
+-- HeidiSQL Version:             9.4.0.5145
+-- --------------------------------------------------------
+
 /*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
 /*!40101 SET NAMES utf8 */;
 /*!50503 SET NAMES utf8mb4 */;
 /*!40014 SET @OLD_FOREIGN_KEY_CHECKS=@@FOREIGN_KEY_CHECKS, FOREIGN_KEY_CHECKS=0 */;
 /*!40101 SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='NO_AUTO_VALUE_ON_ZERO' */;
 
-DROP TABLE IF EXISTS `playercreateinfo_action`;
+-- Dumping structure for table sully_world.playercreateinfo_action
 CREATE TABLE IF NOT EXISTS `playercreateinfo_action` (
   `race` tinyint(3) unsigned NOT NULL DEFAULT '0',
   `class` tinyint(3) unsigned NOT NULL DEFAULT '0',
@@ -16,6 +23,8 @@ CREATE TABLE IF NOT EXISTS `playercreateinfo_action` (
   KEY `playercreateinfo_race_class_index` (`race`,`class`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
+-- Dumping data for table sully_world.playercreateinfo_action: ~293 rows (approximately)
+DELETE FROM `playercreateinfo_action`;
 /*!40000 ALTER TABLE `playercreateinfo_action` DISABLE KEYS */;
 INSERT INTO `playercreateinfo_action` (`race`, `class`, `button`, `action`, `type`, `misc`) VALUES
 	(1, 1, 72, 6603, 0, 0),

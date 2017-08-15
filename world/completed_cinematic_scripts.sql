@@ -1,16 +1,25 @@
+-- --------------------------------------------------------
+-- Host:                         78.46.96.217
+-- Server version:               5.5.49-0+deb8u1 - (Debian)
+-- Server OS:                    debian-linux-gnu
+-- HeidiSQL Version:             9.4.0.5145
+-- --------------------------------------------------------
+
 /*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
 /*!40101 SET NAMES utf8 */;
 /*!50503 SET NAMES utf8mb4 */;
 /*!40014 SET @OLD_FOREIGN_KEY_CHECKS=@@FOREIGN_KEY_CHECKS, FOREIGN_KEY_CHECKS=0 */;
 /*!40101 SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='NO_AUTO_VALUE_ON_ZERO' */;
 
-DROP TABLE IF EXISTS `completed_cinematic_scripts`;
+-- Dumping structure for table sully_world.completed_cinematic_scripts
 CREATE TABLE IF NOT EXISTS `completed_cinematic_scripts` (
   `entry` mediumint(8) NOT NULL,
   `ScriptName` char(64) NOT NULL,
   PRIMARY KEY (`entry`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COMMENT='Script library scripted completed cinematic events';
 
+-- Dumping data for table sully_world.completed_cinematic_scripts: ~1 rows (approximately)
+DELETE FROM `completed_cinematic_scripts`;
 /*!40000 ALTER TABLE `completed_cinematic_scripts` DISABLE KEYS */;
 INSERT INTO `completed_cinematic_scripts` (`entry`, `ScriptName`) VALUES
 	(164, 'scrying_orb_cinematic');

@@ -1,10 +1,17 @@
+-- --------------------------------------------------------
+-- Host:                         78.46.96.217
+-- Server version:               5.5.49-0+deb8u1 - (Debian)
+-- Server OS:                    debian-linux-gnu
+-- HeidiSQL Version:             9.4.0.5145
+-- --------------------------------------------------------
+
 /*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
 /*!40101 SET NAMES utf8 */;
 /*!50503 SET NAMES utf8mb4 */;
 /*!40014 SET @OLD_FOREIGN_KEY_CHECKS=@@FOREIGN_KEY_CHECKS, FOREIGN_KEY_CHECKS=0 */;
 /*!40101 SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='NO_AUTO_VALUE_ON_ZERO' */;
 
-DROP TABLE IF EXISTS `pool_creature`;
+-- Dumping structure for table sully_world.pool_creature
 CREATE TABLE IF NOT EXISTS `pool_creature` (
   `guid` int(10) unsigned NOT NULL DEFAULT '0',
   `pool_entry` mediumint(8) unsigned NOT NULL DEFAULT '0',
@@ -13,6 +20,8 @@ CREATE TABLE IF NOT EXISTS `pool_creature` (
   PRIMARY KEY (`pool_entry`,`guid`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
+-- Dumping data for table sully_world.pool_creature: ~505 rows (approximately)
+DELETE FROM `pool_creature`;
 /*!40000 ALTER TABLE `pool_creature` DISABLE KEYS */;
 INSERT INTO `pool_creature` (`guid`, `pool_entry`, `chance`, `description`) VALUES
 	(86170, 1047, 0, 'Bjarn (1130)'),
@@ -371,6 +380,10 @@ INSERT INTO `pool_creature` (`guid`, `pool_entry`, `chance`, `description`) VALU
 	(99273, 1187, 0, 'Ambassador Jerrikar (18695)'),
 	(99274, 1187, 0, 'Ambassador Jerrikar (18695)'),
 	(223914, 1187, 0, 'Ambassador Jerrikar (18695)'),
+	(85382, 1189, 0, 'Okrek (18685)'),
+	(85405, 1189, 0, 'Okrek (18685)'),
+	(85564, 1189, 0, 'Okrek (18685)'),
+	(85565, 1189, 0, 'Okrek (18685)'),
 	(41730, 1190, 0, 'Doomsayer Jurim (18686)'),
 	(99278, 1190, 0, 'Doomsayer Jurim (18686)'),
 	(99279, 1190, 0, 'Doomsayer Jurim (18686)'),
@@ -387,6 +400,9 @@ INSERT INTO `pool_creature` (`guid`, `pool_entry`, `chance`, `description`) VALU
 	(99287, 1193, 0, 'Coilfang Emissary (18681)'),
 	(99288, 1193, 0, 'Coilfang Emissary (18681)'),
 	(99289, 1193, 0, 'Coilfang Emissary (18681)'),
+	(86744, 1194, 0, 'Bog Lurker (18682)'),
+	(86745, 1194, 0, 'Bog Lurker (18682)'),
+	(86746, 1194, 0, 'Bog Lurker (18682)'),
 	(128633, 1195, 0, 'Hearthsinger Forresten (10558)'),
 	(86860, 1597, 0, 'Nuramoc (20932)'),
 	(99266, 1597, 0, 'Nuramoc (20932)'),

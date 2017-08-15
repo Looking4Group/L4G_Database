@@ -1,10 +1,17 @@
+-- --------------------------------------------------------
+-- Host:                         78.46.96.217
+-- Server version:               5.5.49-0+deb8u1 - (Debian)
+-- Server OS:                    debian-linux-gnu
+-- HeidiSQL Version:             9.4.0.5145
+-- --------------------------------------------------------
+
 /*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
 /*!40101 SET NAMES utf8 */;
 /*!50503 SET NAMES utf8mb4 */;
 /*!40014 SET @OLD_FOREIGN_KEY_CHECKS=@@FOREIGN_KEY_CHECKS, FOREIGN_KEY_CHECKS=0 */;
 /*!40101 SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='NO_AUTO_VALUE_ON_ZERO' */;
 
-DROP TABLE IF EXISTS `db_script_string`;
+-- Dumping structure for table sully_world.db_script_string
 CREATE TABLE IF NOT EXISTS `db_script_string` (
   `entry` int(11) unsigned NOT NULL DEFAULT '0',
   `content_default` text NOT NULL,
@@ -19,6 +26,8 @@ CREATE TABLE IF NOT EXISTS `db_script_string` (
   PRIMARY KEY (`entry`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
+-- Dumping data for table sully_world.db_script_string: ~95 rows (approximately)
+DELETE FROM `db_script_string`;
 /*!40000 ALTER TABLE `db_script_string` DISABLE KEYS */;
 INSERT INTO `db_script_string` (`entry`, `content_default`, `content_loc1`, `content_loc2`, `content_loc3`, `content_loc4`, `content_loc5`, `content_loc6`, `content_loc7`, `content_loc8`) VALUES
 	(2000000001, 'Get in the Ring of Blood, $N. The fight is about to start!', NULL, NULL, 'Gehe in den Ring des Blutes, $N. Der Kampf wird bald beginnen!', NULL, NULL, NULL, NULL, NULL),
@@ -116,6 +125,7 @@ INSERT INTO `db_script_string` (`entry`, `content_default`, `content_loc1`, `con
 	(2000000096, 'You\'re such a good friend, Twinkle. You\'d never leave me, would you?', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL),
 	(2000000097, 'It\'s just you and me, Twinkle. Daddy\'s not going to be coming home.', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL),
 	(2000000098, 'Did you find something fun to chase around, Twinkle? I bet you did!', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL),
+	(2000005470, 'Keep up the good work. Do well and you will be rewarded by the master.', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL),
 	(2000005550, 'We must not fail our leader!  Kael\'thas will redeem us!', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL),
 	(2000005551, 'Hmm...Frost, Fire, and Arcane defenses respond faster than Batch 7, but Nature defenses remain passive.', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL),
 	(2000005552, 'Hmm...', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL),

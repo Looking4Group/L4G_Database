@@ -1,10 +1,17 @@
+-- --------------------------------------------------------
+-- Host:                         78.46.96.217
+-- Server version:               5.5.49-0+deb8u1 - (Debian)
+-- Server OS:                    debian-linux-gnu
+-- HeidiSQL Version:             9.4.0.5145
+-- --------------------------------------------------------
+
 /*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
 /*!40101 SET NAMES utf8 */;
 /*!50503 SET NAMES utf8mb4 */;
 /*!40014 SET @OLD_FOREIGN_KEY_CHECKS=@@FOREIGN_KEY_CHECKS, FOREIGN_KEY_CHECKS=0 */;
 /*!40101 SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='NO_AUTO_VALUE_ON_ZERO' */;
 
-DROP TABLE IF EXISTS `creature_model_info`;
+-- Dumping structure for table sully_world.creature_model_info
 CREATE TABLE IF NOT EXISTS `creature_model_info` (
   `modelid` mediumint(8) unsigned NOT NULL DEFAULT '0',
   `bounding_radius` float NOT NULL DEFAULT '0',
@@ -14,6 +21,8 @@ CREATE TABLE IF NOT EXISTS `creature_model_info` (
   PRIMARY KEY (`modelid`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COMMENT='Creature System (Model related info)';
 
+-- Dumping data for table sully_world.creature_model_info: ~17.253 rows (approximately)
+DELETE FROM `creature_model_info`;
 /*!40000 ALTER TABLE `creature_model_info` DISABLE KEYS */;
 INSERT INTO `creature_model_info` (`modelid`, `bounding_radius`, `combat_reach`, `gender`, `modelid_other_gender`) VALUES
 	(4, 2, 3, 2, 0),
@@ -16284,7 +16293,7 @@ INSERT INTO `creature_model_info` (`modelid`, `bounding_radius`, `combat_reach`,
 	(22583, 0.4596, 1.8, 2, 0),
 	(22584, 0.4596, 1.8, 2, 0),
 	(22585, 0.4596, 1.8, 2, 0),
-	(22586, 0.4596, 1.8, 2, 0),
+	(22586, 0.4596, 1.8, 0, 23097),
 	(22587, 0, 0, 2, 0),
 	(22588, 0, 0, 2, 0),
 	(22589, 0, 0, 2, 0),
@@ -16614,16 +16623,16 @@ INSERT INTO `creature_model_info` (`modelid`, `bounding_radius`, `combat_reach`,
 	(23087, 0, 0, 2, 0),
 	(23088, 0, 0, 2, 0),
 	(23089, 0, 0, 2, 0),
-	(23090, 0.4596, 1.8, 2, 0),
-	(23091, 0.4596, 1.8, 2, 0),
-	(23092, 0, 0, 2, 0),
-	(23093, 0.4596, 1.8, 2, 0),
+	(23090, 0.4596, 1.8, 0, 23091),
+	(23091, 0.4596, 1.8, 1, 23090),
+	(23092, 0.4596, 1.8, 0, 23093),
+	(23093, 0.4596, 1.8, 1, 23092),
 	(23094, 0, 0, 2, 0),
 	(23095, 0, 0, 2, 0),
 	(23096, 0, 0, 2, 0),
-	(23097, 0, 0, 2, 0),
-	(23098, 0, 0, 2, 0),
-	(23099, 0, 0, 2, 0),
+	(23097, 0.4596, 1.8, 1, 22586),
+	(23098, 0.4596, 1.8, 0, 23099),
+	(23099, 0.4596, 1.8, 1, 23098),
 	(23100, 0, 0, 2, 0),
 	(23114, 0, 0, 2, 0),
 	(23128, 0, 0, 2, 0),
@@ -16643,7 +16652,7 @@ INSERT INTO `creature_model_info` (`modelid`, `bounding_radius`, `combat_reach`,
 	(23162, 0, 0, 2, 0),
 	(23177, 0, 0, 2, 0),
 	(23178, 0, 0, 2, 0),
-	(23200, 0, 0, 2, 0),
+	(23200, 12, 12, 2, 0),
 	(23224, 0, 0, 2, 0),
 	(23225, 0, 0, 2, 0),
 	(23226, 0, 0, 2, 0),

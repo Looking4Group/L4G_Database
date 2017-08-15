@@ -1,16 +1,25 @@
+-- --------------------------------------------------------
+-- Host:                         78.46.96.217
+-- Server version:               5.5.49-0+deb8u1 - (Debian)
+-- Server OS:                    debian-linux-gnu
+-- HeidiSQL Version:             9.4.0.5145
+-- --------------------------------------------------------
+
 /*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
 /*!40101 SET NAMES utf8 */;
 /*!50503 SET NAMES utf8mb4 */;
 /*!40014 SET @OLD_FOREIGN_KEY_CHECKS=@@FOREIGN_KEY_CHECKS, FOREIGN_KEY_CHECKS=0 */;
 /*!40101 SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='NO_AUTO_VALUE_ON_ZERO' */;
 
-DROP TABLE IF EXISTS `creature_questrelation`;
+-- Dumping structure for table sully_world.creature_questrelation
 CREATE TABLE IF NOT EXISTS `creature_questrelation` (
   `id` mediumint(8) unsigned NOT NULL DEFAULT '0' COMMENT 'Identifier',
   `quest` mediumint(8) unsigned NOT NULL DEFAULT '0' COMMENT 'Quest Identifier',
   PRIMARY KEY (`id`,`quest`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 ROW_FORMAT=FIXED COMMENT='Creature System';
 
+-- Dumping data for table sully_world.creature_questrelation: ~6.212 rows (approximately)
+DELETE FROM `creature_questrelation`;
 /*!40000 ALTER TABLE `creature_questrelation` DISABLE KEYS */;
 INSERT INTO `creature_questrelation` (`id`, `quest`) VALUES
 	(62, 66714),
@@ -4594,6 +4603,7 @@ INSERT INTO `creature_questrelation` (`id`, `quest`) VALUES
 	(19217, 10173),
 	(19217, 10174),
 	(19217, 10300),
+	(19227, 11130),
 	(19229, 10288),
 	(19253, 10120),
 	(19254, 9407),
@@ -5319,6 +5329,7 @@ INSERT INTO `creature_questrelation` (`id`, `quest`) VALUES
 	(23723, 11145),
 	(23723, 11146),
 	(23723, 11147),
+	(23761, 11164),
 	(23761, 11165),
 	(23797, 11174),
 	(23797, 11207),

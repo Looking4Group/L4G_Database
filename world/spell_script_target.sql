@@ -1,10 +1,17 @@
+-- --------------------------------------------------------
+-- Host:                         78.46.96.217
+-- Server version:               5.5.49-0+deb8u1 - (Debian)
+-- Server OS:                    debian-linux-gnu
+-- HeidiSQL Version:             9.4.0.5145
+-- --------------------------------------------------------
+
 /*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
 /*!40101 SET NAMES utf8 */;
 /*!50503 SET NAMES utf8mb4 */;
 /*!40014 SET @OLD_FOREIGN_KEY_CHECKS=@@FOREIGN_KEY_CHECKS, FOREIGN_KEY_CHECKS=0 */;
 /*!40101 SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='NO_AUTO_VALUE_ON_ZERO' */;
 
-DROP TABLE IF EXISTS `spell_script_target`;
+-- Dumping structure for table sully_world.spell_script_target
 CREATE TABLE IF NOT EXISTS `spell_script_target` (
   `entry` mediumint(8) unsigned NOT NULL,
   `type` tinyint(3) unsigned NOT NULL DEFAULT '0',
@@ -12,6 +19,8 @@ CREATE TABLE IF NOT EXISTS `spell_script_target` (
   UNIQUE KEY `entry_type_target` (`entry`,`type`,`targetEntry`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COMMENT='Spell System';
 
+-- Dumping data for table sully_world.spell_script_target: ~1.343 rows (approximately)
+DELETE FROM `spell_script_target`;
 /*!40000 ALTER TABLE `spell_script_target` DISABLE KEYS */;
 INSERT INTO `spell_script_target` (`entry`, `type`, `targetEntry`) VALUES
 	(3730, 1, 15263),
@@ -953,6 +962,10 @@ INSERT INTO `spell_script_target` (`entry`, `type`, `targetEntry`) VALUES
 	(44355, 1, 24723),
 	(44374, 1, 24722),
 	(44374, 1, 25953),
+	(44411, 1, 24809),
+	(44411, 1, 25558),
+	(44432, 2, 24809),
+	(44432, 2, 25558),
 	(44574, 1, 24808),
 	(44807, 1, 24850),
 	(44807, 1, 24892),

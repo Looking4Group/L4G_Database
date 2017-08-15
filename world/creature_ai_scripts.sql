@@ -1,10 +1,17 @@
+-- --------------------------------------------------------
+-- Host:                         78.46.96.217
+-- Server version:               5.5.49-0+deb8u1 - (Debian)
+-- Server OS:                    debian-linux-gnu
+-- HeidiSQL Version:             9.4.0.5145
+-- --------------------------------------------------------
+
 /*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
 /*!40101 SET NAMES utf8 */;
 /*!50503 SET NAMES utf8mb4 */;
 /*!40014 SET @OLD_FOREIGN_KEY_CHECKS=@@FOREIGN_KEY_CHECKS, FOREIGN_KEY_CHECKS=0 */;
 /*!40101 SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='NO_AUTO_VALUE_ON_ZERO' */;
 
-DROP TABLE IF EXISTS `creature_ai_scripts`;
+-- Dumping structure for table sully_world.creature_ai_scripts
 CREATE TABLE IF NOT EXISTS `creature_ai_scripts` (
   `id` int(11) unsigned NOT NULL AUTO_INCREMENT COMMENT 'Identifier',
   `entryOrGUID` int(11) NOT NULL DEFAULT '0' COMMENT 'Creature Template Identifier',
@@ -32,6 +39,8 @@ CREATE TABLE IF NOT EXISTS `creature_ai_scripts` (
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB AUTO_INCREMENT=100001502 DEFAULT CHARSET=utf8 ROW_FORMAT=FIXED COMMENT='EventAI Scripts';
 
+-- Dumping data for table sully_world.creature_ai_scripts: ~15.753 rows (approximately)
+DELETE FROM `creature_ai_scripts`;
 /*!40000 ALTER TABLE `creature_ai_scripts` DISABLE KEYS */;
 INSERT INTO `creature_ai_scripts` (`id`, `entryOrGUID`, `event_type`, `event_inverse_phase_mask`, `event_chance`, `event_flags`, `event_param1`, `event_param2`, `event_param3`, `event_param4`, `action1_type`, `action1_param1`, `action1_param2`, `action1_param3`, `action2_type`, `action2_param1`, `action2_param2`, `action2_param3`, `action3_type`, `action3_param1`, `action3_param2`, `action3_param3`, `comment`) VALUES
 	(601, 6, 4, 0, 30, 0, 0, 0, 0, 0, 1, -7, -8, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Kobold Vermin - Random Say on Aggro'),
@@ -9690,6 +9699,9 @@ INSERT INTO `creature_ai_scripts` (`id`, `entryOrGUID`, `event_type`, `event_inv
 	(1659902, 16599, 0, 0, 100, 1, 8500, 8500, 15000, 15000, 11, 19643, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Thrallmar Wolf Rider - Cast Mortal Strike'),
 	(1659903, 16599, 0, 0, 100, 1, 3500, 5500, 10000, 12000, 11, 15618, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Thrallmar Wolf Rider - Cast Snap Kick'),
 	(1659904, 16599, 7, 0, 100, 0, 0, 0, 0, 0, 43, 17408, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Thrallmar Wolf Rider - Mount on Evade'),
+	(1669701, 16697, 4, 0, 100, 0, 0, 0, 0, 0, 20, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Void Zone - Stop Melee on Aggro'),
+	(1669702, 16697, 0, 0, 100, 0, 25000, 25000, 0, 0, 41, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Void Zone - Despawn IC'),
+	(1669703, 16697, 1, 0, 100, 0, 25000, 25000, 0, 0, 41, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Void Zone - Despawn OOC'),
 	(1669901, 16699, 0, 0, 100, 7, 8000, 12000, 5000, 9000, 11, 15496, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Shattered Hand Reaver - Cast Cleave'),
 	(1669902, 16699, 9, 0, 100, 7, 0, 5, 9000, 13000, 11, 30471, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 'Shattered Hand Reaver - Cast Uppercut'),
 	(1669903, 16699, 2, 0, 100, 7, 30, 0, 120000, 120000, 11, 30485, 0, 1, 1, -106, 0, 0, 0, 0, 0, 0, 'Shattered Hand Reaver - Cast Enrage at 30% HP'),
@@ -13199,10 +13211,10 @@ INSERT INTO `creature_ai_scripts` (`id`, `entryOrGUID`, `event_type`, `event_inv
 	(2013905, 20139, 9, 13, 100, 0, 35, 80, 0, 0, 21, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Sunfury Conjurer - Start Combat Movement at 35 Yards (Phase 1)'),
 	(2013906, 20139, 9, 13, 100, 0, 5, 15, 0, 0, 21, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Sunfury Conjurer - Prevent Combat Movement at 15 Yards (Phase 1)'),
 	(2013907, 20139, 9, 13, 100, 0, 0, 5, 0, 0, 21, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Sunfury Conjurer - Start Combat Movement Below 5 Yards (Phase 1)'),
-	(2013908, 20139, 3, 11, 100, 1, 100, 15, 100, 100, 23, -1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Sunfury Conjurer - Set Phase 1 when Mana is above 15% (Phase 2)'),
-	(2013909, 20139, 0, 0, 100, 1, 9000, 14000, 12000, 16000, 11, 11829, 4, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Sunfury Conjurer - Cast Flamestrike'),
-	(2013910, 20139, 0, 0, 100, 1, 7000, 9000, 20000, 45000, 11, 35778, 0, 32, 0, 0, 0, 0, 0, 0, 0, 0, 'Sunfury Conjurer - Cast Bloodcrystal Surge');
+	(2013908, 20139, 3, 11, 100, 1, 100, 15, 100, 100, 23, -1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Sunfury Conjurer - Set Phase 1 when Mana is above 15% (Phase 2)');
 INSERT INTO `creature_ai_scripts` (`id`, `entryOrGUID`, `event_type`, `event_inverse_phase_mask`, `event_chance`, `event_flags`, `event_param1`, `event_param2`, `event_param3`, `event_param4`, `action1_type`, `action1_param1`, `action1_param2`, `action1_param3`, `action2_type`, `action2_param1`, `action2_param2`, `action2_param3`, `action3_type`, `action3_param1`, `action3_param2`, `action3_param3`, `comment`) VALUES
+	(2013909, 20139, 0, 0, 100, 1, 9000, 14000, 12000, 16000, 11, 11829, 4, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Sunfury Conjurer - Cast Flamestrike'),
+	(2013910, 20139, 0, 0, 100, 1, 7000, 9000, 20000, 45000, 11, 35778, 0, 32, 0, 0, 0, 0, 0, 0, 0, 0, 'Sunfury Conjurer - Cast Bloodcrystal Surge'),
 	(2013911, 20139, 2, 0, 100, 0, 15, 0, 0, 0, 22, 3, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Sunfury Conjurer - Set Phase 3 at 15% HP'),
 	(2013912, 20139, 2, 7, 100, 0, 15, 0, 0, 0, 21, 1, 0, 0, 25, 0, 0, 0, 1, -47, 0, 0, 'Sunfury Conjurer - Start Combat Movement and Flee at 15% HP (Phase 3)'),
 	(2013913, 20139, 7, 0, 100, 0, 0, 0, 0, 0, 22, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Sunfury Conjurer - Set Phase to 0 on Evade'),
@@ -14224,6 +14236,8 @@ INSERT INTO `creature_ai_scripts` (`id`, `entryOrGUID`, `event_type`, `event_inv
 	(2142801, 21428, 4, 0, 100, 0, 0, 0, 0, 0, 11, 35194, 0, 2, 0, 0, 0, 0, 0, 0, 0, 0, 'Corrupted Water Elemental - Cast Shadowform'),
 	(2142802, 21428, 0, 0, 100, 1, 10000, 10000, 10000, 10000, 11, 9672, 1, 2, 0, 0, 0, 0, 0, 0, 0, 0, 'Corrupted Water Elemental - Cast Frostbolt'),
 	(2142803, 21428, 7, 0, 100, 6, 0, 0, 0, 0, 41, 0, 0, 0, 18, 33554432, 0, 0, 0, 0, 0, 0, 'Corrupted Water Elemental - Despawn on Evade'),
+	(2145301, 21453, 1, 0, 100, 1, 1000, 1000, 600000, 600000, 11, 12550, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Ashtongue Shaman - Cast Lightning Shield OOC'),
+	(2145302, 21453, 2, 0, 100, 1, 50, 0, 30000, 36000, 11, 6742, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Ashtongue Shaman - Cast Bloodlust at 30% HP'),
 	(2145501, 21455, 0, 0, 100, 1, 2000, 8000, 45000, 45000, 11, 6016, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Ashtongue Worker  - Cast Pierce Armor'),
 	(2146201, 21462, 8, 0, 100, 1, 36854, -1, 120000, 120000, 33, 21924, 6, 0, 28, 0, 36854, 0, 11, 37851, 0, 0, 'Greater Felfire Diemetradon - q10672'),
 	(2146202, 21462, 0, 0, 100, 1, 3500, 5500, 10000, 11000, 11, 37945, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Greater Felfire Diemetradon  - Cast Fel Fireball'),
@@ -15118,13 +15132,14 @@ INSERT INTO `creature_ai_scripts` (`id`, `entryOrGUID`, `event_type`, `event_inv
 	(2354202, 23542, 0, 0, 100, 3, 0, 0, 7400, 7400, 11, 35011, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Amani\'shi Axe Thrower - Cast Knockdown'),
 	(2354203, 23542, 0, 0, 100, 3, 5000, 15000, 27000, 60000, 11, 42359, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Amani\'shi Axe Thrower - Cast Axe Volley'),
 	(2354204, 23542, 0, 0, 100, 3, 1000, 4000, 10000, 18000, 11, 42332, 5, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Amani\'shi Axe Thrower - Cast Throw Axe'),
-	(2358001, 23580, 2, 0, 100, 2, 33, 11, 0, 0, 11, 43274, 0, 0, 17, 154, 0, 0, 19, 134217728, 0, 0, 'Amani\'shi Warbringer - Summon Bear + Dismount Warbringer'),
-	(2358002, 23580, 0, 0, 100, 3, 3000, 6000, 12000, 12000, 11, 43273, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Amani\'shi Warbringer - Cast Cleave'),
-	(2358003, 23580, 0, 0, 100, 3, 5000, 5000, 20000, 20000, 11, 42496, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Amani\'shi Warbringer - Cast Furious Roar'),
-	(2358004, 23580, 2, 0, 100, 2, 30, 0, 0, 0, 11, 40743, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Amani\'shi Warbringer - Cast Enrage at 30% HP'),
-	(2358005, 23580, 2, 0, 100, 2, 5, 0, 0, 0, 18, 134217728, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Amani\'shi Warbringer - Set UNIT_FLAG_MOUNT'),
-	(2358006, 23580, 1, 0, 100, 2, 10000, 10000, 0, 0, 17, 154, 22467, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Amani\'shi Warbringer - Mount OOC'),
-	(2358008, 23580, 7, 0, 100, 2, 0, 0, 0, 0, 43, 22467, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Amani\'shi Warbringer - Mount on Reaching Spawnpoint'),
+	(2358001, 23580, 4, 0, 100, 2, 0, 0, 0, 0, 11, 42459, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 'Amani\'shi Warbringer - Cast Dual Wield on Aggro'),
+	(2358002, 23580, 2, 0, 100, 2, 33, 11, 0, 0, 11, 43274, 0, 0, 17, 154, 0, 0, 19, 134217728, 0, 0, 'Amani\'shi Warbringer - Summon Bear + Dismount Warbringer'),
+	(2358003, 23580, 0, 0, 100, 3, 3000, 6000, 12000, 12000, 11, 43273, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Amani\'shi Warbringer - Cast Cleave'),
+	(2358004, 23580, 0, 0, 100, 3, 5000, 5000, 20000, 20000, 11, 42496, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Amani\'shi Warbringer - Cast Furious Roar'),
+	(2358005, 23580, 2, 0, 100, 2, 30, 0, 0, 0, 11, 40743, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Amani\'shi Warbringer - Cast Enrage at 30% HP'),
+	(2358006, 23580, 2, 0, 100, 2, 5, 0, 0, 0, 18, 134217728, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Amani\'shi Warbringer - Set UNIT_FLAG_MOUNT'),
+	(2358007, 23580, 1, 0, 100, 2, 10000, 10000, 0, 0, 17, 154, 22467, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Amani\'shi Warbringer - Mount OOC'),
+	(2358009, 23580, 7, 0, 100, 2, 0, 0, 0, 0, 43, 22467, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Amani\'shi Warbringer - Mount on Reaching Spawnpoint'),
 	(2358101, 23581, 14, 0, 100, 3, 5000, 40, 8000, 16000, 11, 42477, 6, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Amani\'shi Medicine Man - Cast Chain Heal'),
 	(2358102, 23581, 0, 0, 100, 3, 6000, 15000, 10000, 30000, 11, 42478, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Amani\'shi Medicine Man - Cast Protective Ward'),
 	(2358103, 23581, 0, 0, 100, 3, 3000, 15000, 10000, 30000, 11, 42376, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Amani\'shi Medicine Man - Cast Powerful Healing Ward'),
@@ -15134,8 +15149,8 @@ INSERT INTO `creature_ai_scripts` (`id`, `entryOrGUID`, `event_type`, `event_inv
 	(2358301, 23583, 1, 0, 100, 1, 0, 0, 0, 0, 11, 42171, 0, 39, 0, 0, 0, 0, 0, 0, 0, 0, 'Evidence Marker - Mark on Spawn'),
 	(2358401, 23584, 0, 0, 100, 3, 1000, 1000, 20000, 30000, 11, 42745, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Amani Bear - Cast Frenzy'),
 	(2358402, 23584, 9, 0, 100, 3, 0, 5, 10000, 20000, 11, 42747, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Amani Bear - Cast Crunch Armor'),
-	(2358701, 23587, 9, 0, 75, 3, 0, 5, 8000, 8000, 11, 43298, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Amani\'shi Reinforcement - Cast Strike'),
-	(2358702, 23587, 4, 0, 66, 2, 0, 0, 0, 0, 11, 32323, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Amani\'shi Reinforcement - Cast Charge on Aggro'),
+	(2358701, 23587, 9, 0, 50, 3, 0, 5, 8000, 8000, 11, 43298, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Amani\'shi Reinforcement - Cast Strike'),
+	(2358702, 23587, 4, 0, 50, 2, 0, 0, 0, 0, 11, 32323, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Amani\'shi Reinforcement - Cast Charge on Aggro'),
 	(2358703, 23587, 11, 0, 100, 2, 0, 0, 0, 0, 38, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Amani\'shi Reinforcement - Combat Pulse on Spawn'),
 	(2358704, 23587, 1, 0, 100, 2, 15000, 15000, 0, 0, 41, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Amani\'shi Reinforcement - Despawn OOC'),
 	(2359501, 23595, 0, 0, 100, 1, 3000, 3000, 60000, 70000, 11, 15786, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Grimtotem Earthbinder - Cast Earthbind Totem'),
@@ -15291,6 +15306,9 @@ INSERT INTO `creature_ai_scripts` (`id`, `entryOrGUID`, `event_type`, `event_inv
 	(2406502, 24065, 9, 0, 100, 3, 0, 35, 9000, 9000, 11, 43362, 4, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Amani\'shi Handler - Cast Electrified Net'),
 	(2413801, 24138, 9, 0, 100, 3, 0, 5, 10000, 15000, 11, 43353, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Tamed Amani Crocolisk - Cast Infected Bite'),
 	(2413802, 24138, 0, 0, 100, 3, 5000, 5000, 6000, 15000, 11, 43352, 5, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Tamed Amani Crocolisk - Cast Tail Swipe'),
+	(2414301, 24143, 11, 0, 100, 2, 0, 0, 0, 0, 42, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Spirit of the Lynx - Set Invincible at 1% HP on Spawn'),
+	(2414302, 24143, 0, 0, 100, 3, 10000, 20000, 20000, 30000, 11, 43290, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Spirit of the Lynx - Cast Lynx Flurry'),
+	(2414303, 24143, 0, 0, 100, 3, 3000, 4000, 3000, 4000, 11, 43243, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Spirit of the Lynx - Cast Shred Armor'),
 	(2417901, 24179, 4, 0, 15, 2, 0, 0, 0, 0, 1, -228, -229, -9730, 0, 0, 0, 0, 0, 0, 0, 0, 'Amani\'shi Wind Walker - Text on Aggro'),
 	(2417902, 24179, 2, 0, 100, 3, 80, 0, 8000, 16000, 11, 43527, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Amani\'shi Wind Walker - Cast Chain Heal'),
 	(2417903, 24179, 9, 0, 100, 3, 0, 20, 4000, 8000, 11, 43524, 4, 32, 0, 0, 0, 0, 0, 0, 0, 0, 'Amani\'shi Wind Walker - Cast Frost Shock'),
@@ -15304,7 +15322,7 @@ INSERT INTO `creature_ai_scripts` (`id`, `entryOrGUID`, `event_type`, `event_inv
 	(2421702, 24217, 0, 0, 100, 3, 10000, 15000, 15000, 25000, 11, 42745, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Amani Bear Mount - Cast Enrage'),
 	(2421703, 24217, 7, 0, 100, 2, 0, 0, 0, 0, 41, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Amani Bear Mount - Despawn on Evade'),
 	(2421704, 24217, 1, 0, 100, 3, 0, 0, 1000, 1000, 103, 20, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Amani Bear Mount - Aggro Pulse OOC'),
-	(2422401, 24224, 0, 0, 100, 7, 0, 0, 500, 2000, 11, 43301, 4, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Corrupted Lightning Totem - Cast Lightning'),
+	(2422401, 24224, 0, 0, 100, 7, 0, 0, 1500, 2000, 11, 43301, 4, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Corrupted Lightning Totem - Cast Lightning'),
 	(2432501, 24325, 4, 0, 100, 2, 0, 0, 0, 0, 20, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Eagle Troll Spawn Target - Stop Melee on Aggro'),
 	(2432502, 24325, 0, 0, 100, 2, 120000, 120000, 0, 0, 37, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Eagle Troll Spawn Target - Despawn IC'),
 	(2433801, 24338, 4, 0, 100, 2, 0, 0, 0, 0, 38, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Amani Snake - Enter Combat'),
@@ -15331,8 +15349,9 @@ INSERT INTO `creature_ai_scripts` (`id`, `entryOrGUID`, `event_type`, `event_inv
 	(2473807, 24738, 2, 0, 100, 0, 15, 0, 0, 0, 23, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Elenna Edune - Set Phase 2 at 15% HP'),
 	(2473808, 24738, 2, 3, 100, 0, 15, 0, 0, 0, 21, 1, 0, 0, 25, 0, 0, 0, 1, -47, 0, 0, 'Elenna Edune - Start Combat Movement and Flee at 15% HP (Phase 2)'),
 	(2473809, 24738, 7, 0, 100, 0, 0, 0, 0, 0, 22, 0, 0, 0, 40, 1, 0, 0, 0, 0, 0, 0, 'Elenna Edune - Set Phase to 0 and Set Melee Weapon Model on Evade'),
-	(2476201, 24762, 1, 0, 100, 6, 0, 0, 0, 0, 21, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Sunblade Keeper - Prevent Combat Movement on Spawn'),
-	(2476202, 24762, 4, 0, 100, 6, 0, 0, 0, 0, 11, 15232, 1, 0, 23, 1, 0, 0, 0, 0, 0, 0, 'Sunblade Keeper - Cast Shadow Bolt and Set Phase 1 on Aggro'),
+	(2476101, 24761, 6, 0, 100, 6, 0, 0, 0, 0, 11, 44406, 0, 7, 0, 0, 0, 0, 0, 0, 0, 0, 'Brightscale Wyrm - Cast Energry Infusion on Death'),
+	(2476201, 24762, 1, 0, 100, 6, 0, 0, 0, 0, 21, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Sunblade Keeper - Start Movement on Spawn'),
+	(2476202, 24762, 4, 0, 100, 6, 0, 0, 0, 0, 23, 1, 0, 0, 28, 44411, 0, 0, 0, 0, 0, 0, 'Sunblade Keeper - Set Phase 1 Stop Cube Channel on Aggro'),
 	(2476203, 24762, 9, 5, 100, 7, 0, 40, 3400, 4800, 11, 15232, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Sunblade Keeper - Cast Shadow Bolt (Phase 1)'),
 	(2476204, 24762, 3, 5, 100, 6, 15, 0, 0, 0, 21, 1, 0, 0, 23, 1, 0, 0, 0, 0, 0, 0, 'Sunblade Keeper - Start Combat Movement and Set Phase 2 when Mana is at 15% (Phase 1)'),
 	(2476205, 24762, 9, 5, 100, 6, 35, 80, 0, 0, 21, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Sunblade Keeper - Start Combat Movement at 35 Yards (Phase 1)'),
@@ -15342,6 +15361,9 @@ INSERT INTO `creature_ai_scripts` (`id`, `entryOrGUID`, `event_type`, `event_inv
 	(2476209, 24762, 0, 0, 100, 7, 6100, 8600, 15000, 25000, 11, 20741, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 'Sunblade Keeper - Cast Shadowbolt Volley'),
 	(2476210, 24762, 0, 0, 100, 7, 9000, 12000, 12000, 15000, 11, 44765, 5, 1, 0, 0, 0, 0, 0, 0, 0, 0, 'Sunblade Keeper - Cast Banish'),
 	(2476211, 24762, 7, 0, 100, 6, 0, 0, 0, 0, 22, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Sunblade Keeper - Set Phase to 0 on Evade'),
+	(2476212, 24762, 1, 0, 100, 6, 1000, 1000, 0, 0, 11, 44411, 0, 7, 0, 0, 0, 0, 0, 0, 0, 0, 'Sunblade Keeper - Cast Cube Beam OOC'),
+	(2480901, 24809, 4, 0, 100, 6, 0, 0, 0, 0, 37, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Nether Energy Cube (Ground) - Die on Aggro'),
+	(2480903, 24809, 1, 0, 100, 7, 10000, 10000, 10000, 10000, 11, 44434, 0, 7, 0, 0, 0, 0, 0, 0, 0, 0, 'Nether Energy Cube (Ground) - Cast Cube Explode OOC'),
 	(2481801, 24818, 9, 0, 100, 1, 0, 5, 6000, 9000, 11, 11976, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Anvilrage Taskmaster - Cast Strike'),
 	(2481802, 24818, 2, 0, 100, 0, 20, 0, 0, 0, 11, 13589, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 'Anvilrage Taskmaster - Cast Haste Aura at 20% HP'),
 	(2481901, 24819, 0, 0, 100, 3, 1000, 3000, 9000, 12000, 11, 13608, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Anvilrage Enforcer - Cast Hooked Net'),
@@ -15449,6 +15471,8 @@ INSERT INTO `creature_ai_scripts` (`id`, `entryOrGUID`, `event_type`, `event_inv
 	(2517401, 25174, 1, 0, 100, 1, 1000, 1000, 120000, 120000, 11, 46302, 0, 7, 0, 0, 0, 0, 0, 0, 0, 0, 'K\'iru - Cast K\'iru\'s Song of Victory OCC'),
 	(2535401, 25354, 0, 0, 100, 7, 7800, 12100, 6200, 12100, 11, 34351, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Mutate Fleshlasher - Cast Vicious Bite'),
 	(2535402, 25354, 7, 0, 100, 6, 0, 0, 0, 0, 41, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Mutate Fleshlasher - Despawn on Evade'),
+	(2560301, 25603, 11, 0, 100, 2, 0, 0, 0, 0, 11, 46464, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Felfire Portal - Cast Summon Felfire Fiend on Spawn'),
+	(2560302, 25603, 0, 0, 100, 3, 2000, 2000, 2000, 2000, 39, 5, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Felfire Portal - Call for Help'),
 	(2575501, 25755, 0, 0, 100, 3, 100, 100, 0, 0, 11, 46542, 0, 33, 0, 0, 0, 0, 0, 0, 0, 0, 'Ahunite Hailstone (Normal) - Cast Chilling Aura'),
 	(2575502, 25755, 0, 0, 100, 5, 100, 100, 0, 0, 11, 46885, 0, 33, 0, 0, 0, 0, 0, 0, 0, 0, 'Ahunite Hailstone (Heroic) - Cast Chilling Aura'),
 	(2575503, 25755, 0, 0, 100, 7, 2000, 4000, 6000, 12000, 11, 2676, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Ahunite Hailstone (Heroic) - Cast Pulverize'),
@@ -15475,6 +15499,10 @@ INSERT INTO `creature_ai_scripts` (`id`, `entryOrGUID`, `event_type`, `event_inv
 	(2621601, 26216, 0, 0, 100, 1, 5000, 10000, 5000, 10000, 11, 15089, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Glacial Templar - Cast Frost Shock'),
 	(2621602, 26216, 0, 0, 100, 1, 10000, 15000, 30000, 35000, 11, 14907, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Glacial Templar - Cast Frost Nova'),
 	(2621603, 26216, 0, 0, 100, 1, 30000, 30000, 30000, 30000, 11, 5164, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Glacial Templar - Cast Knockdown'),
+	(2625301, 26253, 9, 0, 100, 1, 0, 40, 18000, 25000, 11, 25821, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Shattered Sun Peacekeeper - Cast Charge'),
+	(2625302, 26253, 9, 0, 100, 1, 0, 5, 5000, 8000, 11, 19643, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Shattered Sun Peacekeeper - Cast Mortal Strike'),
+	(2625303, 26253, 0, 0, 100, 1, 7000, 9000, 8000, 12000, 11, 18328, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Shattered Sun Peacekeeper - Cast Incapacitating Shout'),
+	(2625304, 26253, 13, 0, 100, 1, 12000, 18000, 0, 0, 11, 15618, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 'Shattered Sun Peacekeeper - Cast Snap Kick on Target Spellcast'),
 	(2794601, 27946, 0, 0, 100, 1, 4000, 7000, 6000, 9000, 11, 37985, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Silvermoon Dragonhawk - Cast Fire Breath'),
 	(2798901, 27989, 1, 0, 100, 0, 1000, 1000, 0, 0, 11, 50487, 0, 13, 0, 0, 0, 0, 0, 0, 0, 0, 'NPC D.I.S.C.O. spawns gobject D.I.S.C.O. after spawn'),
 	(2798902, 27989, 1, 0, 100, 1, 1000, 1000, 20000, 25000, 4, 12924, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'NPC D.I.S.C.O. play disco sound every 20 - 25 seconds'),

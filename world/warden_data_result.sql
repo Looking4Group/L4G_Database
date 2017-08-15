@@ -1,10 +1,17 @@
+-- --------------------------------------------------------
+-- Host:                         78.46.96.217
+-- Server version:               5.5.49-0+deb8u1 - (Debian)
+-- Server OS:                    debian-linux-gnu
+-- HeidiSQL Version:             9.4.0.5145
+-- --------------------------------------------------------
+
 /*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
 /*!40101 SET NAMES utf8 */;
 /*!50503 SET NAMES utf8mb4 */;
 /*!40014 SET @OLD_FOREIGN_KEY_CHECKS=@@FOREIGN_KEY_CHECKS, FOREIGN_KEY_CHECKS=0 */;
 /*!40101 SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='NO_AUTO_VALUE_ON_ZERO' */;
 
-DROP TABLE IF EXISTS `warden_data_result`;
+-- Dumping structure for table sully_world.warden_data_result
 CREATE TABLE IF NOT EXISTS `warden_data_result` (
   `id` int(4) NOT NULL AUTO_INCREMENT,
   `check` int(3) DEFAULT NULL,
@@ -17,6 +24,8 @@ CREATE TABLE IF NOT EXISTS `warden_data_result` (
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB AUTO_INCREMENT=1010 DEFAULT CHARSET=utf8;
 
+-- Dumping data for table sully_world.warden_data_result: ~50 rows (approximately)
+DELETE FROM `warden_data_result`;
 /*!40000 ALTER TABLE `warden_data_result` DISABLE KEYS */;
 INSERT INTO `warden_data_result` (`id`, `check`, `data`, `str`, `address`, `length`, `result`, `comment`) VALUES
 	(1, 243, '', '', 4840352, 2, '558B', 'LUA Protection'),

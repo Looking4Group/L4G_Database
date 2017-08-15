@@ -1,10 +1,17 @@
+-- --------------------------------------------------------
+-- Host:                         78.46.96.217
+-- Server version:               5.5.49-0+deb8u1 - (Debian)
+-- Server OS:                    debian-linux-gnu
+-- HeidiSQL Version:             9.4.0.5145
+-- --------------------------------------------------------
+
 /*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
 /*!40101 SET NAMES utf8 */;
 /*!50503 SET NAMES utf8mb4 */;
 /*!40014 SET @OLD_FOREIGN_KEY_CHECKS=@@FOREIGN_KEY_CHECKS, FOREIGN_KEY_CHECKS=0 */;
 /*!40101 SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='NO_AUTO_VALUE_ON_ZERO' */;
 
-DROP TABLE IF EXISTS `spell_linked_spell`;
+-- Dumping structure for table sully_world.spell_linked_spell
 CREATE TABLE IF NOT EXISTS `spell_linked_spell` (
   `spell_trigger` int(10) NOT NULL,
   `spell_effect` int(10) NOT NULL DEFAULT '0',
@@ -13,6 +20,8 @@ CREATE TABLE IF NOT EXISTS `spell_linked_spell` (
   PRIMARY KEY (`spell_trigger`,`spell_effect`,`type`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
+-- Dumping data for table sully_world.spell_linked_spell: ~147 rows (approximately)
+DELETE FROM `spell_linked_spell`;
 /*!40000 ALTER TABLE `spell_linked_spell` DISABLE KEYS */;
 INSERT INTO `spell_linked_spell` (`spell_trigger`, `spell_effect`, `type`, `comment`) VALUES
 	(-46021, 46020, 0, 'Teleport: Normal Realm'),
@@ -111,6 +120,8 @@ INSERT INTO `spell_linked_spell` (`spell_trigger`, `spell_effect`, `type`, `comm
 	(31224, -46394, 0, 'Cloak of Shadows - Burn'),
 	(31224, -45665, 0, 'Cloak of shadows dispells encapsulate'),
 	(31224, -45661, 0, 'Cloak of shadows dispells encapsulate'),
+	(31224, -44335, 0, 'Cloak of Shadows - Despell Energy Feedback'),
+	(31224, -33572, 0, 'Cloak of Shadows - Despell Gronn Lord\'s Grasp'),
 	(31224, -31944, 0, 'Cloak of Shadows - Doomfire'),
 	(31224, -1543, 2, 'Cloak of Shadows - Flare'),
 	(32686, 5165, 2, 'BT Worldboss Stun on earthquake'),
