@@ -1,17 +1,9 @@
--- --------------------------------------------------------
--- Host:                         78.46.96.217
--- Server version:               5.5.49-0+deb8u1 - (Debian)
--- Server OS:                    debian-linux-gnu
--- HeidiSQL Version:             9.4.0.5145
--- --------------------------------------------------------
-
 /*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
 /*!40101 SET NAMES utf8 */;
 /*!50503 SET NAMES utf8mb4 */;
 /*!40014 SET @OLD_FOREIGN_KEY_CHECKS=@@FOREIGN_KEY_CHECKS, FOREIGN_KEY_CHECKS=0 */;
 /*!40101 SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='NO_AUTO_VALUE_ON_ZERO' */;
 
--- Dumping structure for table sully_world.creature_model_info
 CREATE TABLE IF NOT EXISTS `creature_model_info` (
   `modelid` mediumint(8) unsigned NOT NULL DEFAULT '0',
   `bounding_radius` float NOT NULL DEFAULT '0',
@@ -21,7 +13,6 @@ CREATE TABLE IF NOT EXISTS `creature_model_info` (
   PRIMARY KEY (`modelid`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COMMENT='Creature System (Model related info)';
 
--- Dumping data for table sully_world.creature_model_info: ~17.253 rows (approximately)
 DELETE FROM `creature_model_info`;
 /*!40000 ALTER TABLE `creature_model_info` DISABLE KEYS */;
 INSERT INTO `creature_model_info` (`modelid`, `bounding_radius`, `combat_reach`, `gender`, `modelid_other_gender`) VALUES

@@ -1,17 +1,9 @@
--- --------------------------------------------------------
--- Host:                         78.46.96.217
--- Server version:               5.5.49-0+deb8u1 - (Debian)
--- Server OS:                    debian-linux-gnu
--- HeidiSQL Version:             9.4.0.5145
--- --------------------------------------------------------
-
 /*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
 /*!40101 SET NAMES utf8 */;
 /*!50503 SET NAMES utf8mb4 */;
 /*!40014 SET @OLD_FOREIGN_KEY_CHECKS=@@FOREIGN_KEY_CHECKS, FOREIGN_KEY_CHECKS=0 */;
 /*!40101 SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='NO_AUTO_VALUE_ON_ZERO' */;
 
--- Dumping structure for table sully_world.page_text
 CREATE TABLE IF NOT EXISTS `page_text` (
   `entry` mediumint(8) unsigned NOT NULL DEFAULT '0',
   `text` longtext NOT NULL,
@@ -19,7 +11,6 @@ CREATE TABLE IF NOT EXISTS `page_text` (
   PRIMARY KEY (`entry`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COMMENT='Item System';
 
--- Dumping data for table sully_world.page_text: ~1.531 rows (approximately)
 DELETE FROM `page_text`;
 /*!40000 ALTER TABLE `page_text` DISABLE KEYS */;
 INSERT INTO `page_text` (`entry`, `text`, `next_page`) VALUES

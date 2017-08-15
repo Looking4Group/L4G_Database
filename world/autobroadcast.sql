@@ -1,24 +1,15 @@
--- --------------------------------------------------------
--- Host:                         78.46.96.217
--- Server version:               5.5.49-0+deb8u1 - (Debian)
--- Server OS:                    debian-linux-gnu
--- HeidiSQL Version:             9.4.0.5145
--- --------------------------------------------------------
-
 /*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
 /*!40101 SET NAMES utf8 */;
 /*!50503 SET NAMES utf8mb4 */;
 /*!40014 SET @OLD_FOREIGN_KEY_CHECKS=@@FOREIGN_KEY_CHECKS, FOREIGN_KEY_CHECKS=0 */;
 /*!40101 SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='NO_AUTO_VALUE_ON_ZERO' */;
 
--- Dumping structure for table sully_world.autobroadcast
 CREATE TABLE IF NOT EXISTS `autobroadcast` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
   `text` longtext NOT NULL,
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB AUTO_INCREMENT=11 DEFAULT CHARSET=utf8;
 
--- Dumping data for table sully_world.autobroadcast: ~9 rows (approximately)
 DELETE FROM `autobroadcast`;
 /*!40000 ALTER TABLE `autobroadcast` DISABLE KEYS */;
 INSERT INTO `autobroadcast` (`id`, `text`) VALUES

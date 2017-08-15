@@ -1,17 +1,9 @@
--- --------------------------------------------------------
--- Host:                         78.46.96.217
--- Server version:               5.5.49-0+deb8u1 - (Debian)
--- Server OS:                    debian-linux-gnu
--- HeidiSQL Version:             9.4.0.5145
--- --------------------------------------------------------
-
 /*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
 /*!40101 SET NAMES utf8 */;
 /*!50503 SET NAMES utf8mb4 */;
 /*!40014 SET @OLD_FOREIGN_KEY_CHECKS=@@FOREIGN_KEY_CHECKS, FOREIGN_KEY_CHECKS=0 */;
 /*!40101 SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='NO_AUTO_VALUE_ON_ZERO' */;
 
--- Dumping structure for table sully_world.game_event
 CREATE TABLE IF NOT EXISTS `game_event` (
   `entry` mediumint(8) unsigned NOT NULL COMMENT 'Entry of the game event',
   `start_time` timestamp NOT NULL DEFAULT '0000-00-00 00:00:00' COMMENT 'Absolute start date, the event will never start before',
@@ -24,7 +16,6 @@ CREATE TABLE IF NOT EXISTS `game_event` (
   PRIMARY KEY (`entry`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
--- Dumping data for table sully_world.game_event: ~68 rows (approximately)
 DELETE FROM `game_event`;
 /*!40000 ALTER TABLE `game_event` DISABLE KEYS */;
 INSERT INTO `game_event` (`entry`, `start_time`, `end_time`, `occurence`, `length`, `description`, `world_event`, `flags`) VALUES

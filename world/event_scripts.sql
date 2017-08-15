@@ -1,17 +1,9 @@
--- --------------------------------------------------------
--- Host:                         78.46.96.217
--- Server version:               5.5.49-0+deb8u1 - (Debian)
--- Server OS:                    debian-linux-gnu
--- HeidiSQL Version:             9.4.0.5145
--- --------------------------------------------------------
-
 /*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
 /*!40101 SET NAMES utf8 */;
 /*!50503 SET NAMES utf8mb4 */;
 /*!40014 SET @OLD_FOREIGN_KEY_CHECKS=@@FOREIGN_KEY_CHECKS, FOREIGN_KEY_CHECKS=0 */;
 /*!40101 SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='NO_AUTO_VALUE_ON_ZERO' */;
 
--- Dumping structure for table sully_world.event_scripts
 CREATE TABLE IF NOT EXISTS `event_scripts` (
   `id` mediumint(8) unsigned NOT NULL DEFAULT '0',
   `delay` int(10) unsigned NOT NULL DEFAULT '0',
@@ -25,7 +17,6 @@ CREATE TABLE IF NOT EXISTS `event_scripts` (
   `o` float NOT NULL DEFAULT '0'
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
--- Dumping data for table sully_world.event_scripts: ~371 rows (approximately)
 DELETE FROM `event_scripts`;
 /*!40000 ALTER TABLE `event_scripts` DISABLE KEYS */;
 INSERT INTO `event_scripts` (`id`, `delay`, `command`, `datalong`, `datalong2`, `dataint`, `x`, `y`, `z`, `o`) VALUES

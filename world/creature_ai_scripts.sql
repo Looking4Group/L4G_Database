@@ -1,17 +1,9 @@
--- --------------------------------------------------------
--- Host:                         78.46.96.217
--- Server version:               5.5.49-0+deb8u1 - (Debian)
--- Server OS:                    debian-linux-gnu
--- HeidiSQL Version:             9.4.0.5145
--- --------------------------------------------------------
-
 /*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
 /*!40101 SET NAMES utf8 */;
 /*!50503 SET NAMES utf8mb4 */;
 /*!40014 SET @OLD_FOREIGN_KEY_CHECKS=@@FOREIGN_KEY_CHECKS, FOREIGN_KEY_CHECKS=0 */;
 /*!40101 SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='NO_AUTO_VALUE_ON_ZERO' */;
 
--- Dumping structure for table sully_world.creature_ai_scripts
 CREATE TABLE IF NOT EXISTS `creature_ai_scripts` (
   `id` int(11) unsigned NOT NULL AUTO_INCREMENT COMMENT 'Identifier',
   `entryOrGUID` int(11) NOT NULL DEFAULT '0' COMMENT 'Creature Template Identifier',
@@ -39,7 +31,6 @@ CREATE TABLE IF NOT EXISTS `creature_ai_scripts` (
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB AUTO_INCREMENT=100001502 DEFAULT CHARSET=utf8 ROW_FORMAT=FIXED COMMENT='EventAI Scripts';
 
--- Dumping data for table sully_world.creature_ai_scripts: ~15.753 rows (approximately)
 DELETE FROM `creature_ai_scripts`;
 /*!40000 ALTER TABLE `creature_ai_scripts` DISABLE KEYS */;
 INSERT INTO `creature_ai_scripts` (`id`, `entryOrGUID`, `event_type`, `event_inverse_phase_mask`, `event_chance`, `event_flags`, `event_param1`, `event_param2`, `event_param3`, `event_param4`, `action1_type`, `action1_param1`, `action1_param2`, `action1_param3`, `action2_type`, `action2_param1`, `action2_param2`, `action2_param3`, `action3_type`, `action3_param1`, `action3_param2`, `action3_param3`, `comment`) VALUES

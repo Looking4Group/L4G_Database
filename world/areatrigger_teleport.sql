@@ -1,17 +1,9 @@
--- --------------------------------------------------------
--- Host:                         78.46.96.217
--- Server version:               5.5.49-0+deb8u1 - (Debian)
--- Server OS:                    debian-linux-gnu
--- HeidiSQL Version:             9.4.0.5145
--- --------------------------------------------------------
-
 /*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
 /*!40101 SET NAMES utf8 */;
 /*!50503 SET NAMES utf8mb4 */;
 /*!40014 SET @OLD_FOREIGN_KEY_CHECKS=@@FOREIGN_KEY_CHECKS, FOREIGN_KEY_CHECKS=0 */;
 /*!40101 SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='NO_AUTO_VALUE_ON_ZERO' */;
 
--- Dumping structure for table sully_world.areatrigger_teleport
 CREATE TABLE IF NOT EXISTS `areatrigger_teleport` (
   `id` mediumint(8) unsigned NOT NULL DEFAULT '0' COMMENT 'Identifier',
   `name` text,
@@ -24,7 +16,6 @@ CREATE TABLE IF NOT EXISTS `areatrigger_teleport` (
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 ROW_FORMAT=FIXED COMMENT='Trigger System';
 
--- Dumping data for table sully_world.areatrigger_teleport: ~164 rows (approximately)
 DELETE FROM `areatrigger_teleport`;
 /*!40000 ALTER TABLE `areatrigger_teleport` DISABLE KEYS */;
 INSERT INTO `areatrigger_teleport` (`id`, `name`, `access_id`, `target_map`, `target_position_x`, `target_position_y`, `target_position_z`, `target_orientation`) VALUES

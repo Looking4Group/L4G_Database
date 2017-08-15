@@ -1,17 +1,9 @@
--- --------------------------------------------------------
--- Host:                         78.46.96.217
--- Server version:               5.5.49-0+deb8u1 - (Debian)
--- Server OS:                    debian-linux-gnu
--- HeidiSQL Version:             9.4.0.5145
--- --------------------------------------------------------
-
 /*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
 /*!40101 SET NAMES utf8 */;
 /*!50503 SET NAMES utf8mb4 */;
 /*!40014 SET @OLD_FOREIGN_KEY_CHECKS=@@FOREIGN_KEY_CHECKS, FOREIGN_KEY_CHECKS=0 */;
 /*!40101 SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='NO_AUTO_VALUE_ON_ZERO' */;
 
--- Dumping structure for table sully_world.locales_page_text
 CREATE TABLE IF NOT EXISTS `locales_page_text` (
   `entry` mediumint(8) unsigned NOT NULL DEFAULT '0',
   `Text_loc1` longtext,
@@ -25,7 +17,6 @@ CREATE TABLE IF NOT EXISTS `locales_page_text` (
   PRIMARY KEY (`entry`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
--- Dumping data for table sully_world.locales_page_text: ~1.605 rows (approximately)
 DELETE FROM `locales_page_text`;
 /*!40000 ALTER TABLE `locales_page_text` DISABLE KEYS */;
 INSERT INTO `locales_page_text` (`entry`, `Text_loc1`, `Text_loc2`, `Text_loc3`, `Text_loc4`, `Text_loc5`, `Text_loc6`, `Text_loc7`, `Text_loc8`) VALUES

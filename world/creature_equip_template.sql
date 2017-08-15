@@ -1,17 +1,9 @@
--- --------------------------------------------------------
--- Host:                         78.46.96.217
--- Server version:               5.5.49-0+deb8u1 - (Debian)
--- Server OS:                    debian-linux-gnu
--- HeidiSQL Version:             9.4.0.5145
--- --------------------------------------------------------
-
 /*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
 /*!40101 SET NAMES utf8 */;
 /*!50503 SET NAMES utf8mb4 */;
 /*!40014 SET @OLD_FOREIGN_KEY_CHECKS=@@FOREIGN_KEY_CHECKS, FOREIGN_KEY_CHECKS=0 */;
 /*!40101 SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='NO_AUTO_VALUE_ON_ZERO' */;
 
--- Dumping structure for table sully_world.creature_equip_template
 CREATE TABLE IF NOT EXISTS `creature_equip_template` (
   `entry` mediumint(8) unsigned NOT NULL DEFAULT '0' COMMENT 'Unique entry',
   `equipmodel1` mediumint(8) unsigned NOT NULL DEFAULT '0',
@@ -26,7 +18,6 @@ CREATE TABLE IF NOT EXISTS `creature_equip_template` (
   PRIMARY KEY (`entry`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COMMENT='Creature System (Equipment)';
 
--- Dumping data for table sully_world.creature_equip_template: ~2.135 rows (approximately)
 DELETE FROM `creature_equip_template`;
 /*!40000 ALTER TABLE `creature_equip_template` DISABLE KEYS */;
 INSERT INTO `creature_equip_template` (`entry`, `equipmodel1`, `equipmodel2`, `equipmodel3`, `equipinfo1`, `equipinfo2`, `equipinfo3`, `equipslot1`, `equipslot2`, `equipslot3`) VALUES

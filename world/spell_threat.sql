@@ -1,24 +1,15 @@
--- --------------------------------------------------------
--- Host:                         78.46.96.217
--- Server version:               5.5.49-0+deb8u1 - (Debian)
--- Server OS:                    debian-linux-gnu
--- HeidiSQL Version:             9.4.0.5145
--- --------------------------------------------------------
-
 /*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
 /*!40101 SET NAMES utf8 */;
 /*!50503 SET NAMES utf8mb4 */;
 /*!40014 SET @OLD_FOREIGN_KEY_CHECKS=@@FOREIGN_KEY_CHECKS, FOREIGN_KEY_CHECKS=0 */;
 /*!40101 SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='NO_AUTO_VALUE_ON_ZERO' */;
 
--- Dumping structure for table sully_world.spell_threat
 CREATE TABLE IF NOT EXISTS `spell_threat` (
   `entry` mediumint(8) unsigned NOT NULL,
   `Threat` smallint(6) NOT NULL,
   PRIMARY KEY (`entry`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 ROW_FORMAT=FIXED;
 
--- Dumping data for table sully_world.spell_threat: ~143 rows (approximately)
 DELETE FROM `spell_threat`;
 /*!40000 ALTER TABLE `spell_threat` DISABLE KEYS */;
 INSERT INTO `spell_threat` (`entry`, `Threat`) VALUES

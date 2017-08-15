@@ -1,17 +1,9 @@
--- --------------------------------------------------------
--- Host:                         78.46.96.217
--- Server version:               5.5.49-0+deb8u1 - (Debian)
--- Server OS:                    debian-linux-gnu
--- HeidiSQL Version:             9.4.0.5145
--- --------------------------------------------------------
-
 /*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
 /*!40101 SET NAMES utf8 */;
 /*!50503 SET NAMES utf8mb4 */;
 /*!40014 SET @OLD_FOREIGN_KEY_CHECKS=@@FOREIGN_KEY_CHECKS, FOREIGN_KEY_CHECKS=0 */;
 /*!40101 SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='NO_AUTO_VALUE_ON_ZERO' */;
 
--- Dumping structure for table sully_world.player_classlevelstats
 CREATE TABLE IF NOT EXISTS `player_classlevelstats` (
   `class` tinyint(3) unsigned NOT NULL,
   `level` tinyint(3) unsigned NOT NULL,
@@ -20,7 +12,6 @@ CREATE TABLE IF NOT EXISTS `player_classlevelstats` (
   PRIMARY KEY (`class`,`level`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 PACK_KEYS=0 COMMENT='Stores levels stats.';
 
--- Dumping data for table sully_world.player_classlevelstats: ~641 rows (approximately)
 DELETE FROM `player_classlevelstats`;
 /*!40000 ALTER TABLE `player_classlevelstats` DISABLE KEYS */;
 INSERT INTO `player_classlevelstats` (`class`, `level`, `basehp`, `basemana`) VALUES

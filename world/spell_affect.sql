@@ -1,17 +1,9 @@
--- --------------------------------------------------------
--- Host:                         78.46.96.217
--- Server version:               5.5.49-0+deb8u1 - (Debian)
--- Server OS:                    debian-linux-gnu
--- HeidiSQL Version:             9.4.0.5145
--- --------------------------------------------------------
-
 /*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
 /*!40101 SET NAMES utf8 */;
 /*!50503 SET NAMES utf8mb4 */;
 /*!40014 SET @OLD_FOREIGN_KEY_CHECKS=@@FOREIGN_KEY_CHECKS, FOREIGN_KEY_CHECKS=0 */;
 /*!40101 SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='NO_AUTO_VALUE_ON_ZERO' */;
 
--- Dumping structure for table sully_world.spell_affect
 CREATE TABLE IF NOT EXISTS `spell_affect` (
   `entry` smallint(5) unsigned NOT NULL DEFAULT '0',
   `effectId` tinyint(3) unsigned NOT NULL DEFAULT '0',
@@ -19,7 +11,6 @@ CREATE TABLE IF NOT EXISTS `spell_affect` (
   PRIMARY KEY (`entry`,`effectId`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
--- Dumping data for table sully_world.spell_affect: ~1.476 rows (approximately)
 DELETE FROM `spell_affect`;
 /*!40000 ALTER TABLE `spell_affect` DISABLE KEYS */;
 INSERT INTO `spell_affect` (`entry`, `effectId`, `SpellFamilyMask`) VALUES

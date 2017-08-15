@@ -1,24 +1,15 @@
--- --------------------------------------------------------
--- Host:                         78.46.96.217
--- Server version:               5.5.49-0+deb8u1 - (Debian)
--- Server OS:                    debian-linux-gnu
--- HeidiSQL Version:             9.4.0.5145
--- --------------------------------------------------------
-
 /*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
 /*!40101 SET NAMES utf8 */;
 /*!50503 SET NAMES utf8mb4 */;
 /*!40014 SET @OLD_FOREIGN_KEY_CHECKS=@@FOREIGN_KEY_CHECKS, FOREIGN_KEY_CHECKS=0 */;
 /*!40101 SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='NO_AUTO_VALUE_ON_ZERO' */;
 
--- Dumping structure for table sully_world.creature_linked_respawn
 CREATE TABLE IF NOT EXISTS `creature_linked_respawn` (
   `guid` int(10) unsigned NOT NULL COMMENT 'dependent creature',
   `linkedGuid` int(10) unsigned NOT NULL COMMENT 'master creature',
   PRIMARY KEY (`guid`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 ROW_FORMAT=DYNAMIC COMMENT='Creature Respawn Link System';
 
--- Dumping data for table sully_world.creature_linked_respawn: ~4.864 rows (approximately)
 DELETE FROM `creature_linked_respawn`;
 /*!40000 ALTER TABLE `creature_linked_respawn` DISABLE KEYS */;
 INSERT INTO `creature_linked_respawn` (`guid`, `linkedGuid`) VALUES

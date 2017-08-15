@@ -1,17 +1,9 @@
--- --------------------------------------------------------
--- Host:                         78.46.96.217
--- Server version:               5.5.49-0+deb8u1 - (Debian)
--- Server OS:                    debian-linux-gnu
--- HeidiSQL Version:             9.4.0.5145
--- --------------------------------------------------------
-
 /*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
 /*!40101 SET NAMES utf8 */;
 /*!50503 SET NAMES utf8mb4 */;
 /*!40014 SET @OLD_FOREIGN_KEY_CHECKS=@@FOREIGN_KEY_CHECKS, FOREIGN_KEY_CHECKS=0 */;
 /*!40101 SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='NO_AUTO_VALUE_ON_ZERO' */;
 
--- Dumping structure for table sully_world.npc_vendor
 CREATE TABLE IF NOT EXISTS `npc_vendor` (
   `entry` mediumint(8) unsigned NOT NULL DEFAULT '0',
   `item` mediumint(8) unsigned NOT NULL DEFAULT '0',
@@ -21,7 +13,6 @@ CREATE TABLE IF NOT EXISTS `npc_vendor` (
   PRIMARY KEY (`entry`,`item`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 ROW_FORMAT=FIXED COMMENT='Npc System';
 
--- Dumping data for table sully_world.npc_vendor: ~21.892 rows (approximately)
 DELETE FROM `npc_vendor`;
 /*!40000 ALTER TABLE `npc_vendor` DISABLE KEYS */;
 INSERT INTO `npc_vendor` (`entry`, `item`, `maxcount`, `incrtime`, `ExtendedCost`) VALUES

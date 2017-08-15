@@ -1,17 +1,9 @@
--- --------------------------------------------------------
--- Host:                         78.46.96.217
--- Server version:               5.5.49-0+deb8u1 - (Debian)
--- Server OS:                    debian-linux-gnu
--- HeidiSQL Version:             9.4.0.5145
--- --------------------------------------------------------
-
 /*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
 /*!40101 SET NAMES utf8 */;
 /*!50503 SET NAMES utf8mb4 */;
 /*!40014 SET @OLD_FOREIGN_KEY_CHECKS=@@FOREIGN_KEY_CHECKS, FOREIGN_KEY_CHECKS=0 */;
 /*!40101 SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='NO_AUTO_VALUE_ON_ZERO' */;
 
--- Dumping structure for table sully_world.pet_name_generation
 CREATE TABLE IF NOT EXISTS `pet_name_generation` (
   `id` mediumint(8) unsigned NOT NULL AUTO_INCREMENT,
   `word` tinytext NOT NULL,
@@ -20,7 +12,6 @@ CREATE TABLE IF NOT EXISTS `pet_name_generation` (
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB AUTO_INCREMENT=261 DEFAULT CHARSET=utf8;
 
--- Dumping data for table sully_world.pet_name_generation: ~260 rows (approximately)
 DELETE FROM `pet_name_generation`;
 /*!40000 ALTER TABLE `pet_name_generation` DISABLE KEYS */;
 INSERT INTO `pet_name_generation` (`id`, `word`, `entry`, `half`) VALUES

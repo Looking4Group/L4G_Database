@@ -1,17 +1,9 @@
--- --------------------------------------------------------
--- Host:                         78.46.96.217
--- Server version:               5.5.49-0+deb8u1 - (Debian)
--- Server OS:                    debian-linux-gnu
--- HeidiSQL Version:             9.4.0.5145
--- --------------------------------------------------------
-
 /*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
 /*!40101 SET NAMES utf8 */;
 /*!50503 SET NAMES utf8mb4 */;
 /*!40014 SET @OLD_FOREIGN_KEY_CHECKS=@@FOREIGN_KEY_CHECKS, FOREIGN_KEY_CHECKS=0 */;
 /*!40101 SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='NO_AUTO_VALUE_ON_ZERO' */;
 
--- Dumping structure for table sully_world.creature_ai_summons
 CREATE TABLE IF NOT EXISTS `creature_ai_summons` (
   `id` int(11) unsigned NOT NULL AUTO_INCREMENT COMMENT 'Location Identifier',
   `position_x` float NOT NULL DEFAULT '0',
@@ -23,7 +15,6 @@ CREATE TABLE IF NOT EXISTS `creature_ai_summons` (
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB AUTO_INCREMENT=28 DEFAULT CHARSET=utf8 ROW_FORMAT=FIXED COMMENT='EventAI Summoning Locations';
 
--- Dumping data for table sully_world.creature_ai_summons: ~13 rows (approximately)
 DELETE FROM `creature_ai_summons`;
 /*!40000 ALTER TABLE `creature_ai_summons` DISABLE KEYS */;
 INSERT INTO `creature_ai_summons` (`id`, `position_x`, `position_y`, `position_z`, `orientation`, `spawntimesecs`, `comment`) VALUES
