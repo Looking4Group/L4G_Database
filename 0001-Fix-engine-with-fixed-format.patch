@@ -1,0 +1,515 @@
+From 05d1fce6e3c202afc0db6e5624368c76a2ac2a1a Mon Sep 17 00:00:00 2001
+From: SaltyZero <saltyzero@foxmail.com>
+Date: Wed, 15 Jul 2020 12:37:36 +0800
+Subject: [PATCH] Fix engine with fixed format
+
+---
+ areatrigger_involvedrelation.sql | 2 +-
+ areatrigger_tavern.sql           | 2 +-
+ areatrigger_teleport.sql         | 2 +-
+ command.sql                      | 2 +-
+ creature_ai_scripts.sql          | 2 +-
+ creature_ai_summons.sql          | 2 +-
+ creature_ai_texts.sql            | 2 +-
+ creature_involvedrelation.sql    | 2 +-
+ creature_questrelation.sql       | 2 +-
+ custom_texts.sql                 | 2 +-
+ disenchant_loot_template.sql     | 2 +-
+ exploration_basexp.sql           | 2 +-
+ game_weather.sql                 | 2 +-
+ gameobject.sql                   | 2 +-
+ gameobject_template.sql          | 2 +-
+ item_enchantment_template.sql    | 2 +-
+ item_loot_template.sql           | 2 +-
+ item_template.sql                | 2 +-
+ npc_vendor.sql                   | 2 +-
+ pickpocketing_loot_template.sql  | 2 +-
+ prospecting_loot_template.sql    | 2 +-
+ quest_mail_loot_template.sql     | 2 +-
+ reference_loot_template.sql      | 2 +-
+ script_texts.sql                 | 2 +-
+ script_waypoint.sql              | 2 +-
+ skill_discovery_template.sql     | 2 +-
+ skill_extra_item_template.sql    | 2 +-
+ skill_fishing_base_level.sql     | 2 +-
+ skinning_loot_template.sql       | 2 +-
+ spell_elixir.sql                 | 2 +-
+ spell_learn_spell.sql            | 2 +-
+ spell_required.sql               | 2 +-
+ spell_target_position.sql        | 2 +-
+ spell_threat.sql                 | 2 +-
+ transports.sql                   | 2 +-
+ version.sql                      | 2 +-
+ 36 files changed, 36 insertions(+), 36 deletions(-)
+
+diff --git a/areatrigger_involvedrelation.sql b/areatrigger_involvedrelation.sql
+index 8481e5c..0df2c70 100644
+--- a/areatrigger_involvedrelation.sql
++++ b/areatrigger_involvedrelation.sql
+@@ -8,7 +8,7 @@ CREATE TABLE IF NOT EXISTS `areatrigger_involvedrelation` (
+   `id` mediumint(8) unsigned NOT NULL DEFAULT '0' COMMENT 'Identifier',
+   `quest` mediumint(8) unsigned NOT NULL DEFAULT '0' COMMENT 'Quest Identifier',
+   PRIMARY KEY (`id`)
+-) ENGINE=InnoDB DEFAULT CHARSET=utf8 ROW_FORMAT=FIXED COMMENT='Trigger System';
++) ENGINE=MyISAM DEFAULT CHARSET=utf8 ROW_FORMAT=FIXED COMMENT='Trigger System';
+ 
+ DELETE FROM `areatrigger_involvedrelation`;
+ /*!40000 ALTER TABLE `areatrigger_involvedrelation` DISABLE KEYS */;
+diff --git a/areatrigger_tavern.sql b/areatrigger_tavern.sql
+index 65dc245..d39a90b 100644
+--- a/areatrigger_tavern.sql
++++ b/areatrigger_tavern.sql
+@@ -8,7 +8,7 @@ CREATE TABLE IF NOT EXISTS `areatrigger_tavern` (
+   `id` mediumint(8) unsigned NOT NULL DEFAULT '0' COMMENT 'Identifier',
+   `name` text,
+   PRIMARY KEY (`id`)
+-) ENGINE=InnoDB DEFAULT CHARSET=utf8 ROW_FORMAT=FIXED COMMENT='Trigger System';
++) ENGINE=MyISAM DEFAULT CHARSET=utf8 ROW_FORMAT=FIXED COMMENT='Trigger System';
+ 
+ DELETE FROM `areatrigger_tavern`;
+ /*!40000 ALTER TABLE `areatrigger_tavern` DISABLE KEYS */;
+diff --git a/areatrigger_teleport.sql b/areatrigger_teleport.sql
+index 9bb2dd9..531b6d7 100644
+--- a/areatrigger_teleport.sql
++++ b/areatrigger_teleport.sql
+@@ -14,7 +14,7 @@ CREATE TABLE IF NOT EXISTS `areatrigger_teleport` (
+   `target_position_z` float NOT NULL DEFAULT '0',
+   `target_orientation` float NOT NULL DEFAULT '0',
+   PRIMARY KEY (`id`)
+-) ENGINE=InnoDB DEFAULT CHARSET=utf8 ROW_FORMAT=FIXED COMMENT='Trigger System';
++) ENGINE=MyISAM DEFAULT CHARSET=utf8 ROW_FORMAT=FIXED COMMENT='Trigger System';
+ 
+ DELETE FROM `areatrigger_teleport`;
+ /*!40000 ALTER TABLE `areatrigger_teleport` DISABLE KEYS */;
+diff --git a/command.sql b/command.sql
+index dedeba0..dadbed3 100644
+--- a/command.sql
++++ b/command.sql
+@@ -9,7 +9,7 @@ CREATE TABLE IF NOT EXISTS `command` (
+   `permission_mask` bigint(20) unsigned NOT NULL DEFAULT '1',
+   `help` longtext,
+   PRIMARY KEY (`name`)
+-) ENGINE=InnoDB DEFAULT CHARSET=utf8 CHECKSUM=1 DELAY_KEY_WRITE=1 ROW_FORMAT=FIXED COMMENT='Chat System';
++) ENGINE=MyISAM DEFAULT CHARSET=utf8 CHECKSUM=1 DELAY_KEY_WRITE=1 ROW_FORMAT=FIXED COMMENT='Chat System';
+ 
+ DELETE FROM `command`;
+ /*!40000 ALTER TABLE `command` DISABLE KEYS */;
+diff --git a/creature_ai_scripts.sql b/creature_ai_scripts.sql
+index be4695a..fb0b06b 100644
+--- a/creature_ai_scripts.sql
++++ b/creature_ai_scripts.sql
+@@ -29,7 +29,7 @@ CREATE TABLE IF NOT EXISTS `creature_ai_scripts` (
+   `action3_param3` int(11) NOT NULL DEFAULT '0',
+   `comment` varchar(255) NOT NULL DEFAULT '' COMMENT 'Event Comment',
+   PRIMARY KEY (`id`)
+-) ENGINE=InnoDB AUTO_INCREMENT=100001502 DEFAULT CHARSET=utf8 ROW_FORMAT=FIXED COMMENT='EventAI Scripts';
++) ENGINE=MyISAM AUTO_INCREMENT=100001502 DEFAULT CHARSET=utf8 ROW_FORMAT=FIXED COMMENT='EventAI Scripts';
+ 
+ DELETE FROM `creature_ai_scripts`;
+ /*!40000 ALTER TABLE `creature_ai_scripts` DISABLE KEYS */;
+diff --git a/creature_ai_summons.sql b/creature_ai_summons.sql
+index bc1b456..7a4932a 100644
+--- a/creature_ai_summons.sql
++++ b/creature_ai_summons.sql
+@@ -13,7 +13,7 @@ CREATE TABLE IF NOT EXISTS `creature_ai_summons` (
+   `spawntimesecs` int(11) unsigned NOT NULL DEFAULT '120',
+   `comment` varchar(255) NOT NULL DEFAULT '' COMMENT 'Summon Comment',
+   PRIMARY KEY (`id`)
+-) ENGINE=InnoDB AUTO_INCREMENT=28 DEFAULT CHARSET=utf8 ROW_FORMAT=FIXED COMMENT='EventAI Summoning Locations';
++) ENGINE=MyISAM AUTO_INCREMENT=28 DEFAULT CHARSET=utf8 ROW_FORMAT=FIXED COMMENT='EventAI Summoning Locations';
+ 
+ DELETE FROM `creature_ai_summons`;
+ /*!40000 ALTER TABLE `creature_ai_summons` DISABLE KEYS */;
+diff --git a/creature_ai_texts.sql b/creature_ai_texts.sql
+index 318a80b..a1d5d21 100644
+--- a/creature_ai_texts.sql
++++ b/creature_ai_texts.sql
+@@ -21,7 +21,7 @@ CREATE TABLE IF NOT EXISTS `creature_ai_texts` (
+   `emote` smallint(5) unsigned NOT NULL DEFAULT '0',
+   `comment` text,
+   PRIMARY KEY (`entry`)
+-) ENGINE=InnoDB DEFAULT CHARSET=utf8 ROW_FORMAT=FIXED COMMENT='Script Texts';
++) ENGINE=MyISAM DEFAULT CHARSET=utf8 ROW_FORMAT=FIXED COMMENT='Script Texts';
+ 
+ DELETE FROM `creature_ai_texts`;
+ /*!40000 ALTER TABLE `creature_ai_texts` DISABLE KEYS */;
+diff --git a/creature_involvedrelation.sql b/creature_involvedrelation.sql
+index fe64af5..ce5004a 100644
+--- a/creature_involvedrelation.sql
++++ b/creature_involvedrelation.sql
+@@ -8,7 +8,7 @@ CREATE TABLE IF NOT EXISTS `creature_involvedrelation` (
+   `id` mediumint(8) unsigned NOT NULL DEFAULT '0' COMMENT 'Identifier',
+   `quest` mediumint(8) unsigned NOT NULL DEFAULT '0' COMMENT 'Quest Identifier',
+   PRIMARY KEY (`id`,`quest`)
+-) ENGINE=InnoDB DEFAULT CHARSET=utf8 ROW_FORMAT=FIXED COMMENT='Creature System';
++) ENGINE=MyISAM DEFAULT CHARSET=utf8 ROW_FORMAT=FIXED COMMENT='Creature System';
+ 
+ DELETE FROM `creature_involvedrelation`;
+ /*!40000 ALTER TABLE `creature_involvedrelation` DISABLE KEYS */;
+diff --git a/creature_questrelation.sql b/creature_questrelation.sql
+index bb3e8c2..6582162 100644
+--- a/creature_questrelation.sql
++++ b/creature_questrelation.sql
+@@ -8,7 +8,7 @@ CREATE TABLE IF NOT EXISTS `creature_questrelation` (
+   `id` mediumint(8) unsigned NOT NULL DEFAULT '0' COMMENT 'Identifier',
+   `quest` mediumint(8) unsigned NOT NULL DEFAULT '0' COMMENT 'Quest Identifier',
+   PRIMARY KEY (`id`,`quest`)
+-) ENGINE=InnoDB DEFAULT CHARSET=utf8 ROW_FORMAT=FIXED COMMENT='Creature System';
++) ENGINE=MyISAM DEFAULT CHARSET=utf8 ROW_FORMAT=FIXED COMMENT='Creature System';
+ 
+ DELETE FROM `creature_questrelation`;
+ /*!40000 ALTER TABLE `creature_questrelation` DISABLE KEYS */;
+diff --git a/custom_texts.sql b/custom_texts.sql
+index ef694ac..6bf8023 100644
+--- a/custom_texts.sql
++++ b/custom_texts.sql
+@@ -21,7 +21,7 @@ CREATE TABLE IF NOT EXISTS `custom_texts` (
+   `emote` smallint(5) unsigned NOT NULL DEFAULT '0',
+   `comment` text,
+   PRIMARY KEY (`entry`)
+-) ENGINE=InnoDB DEFAULT CHARSET=utf8 ROW_FORMAT=FIXED COMMENT='Custom Texts';
++) ENGINE=MyISAM DEFAULT CHARSET=utf8 ROW_FORMAT=FIXED COMMENT='Custom Texts';
+ 
+ DELETE FROM `custom_texts`;
+ /*!40000 ALTER TABLE `custom_texts` DISABLE KEYS */;
+diff --git a/disenchant_loot_template.sql b/disenchant_loot_template.sql
+index e32e4af..a06caf8 100644
+--- a/disenchant_loot_template.sql
++++ b/disenchant_loot_template.sql
+@@ -15,7 +15,7 @@ CREATE TABLE IF NOT EXISTS `disenchant_loot_template` (
+   `condition_value1` mediumint(8) unsigned NOT NULL DEFAULT '0',
+   `condition_value2` mediumint(8) unsigned NOT NULL DEFAULT '0',
+   PRIMARY KEY (`entry`,`item`)
+-) ENGINE=InnoDB DEFAULT CHARSET=utf8 ROW_FORMAT=FIXED COMMENT='Loot System';
++) ENGINE=MyISAM DEFAULT CHARSET=utf8 ROW_FORMAT=FIXED COMMENT='Loot System';
+ 
+ DELETE FROM `disenchant_loot_template`;
+ /*!40000 ALTER TABLE `disenchant_loot_template` DISABLE KEYS */;
+diff --git a/exploration_basexp.sql b/exploration_basexp.sql
+index 1356d61..489098d 100644
+--- a/exploration_basexp.sql
++++ b/exploration_basexp.sql
+@@ -8,7 +8,7 @@ CREATE TABLE IF NOT EXISTS `exploration_basexp` (
+   `level` tinyint(4) NOT NULL DEFAULT '0',
+   `basexp` mediumint(9) NOT NULL DEFAULT '0',
+   PRIMARY KEY (`level`)
+-) ENGINE=InnoDB DEFAULT CHARSET=utf8 ROW_FORMAT=FIXED COMMENT='Exploration System';
++) ENGINE=MyISAM DEFAULT CHARSET=utf8 ROW_FORMAT=FIXED COMMENT='Exploration System';
+ 
+ DELETE FROM `exploration_basexp`;
+ /*!40000 ALTER TABLE `exploration_basexp` DISABLE KEYS */;
+diff --git a/game_weather.sql b/game_weather.sql
+index b5fa338..16d47c9 100644
+--- a/game_weather.sql
++++ b/game_weather.sql
+@@ -19,7 +19,7 @@ CREATE TABLE IF NOT EXISTS `game_weather` (
+   `winter_snow_chance` tinyint(3) unsigned NOT NULL DEFAULT '25',
+   `winter_storm_chance` tinyint(3) unsigned NOT NULL DEFAULT '25',
+   PRIMARY KEY (`zone`)
+-) ENGINE=InnoDB DEFAULT CHARSET=utf8 ROW_FORMAT=FIXED COMMENT='Weather System';
++) ENGINE=MyISAM DEFAULT CHARSET=utf8 ROW_FORMAT=FIXED COMMENT='Weather System';
+ 
+ DELETE FROM `game_weather`;
+ /*!40000 ALTER TABLE `game_weather` DISABLE KEYS */;
+diff --git a/gameobject.sql b/gameobject.sql
+index 3280537..db6457a 100644
+--- a/gameobject.sql
++++ b/gameobject.sql
+@@ -21,7 +21,7 @@ CREATE TABLE IF NOT EXISTS `gameobject` (
+   `animprogress` tinyint(3) unsigned NOT NULL DEFAULT '0',
+   `state` tinyint(3) unsigned NOT NULL DEFAULT '0',
+   PRIMARY KEY (`guid`)
+-) ENGINE=InnoDB AUTO_INCREMENT=14113686 DEFAULT CHARSET=utf8 ROW_FORMAT=FIXED COMMENT='Gameobject System';
++) ENGINE=MyISAM AUTO_INCREMENT=14113686 DEFAULT CHARSET=utf8 ROW_FORMAT=FIXED COMMENT='Gameobject System';
+ 
+ DELETE FROM `gameobject`;
+ /*!40000 ALTER TABLE `gameobject` DISABLE KEYS */;
+diff --git a/gameobject_template.sql b/gameobject_template.sql
+index 44a6eda..bf36459 100644
+--- a/gameobject_template.sql
++++ b/gameobject_template.sql
+@@ -40,7 +40,7 @@ CREATE TABLE IF NOT EXISTS `gameobject_template` (
+   `ScriptName` varchar(64) NOT NULL DEFAULT '',
+   PRIMARY KEY (`entry`),
+   KEY `idx_name` (`name`)
+-) ENGINE=InnoDB DEFAULT CHARSET=utf8 ROW_FORMAT=FIXED COMMENT='Gameobject System';
++) ENGINE=MyISAM DEFAULT CHARSET=utf8 ROW_FORMAT=FIXED COMMENT='Gameobject System';
+ 
+ DELETE FROM `gameobject_template`;
+ /*!40000 ALTER TABLE `gameobject_template` DISABLE KEYS */;
+diff --git a/item_enchantment_template.sql b/item_enchantment_template.sql
+index 1b12c74..019c500 100644
+--- a/item_enchantment_template.sql
++++ b/item_enchantment_template.sql
+@@ -9,7 +9,7 @@ CREATE TABLE IF NOT EXISTS `item_enchantment_template` (
+   `ench` mediumint(8) unsigned NOT NULL DEFAULT '0',
+   `chance` float unsigned NOT NULL DEFAULT '0',
+   PRIMARY KEY (`entry`,`ench`)
+-) ENGINE=InnoDB DEFAULT CHARSET=utf8 ROW_FORMAT=FIXED COMMENT='Item Random Enchantment System';
++) ENGINE=MyISAM DEFAULT CHARSET=utf8 ROW_FORMAT=FIXED COMMENT='Item Random Enchantment System';
+ 
+ DELETE FROM `item_enchantment_template`;
+ /*!40000 ALTER TABLE `item_enchantment_template` DISABLE KEYS */;
+diff --git a/item_loot_template.sql b/item_loot_template.sql
+index 9167f87..cad18e3 100644
+--- a/item_loot_template.sql
++++ b/item_loot_template.sql
+@@ -15,7 +15,7 @@ CREATE TABLE IF NOT EXISTS `item_loot_template` (
+   `condition_value1` mediumint(8) unsigned NOT NULL DEFAULT '0',
+   `condition_value2` mediumint(8) unsigned NOT NULL DEFAULT '0',
+   PRIMARY KEY (`entry`,`item`)
+-) ENGINE=InnoDB DEFAULT CHARSET=utf8 ROW_FORMAT=FIXED COMMENT='Loot System';
++) ENGINE=MyISAM DEFAULT CHARSET=utf8 ROW_FORMAT=FIXED COMMENT='Loot System';
+ 
+ DELETE FROM `item_loot_template`;
+ /*!40000 ALTER TABLE `item_loot_template` DISABLE KEYS */;
+diff --git a/item_template.sql b/item_template.sql
+index 1f1651a..4fe37b2 100644
+--- a/item_template.sql
++++ b/item_template.sql
+@@ -148,7 +148,7 @@ CREATE TABLE IF NOT EXISTS `item_template` (
+   PRIMARY KEY (`entry`),
+   KEY `idx_name` (`name`),
+   KEY `items_index` (`class`)
+-) ENGINE=InnoDB DEFAULT CHARSET=utf8 ROW_FORMAT=FIXED COMMENT='Item System';
++) ENGINE=MyISAM DEFAULT CHARSET=utf8 ROW_FORMAT=FIXED COMMENT='Item System';
+ 
+ DELETE FROM `item_template`;
+ /*!40000 ALTER TABLE `item_template` DISABLE KEYS */;
+diff --git a/npc_vendor.sql b/npc_vendor.sql
+index f6108c9..4a130f8 100644
+--- a/npc_vendor.sql
++++ b/npc_vendor.sql
+@@ -11,7 +11,7 @@ CREATE TABLE IF NOT EXISTS `npc_vendor` (
+   `incrtime` int(10) unsigned NOT NULL DEFAULT '0',
+   `ExtendedCost` mediumint(8) unsigned NOT NULL DEFAULT '0',
+   PRIMARY KEY (`entry`,`item`)
+-) ENGINE=InnoDB DEFAULT CHARSET=utf8 ROW_FORMAT=FIXED COMMENT='Npc System';
++) ENGINE=MyISAM DEFAULT CHARSET=utf8 ROW_FORMAT=FIXED COMMENT='Npc System';
+ 
+ DELETE FROM `npc_vendor`;
+ /*!40000 ALTER TABLE `npc_vendor` DISABLE KEYS */;
+diff --git a/pickpocketing_loot_template.sql b/pickpocketing_loot_template.sql
+index 69e6392..9ad2768 100644
+--- a/pickpocketing_loot_template.sql
++++ b/pickpocketing_loot_template.sql
+@@ -15,7 +15,7 @@ CREATE TABLE IF NOT EXISTS `pickpocketing_loot_template` (
+   `condition_value1` mediumint(8) unsigned NOT NULL DEFAULT '0',
+   `condition_value2` mediumint(8) unsigned NOT NULL DEFAULT '0',
+   PRIMARY KEY (`entry`,`item`)
+-) ENGINE=InnoDB DEFAULT CHARSET=utf8 ROW_FORMAT=FIXED COMMENT='Loot System';
++) ENGINE=MyISAM DEFAULT CHARSET=utf8 ROW_FORMAT=FIXED COMMENT='Loot System';
+ 
+ DELETE FROM `pickpocketing_loot_template`;
+ /*!40000 ALTER TABLE `pickpocketing_loot_template` DISABLE KEYS */;
+diff --git a/prospecting_loot_template.sql b/prospecting_loot_template.sql
+index 38d0e7b..cc0d1f6 100644
+--- a/prospecting_loot_template.sql
++++ b/prospecting_loot_template.sql
+@@ -15,7 +15,7 @@ CREATE TABLE IF NOT EXISTS `prospecting_loot_template` (
+   `condition_value1` mediumint(8) unsigned NOT NULL DEFAULT '0',
+   `condition_value2` mediumint(8) unsigned NOT NULL DEFAULT '0',
+   PRIMARY KEY (`entry`,`item`)
+-) ENGINE=InnoDB DEFAULT CHARSET=utf8 ROW_FORMAT=FIXED COMMENT='Loot System';
++) ENGINE=MyISAM DEFAULT CHARSET=utf8 ROW_FORMAT=FIXED COMMENT='Loot System';
+ 
+ DELETE FROM `prospecting_loot_template`;
+ /*!40000 ALTER TABLE `prospecting_loot_template` DISABLE KEYS */;
+diff --git a/quest_mail_loot_template.sql b/quest_mail_loot_template.sql
+index 72f54f5..26fbb3d 100644
+--- a/quest_mail_loot_template.sql
++++ b/quest_mail_loot_template.sql
+@@ -15,7 +15,7 @@ CREATE TABLE IF NOT EXISTS `quest_mail_loot_template` (
+   `condition_value1` mediumint(8) unsigned NOT NULL DEFAULT '0',
+   `condition_value2` mediumint(8) unsigned NOT NULL DEFAULT '0',
+   PRIMARY KEY (`entry`,`item`)
+-) ENGINE=InnoDB DEFAULT CHARSET=utf8 ROW_FORMAT=FIXED COMMENT='Loot System';
++) ENGINE=MyISAM DEFAULT CHARSET=utf8 ROW_FORMAT=FIXED COMMENT='Loot System';
+ 
+ DELETE FROM `quest_mail_loot_template`;
+ /*!40000 ALTER TABLE `quest_mail_loot_template` DISABLE KEYS */;
+diff --git a/reference_loot_template.sql b/reference_loot_template.sql
+index 1b6405d..6002687 100644
+--- a/reference_loot_template.sql
++++ b/reference_loot_template.sql
+@@ -15,7 +15,7 @@ CREATE TABLE IF NOT EXISTS `reference_loot_template` (
+   `condition_value1` mediumint(8) unsigned NOT NULL DEFAULT '0',
+   `condition_value2` mediumint(8) unsigned NOT NULL DEFAULT '0',
+   PRIMARY KEY (`entry`,`item`)
+-) ENGINE=InnoDB DEFAULT CHARSET=utf8 ROW_FORMAT=FIXED COMMENT='Loot System';
++) ENGINE=MyISAM DEFAULT CHARSET=utf8 ROW_FORMAT=FIXED COMMENT='Loot System';
+ 
+ DELETE FROM `reference_loot_template`;
+ /*!40000 ALTER TABLE `reference_loot_template` DISABLE KEYS */;
+diff --git a/script_texts.sql b/script_texts.sql
+index 9647630..8568f74 100644
+--- a/script_texts.sql
++++ b/script_texts.sql
+@@ -21,7 +21,7 @@ CREATE TABLE IF NOT EXISTS `script_texts` (
+   `emote` smallint(5) unsigned NOT NULL DEFAULT '0',
+   `comment` text,
+   PRIMARY KEY (`entry`)
+-) ENGINE=InnoDB DEFAULT CHARSET=utf8 ROW_FORMAT=FIXED COMMENT='Script Texts';
++) ENGINE=MyISAM DEFAULT CHARSET=utf8 ROW_FORMAT=FIXED COMMENT='Script Texts';
+ 
+ DELETE FROM `script_texts`;
+ /*!40000 ALTER TABLE `script_texts` DISABLE KEYS */;
+diff --git a/script_waypoint.sql b/script_waypoint.sql
+index 4bc2c1f..2521c41 100644
+--- a/script_waypoint.sql
++++ b/script_waypoint.sql
+@@ -13,7 +13,7 @@ CREATE TABLE IF NOT EXISTS `script_waypoint` (
+   `waittime` int(10) unsigned NOT NULL DEFAULT '0' COMMENT 'waittime in millisecs',
+   `point_comment` text,
+   PRIMARY KEY (`entry`,`pointid`)
+-) ENGINE=InnoDB DEFAULT CHARSET=utf8 ROW_FORMAT=FIXED COMMENT='Script Creature waypoints';
++) ENGINE=MyISAM DEFAULT CHARSET=utf8 ROW_FORMAT=FIXED COMMENT='Script Creature waypoints';
+ 
+ DELETE FROM `script_waypoint`;
+ /*!40000 ALTER TABLE `script_waypoint` DISABLE KEYS */;
+diff --git a/skill_discovery_template.sql b/skill_discovery_template.sql
+index 1ef2156..0e9b9d6 100644
+--- a/skill_discovery_template.sql
++++ b/skill_discovery_template.sql
+@@ -9,7 +9,7 @@ CREATE TABLE IF NOT EXISTS `skill_discovery_template` (
+   `reqSpell` mediumint(8) unsigned NOT NULL DEFAULT '0' COMMENT 'spell requirement',
+   `chance` float NOT NULL DEFAULT '0' COMMENT 'chance to discover',
+   PRIMARY KEY (`spellId`)
+-) ENGINE=InnoDB DEFAULT CHARSET=utf8 ROW_FORMAT=FIXED COMMENT='Skill Discovery System';
++) ENGINE=MyISAM DEFAULT CHARSET=utf8 ROW_FORMAT=FIXED COMMENT='Skill Discovery System';
+ 
+ DELETE FROM `skill_discovery_template`;
+ /*!40000 ALTER TABLE `skill_discovery_template` DISABLE KEYS */;
+diff --git a/skill_extra_item_template.sql b/skill_extra_item_template.sql
+index 533591c..82577b5 100644
+--- a/skill_extra_item_template.sql
++++ b/skill_extra_item_template.sql
+@@ -10,7 +10,7 @@ CREATE TABLE IF NOT EXISTS `skill_extra_item_template` (
+   `additionalCreateChance` float NOT NULL DEFAULT '0' COMMENT 'chance to create add',
+   `additionalMaxNum` tinyint(3) unsigned NOT NULL DEFAULT '0' COMMENT 'max num of adds',
+   PRIMARY KEY (`spellId`)
+-) ENGINE=InnoDB DEFAULT CHARSET=utf8 ROW_FORMAT=FIXED COMMENT='Skill Specialization System';
++) ENGINE=MyISAM DEFAULT CHARSET=utf8 ROW_FORMAT=FIXED COMMENT='Skill Specialization System';
+ 
+ DELETE FROM `skill_extra_item_template`;
+ /*!40000 ALTER TABLE `skill_extra_item_template` DISABLE KEYS */;
+diff --git a/skill_fishing_base_level.sql b/skill_fishing_base_level.sql
+index 5c122fc..946c7f9 100644
+--- a/skill_fishing_base_level.sql
++++ b/skill_fishing_base_level.sql
+@@ -8,7 +8,7 @@ CREATE TABLE IF NOT EXISTS `skill_fishing_base_level` (
+   `entry` mediumint(8) unsigned NOT NULL DEFAULT '0' COMMENT 'Area identifier',
+   `skill` smallint(6) NOT NULL DEFAULT '0' COMMENT 'Base skill level requirement',
+   PRIMARY KEY (`entry`)
+-) ENGINE=InnoDB DEFAULT CHARSET=utf8 ROW_FORMAT=FIXED COMMENT='Fishing system';
++) ENGINE=MyISAM DEFAULT CHARSET=utf8 ROW_FORMAT=FIXED COMMENT='Fishing system';
+ 
+ DELETE FROM `skill_fishing_base_level`;
+ /*!40000 ALTER TABLE `skill_fishing_base_level` DISABLE KEYS */;
+diff --git a/skinning_loot_template.sql b/skinning_loot_template.sql
+index 98114f7..b269351 100644
+--- a/skinning_loot_template.sql
++++ b/skinning_loot_template.sql
+@@ -15,7 +15,7 @@ CREATE TABLE IF NOT EXISTS `skinning_loot_template` (
+   `condition_value1` mediumint(8) unsigned NOT NULL DEFAULT '0',
+   `condition_value2` mediumint(8) unsigned NOT NULL DEFAULT '0',
+   PRIMARY KEY (`entry`,`item`)
+-) ENGINE=InnoDB DEFAULT CHARSET=utf8 ROW_FORMAT=FIXED COMMENT='Loot System';
++) ENGINE=MyISAM DEFAULT CHARSET=utf8 ROW_FORMAT=FIXED COMMENT='Loot System';
+ 
+ DELETE FROM `skinning_loot_template`;
+ /*!40000 ALTER TABLE `skinning_loot_template` DISABLE KEYS */;
+diff --git a/spell_elixir.sql b/spell_elixir.sql
+index ef82cbe..268d6e1 100644
+--- a/spell_elixir.sql
++++ b/spell_elixir.sql
+@@ -8,7 +8,7 @@ CREATE TABLE IF NOT EXISTS `spell_elixir` (
+   `entry` int(11) unsigned NOT NULL DEFAULT '0' COMMENT 'SpellId of potion',
+   `mask` tinyint(1) unsigned NOT NULL DEFAULT '0' COMMENT 'Mask 0x1 battle 0x2 guardian 0x3 flask 0x7 unstable flasks 0xB shattrath flasks',
+   PRIMARY KEY (`entry`)
+-) ENGINE=InnoDB DEFAULT CHARSET=utf8 ROW_FORMAT=FIXED COMMENT='Spell System';
++) ENGINE=MyISAM DEFAULT CHARSET=utf8 ROW_FORMAT=FIXED COMMENT='Spell System';
+ 
+ DELETE FROM `spell_elixir`;
+ /*!40000 ALTER TABLE `spell_elixir` DISABLE KEYS */;
+diff --git a/spell_learn_spell.sql b/spell_learn_spell.sql
+index b67c275..e6ef63c 100644
+--- a/spell_learn_spell.sql
++++ b/spell_learn_spell.sql
+@@ -8,7 +8,7 @@ CREATE TABLE IF NOT EXISTS `spell_learn_spell` (
+   `entry` smallint(5) unsigned NOT NULL DEFAULT '0',
+   `SpellID` smallint(5) unsigned NOT NULL DEFAULT '0',
+   PRIMARY KEY (`entry`,`SpellID`)
+-) ENGINE=InnoDB DEFAULT CHARSET=utf8 ROW_FORMAT=FIXED COMMENT='Item System';
++) ENGINE=MyISAM DEFAULT CHARSET=utf8 ROW_FORMAT=FIXED COMMENT='Item System';
+ 
+ DELETE FROM `spell_learn_spell`;
+ /*!40000 ALTER TABLE `spell_learn_spell` DISABLE KEYS */;
+diff --git a/spell_required.sql b/spell_required.sql
+index 138009b..fea625b 100644
+--- a/spell_required.sql
++++ b/spell_required.sql
+@@ -8,7 +8,7 @@ CREATE TABLE IF NOT EXISTS `spell_required` (
+   `spell_id` mediumint(9) NOT NULL DEFAULT '0',
+   `req_spell` mediumint(9) NOT NULL DEFAULT '0',
+   PRIMARY KEY (`spell_id`)
+-) ENGINE=InnoDB DEFAULT CHARSET=utf8 ROW_FORMAT=FIXED COMMENT='Spell Additinal Data';
++) ENGINE=MyISAM DEFAULT CHARSET=utf8 ROW_FORMAT=FIXED COMMENT='Spell Additinal Data';
+ 
+ DELETE FROM `spell_required`;
+ /*!40000 ALTER TABLE `spell_required` DISABLE KEYS */;
+diff --git a/spell_target_position.sql b/spell_target_position.sql
+index bf8fb17..2539ff6 100644
+--- a/spell_target_position.sql
++++ b/spell_target_position.sql
+@@ -12,7 +12,7 @@ CREATE TABLE IF NOT EXISTS `spell_target_position` (
+   `target_position_z` float NOT NULL DEFAULT '0',
+   `target_orientation` float NOT NULL DEFAULT '0',
+   PRIMARY KEY (`id`)
+-) ENGINE=InnoDB DEFAULT CHARSET=utf8 ROW_FORMAT=FIXED COMMENT='Spell System';
++) ENGINE=MyISAM DEFAULT CHARSET=utf8 ROW_FORMAT=FIXED COMMENT='Spell System';
+ 
+ DELETE FROM `spell_target_position`;
+ /*!40000 ALTER TABLE `spell_target_position` DISABLE KEYS */;
+diff --git a/spell_threat.sql b/spell_threat.sql
+index 206946e..7a040fc 100644
+--- a/spell_threat.sql
++++ b/spell_threat.sql
+@@ -8,7 +8,7 @@ CREATE TABLE IF NOT EXISTS `spell_threat` (
+   `entry` mediumint(8) unsigned NOT NULL,
+   `Threat` smallint(6) NOT NULL,
+   PRIMARY KEY (`entry`)
+-) ENGINE=InnoDB DEFAULT CHARSET=utf8 ROW_FORMAT=FIXED;
++) ENGINE=MyISAM DEFAULT CHARSET=utf8 ROW_FORMAT=FIXED;
+ 
+ DELETE FROM `spell_threat`;
+ /*!40000 ALTER TABLE `spell_threat` DISABLE KEYS */;
+diff --git a/transports.sql b/transports.sql
+index f408237..2c53991 100644
+--- a/transports.sql
++++ b/transports.sql
+@@ -9,7 +9,7 @@ CREATE TABLE IF NOT EXISTS `transports` (
+   `name` text,
+   `period` mediumint(8) unsigned NOT NULL DEFAULT '0',
+   PRIMARY KEY (`entry`)
+-) ENGINE=InnoDB DEFAULT CHARSET=utf8 ROW_FORMAT=FIXED COMMENT='Transports';
++) ENGINE=MyISAM DEFAULT CHARSET=utf8 ROW_FORMAT=FIXED COMMENT='Transports';
+ 
+ DELETE FROM `transports`;
+ /*!40000 ALTER TABLE `transports` DISABLE KEYS */;
+diff --git a/version.sql b/version.sql
+index 4ad2121..00148f0 100644
+--- a/version.sql
++++ b/version.sql
+@@ -9,7 +9,7 @@ CREATE TABLE IF NOT EXISTS `version` (
+   `core_revision` bigint(20) unsigned DEFAULT NULL,
+   `db_version` varchar(120) DEFAULT NULL COMMENT 'Version of world DB.',
+   `script_version` varchar(120) DEFAULT NULL COMMENT 'Version of scripts DB.'
+-) ENGINE=InnoDB DEFAULT CHARSET=utf8 CHECKSUM=1 DELAY_KEY_WRITE=1 ROW_FORMAT=FIXED COMMENT='Version Notes';
++) ENGINE=MyISAM DEFAULT CHARSET=utf8 CHECKSUM=1 DELAY_KEY_WRITE=1 ROW_FORMAT=FIXED COMMENT='Version Notes';
+ 
+ DELETE FROM `version`;
+ /*!40000 ALTER TABLE `version` DISABLE KEYS */;
+-- 
+2.15.1.windows.2
+
